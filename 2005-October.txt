@@ -1,0 +1,216 @@
+From noteedit-user-admin at lists.berlios.de  Wed Oct  5 12:56:57 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 5 Oct 2005 12:56:57 +0200
+Subject: [Noteedit-user] tse3play works, but noteedit do not recognize
+Message-ID: <200510051256.57682.d0m1n1k@geekmail.de>
+
+Hello
+I'm using noteedit 2.8.0 from debian sid
+
+ii  noteedit       2.8.0-1        KDE Music Editor
+ii  libtse3-0.2.7c 0.2.7-5.1      TSE3: portable sequencer engine in C++
+
+'tse3play list <midifile.mid>' works, but noteedit don't recognize tse3 lib.
+
+
+I also tried to compile myself, but I got some errors:
+
+if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ -DHAVE_CONFIG_H 
+-I. -I. -I.. -I/usr/include/kde -I/usr/share/qt3/include -I/usr/X11R6/include  
+-I/usr/include    -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor 
+-Wno-long-long -Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+-D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts 
+-O2 -Wformat-security -Wmissing-format-attribute -fno-exceptions 
+-fno-check-new -fno-common  -MT abcexport.lo -MD -MP -MF 
+".deps/abcexport.Tpo" \
+  -c -o abcexport.lo `test -f 'abcexport.cpp' || echo './'`abcexport.cpp; \
+then mv -f ".deps/abcexport.Tpo" ".deps/abcexport.Plo"; \
+else rm -f ".deps/abcexport.Tpo"; exit 1; \
+fi
+In file included from voice.h:29,
+                 from staff.h:27,
+                 from abcexport.cpp:32:
+midimapper.h:116: error: cannot declare field `NMidiMapper::theFactory_' to be
+   of type `TSE3::MidiSchedulerFactory'
+midimapper.h:116: error:   because the following virtual functions are
+   abstract:
+/usr/local/include/tse3/MidiScheduler.h:73: error:      virtual
+   TSE3::MidiScheduler* TSE3::MidiSchedulerFactory::createScheduler()
+abcexport.cpp: In member function `void
+   NABCExport::handleSpecialElements(NStaff*, NMusElement*)':
+abcexport.cpp:799: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp: In member function `void NABCExport::writePendingSigns(int)':
+abcexport.cpp:839: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:851: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:858: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:867: warning: suggest parentheses around assignment used as 
+truth
+   value
+make[3]: *** [abcexport.lo] Fehler 1
+make[3]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[2]: *** [all-recursive] Fehler 1
+make[2]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[1]: *** [all-recursive] Fehler 1
+make[1]: Leaving directory `/home/niki/downloads/noteedit-2.8.0'
+make: *** [all] Fehler 2
+
+
+
+Any hint or idea?
+
+Thanks in advance and excuse my bad english,
+Dominik (from germany)
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Oct  5 12:56:57 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 5 Oct 2005 12:56:57 +0200
+Subject: [Noteedit-user] tse3play works, but noteedit do not recognize
+Message-ID: <200510051256.57682.d0m1n1k@geekmail.de>
+
+Hello
+I'm using noteedit 2.8.0 from debian sid
+
+ii  noteedit       2.8.0-1        KDE Music Editor
+ii  libtse3-0.2.7c 0.2.7-5.1      TSE3: portable sequencer engine in C++
+
+'tse3play list <midifile.mid>' works, but noteedit don't recognize tse3 lib.
+
+
+I also tried to compile myself, but I got some errors:
+
+if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ -DHAVE_CONFIG_H 
+-I. -I. -I.. -I/usr/include/kde -I/usr/share/qt3/include -I/usr/X11R6/include  
+-I/usr/include    -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor 
+-Wno-long-long -Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+-D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts 
+-O2 -Wformat-security -Wmissing-format-attribute -fno-exceptions 
+-fno-check-new -fno-common  -MT abcexport.lo -MD -MP -MF 
+".deps/abcexport.Tpo" \
+  -c -o abcexport.lo `test -f 'abcexport.cpp' || echo './'`abcexport.cpp; \
+then mv -f ".deps/abcexport.Tpo" ".deps/abcexport.Plo"; \
+else rm -f ".deps/abcexport.Tpo"; exit 1; \
+fi
+In file included from voice.h:29,
+                 from staff.h:27,
+                 from abcexport.cpp:32:
+midimapper.h:116: error: cannot declare field `NMidiMapper::theFactory_' to be
+   of type `TSE3::MidiSchedulerFactory'
+midimapper.h:116: error:   because the following virtual functions are
+   abstract:
+/usr/local/include/tse3/MidiScheduler.h:73: error:      virtual
+   TSE3::MidiScheduler* TSE3::MidiSchedulerFactory::createScheduler()
+abcexport.cpp: In member function `void
+   NABCExport::handleSpecialElements(NStaff*, NMusElement*)':
+abcexport.cpp:799: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp: In member function `void NABCExport::writePendingSigns(int)':
+abcexport.cpp:839: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:851: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:858: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:867: warning: suggest parentheses around assignment used as 
+truth
+   value
+make[3]: *** [abcexport.lo] Fehler 1
+make[3]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[2]: *** [all-recursive] Fehler 1
+make[2]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[1]: *** [all-recursive] Fehler 1
+make[1]: Leaving directory `/home/niki/downloads/noteedit-2.8.0'
+make: *** [all] Fehler 2
+
+
+
+Any hint or idea?
+
+Thanks in advance and excuse my bad english,
+Dominik (from germany)
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Oct  5 12:55:05 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 5 Oct 2005 12:55:05 +0200
+Subject: [Noteedit-user] tse3play works, but noteedit do not recognize
+Message-ID: <200510051255.05262.kermit@justmail.de>
+
+Hello
+I'm using noteedit 2.8.0 from debian sid
+
+ii  noteedit       2.8.0-1        KDE Music Editor
+ii  libtse3-0.2.7c 0.2.7-5.1      TSE3: portable sequencer engine in C++
+
+'tse3play list <midifile.mid>' works, but noteedit don't recognize tse3 lib.
+
+
+I also tried to compile myself, but I got some errors:
+
+if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ -DHAVE_CONFIG_H 
+-I. -I. -I.. -I/usr/include/kde -I/usr/share/qt3/include -I/usr/X11R6/include  
+-I/usr/include    -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor 
+-Wno-long-long -Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+-D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts 
+-O2 -Wformat-security -Wmissing-format-attribute -fno-exceptions 
+-fno-check-new -fno-common  -MT abcexport.lo -MD -MP -MF 
+".deps/abcexport.Tpo" \
+  -c -o abcexport.lo `test -f 'abcexport.cpp' || echo './'`abcexport.cpp; \
+then mv -f ".deps/abcexport.Tpo" ".deps/abcexport.Plo"; \
+else rm -f ".deps/abcexport.Tpo"; exit 1; \
+fi
+In file included from voice.h:29,
+                 from staff.h:27,
+                 from abcexport.cpp:32:
+midimapper.h:116: error: cannot declare field `NMidiMapper::theFactory_' to be
+   of type `TSE3::MidiSchedulerFactory'
+midimapper.h:116: error:   because the following virtual functions are
+   abstract:
+/usr/local/include/tse3/MidiScheduler.h:73: error:      virtual
+   TSE3::MidiScheduler* TSE3::MidiSchedulerFactory::createScheduler()
+abcexport.cpp: In member function `void
+   NABCExport::handleSpecialElements(NStaff*, NMusElement*)':
+abcexport.cpp:799: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp: In member function `void NABCExport::writePendingSigns(int)':
+abcexport.cpp:839: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:851: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:858: warning: suggest parentheses around assignment used as 
+truth
+   value
+abcexport.cpp:867: warning: suggest parentheses around assignment used as 
+truth
+   value
+make[3]: *** [abcexport.lo] Fehler 1
+make[3]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[2]: *** [all-recursive] Fehler 1
+make[2]: Leaving directory `/home/niki/downloads/noteedit-2.8.0/noteedit'
+make[1]: *** [all-recursive] Fehler 1
+make[1]: Leaving directory `/home/niki/downloads/noteedit-2.8.0'
+make: *** [all] Fehler 2
+
+
+
+Any hint or idea?
+
+Thanks in advance and excuse my bad english,
+Dominik (from germany)
+
+

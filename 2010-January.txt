@@ -1,0 +1,180 @@
+From noteedit-user at lists.berlios.de  Tue Jan  5 17:43:44 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 05 Jan 2010 17:43:44 +0100
+Subject: [Noteedit-user] Guitar Score Problem (stem orientation)
+In-Reply-To: <3ca8db5c0912181954t543684d6p52b7649100423139@mail.gmail.com>
+References: <3ca8db5c0912181954t543684d6p52b7649100423139@mail.gmail.com>
+Message-ID: <4B436C40.6080201@gmail.com>
+
+Hi Alfredo,
+
+did you try to switch the \voiceOne and \voiceTwo parameters in the 
+exported .ly file? These two directives tell Lily how the stems should 
+be rendered. Looks like NE doesn't set it correctly.
+
+
+Regards.
+-Matev?
+
+On 19. 12. 2009 04:54, user mailing list for the score editor noteedit 
+wrote:
+> Hi:
+>
+> I am a new user. I am trying to print a guitar score but I have a 
+> problem. When I am working on NoteEdit the stem orientation is right 
+> on screen, but when I print the score the situation is different 
+> because almost all the stems are backwards.
+>
+> I think that I need more vertical distance between scores in order to 
+> avoid this problem... but I don't know how to fix this setting.
+>
+> My typesetting  is Lilypond.
+>
+> You can find a screenshot in the attached file.
+>
+> Thanks,
+>
+> -- 
+> Alfredo
+>
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>    
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20100105/fad60e1c/attachment.html>
+
+From noteedit-user at lists.berlios.de  Mon Jan 11 16:11:31 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 11 Jan 2010 16:11:31 +0100 (CET)
+Subject: [Noteedit-user] patch: concurrent uptext and downtext in lilypond
+	export
+Message-ID: <alpine.DEB.1.10.0910312153590.17409@dront.rosnix>
+
+Hi!
+
+Yes, I know development have moved on to Canorus, and hope it proceeds 
+smoothly. However, if anyone is interested I have a patched a small bug:
+
+Concurrent text sections or dynamics was not exported properly to 
+lilypond. For example, if you have both a piano and and forte between two 
+notes (perhaps useful when ending a crescendo) only the last "\f" would be 
+exported. In the same way, only the last text section would be 
+exported (for example, no "Allargando" above and "tutti" below possible).
+
+This patch fixes that (by using a list), and allows any number of 
+text/dynamics to be exported. It may be useful also if you, like me, are 
+embedding lilypond syntax in the noteedit source (to get many lilypond 
+features not directly supported by export) and post-processing the 
+exported .ly. (I can send my post-processor if anyone is interested).
+
+regards
+Per Eric Ros?n, Uppsala, Sweden
+--
+^): Per Eric Ros?n http://rosnix.net/~per/
+/   per at rosnix.net GPG 7A7A BD68 ADC0 01E1 F560 79FD 33D1 1EC3 1EBB 7311
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: noteedit-2.8.1-pending_texts.diff
+Type: text/x-diff
+Size: 9764 bytes
+Desc: 
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20100111/3e455d7a/attachment.diff>
+
+From noteedit-user at lists.berlios.de  Thu Jan 21 16:57:41 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 21 Jan 2010 16:57:41 +0100
+Subject: [Noteedit-user] How do I add a title?
+Message-ID: <4B587975.4000203@web.de>
+
+Hi,
+
+I'm quite new to noteedit. I've successfully created the intro of 
+"Sandmann, lieber Sandmann..." and now I'd like to add a title. There is 
+"Insert"->"Text", but with this tool I can only add text immediately 
+above or below the lines, not a title, e.g. in bold face.
+
+Any hints?
+
+Thank you,
+Christina Rossmanith
+
+
+From noteedit-user at lists.berlios.de  Thu Jan 21 17:39:03 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 21 Jan 2010 17:39:03 +0100
+Subject: [Noteedit-user] How do I add a title?
+In-Reply-To: <4B587975.4000203@web.de>
+References: <4B587975.4000203@web.de>
+Message-ID: <4B588327.2070107@gmail.com>
+
+Hi Christina.
+
+Use Format->Document information to set title, composer etc.
+
+Regards.
+-Matev?
+
+On 21. 01. 2010 16:57, user mailing list for the score editor noteedit 
+wrote:
+> Hi,
+>
+> I'm quite new to noteedit. I've successfully created the intro of
+> "Sandmann, lieber Sandmann..." and now I'd like to add a title. There is
+> "Insert"->"Text", but with this tool I can only add text immediately
+> above or below the lines, not a title, e.g. in bold face.
+>
+> Any hints?
+>
+> Thank you,
+> Christina Rossmanith
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>    
+
+
+
+From noteedit-user at lists.berlios.de  Sat Jan 23 04:23:22 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 22 Jan 2010 22:23:22 -0500
+Subject: [Noteedit-user] How do I add a title?
+In-Reply-To: <4B587975.4000203@web.de>
+References: <4B587975.4000203@web.de>
+Message-ID: <4B5A6BAA.2090908@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi,
+>
+> I'm quite new to noteedit. I've successfully created the intro of 
+> "Sandmann, lieber Sandmann..." and now I'd like to add a title. There is 
+> "Insert"->"Text", but with this tool I can only add text immediately 
+> above or below the lines, not a title, e.g. in bold face.
+>
+> Any hints?
+>
+> Thank you,
+> Christina Rossmanith
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+Hi,  Christina;
+
+Sorry for being slow to respond. But in case you haven't found it
+already, The title can be set by clicking on Format > Score
+information...  and filling in the fields in the dialog window. The
+information entered there will show on the page produced when you export
+to lillypond.
+
+                            -ED-
+
+

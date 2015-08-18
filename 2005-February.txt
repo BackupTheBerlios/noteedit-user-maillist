@@ -1,0 +1,342 @@
+From noteedit-user-admin at lists.berlios.de  Sat Feb  5 23:31:53 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 05 Feb 2005 23:31:53 +0100
+Subject: [Noteedit-user] 2.7.4 Beta 1 released
+Message-ID: <42054959.10907@web.de>
+
+Hi,
+
+The first beta (and probably the last and also the first and last 
+release candidate ;-) for version 2.7.4 of noteedit has been released. 
+Please test this hard and report any build problems to the developer 
+mailing lists. You can also post bugs to the bug tracker.
+
+You can download it from here:
+http://developer.berlios.de/project/filelist.php?group_id=2232
+
+I only know of one issue: The problem reports are still send
+to Joerg Anders.
+
+Regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Feb  6 00:00:28 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 06 Feb 2005 00:00:28 +0100
+Subject: [Noteedit-user] New Homepage for Noteedit
+Message-ID: <4205500C.5080000@web.de>
+
+Hi!
+
+I've uploaded a first version of the new noteedit homepage. It
+can be visited here: http://noteedit.berlios.de
+Currently it is very simple and only based on the README.
+
+It is also checked in into SVN. So you can send in your
+patches or add your comments. We should have a designer
+improving the homepage. Some ideas have already been
+posted to the list beginning on 22. September (see ML Archives).
+
+Also the homepage of Mr. Anders seems to be lost in the
+happy hunting ground of some memory chips... I got some of
+the original files (without screenshots) in case someone
+wants to copy some of the original content.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Feb 11 01:47:55 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Feb 2005 01:47:55 +0100
+Subject: [Noteedit-user] New Homepage for Noteedit
+In-Reply-To: <4205500C.5080000@web.de>
+References: <4205500C.5080000@web.de>
+Message-ID: <420C00BB.7060402@pacageek.org>
+
+Hi,
+
+I m a poor NoteEdit user under Debian Sarge I use NoteEdit 2.7.1
+Where can I get help?
+
+I try to write some music for guitar (classical) and share it on this 
+great forum (http://delcamp.net),
+ and I don't know how to insert some quarter of silence.
+I read the help, but  found  nothing about silence.
+
+Thanks
+
+Georges
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Feb 11 10:14:25 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Feb 2005 10:14:25 +0100
+Subject: [Noteedit-user] New Homepage for Noteedit
+In-Reply-To: <420C00BB.7060402@pacageek.org>
+References: <4205500C.5080000@web.de> <420C00BB.7060402@pacageek.org>
+Message-ID: <200502111014.25404.kai.wassermann@gmx.de>
+
+Hi, 
+
+>  and I don't know how to insert some quarter of silence.
+> I read the help, but  found  nothing about silence.
+
+Try to use not the left but the right button of your mouse.
+
+HTH
+
+Kai
+-- 
+This mail was sent using 100% recycled electrons.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050211/1c6b67b6/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Fri Feb 11 10:37:24 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Feb 2005 10:37:24 +0100
+Subject: [Noteedit-user] New Homepage for Noteedit
+In-Reply-To: <200502111014.25404.kai.wassermann@gmx.de>
+References: <4205500C.5080000@web.de> <420C00BB.7060402@pacageek.org> <200502111014.25404.kai.wassermann@gmx.de>
+Message-ID: <420C7CD4.6050809@guest.arnes.si>
+
+And if you don't want the rest being visible (but being there), you can 
+turn the hidden-rest button on in the toolbar (crossed over quarter rest 
+icon) and use the right mouse button.
+
+
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+>Hi, 
+>
+>  
+>
+>> and I don't know how to insert some quarter of silence.
+>>I read the help, but  found  nothing about silence.
+>>    
+>>
+>
+>Try to use not the left but the right button of your mouse.
+>
+>HTH
+>
+>Kai
+>  
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050211/d1d8c348/attachment.html>
+
+From noteedit-user-admin at lists.berlios.de  Sat Feb 12 07:38:25 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Feb 2005 07:38:25 +0100
+Subject: [Noteedit-user] G-8 clef Fingering and fluxbox
+Message-ID: <420DA461.8090002@pacageek.org>
+
+Hi,
+
+It s ok now with the Right click.
+
+If I use the G-8 clef (Guitar) and do export to a Lilypond  file, I Lose 
+it  for the G  key in Lilypond file .ly
+on Noteedit screen the G-8 key is okay.
+
+I need to fingering the sheet is it possible? inserting some Fingering 
+annotation?
+
+I can't use noteedit under fluxbox, some charset buttons problems 
+(Strange sign Charset, may be from Mars or  beyond)
+but its ok under gnome.
+
+Regards
+
+Georges
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Feb 13 13:46:25 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 13 Feb 2005 13:46:25 +0100
+Subject: [Noteedit-user] G-8 clef Fingering and fluxbox
+In-Reply-To: <420DA461.8090002@pacageek.org>
+References: <420DA461.8090002@pacageek.org>
+Message-ID: <420F4C21.7090704@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+
+> If I use the G-8 clef (Guitar) and do export to a Lilypond  file, I 
+> Lose it  for the G  key in Lilypond file .ly
+> on Noteedit screen the G-8 key is okay.
+>
+Hi Georges,
+
+this is fixed for the upcoming 2.7.4 release, only together with 
+lilypond 2.4 and above. Hope this  works for you. All _8 and ^8 
+combinations for all clefs I'll add after this release, I think.
+
+> I need to fingering the sheet is it possible? inserting some Fingering 
+> annotation?
+>
+Pity that noteedit doesn't have that yet. It's needed. Deserves a 
+feature request.
+
+> I can't use noteedit under fluxbox, some charset buttons problems 
+> (Strange sign Charset, may be from Mars or  beyond)
+> but its ok under gnome.
+>
+Huh, this might need the help of a guru, hmm.
+
+Best Regards,
+Georg Rudolph
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Feb 25 17:29:56 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 25 Feb 2005 17:29:56 +0100
+Subject: [Noteedit-user] noteedit-2.7.4 released
+Message-ID: <421F5284.3060109@schwaben.de>
+
+Hi all,
+
+we are proud to announce the noteedit release 2.7.4! Download it and enjoy!
+
+New features:
+- improved LilyPond support : added export in lilypond-2.4.2 format
+- added Slovenian translation, thanks to Matevz Jekovec
+
+Patches included (Matevz Jekovec):
+- 000255 added \version "2.0", so convert-ly now works out of the box
+
+Bugs fixed:
+- 002487 noteedit doesn't consider ties on MusicXML import
+- 002528 triplets unfunctional
+- 002532 multirests with one bar
+- 002581 rest symbol printed twice
+- 002807 rests should have fermatas as well
+- 002809 measure numbers for other voices not printed in .ly file
+- 003249 2.7.4 beta crash on RH7.2
+- 003296 crash when ALSA synth not running
+
+The build process is unchanged.
+
+Thanks to everybody who made it possible, and
+Best Regards,
+Georg Rudolph
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Feb 25 19:27:37 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 25 Feb 2005 19:27:37 +0100
+Subject: [Noteedit-user] noteedit-2.7.4 released
+In-Reply-To: <421F5284.3060109@schwaben.de>
+References: <421F5284.3060109@schwaben.de>
+Message-ID: <200502251927.37774.leon.vinken@hetnet.nl>
+
+On Friday 25 February 2005 17:29, noteedit-user-admin at berlios.de wrote:
+> Hi all,
+>
+> we are proud to announce the noteedit release 2.7.4! Download it and enjoy!
+>
+
+Hi Georg,
+
+thanks for creating our first official release.
+
+Did you do any advertising yet ?
+
+E.g. http://freshmeat.net/projects/noteedit/ is still outdated, 
+www.kde-apps.org is unreachable at the moment, don't know it's status. An 
+announcement to a mailing list (comp.os.linux.audio ?) might be useful too.
+
+Regards, Leon.
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Feb 28 01:54:06 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 28 Feb 2005 01:54:06 +0100
+Subject: [Noteedit-user] noteedit-2.7.4 released
+In-Reply-To: <200502251927.37774.leon.vinken@hetnet.nl>
+References: <421F5284.3060109@schwaben.de> <200502251927.37774.leon.vinken@hetnet.nl>
+Message-ID: <42226BAE.7060703@schwaben.de>
+
+Hi Leon,
+
+a special big thank you goes to you, how you restarted the working on 
+the code ...
+
+>E.g. http://freshmeat.net/projects/noteedit/ is still outdated, 
+>www.kde-apps.org is unreachable at the moment, don't know it's status. An 
+>announcement to a mailing list (comp.os.linux.audio ?) might be useful too.
+>
+>
+Ok: I'll send a mail to sigra (freshmeat) and to the LAU 
+(linux-audio-user). Feel free to announce also.
+
+Best Regards,
+Georg.
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Feb 28 18:45:04 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 28 Feb 2005 18:45:04 +0100
+Subject: [Noteedit-user] noteedit-2.7.4 released
+In-Reply-To: <42226BAE.7060703@schwaben.de>
+References: <421F5284.3060109@schwaben.de> <200502251927.37774.leon.vinken@hetnet.nl> <42226BAE.7060703@schwaben.de>
+Message-ID: <200502281845.04660.leon.vinken@hetnet.nl>
+
+On Monday 28 February 2005 01:54, noteedit-user-admin at berlios.de wrote:
+> Hi Leon,
+>
+> a special big thank you goes to you, how you restarted the working on
+> the code ...
+
+You're welcome ...
+>
+> >E.g. http://freshmeat.net/projects/noteedit/ is still outdated,
+> >www.kde-apps.org is unreachable at the moment, don't know it's status. An
+> >announcement to a mailing list (comp.os.linux.audio ?) might be useful
+> > too.
+>
+> Ok: I'll send a mail to sigra (freshmeat) and to the LAU
+> (linux-audio-user). Feel free to announce also.
+
+Thanks. As I gave up reading LAU etc. I won't make any announcements myself. 
+Wouldn't even know how to do that :-).
+
+Best regards, Leon.
+
+>
+> Best Regards,
+> Georg.
+>
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+
+

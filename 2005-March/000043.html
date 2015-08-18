@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compiling under Debian Sid
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-March/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compiling%20under%20Debian%20Sid&In-Reply-To=%3C20050311074335.GA4796%40schubbi-net.local%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000040.html">
+   <LINK REL="Next"  HREF="000044.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compiling under Debian Sid</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compiling%20under%20Debian%20Sid&In-Reply-To=%3C20050311074335.GA4796%40schubbi-net.local%3E"
+       TITLE="[Noteedit-user] Compiling under Debian Sid">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Fri Mar 11 08:43:35 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000040.html">[Noteedit-user] Compiling under Debian Sid
+</A></li>
+        <LI>Next message: <A HREF="000044.html">[Noteedit-user] under Debian Sid
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#43">[ date ]</a>
+              <a href="thread.html#43">[ thread ]</a>
+              <a href="subject.html#43">[ subject ]</a>
+              <a href="author.html#43">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* On 09.03. <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A>
+(<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A>) muttered:
+
+&gt;<i> Might it be helpful first to build 
+</I>&gt;<i> noteedit 2.7.1, that you get most of the packages needed, that apt tells 
+</I>&gt;<i> you what you need to install?
+</I>
+Before downloading the source of noteedit 2.7.4 I installed noteedit
+2.7.1 using apt-get to get the required packages automatically.
+
+kdelibs4-dev, libqt3-mt-dev and libqt3-headers are installed:
+
+ii  kdelibs4-dev   3.3.2-3
+ii  libqt3-mt-dev  3.3.3-8
+ii  libqt3-headers 3.3.3-8
+
+And these additional qt-packages:
+
+ii libqt2 2.3.2-14
+ii libqt3c102-mt 3.3.3-8
+ii libqthreads-12 1.6.7-1
+ii qt3-dev-tools 3.3.3-8
+
+And these additional kde-packages:
+
+ii kdelibs-bin 3.3.2-3
+ii kdelibs-data 3.3.2-3
+ii kdelibs4 3.3.2-3
+
+
+Running
+./configure --with-qt-includes=/usr/include/qt3
+make says:
+
+c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+-I/usr/include/qt3 -I/usr/X11R6/include -I/usr/include
+-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+-Wp,-MD,.deps/chord.pp -c chord.cpp  -fPIC -DPIC -o .libs/chord.o
+In file included from chord.cpp:24:
+tabtrack.h:19:20: qarray.h: No such file or directory
+In file included from ../noteedit/muselement.h:28,
+                 from ../noteedit/mainframewidget.h:38,
+                 from chord.cpp:37:
+../noteedit/resource.h:30:19: qlist.h: No such file or directory
+make[2]: *** [chord.lo] Error 1
+make[2]: Leaving directory
+/usr/local/src/noteedit/noteedit-2.7.4/kguitar_excerpt'
+
+
+&gt;<i> The file INSTALL might also be helpful.
+</I>
+It tells me to set --prefix=&lt;path_to_your_kde_installation&gt;, so...
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">til at debian</A>:~ - kde-config --prefix
+/usr
+
+...I ran
+./configure --prefix=/usr --with-qt-includes=/usr/include/qt3
+with make giving the same result as above without --prefix.
+
+&gt;<i> Give a note if you don't have
+</I>&gt;<i> luck.
+</I>
+So I do.  ;-)
+
+Regards
+Til
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000040.html">[Noteedit-user] Compiling under Debian Sid
+</A></li>
+	<LI>Next message: <A HREF="000044.html">[Noteedit-user] under Debian Sid
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#43">[ date ]</a>
+              <a href="thread.html#43">[ thread ]</a>
+              <a href="subject.html#43">[ subject ]</a>
+              <a href="author.html#43">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

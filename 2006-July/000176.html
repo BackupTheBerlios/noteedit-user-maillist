@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compatibility Issue
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-July/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compatibility%20Issue&In-Reply-To=%3C44CC7B9B.6090409%40gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000175.html">
+   <LINK REL="Next"  HREF="000177.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compatibility Issue</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compatibility%20Issue&In-Reply-To=%3C44CC7B9B.6090409%40gmail.com%3E"
+       TITLE="[Noteedit-user] Compatibility Issue">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Sun Jul 30 11:27:55 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000175.html">[Noteedit-user] Compatibility Issue
+</A></li>
+        <LI>Next message: <A HREF="000177.html">[Noteedit-user] [Fwd: Verschiedene Anmerkungen zu Noteedit]
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#176">[ date ]</a>
+              <a href="thread.html#176">[ thread ]</a>
+              <a href="subject.html#176">[ subject ]</a>
+              <a href="author.html#176">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>user mailing list for the score editor noteedit pravi:
+&gt;<i> Hi Matev&#382;,
+</I>&gt;<i>
+</I>&gt;<i> Thanks for the response.
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> I am wondering about if there is a way to use newer versions of
+</I>&gt;&gt;&gt;<i> NoteEdit with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and
+</I>&gt;&gt;&gt;<i> I cannot get a newer version without update *a lot* of packages
+</I>&gt;&gt;&gt;<i> along. Since I use a dial-up connection, I can only upgrade the
+</I>&gt;&gt;&gt;<i> distro very rarely.
+</I>&gt;&gt;&gt;<i>  
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> NoteEdit needs KDE&gt;3.0, so if it doesn't work with 3.3.2, it's the
+</I>&gt;&gt;<i> Debian's maintainter decision.
+</I>&gt;<i>
+</I>&gt;<i> With the libraries for KDE 3.3.2, I can use NoteEdit-2.7.4-1. The new
+</I>&gt;<i> version in Debian testing is 2.8.0, but it requires updating the KDE
+</I>&gt;<i> libraries, remove a lot of packages, and many other changes (almost an
+</I>&gt;<i> entire distro upgrade).
+</I>&gt;<i>
+</I>&gt;<i> I tried with the RPM package for 2.8.0 (converted with alien) from:
+</I>&gt;<i> <A HREF="http://abcplus.sourceforge.net/#noteedit">http://abcplus.sourceforge.net/#noteedit</A>
+</I>&gt;<i> with no success.
+</I>&gt;<i>
+</I>You can always unpack the .deb package manually ($ ar x
+noteedit-2.8.0.deb), change the dependencies manually in the
+control.tar.gz and repack it and install the package.
+&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> The same problem I find with GTK programs, and that is an additional
+</I>&gt;&gt;&gt;<i> reason I prefer programs which do not require QT or GTK or any GUI
+</I>&gt;&gt;&gt;<i> at all.
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> To make the things worse, it seems that there is no way even to
+</I>&gt;&gt;&gt;<i> compile new versions of NoteEdit from the sources to get compability
+</I>&gt;&gt;&gt;<i> with 3.3.2.
+</I>&gt;&gt;&gt;<i>  
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Could you be more precise? I'm using Debian myself and I can get the
+</I>&gt;&gt;<i> latest SVN version of NoteEdit compiled fine. You need to download the
+</I>&gt;&gt;<i> qt3 development packages and TSE3 sequencer and then type:
+</I>&gt;&gt;<i> $ make -f Makefile.cvs
+</I>&gt;&gt;<i> $ ./configure
+</I>&gt;&gt;<i> $ make
+</I>&gt;<i>
+</I>&gt;<i> I have read somewhere that I would need to compile the entire KDE
+</I>&gt;<i> (!!!) to do that. But I think I am confusing Debian package
+</I>&gt;<i> dependencies with other issues. I could not install qt3 because the
+</I>&gt;<i> numberous dependencies too.
+</I>&gt;<i>
+</I>&gt;<i> I am using Debian-3.1, release 0  +  Demudi-0.19 with some updates.
+</I>No, NoteEdit isn't part of the KDE, it's only &quot;integrated&quot; meaning that
+is uses some of its libraries, so the icons, font style, sound engine
+ARTS in the past, were taken from the current KDE environment. You don't
+need to recompile to whole KDE to compile NoteEdit.
+
+&gt;&gt;&gt;<i> Is there some way to face this problem? Perhaps statically linked
+</I>&gt;&gt;&gt;<i> binaries? Any suggestion?
+</I>&gt;&gt;&gt;<i>  
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I think statically linked libraries aren't the answer because NE depends
+</I>&gt;&gt;<i> heavily on the underlaying KDE system.  I don't know how the different
+</I>&gt;&gt;<i> version of KDEs would work together.
+</I>&gt;<i>
+</I>&gt;<i> That seems bad. Sometimes I think that environments with integrated
+</I>&gt;<i> software, like KDE or GNOME, are just a bad idea. Hopefuly in some
+</I>&gt;<i> time point in the future a solution for better compatibility may arise
+</I>&gt;<i> so that one can run programs alone without need installing an entire
+</I>&gt;<i> desktop only because them...
+</I>&gt;<i>
+</I>&gt;<i> Is there any NoteEdit-2.8.* binary package for Debian-3.0 anywhere?
+</I>Not that I know of currently, sorry. You should try the testing/unstable
+package and change the dependencies manually as I said before. It should
+work :).
+
+
+Regards.
+- Matev&#382;
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000175.html">[Noteedit-user] Compatibility Issue
+</A></li>
+	<LI>Next message: <A HREF="000177.html">[Noteedit-user] [Fwd: Verschiedene Anmerkungen zu Noteedit]
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#176">[ date ]</a>
+              <a href="thread.html#176">[ thread ]</a>
+              <a href="subject.html#176">[ subject ]</a>
+              <a href="author.html#176">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

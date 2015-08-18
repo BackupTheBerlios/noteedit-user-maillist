@@ -1,0 +1,150 @@
+From noteedit-user-admin at lists.berlios.de  Mon Dec  5 21:26:43 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 5 Dec 2005 21:26:43 +0100
+Subject: [Noteedit-user] Volume Signatures in printed output
+Message-ID: <200512052126.43702.ulrich.herbst@gmx.de>
+
+Hi,
+
+I'm looking for generating volume signatures (is that correct in english ?) 
+like "f" (forte), "mf" (mezzoforte) and so on in some pieces of music.
+
+I'm just interested in printed output, not in playing online.
+Some tries with musixtex were not very nice looking, the "f", "mf",... doesn't 
+stand directly under the note, but left or right from it.
+
+Has anyone experiences with that (or with some other output format) ?
+
+Uli
+
+
+
+-- 
+
+                            Ulrich Herbst
+                         ulrich.herbst at gmx.de
+
+-------------------------------------------------------------------------------
+Fachbegriffe der Informatik - Einfach erkl?rt:
+375: Datenblatt
+        Die angegebenen Werte k?nnen auch unter optimalen Bedingungen mittels
+        angepa?ter Testf?lle sicher nicht ?bertroffen werden. (Frank Paulsen)
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Dec  5 23:41:27 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 05 Dec 2005 20:41:27 -0200
+Subject: [Noteedit-user] Volume Signatures in printed output
+In-Reply-To: <200512052126.43702.ulrich.herbst@gmx.de>
+References: <200512052126.43702.ulrich.herbst@gmx.de>
+Message-ID: <4394C217.4090204@yahoo.com.br>
+
+Really, the positions of dynamics for musixtex seems wrong 
+(noteedit-2.7.4 on demudi).
+
+However, the output for abcm2ps (<http://moinejf.free.fr>, 
+<http://abcplus.sf.net>) is fine.
+
+noteedit-user-admin at berlios.de escreveu:
+> Hi,
+> 
+> I'm looking for generating volume signatures (is that correct in english ?) 
+> like "f" (forte), "mf" (mezzoforte) and so on in some pieces of music.
+> 
+> I'm just interested in printed output, not in playing online.
+> Some tries with musixtex were not very nice looking, the "f", "mf",... doesn't 
+> stand directly under the note, but left or right from it.
+> 
+> Has anyone experiences with that (or with some other output format) ?
+> 
+> Uli
+> 
+> 
+> 
+
+
+-- 
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o manifesto! http://www.votoseguro.com/alertaprofessores/
+*Quem tem medo de GNU/Linux? http://linuxfud.org/
+
+	
+
+	
+		
+_______________________________________________________ 
+Yahoo! doce lar. Fa?a do Yahoo! sua homepage. 
+http://br.yahoo.com/homepageset.html 
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Dec  6 15:23:42 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 6 Dec 2005 15:23:42 +0100
+Subject: [Noteedit-user] Volume Signatures in printed output
+In-Reply-To: <200512052126.43702.ulrich.herbst@gmx.de>
+References: <200512052126.43702.ulrich.herbst@gmx.de>
+Message-ID: <200512061523.42095.mail@schultzm.de>
+
+Hi,
+
+If I edit the generated .tex file, I use the command zchar for the signatures.
+
+Example:
+\Notes\qb0 f|\zchar{-18}\f\en
+
+Wrote like this, everything is fine. Yet I haven't inserted it directly in 
+noteedit.
+
+Greetings
+Michael
+
+--------------------------------------------------------------
+   Urspr?ngliche Mail von noteedit-user-admin at berlios.de
+   "[Noteedit-user] Volume Signatures in printed output"
+   (Montag, 5. Dezember 2005 21:26):
+--------------------------------------------------------------
+| Hi,
+|
+| I'm looking for generating volume signatures (is that correct in english ?)
+| like "f" (forte), "mf" (mezzoforte) and so on in some pieces of music.
+|
+| I'm just interested in printed output, not in playing online.
+| Some tries with musixtex were not very nice looking, the "f", "mf",...
+| doesn't stand directly under the note, but left or right from it.
+|
+| Has anyone experiences with that (or with some other output format) ?
+|
+| Uli
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Dec 11 20:14:23 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 11 Dec 2005 19:14:23 +0000
+Subject: [Noteedit-user] noteedit and printing backends
+Message-ID: <20051211191423.2230f2ae.dmatthews@mailc.net>
+
+I've posted a shell script at http://www.dcmatthews.f2s.com/music.sh
+
+It gets postscript output from a lilypond, musixtex or abc file, using the file extension to automatically run the correct backend (abcm2ps for abc).
+
+It will also adjust the size of the music on the fly, without altering the file, so if your printout doesn't fit on one page you don't need to do another export from noteedit, just run the script again with a different parameter (-s, -n. -l or -L).
+
+Let me know if you like it or there are problems; include it with noteedit releases if you see fit.
+
+-- 
+David
+
+dmatthews at mailc.net
+Public key at hkp://www.keys.eu.pgp.net
+and http://pooter.sourceforge.net/dmatthews.asc
+
+"If our nation can issue a dollar bond, it can issue a dollar bill. The 
+element that makes the bond good makes the bill good ? 
+It is absurd to say that our country can issue $30,000,000 in bonds and 
+not $30,000,000 in currency." [Thomas Edison, Quoted in The New York Times, 6 December 1921]
+http://www.prosperityuk.com/prosperity/prosperity.html
+
+
+

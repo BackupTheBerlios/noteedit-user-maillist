@@ -1,0 +1,375 @@
+From noteedit-user-admin at lists.berlios.de  Thu Mar  2 17:56:41 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 2 Mar 2006 11:56:41 -0500
+Subject: [Noteedit-user] Mac OSX
+Message-ID: <839D8E0C-0268-4372-85CA-C7386920D8C8@wans.net>
+
+Can Noteedit be installed on OSX?
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar  3 03:29:36 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 2 Mar 2006 18:29:36 -0800 (PST)
+Subject: [Noteedit-user] noteedit for mac
+In-Reply-To: <20060215104530.70625.qmail@web54211.mail.yahoo.com>
+Message-ID: <20060303022936.25276.qmail@web30606.mail.mud.yahoo.com>
+
+> How can I compile noteedit in the Mac OS 10.4?
+> 
+> Gil Claudio
+
+I have been trying to do this for a while now, without
+much success. I am using KDE and Qt from the Fink
+project. For now this requires compiling NoteEdit with
+gcc 3; at some point in the future the 10.4 branch of
+fink will be released, which will use gcc 4.
+
+I did manage to get NoteEdit running on OSX 10.3,
+although it was too buggy to be usable, probably since
+I compiled it without the TSE3 library (configure
+--without-libs). On 10.4, I get multiply-defined
+symbol errors when linking. This happens when I try to
+compile the TSE library as well.
+
+The Fink website has some info and workarounds for
+these errors, but I have unfortunately not gotten them
+to work; even when I manage to suppress the errors
+(export LDFLAGS="-multiply_defined suppress"), the
+executable or library gives undefined symbol errors
+when run. I have a feeling there is a fairly simple
+fix for this problem, like giving gcc some certain
+options, but at the moment I haven't discovered it :(
+If you figure something out, post it!
+
+Cheers,
+Sam Hernandez
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar  3 19:19:56 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 03 Mar 2006 19:19:56 +0100
+Subject: [Noteedit-user] Mac OSX
+In-Reply-To: <839D8E0C-0268-4372-85CA-C7386920D8C8@wans.net>
+References: <839D8E0C-0268-4372-85CA-C7386920D8C8@wans.net>
+Message-ID: <440888CC.3050706@web.de>
+
+noteedit-user-admin at berlios.de wrote:
+> Can Noteedit be installed on OSX?
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+> 
+> 
+
+Probably yes, though I haven't tried it (I don't own
+MacOSX). NoteEdit requires KDE3/Qt3 and should be
+compiled with a recent gcc compiler (3.x/4.x), others
+haven't been tested. Also I've read that tse3 won't
+work on MacOSX, so you could try the kmid midi support.
+If you have problems with compiling or linking, you can
+post them here.
+
+Good luck,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 21 20:52:14 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 21 Mar 2006 20:52:14 +0100
+Subject: [Noteedit-user] Review on Linux Journal
+Message-ID: <4420596E.70006@web.de>
+
+Hi,
+
+For those who haven't already read it:
+There was a really great article comparing the Lilypond
+frontends Denemo, NoteEdit and Rosegarden by Dave Phillips.
+NoteEdit got a very good review I'm really happy about!
+
+Read the full article here:
+http://www.linuxjournal.com/article/8928
+
+A big thanks to Dave Phillips for the reviews!
+
+Regards,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Mar 27 22:22:38 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 27 Mar 2006 22:22:38 +0200
+Subject: [Noteedit-user] beta Release: NoteEdit 2.8.1
+Message-ID: <4428498E.1090402@web.de>
+
+Hi,
+
+The beta release of NoteEdit 2.8.1 has been published by
+me this morning. Report any problems to the lists during
+your tests. Thanks and have fun with the Beta!
+
+Regards,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Mar 27 23:45:34 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 27 Mar 2006 23:45:34 +0200
+Subject: [Noteedit-user] Homepage: Links
+Message-ID: <44285CFE.2040504@web.de>
+
+Hi all score editing freaks out there,
+
+I'm thinking about a link page for NoteEdit. It could contains
+links to other score editors (denemo, rosegarden, but probably
+primilary the backends of NoteEdit Lilypond, MusiXTeX, ABC etc.)
+
+It should also contains places where you can get score written
+in either the NoteEdit format (.not) or one of the backends
+(including Midi and MusiXTeX).
+
+The most important thing is: It should mainly contains free
+music scores (public domain / gnu document license or similar).
+
+I start a small list I have in my mind:
+- http://icking-music-archive.org (both sheets and musixtex, pmx)
+- http://www.mutopia.org (lilypond and midi sheets)
+- http://www.lilypond.org
+- http://moinejf.free.fr (abcm2ps - program to convert abc to ps)
+- http://www.concertina.net (several free abc tunes)
+- http://staffweb.cms.gre.ac.uk/~c.walshaw/abc/ (abc home page)
+
+I'd be very happy to collect more pages you encountered. This
+can also be forum pages containing composing tips or similar.
+Thanks and best regards,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 28 18:00:34 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 28 Mar 2006 18:00:34 +0200
+Subject: [Noteedit-user] LilyPond 2.8.0 released
+Message-ID: <44295DA2.8070906@guest.arnes.si>
+
+A new stable branch of LilyPond music typesetter was released this
+weekend, 2.8.0. I hope the NoteEdit export filter needs to remain
+unchanged and is still working for the new version.
+
+You can get it at
+http://www.lilypond.org
+
+Regards.
+- Matev?
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 254 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060328/32fd7ec3/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 28 19:51:10 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 28 Mar 2006 12:51:10 -0500
+Subject: [Noteedit-user] LilyPond 2.8.0 released
+In-Reply-To: <44295DA2.8070906@guest.arnes.si>
+References: <44295DA2.8070906@guest.arnes.si>
+Message-ID: <f399425f0603280951w25a1ac28kc72c14fd919ad1c2@mail.gmail.com>
+
+Hi all,
+I've only just joined this list. I really like the relative simplicity of
+noteedit.
+Now that I've said that, I have had an opportunity to work with Lilypond
+2.8.0 and I think the format is significantly different in some regards.
+There are new methods of creating hyphen and extension marks on lyrics.
+Also, in my experience, lilypond 2.8.0 won't work unless the ly file labels
+itself as version 2.8.0.
+Sorry I don't remember more, but this is just what I've been going through
+at home this past weekend and I'm at work now.
+
+Thanks,
+Jonathan
+
+On 3/28/06, noteedit-user-admin at berlios.de <noteedit-user-admin at berlios.de>
+wrote:
+>
+> A new stable branch of LilyPond music typesetter was released this
+> weekend, 2.8.0. I hope the NoteEdit export filter needs to remain
+> unchanged and is still working for the new version.
+>
+> You can get it at
+> http://www.lilypond.org
+>
+> Regards.
+> - Matev?
+>
+>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060328/e3501b7f/attachment.html>
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 28 22:14:29 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 28 Mar 2006 22:14:29 +0200
+Subject: [Noteedit-user] LilyPond 2.8.0 released
+In-Reply-To: <f399425f0603280951w25a1ac28kc72c14fd919ad1c2@mail.gmail.com>
+References: <44295DA2.8070906@guest.arnes.si> <f399425f0603280951w25a1ac28kc72c14fd919ad1c2@mail.gmail.com>
+Message-ID: <44299925.8090402@gmail.com>
+
+Yes, lyrics code is different in NoteEdit any LilyPond. Actually
+NoteEdit doesn't actually support melismas and multi-sillable words well
+yet. That's the reason why in NoteEdit, you usually use
+Twin- kle, Twin- kle, lit- tle star.
+and in Lily
+Twin -- kle, Twin -- kle, lit -- tle star.
+
+The export filter isn't perfect about this. These are the major
+differences about the two. Otherwise, it should work AFAIK. Is there any
+specific problem you had in mind?
+
+
+Regards.
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+> Hi all,
+> I've only just joined this list. I really like the relative simplicity
+> of noteedit.
+> Now that I've said that, I have had an opportunity to work with
+> Lilypond 2.8.0 and I think the format is significantly different in
+> some regards. There are new methods of creating hyphen and extension
+> marks on lyrics. Also, in my experience, lilypond 2.8.0 won't work
+> unless the ly file labels itself as version 2.8.0.
+> Sorry I don't remember more, but this is just what I've been going
+> through at home this past weekend and I'm at work now.
+>
+> Thanks,
+> Jonathan
+>
+> On 3/28/06, *noteedit-user-admin at berlios.de
+> <mailto:noteedit-user-admin at berlios.de>*
+> <noteedit-user-admin at berlios.de
+> <mailto:noteedit-user-admin at berlios.de>> wrote:
+>
+>     A new stable branch of LilyPond music typesetter was released this
+>     weekend, 2.8.0. I hope the NoteEdit export filter needs to remain
+>     unchanged and is still working for the new version.
+>
+>     You can get it at
+>     http://www.lilypond.org
+>
+>     Regards.
+>     - Matev?
+>
+>
+>
+>
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Mar 29 01:35:49 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 28 Mar 2006 18:35:49 -0500
+Subject: [Noteedit-user] LilyPond 2.8.0 released
+In-Reply-To: <44299925.8090402@gmail.com>
+References: <44295DA2.8070906@guest.arnes.si>
+	 <f399425f0603280951w25a1ac28kc72c14fd919ad1c2@mail.gmail.com>
+	 <44299925.8090402@gmail.com>
+Message-ID: <1143588949.12651.1.camel@rhiannon.washburngardner>
+
+I can't say I have any other problems specifically. I just learned about
+the convert-ly script that comes with lilypond and it did a nice job of
+converting the noteedit output to something it could use. lilypond 2.8.0
+is ever so particular about having that version number. 
+I do have a question and/or an idea but I'll put those in a different
+email so as to not abuse the subject.
+
+Jonathan 
+
+On Tue, 2006-03-28 at 22:14 +0200, noteedit-user-admin at berlios.de wrote:
+> Yes, lyrics code is different in NoteEdit any LilyPond. Actually
+> NoteEdit doesn't actually support melismas and multi-sillable words well
+> yet. That's the reason why in NoteEdit, you usually use
+> Twin- kle, Twin- kle, lit- tle star.
+> and in Lily
+> Twin -- kle, Twin -- kle, lit -- tle star.
+> 
+> The export filter isn't perfect about this. These are the major
+> differences about the two. Otherwise, it should work AFAIK. Is there any
+> specific problem you had in mind?
+> 
+> 
+> Regards.
+> - Matev?
+> 
+> noteedit-user-admin at berlios.de wrote:
+> > Hi all,
+> > I've only just joined this list. I really like the relative simplicity
+> > of noteedit.
+> > Now that I've said that, I have had an opportunity to work with
+> > Lilypond 2.8.0 and I think the format is significantly different in
+> > some regards. There are new methods of creating hyphen and extension
+> > marks on lyrics. Also, in my experience, lilypond 2.8.0 won't work
+> > unless the ly file labels itself as version 2.8.0.
+> > Sorry I don't remember more, but this is just what I've been going
+> > through at home this past weekend and I'm at work now.
+> >
+> > Thanks,
+> > Jonathan
+> >
+> > On 3/28/06, *noteedit-user-admin at berlios.de
+> > <mailto:noteedit-user-admin at berlios.de>*
+> > <noteedit-user-admin at berlios.de
+> > <mailto:noteedit-user-admin at berlios.de>> wrote:
+> >
+> >     A new stable branch of LilyPond music typesetter was released this
+> >     weekend, 2.8.0. I hope the NoteEdit export filter needs to remain
+> >     unchanged and is still working for the new version.
+> >
+> >     You can get it at
+> >     http://www.lilypond.org
+> >
+> >     Regards.
+> >     - Matev?
+> >
+> >
+> >
+> >
+> 
+> 
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+

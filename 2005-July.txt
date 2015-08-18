@@ -1,0 +1,1147 @@
+From noteedit-user-admin at lists.berlios.de  Wed Jul  6 20:22:34 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 06 Jul 2005 18:22:34 +0000
+Subject: [Noteedit-user] Good to see that noteedit is not dead!
+Message-ID: <42CC216A.20600@telus.net>
+
+I am using lilypond version 2.6 so my conversion reliability is 
+sometimes compromised. My main interest is classical guitar notation, so 
+I do alot of single staff polyphony. I hope that future versions of 
+NoteEdit can become more complex notation oriented. Lilypond has 
+recently included routines for guitar fingering notation. What would be 
+really great is if  the NoteEdit gui could be split into a pure notation 
+gui.
+
+My NoteEdit 2.8 ./configure is --without libs.... as I have no need to 
+hear midi of what I write and transcribe.
+
+In future I hope that a pure notation editor without midi deps can be 
+developed. NoteEdit seems like a good starting point. Maybe the way to 
+go is to have a pared down notation gui which parses a .ly or whatever 
+ouput script as you enter notes. The output script could then be edited 
+on the fly.
+
+I have not tried the ABC conversion yet as I do not have ABC configured 
+in my slackware install.  I do not know how well ABC handles single 
+staff polyphony, or whether or not it can parse fingerings. If anybody 
+has any experience with this please clarify what ABC can and cannot do.
+
+I know that the ability to output midi is important to many, but the 
+ability to quickly and correctly notate music seems more important to 
+me. Just my two cents... I do not mean this as a flame, and am really 
+impressed with the progress you are making. Keep up the great work, if I 
+was a compitant programmer I would help! I do not even know how to 
+remove deps without breaking things yet.
+
+Eric
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jul 15 13:30:52 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Jul 2005 13:30:52 +0200
+Subject: [Noteedit-user] I did nothing and now it works...
+In-Reply-To: <200410151414.09765.kai.wassermann@gmx.de>
+References: <200410151414.09765.kai.wassermann@gmx.de>
+Message-ID: <200507151330.57304.kai.wassermann@gmx.de>
+
+Hello list!
+
+On this thread I wrote once about problems with noteedit and midi output. 
+Today I gave it a new try, and what do I see? It works! It came from nowhere 
+and it played everything, I gave him to play. I did nothing, and suddenly it 
+works.
+I do thank everyone who answered my mails so paitently!
+
+Now my weekend cannot become bad, and I just have to cope with the printing of 
+the notes.
+
+Thanks a bundle
+
+Kai
+-- 
+Der Kurs "Flirten f?r Informatiker" wurde inzwischen zusammen mit
+"Freeclimbing f?r Epileptiker" aus allen VHS-Programmen entfernt.
+ -- Jochen Linnich
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050715/a831888d/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Fri Jul 15 19:31:53 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Jul 2005 19:31:53 +0200
+Subject: [Noteedit-user] Presentation
+Message-ID: <42D7F309.90605@free.fr>
+
+Hello,
+I am new on the list and want to try NoteEdit. It's to make sheet with 
+voices and lyrics (early music, vocal and instrumental).
+I want also separated parts. I can't find the help with my Mandrake 
+10.1. My english is no good, is there help in french?
+? bient?t.
+
+-- 
+Jean GOUJON, www.aperturaXVI.org (Ensemble Vocal & Instrumental) www.abul.org (Linux & logiciels libres).
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jul 15 22:28:38 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Jul 2005 22:28:38 +0200
+Subject: [Noteedit-user] Presentation
+In-Reply-To: <42D7F309.90605@free.fr>
+References: <42D7F309.90605@free.fr>
+Message-ID: <42D81C76.5010203@web.de>
+
+noteedit-user-admin at berlios.de schrieb:
+> Hello,
+> I am new on the list and want to try NoteEdit. It's to make sheet with 
+> voices and lyrics (early music, vocal and instrumental).
+> I want also separated parts. I can't find the help with my Mandrake 
+> 10.1. My english is no good, is there help in french?
+> ? bient?t.
+> 
+
+No I'm afraid there is only a german and english documentation a little
+bit out of date compared to 2.8.0. My french is quite rusty and also I
+prefer to work on developing new features for the program instead of
+translating the documentation to french. Maybe someone else would like
+to take the challenge to translate it. Also the french translation is
+not up to date as our current french translator did not answer when we
+asked if it is possible for him to do that. We still hope to finish 
+french translation soon though and will announce it to the lists if
+it is done.
+
+If you know anyone who speaks english or german a little bit better and 
+knows the music technical terms we would be very thankful for a start of
+a french documentation (the first introduction chapters would probably
+be enough as a start).
+
+Thanks for your feedback.
+
+Regards,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jul 15 22:53:56 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Jul 2005 22:53:56 +0200
+Subject: [Noteedit-user] I did nothing and now it works...
+In-Reply-To: <200507151330.57304.kai.wassermann@gmx.de>
+References: <200410151414.09765.kai.wassermann@gmx.de> <200507151330.57304.kai.wassermann@gmx.de>
+Message-ID: <42D82264.7030505@web.de>
+
+noteedit-user-admin at berlios.de schrieb:
+> Hello list!
+> 
+> On this thread I wrote once about problems with noteedit and midi output. 
+> Today I gave it a new try, and what do I see? It works! It came from nowhere 
+> and it played everything, I gave him to play. I did nothing, and suddenly it 
+> works.
+> I do thank everyone who answered my mails so paitently!
+
+Thanks for your feedback :-). I'm glad to here that midi output works 
+for you!
+
+> Now my weekend cannot become bad, and I just have to cope with the printing of 
+> the notes.
+
+Well in that area noteedit will improve further soon hopefully as 
+promised :-).
+
+Concerning midi playing: If anyone uses fluidsynth / qsynth (or whatever
+frontend you use for it), I can tell you that I was able to reduce the
+memory amount needed drastically by updating to the latest versions and
+using 48 Khz Sampling rate instead of 96 Khz for the output. So I can 
+really recommand it for those having 512 MB RAM like me.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Jul 17 10:55:39 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 17 Jul 2005 10:55:39 +0200
+Subject: [Noteedit-user] 2.8.0 Final released
+Message-ID: <42DA1D0B.9030009@web.de>
+
+Hi everybody!
+
+The NoteEdit team is glad to announce the first major-version since its
+new beginning!
+
+Release 2.8.0
+-------------
+New features:
+- Updated translations and fixed Makefile to include Slovenian translation.
+- RFE #573 - Soprano clef added.
+- Score info fields and staff names can now include double quotes ("),
+updated export filters.
+- RFE #730 - Direct MIDI import - one-click MIDI file import implemented.
+- RFE #729 - warning message before TSE3 -> Score added.
+- Automatic bar placement disabled if no time signature defined.
+- Allow bar placement in empty staffs with no clef/key/time signature.
+- Merged staff properties and voice dialog.
+- Staff properties can now change all staffs at once, not only the
+current one.
+- Menu point staff -> voices invokes the staff properties.
+- More improvements to the menu: Easier access via keys, some better
+menu names
+   (like Close / Quit, Select Multi Staff).
+- Main window title now includes score title and subtitle by default, if
+none defined yet, it the current uses file name.
+- Many score layout window improvements (bottom-up selection, resized
+buttons to  fit captions on buttons, added form caption).
+- Removed fuzzyness from german translation and updated all po(t) files
+   (others will have fuzzyness as well until translated).
+- Removed a thrilling MusiXTeX warning when exporting and replaced it
+with a nice notice dialog.
+- New icon.
+- Implemented splash screen.
+- New playback shortcut. Changed Edit Mode and Insert Rest default
+shortcuts.
+- Save main window position and size (default: available screen geometry).
+- Toolbar settings of every toolbar are saved and restored.
+- Integrated patch 403 - Better menu structure.
+- Removed "Report Bug" menu item from help menu.
+- The last selected key or time signature is now remembered and gets
+selected automatically when inserting it the second time.
+- configure now works on FreeBSD (thanks to Raphael Langerhorst)
+
+Bug fixes:
+- Fixed #3944 - polyphony importing wrong in MusicXML.
+- Fixed #3969 - Score layout: Text on buttons uncomplete.
+- Fixed #3595 - dbl quotes in some score info fields leads to invalid files.
+- Fixed #3935 - deleting element doesn't make document edited - also
+some rework                in delete element code.
+- Fixed #3934 - discard changes dialog ignored on exit.
+- Fixed #3914 - crash when a pasting to new staff.
+- Fixed #3504 - bad file save without clef.
+- Fixed #3861 - Multirests in non-4/4 measure broken.
+- Fixed #3862 - measures after multirests not numbered correctly.
+- Fixed #3183 - multistaff broken - warning message added.
+- Fixed #3403 - export lilypond 2.4 lyrics problem.
+- Fixed #3418 - Doesn't save icon settings
+- Fixed #3484 - crash on midi import.
+- Fixed #3503 - hard crash on midi export.
+- Fixed #3505 - ABC export when leading repeat open and other voices.
+- Fixed #3786 - midi export crashes noteedit.
+- Fixed #3791 - staff->delete / import recording warnings wrong.
+- Fixed typo in staff properties dialog ("Voice:" -> "Instrument:").
+- Fixed #2930 - noteedit stops playing still held notes in other voices.
+- Fixed #4119 - Stem directions in voice dialog don't get rememberd.
+- Fixed #4235 - noteedit-2.8.0-rc1 crashes on start
+- Fixed typo in insert Key signature dialog: D flat Major; b minor -> D flat
+   Major; b flat minor and updated translations
+- Enlarged Insert line and Line properties dialog to fit all the
+translations.
+
+
+Download the 2.8.0 release here:
+http://download.berlios.de/noteedit/noteedit-2.8.0.tar.gz
+
+Future plans: We are splitting up the NoteEdit development into a stable
+and unstable tree. The current development focus will be on the stable
+tree adding some interesting new features. The unstable tree will get
+a stronger focus after the next stable relese. The plans for this tree
+will be hopefully unleashed in the near future :-)
+
+As always: If you have any problems or find bugs, please post them in 
+the Bug tracker. or mail them to the developer mailing list.
+Known bugs can be found in the Bug tracker as well.
+
+Best Regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Jul 24 10:32:21 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 24 Jul 2005 10:32:21 +0200
+Subject: [Noteedit-user] Good to see that noteedit is not dead!
+In-Reply-To: <42CC216A.20600@telus.net>
+References: <42CC216A.20600@telus.net>
+Message-ID: <200507241032.21555.leon.vinken@hetnet.nl>
+
+On Wednesday 06 July 2005 20:22, noteedit-user-admin at berlios.de wrote:
+> I am using lilypond version 2.6 so my conversion reliability is
+> sometimes compromised. My main interest is classical guitar notation, so
+> I do alot of single staff polyphony. I hope that future versions of
+> NoteEdit can become more complex notation oriented. Lilypond has
+> recently included routines for guitar fingering notation. What would be
+> really great is if  the NoteEdit gui could be split into a pure notation
+> gui.
+>
+> I have not tried the ABC conversion yet as I do not have ABC configured
+> in my slackware install.  I do not know how well ABC handles single
+> staff polyphony, or whether or not it can parse fingerings. If anybody
+> has any experience with this please clarify what ABC can and cannot do.
+>
+> Eric
+
+Eric,
+
+I am also using NoteEdit for transcribing classical guitar music. ABC does not 
+handle polyphony, but abcm2ps does. NoteEdit's abc output is compatible with 
+abcm2ps, i.e. when you use multiple voices in a staff, the resulting abc file 
+is polyphonic and needs abcm2ps for printing. This works very well. Don't 
+know about fingering, though.
+
+See: http://moinejf.free.fr
+
+Best regards, Leon.
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Jul 25 19:11:55 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 25 Jul 2005 19:11:55 +0200
+Subject: [Noteedit-user] to print file.ly
+Message-ID: <42E51D5B.3080004@free.fr>
+
+Hello,
+I made a song (Anonyme_j\'aiunmari_4vx) with NoteEdit than export as 
+Lilypond and after to print I right this to have a pdf file :
+$ lilypond --pdf Anonyme_j\'aiunmari_4vx.ly
+GNU LilyPond 2.5.2
+/usr/share/guile/1.6/srfi/srfi-13.scm:159:1: In procedure dynamic-link 
+in expression (load-extension "libguile-srfi-srfi-13-14-v-1" 
+"scm_init_srfi_13"):
+/usr/share/guile/1.6/srfi/srfi-13.scm:159:1: file: 
+"libguile-srfi-srfi-13-14-v-1", message: 
+"libguile-srfi-srfi-13-14-v-1.so: cannot open shared object file: No 
+such file or directory"
+
+what is the probleme?
+
+-- 
+Jean GOUJON, www.aperturaXVI.org (Ensemble Vocal & Instrumental) www.abul.org (Linux & logiciels libres).
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Jul 25 20:45:52 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 25 Jul 2005 20:45:52 +0200
+Subject: [Noteedit-user] to print file.ly
+In-Reply-To: <42E51D5B.3080004@free.fr>
+References: <42E51D5B.3080004@free.fr>
+Message-ID: <42E53360.9050004@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+>
+> Hello,
+> I made a song (Anonyme_j\'aiunmari_4vx) with NoteEdit than export as
+> Lilypond and after to print I right this to have a pdf file :
+> $ lilypond --pdf Anonyme_j\'aiunmari_4vx.ly
+> GNU LilyPond 2.5.2
+> /usr/share/guile/1.6/srfi/srfi-13.scm:159:1: In procedure dynamic-link
+> in expression (load-extension "libguile-srfi-srfi-13-14-v-1"
+> "scm_init_srfi_13"):
+> /usr/share/guile/1.6/srfi/srfi-13.scm:159:1: file:
+> "libguile-srfi-srfi-13-14-v-1", message:
+> "libguile-srfi-srfi-13-14-v-1.so: cannot open shared object file: No
+> such file or directory"
+>
+> what is the probleme?
+>
+Hi Jean,
+
+to help you we might need more info. Anyway, I what comes to my mind:
+
+1) There's no hint what at all causes the problem, so you could post a
+snippet of music (.not or .ly) to the list. We could check if we can
+print it. Generally, there are no overall problem, more singular
+problems in details.
+
+2) Your lily version seems to be out of date. A stable version, 2.6.1,
+would be recommended.
+
+3) If it turns out to be a NoteEdit problem, we would fix it for the
+stable versions lilypond 2.4.x and 2.6.
+
+Recently I updated the neccessary packages on my machine for lilypond
+and got a working 2.6.1. It seems to be very compatible with NoteEdit
+2.8.0, which exports in lilypond 2.4.2 style. A problem arises in
+special characters of lyrics and titles. The now partially missing
+backend of TeX needs different encondings now for texts, preferably
+latin1. But lilypond doesn't chocke on those, instead, makes it as
+beatifull as it can :)
+
+If your problem pushes the lilypond 2.6 adaption, that would be only
+good ...
+
+Best Regards,
+Georg
+
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Jul 26 10:30:11 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 26 Jul 2005 10:30:11 +0200
+Subject: [Noteedit-user] to print file.ly
+In-Reply-To: <42E53360.9050004@schwaben.de>
+References: <42E51D5B.3080004@free.fr> <42E53360.9050004@schwaben.de>
+Message-ID: <42E5F493.9030600@free.fr>
+
+noteedit-user-admin at berlios.de a ?crit :
+
+>noteedit-user-admin at berlios.de wrote:
+>  
+>
+>>Hello,
+>>I made a song (Anonyme_j\'aiunmari_4vx) with NoteEdit than export as
+>>Lilypond and after to print I right this to have a pdf file :
+>>$ lilypond --pdf Anonyme_j\'aiunmari_4vx.ly
+>>GNU LilyPond 2.5.2
+>>/usr/share/guile/1.6/srfi/srfi-13.scm:159:1: In procedure dynamic-link
+>>in expression (load-extension "libguile-srfi-srfi-13-14-v-1"
+>>"scm_init_srfi_13"):
+>>/usr/share/guile/1.6/srfi/srfi-13.scm:159:1: file:
+>>"libguile-srfi-srfi-13-14-v-1", message:
+>>"libguile-srfi-srfi-13-14-v-1.so: cannot open shared object file: No
+>>such file or directory"
+>>
+>>what is the probleme?
+>>
+>>    
+>>
+>Hi Jean,
+>
+>to help you we might need more info. Anyway, I what comes to my mind:
+>
+>1) There's no hint what at all causes the problem, so you could post a
+>snippet of music (.not or .ly) to the list. We could check if we can
+>print it. Generally, there are no overall problem, more singular
+>problems in details.
+>  
+>
+I joint the 2 files, .not and .ly
+
+>2) Your lily version seems to be out of date. A stable version, 2.6.1,
+>would be recommended.
+>  
+>
+I use Mandrake 10.1 and urpmi don't know the last version
+
+>
+>Best Regards,
+>Georg
+>
+>
+>
+>  
+>
+thank you for the help. Jean
+
+-- 
+Jean GOUJON, www.aperturaXVI.org (Ensemble Vocal & Instrumental) www.abul.org (Linux & logiciels libres).
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_j'aiunmari_4vx.not
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/795968ca/attachment.ksh>
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_jaiunmari_4vx.ly
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/795968ca/attachment-0001.ksh>
+
+From noteedit-user-admin at lists.berlios.de  Tue Jul 26 22:06:49 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 26 Jul 2005 22:06:49 +0200
+Subject: [Noteedit-user] to print file.ly
+In-Reply-To: <42E5F493.9030600@free.fr>
+References: <42E51D5B.3080004@free.fr> <42E53360.9050004@schwaben.de> <42E5F493.9030600@free.fr>
+Message-ID: <42E697D9.2080704@schwaben.de>
+
+> I joint the 2 files, .not and .ly
+>
+Hello Jean,
+
+everything is okay, if you export in NoteEdit with lyrics encoding
+latin1, not ascii, what you did probably (in the lilypond export
+dialog). I checked it with NoteEdit 2.8.0 and both lilypond 2.4.4 and 2.6.1.
+
+Btw., why exporting with utf8 is not working I'm going to check out now ...
+
+Tell if you see still a problem. I enjoyed to listen to your music,
+Best Regards,
+
+Georg.
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Jul 24 09:34:51 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 24 Jul 2005 01:34:51 -0600
+Subject: [Noteedit-user] need help on tips.
+Message-ID: <200507240134.51977.arthur.moore.lists@gmail.com>
+
+I've been keeping ana eye on notation on linux for a while, and right now I'm 
+liking both noteedit and rosegarden4 for their notation interfaces. There are 
+a few things that I'm having a hard time doing in noteedit thought, and I was 
+hoping someone could help me out.
+
+1. after inserting notes into a staff I have a hard time figuring out how to 
+add such things as staccatos, accents etc. to the notes already inserted. how 
+does one do this? I know that I can select staccato before entering the note, 
+however it seems more efficient to be able to highlight my selection after 
+entering it and then adding accents and such. Am I missing something.
+
+2. The Text feature does not seem to be quite as nice as in Rosegarden. and I 
+do notice some mistakes. accel. and ritard. should be italicized when 
+exported to lilypond. Are there ways to manually set what the text should 
+look like, instead of just "uptext" and "downtext"?
+
+3. I'm not seeing any tools for entering crescendos or decrescendos. any help 
+there would be great.
+
+
+There are some things about noteedit I like over Rosegarden. The score layout 
+ability and the note entry system. navigating to the correct note and then 
+entering it in is very helpful. Rosegarden4 has no support for layout issues, 
+and implements a very silly solfege system for entering notes which would 
+drive anyone nuts who hasn't taken sight singing classes. 
+
+For me the rule of who dominates is which resulting lilypond file do I have to 
+edit the least to get basic normal functionallity?
+
+Thanks.
+
+Art
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Jul 26 11:10:17 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 26 Jul 2005 11:10:17 +0200
+Subject: [Noteedit-user] to print file.ly
+In-Reply-To: <42E5F493.9030600@free.fr>
+References: <42E51D5B.3080004@free.fr> <42E53360.9050004@schwaben.de> <42E5F493.9030600@free.fr>
+Message-ID: <42E5FDF9.9050306@guest.arnes.si>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi!
+
+> I joint the 2 files, .not and .ly
+
+I looked at them and found out that you're not using the latest
+version of NoteEdit (<2.7.4). There are many LilyPond export
+improvements made in 2.7.4 and 2.8.0, so I advice you to update to the
+latest version of NE. I opened the .not file and fix some spacings
+(using underspace/overspace so the lyrics doesn't hit the staff) and
+simply export it to LilyPond. And then:
+
+matevz at mojazver:~/tmp$ convert-ly --edit Anonyme_jaiunmari_4vx.ly
+/usr/bin/convert-ly (GNU LilyPond) 2.4.5
+Processing `Anonyme_jaiunmari_4vx.ly' ... Applying conversions:
+
+matevz at mojazver:~/tmp$ lilypond Anonyme_jaiunmari_4vx.ly
+GNU LilyPond 2.4.5
+Processing `Anonyme_jaiunmari_4vx.ly'
+Parsing...
+Interpreting music... [8][16][24]
+Preprocessing graphical objects...
+Calculating line breaks... [3][6][9][12][15][18][21]
+Layout output to `Anonyme_jaiunmari_4vx.tex'...
+Converting to `Anonyme_jaiunmari_4vx.dvi'...
+Converting to `Anonyme_jaiunmari_4vx.ps'...
+Converting to `Anonyme_jaiunmari_4vx.pdf'...
+matevz at mojazver:~/tmp$
+
+It worked out of the box. I'm attaching the results.
+
+About your problem, I think there's something with your LilyPond
+installation messed up. Did you install libguile library (or
+everything related to guile) beside the LilyPond? If that doesn't
+help, contact the user mailing list at LilyPond
+(lilypond-user at gnu.org) and the maintainer for Mandrake.
+
+For the version of LilyPond, you should simply run lilypond --version
+and it should print the LilyPond version out.
+
+
+Regards.
+- - Matev?
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFC5f34m1IQqmP8KVgRAo2iAJwNVr6Rz23W1Kgr3TvpU2AoT9ZyNACdHHwQ
+BSaN1kDo6m2Xt0q/D2XLgfM=
+=NsFh
+-----END PGP SIGNATURE-----
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_j'aiunmari_4vx.not
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ksh>
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_jaiunmari_4vx.ly
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment-0001.ksh>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Anonyme_jaiunmari_4vx.ps
+Type: application/postscript
+Size: 255346 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ps>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 08:06:35 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 08:06:35 +0200
+Subject: [Noteedit-user] need help on tips.
+In-Reply-To: <200507240134.51977.arthur.moore.lists@gmail.com>
+References: <200507240134.51977.arthur.moore.lists@gmail.com>
+Message-ID: <42E7246B.9080104@schwaben.de>
+
+>
+>... There are 
+>a few things that I'm having a hard time doing in noteedit thought, and I was 
+>hoping someone could help me out.
+>
+>  
+>1. after inserting notes into a staff I have a hard time figuring out how to 
+>add such things as staccatos, accents etc. to the notes already inserted. how 
+>does one do this? I know that I can select staccato before entering the note, 
+>however it seems more efficient to be able to highlight my selection after 
+>entering it and then adding accents and such. Am I missing something.
+>
+>  
+Hi Art,
+
+for adding accents afterwards you have to go in edit mode by pressing
+the E button. For toggling the edit mode there is also a keyboard
+shortcut, even configurable. And we have to mention that NoteEdit
+currently only supports one kind of accent per note. And the (single)
+note to be accented has to be selected.
+>2. The Text feature does not seem to be quite as nice as in Rosegarden. and I 
+>do notice some mistakes. accel. and ritard. should be italicized when 
+>exported to lilypond. Are there ways to manually set what the text should 
+>look like, instead of just "uptext" and "downtext"?
+>
+>  
+Not in NoteEdit. Maybe this should go on our whishlist? I missed
+sometimes that lilypond by itself didn't choose the right distance in
+heigth, so that the text woudn't interfere with the notes, .. seems for
+me not so easily accessible for automation. Maybe for you it would be
+worthwile to run a text processing script before lilypond?
+>3. I'm not seeing any tools for entering crescendos or decrescendos. any help 
+>there would be great.
+>
+>  
+This is somehow tricky: In either mode you choose in the menu
+insert->lines, then you select for example dynamics. Then click on the
+starting note where you want it, and you get a slider widget in the
+right bottom of NoteEdit, where you can adjust the length and direction
+of the dynamic. A click in the free area of NoteEdit enters everything.
+Deleting needs to delete the leading note. A caveat: When exporting to
+lilypond a dynamic can't stop on a rest. (Need to check the online help
+if it's properly in there.)
+
+Hope this helps you,
+Regards,
+Georg
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 10:38:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 10:38:33 +0200
+Subject: [Noteedit-user] syntax error
+Message-ID: <200507271038.33499.kai.wassermann@gmx.de>
+
+Hello!
+
+Yesterday I put some notes with four staffs in noteedit. Everything went ok 
+and sounded good. Now I try to continue my work and noteedit doesn't want to 
+open my file... "$filename line 161: syntax error" When I try to open 
+the .not.sav file noteedit says: "$filename line 32: syntax error"
+But both files are idendentical! 
+How can I restore my work? Shall I post my .not and .not.sav files?
+
+TIA
+
+Kai
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050727/2390e776/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 10:38:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 10:38:33 +0200
+Subject: [Noteedit-user] syntax error
+Message-ID: <200507271038.33499.kai.wassermann@gmx.de>
+
+Hello!
+
+Yesterday I put some notes with four staffs in noteedit. Everything went ok 
+and sounded good. Now I try to continue my work and noteedit doesn't want to 
+open my file... "$filename line 161: syntax error" When I try to open 
+the .not.sav file noteedit says: "$filename line 32: syntax error"
+But both files are idendentical! 
+How can I restore my work? Shall I post my .not and .not.sav files?
+
+TIA
+
+Kai
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050727/2390e776/attachment-0001.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 10:38:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 10:38:33 +0200
+Subject: [Noteedit-user] syntax error
+Message-ID: <200507271038.33499.kai.wassermann@gmx.de>
+
+Hello!
+
+Yesterday I put some notes with four staffs in noteedit. Everything went ok 
+and sounded good. Now I try to continue my work and noteedit doesn't want to 
+open my file... "$filename line 161: syntax error" When I try to open 
+the .not.sav file noteedit says: "$filename line 32: syntax error"
+But both files are idendentical! 
+How can I restore my work? Shall I post my .not and .not.sav files?
+
+TIA
+
+Kai
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050727/2390e776/attachment-0002.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 12:09:09 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 12:09:09 +0200
+Subject: [Noteedit-user] syntax error
+In-Reply-To: <200507271038.33499.kai.wassermann@gmx.de>
+References: <200507271038.33499.kai.wassermann@gmx.de>
+Message-ID: <200507271209.14091.kai.wassermann@gmx.de>
+
+It's me again..
+Perhaps I should have posted the line where the failure is reported. It's in 
+the 32nd line:
+
+     25 staff 4
+     26 // overlength = 60
+     27 // underlength = 60
+     28 // lyricsdist = 60
+     29 ?       clef=bass
+     30 ?       key = 3&
+     31 music
+     32 midi 1 1: 0 "channel=1"; 0 "program=0";
+     33 midi 2 1: 0 "channel=3"; 0 "program=0";
+
+The other error (line 161) was an error corresponding to a double bar. I found 
+the solution through google.
+
+Best regards.
+
+Kai
+
+P.S.: Sorry for the copies of my first mail.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050727/77bd9509/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jul 27 23:02:29 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Jul 2005 23:02:29 +0200
+Subject: [Noteedit-user] to print file.ly
+In-Reply-To: <42E5F493.9030600@free.fr>
+References: <42E51D5B.3080004@free.fr> <42E53360.9050004@schwaben.de> <42E5F493.9030600@free.fr>
+Message-ID: <42E7F665.8060206@web.de>
+
+Hi,
+
+>> Hi Jean,
+>>
+>> to help you we might need more info. Anyway, I what comes to my mind:
+>>
+>> 1) There's no hint what at all causes the problem, so you could post a
+>> snippet of music (.not or .ly) to the list. We could check if we can
+>> print it. Generally, there are no overall problem, more singular
+>> problems in details.
+>>  
+>>
+> I joint the 2 files, .not and .ly
+> 
+>> 2) Your lily version seems to be out of date. A stable version, 2.6.1,
+>> would be recommended.
+>>  
+>>
+> I use Mandrake 10.1 and urpmi don't know the last version
+> 
+
+Mandriva has only 2.7.4 currently in it's archive (I don't know if it 
+was included with Mandriva LE 2005). On the Mandriva homepage you
+can find mirrors where you can download it (cooker link).
+Else you need to download the source and compile it yourself (works
+fine on my Mandriva LE2005 box). I could upload Mandriva RPM and SRPM if 
+this is too technical for you at the weekend (my RPM might not work
+on your older Mandrake box).
+
+Regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Jul 28 02:27:25 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 28 Jul 2005 04:27:25 +0400
+Subject: [Noteedit-user] ./configure fails
+Message-ID: <733f2c73050727172771005088@mail.gmail.com>
+
+Hi,
+
+./configure seems to fail to ebrace my gcc.
+
+Testing compiler version ... 4
+
+Cannot determine g++ version
+Check your compiler installation or
+try to find out why "./compvers" doesn't
+supply "2" or "3"!
+
+I have FC4 and gcc-4.0.1
+
+Alexandre
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Jul 28 10:41:01 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 28 Jul 2005 10:41:01 +0200
+Subject: [Noteedit-user] ./configure fails
+In-Reply-To: <733f2c73050727172771005088@mail.gmail.com>
+References: <733f2c73050727172771005088@mail.gmail.com>
+Message-ID: <42E89A1D.8090801@guest.arnes.si>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+NoteEdit 2.8.0 cannot compile (and was not meant to) with gcc4. The
+problems are the syntax errors in TSE3 headers (which need to be
+compiled if you want to have playback). However, a user confirmed that
+building of NoteEdti with gcc4 was successful for him. Test the latest
+trunk SVN version.
+
+
+Regards.
+- - Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+> Hi,
+>
+> ./configure seems to fail to ebrace my gcc.
+>
+> Testing compiler version ... 4
+>
+> Cannot determine g++ version Check your compiler installation or
+> try to find out why "./compvers" doesn't supply "2" or "3"!
+>
+> I have FC4 and gcc-4.0.1
+>
+> Alexandre _______________________________________________
+> Noteedit-user mailing list Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFC6Jodm1IQqmP8KVgRAvrgAJwNPG42EJWf7sVtVSCVGSjMUpSlnACfRSbh
+dq2B2j9IWdbLf2vx/1RlEgY=
+=sy5y
+-----END PGP SIGNATURE-----
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jul 29 00:12:28 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 28 Jul 2005 19:12:28 -0300
+Subject: [Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+Message-ID: <42E9584C.4070902@yahoo.com.br>
+
+Hi all,
+
+I have some problems with noteedit-2.7.4 *print preview* :
+
+0. NoteEdit cannot find abcm2ps under certain ciscustances (when 
+noteedit is called from a terminal; no problem when called from a 
+mini-command (fbrun)); the printing is cancelled at all.
+
+ErrMsg: "abcm2ps was not found in your PATH, aborting"
+
+localhost  hudson $ which abcm2ps
+/usr/local/bin/abcm2ps
+
+localhost  hudson $ echo $PATH
+/home/hudson/bin:/home/hudson/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
+                                   ^^^^^^^^^^^^^^
+
+1. NoteEdit preview with gv get errors, without message in gv error 
+window (I have gv-3.6.1 with gs-7.07.1);
+
+2. NoteEdit cannot generate PS files:
+
+ErrMsg: "Catastrophe: KNotify"
+"A print error ocurred. Error message received from system:"
+"Cannot save print file to /home/hudson/print.ps. Check that you have 
+write access to it."
+
+(The error persists when set chmod 777 /home/hudson/print.ps; but PDF 
+printing is fine)
+
+I tried also install kghostview, but it cannot comunicate to 
+ghostscript, suggesting misconfigured printer.
+
+System info:
+NoteEdit-2.7.4 3.3.2, (3.1)
+Linux (i686) release 2.4.25-1-multimedia-686
+Debian Sarge GNU/Linux - DeMuDi-1.2.0 - (with updates)
+Window manager: fluxbox-0.9.3 on XFree86, res. 800x600, 15bit
+gv-3.6.1
+gs-7.07.1
+Printer EPSON-C20UX, configured by gnome-cups-manager, using cupsys-bsd
+
+Any suggestions?
+
+Cheer,
+Hudson Lacerda
+
+-- 
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o manifesto! http://www.votoseguro.com/alertaprofessores/
+*Quem tem medo de GNU/Linux? http://linuxfud.org/
+
+	
+	
+		
+_______________________________________________________ 
+Yahoo! Acesso Gr?tis - Internet r?pida e gr?tis. 
+Instale o discador agora! http://br.acesso.yahoo.com/
+
+
+From noteedit-user-admin at lists.berlios.de  Sat Jul 30 18:15:21 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 30 Jul 2005 18:15:21 +0200
+Subject: [Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+In-Reply-To: <42E9584C.4070902@yahoo.com.br>
+References: <42E9584C.4070902@yahoo.com.br>
+Message-ID: <42EBA799.6040002@guest.arnes.si>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Did you try to link abcm2ps executable to /usr/bin only (local
+directories can sometimes got excluded from path) and re-run NoteEdit:
+$ ln /usr/local/bin/abcm2ps /usr/bin -s
+
+If this doesn't work, you should try to first export to ABC manually
+and then run
+$ abcm2ps exported_file.abc
+
+This way you can export to other formats as well (personally, I prefer
+LilyPond). For Lily:
+$ convert-ly --edit exported_file.ly
+$ lilypond exported_file.ly.
+
+Both ways will hopefully produce a usable PDF and PS output.
+
+I'm not really sure why your problem occurs, but direct printing from
+NoteEdit is going to have a complete rewrite in version 2.8.1.
+
+
+Regards.
+- - Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+> Hi all,
+>
+> I have some problems with noteedit-2.7.4 *print preview* :
+>
+> 0. NoteEdit cannot find abcm2ps under certain ciscustances (when
+> noteedit is called from a terminal; no problem when called from a
+> mini-command (fbrun)); the printing is cancelled at all.
+>
+> ErrMsg: "abcm2ps was not found in your PATH, aborting"
+>
+> localhost hudson $ which abcm2ps /usr/local/bin/abcm2ps
+>
+> localhost hudson $ echo $PATH
+> /home/hudson/bin:/home/hudson/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
+>
+>
+> ^^^^^^^^^^^^^^
+>
+> 1. NoteEdit preview with gv get errors, without message in gv error
+> window (I have gv-3.6.1 with gs-7.07.1);
+>
+> 2. NoteEdit cannot generate PS files:
+>
+> ErrMsg: "Catastrophe: KNotify" "A print error ocurred. Error
+> message received from system:" "Cannot save print file to
+> /home/hudson/print.ps. Check that you have write access to it."
+>
+> (The error persists when set chmod 777 /home/hudson/print.ps; but
+> PDF printing is fine)
+>
+> I tried also install kghostview, but it cannot comunicate to
+> ghostscript, suggesting misconfigured printer.
+>
+> System info: NoteEdit-2.7.4 3.3.2, (3.1) Linux (i686) release
+> 2.4.25-1-multimedia-686 Debian Sarge GNU/Linux - DeMuDi-1.2.0 -
+> (with updates) Window manager: fluxbox-0.9.3 on XFree86, res.
+> 800x600, 15bit gv-3.6.1 gs-7.07.1 Printer EPSON-C20UX, configured
+> by gnome-cups-manager, using cupsys-bsd
+>
+> Any suggestions?
+>
+> Cheer, Hudson Lacerda
+>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFC66eYm1IQqmP8KVgRAi2XAJ9SPEzR0ECk1uAWFpSjrNekmsIH6wCeO+vD
+/vnP6aNjZLAN3hgS//An30M=
+=CB7a
+-----END PGP SIGNATURE-----
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Jul 31 05:13:44 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 30 Jul 2005 21:13:44 -0600 (Mountain Daylight Time)
+Subject: [Noteedit-user] NoteEdit Won't Save
+Message-ID: <Pine.WNT.4.63.0507302104310.3660@fiona.salford.local>
+
+Hardware:    x86
+OS:          Linux (Fedora Code 3)
+NE Version:  2.8.0
+KDE Version: 3.3.1
+
+I downloaded, compiled and installed NoteEdit 2.8.0, using the 
+--without-libs on configure because I was unable to compile libtse. 
+Everything seems to work fine (except for the MIDI stuff I don't expect to 
+work), except that nothing can be saved.  Any attempt to do so produces 
+the following informative error message:
+
+error opening file <file name>.
+
+This is not a permission issue since I get it no matter where I try to 
+save, even if I'm running as root.
+
+Any ideas what might have gone wrong?
+
+Thanks in advance.
+
+--------------------------|
+John L. Ries              |
+Salford Systems           |
+Phone: (619)543-8880 x107 |
+or     (435)865-5723      |
+--------------------------|
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Jul 31 05:17:20 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 30 Jul 2005 21:17:20 -0600 (Mountain Daylight Time)
+Subject: [Noteedit-user] Re: NoteEdit Won't Save
+In-Reply-To: <Pine.WNT.4.63.0507302104310.3660@fiona.salford.local>
+References: <Pine.WNT.4.63.0507302104310.3660@fiona.salford.local>
+Message-ID: <Pine.WNT.4.63.0507302116100.3660@fiona.salford.local>
+
+I'll provide one additional detail:
+
+On Sat, 30 Jul 2005, John L. Ries wrote:
+
+> Hardware:    x86
+> OS:          Linux (Fedora Code 3)
+> NE Version:  2.8.0
+> KDE Version: 3.3.1
+   GCC Version: 3.4.4
+>
+> I downloaded, compiled and installed NoteEdit 2.8.0, using the --without-libs 
+> on configure because I was unable to compile libtse. Everything seems to work 
+> fine (except for the MIDI stuff I don't expect to work), except that nothing 
+> can be saved.  Any attempt to do so produces the following informative error 
+> message:
+>
+> error opening file <file name>.
+>
+> This is not a permission issue since I get it no matter where I try to save, 
+> even if I'm running as root.
+>
+> Any ideas what might have gone wrong?
+>
+> Thanks in advance.
+>
+
+
+--------------------------|
+John L. Ries              |
+Salford Systems           |
+Phone: (619)543-8880 x107 |
+or     (435)865-5723      |
+--------------------------|
+
+
+
+
+
+

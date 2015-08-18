@@ -1,0 +1,2726 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] problem solved, but there are new questions
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-September/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20problem%20solved%2C%20but%20there%20are%20new%20questions&In-Reply-To=%3C20060909141257.GA4148%40chezmoi%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000234.html">
+   <LINK REL="Next"  HREF="000236.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] problem solved, but there are new questions</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20problem%20solved%2C%20but%20there%20are%20new%20questions&In-Reply-To=%3C20060909141257.GA4148%40chezmoi%3E"
+       TITLE="[Noteedit-user] problem solved, but there are new questions">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Sat Sep  9 16:12:58 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000234.html">[Noteedit-user] problem solved, but there are new questions
+</A></li>
+        <LI>Next message: <A HREF="000236.html">[Noteedit-user] problem solved, but there are new questions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#235">[ date ]</a>
+              <a href="thread.html#235">[ thread ]</a>
+              <a href="subject.html#235">[ subject ]</a>
+              <a href="author.html#235">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear Mathew,
+
+first of all let me tell you what I have installed:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">thomas at schreibtisch</A>:~$ noteedit -v
+Qt: 3.3.4
+KDE: 3.3.2
+NoteEdit: 2.8.1
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">thomas at schreibtisch</A>:~$ lilypond -v
+GNU LilyPond 2.8.6
+This program is free software.  It is covered by the GNU General Public
+License and you are welcome to change it and/or distribute copies of it
+under certain conditions.  Invoke as ilypond --warranty' for more
+information.
+
+
+Copyright (c) 1996--2006 by
+  Han-Wen Nienhuys &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">hanwen at xs4all.nl</A>&gt;
+  Jan Nieuwenhuizen &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">janneke at gnu.org</A>&gt;
+  and others.
+
+and what noteedit finds:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">thomas at schreibtisch</A>:~$ noteedit
+LilyPond check: found version: 2.8.6
+TSE3 ALSA MIDI scheduler created
+TSE3 Copyright information :(c) Pete Goodliffe, 2000-2002. A Trax Software
+Product. Version: 0.2.7
+
+so as you see, the latest versions, and noteedit finds the correct version. 
+
+I will send you the current status of my actual project as .not and as
+.ly file I will paste the text into this mail, and i will attach the two
+files.
+
+as you see, in the .ly file the \f and \mp- statements are always in front
+of of the notes
+
+
+So what can I do? Any help would be appreciated.
+
+Regards Thomas
+
+
+
+
+this is the .not file
+
+header
+	title bold (20) &quot;Latin American Fever&quot;
+	title bold (12) &quot;Samba&quot;
+	title bold (11) &quot;Harald Kolasch&quot;
+	title bold (10) &quot;Thomas Wille&quot;
+footer
+	title bold (13) &quot;classical&quot;
+score
+	pedstyle = pedstar
+	staffs = 7
+	time = 4/4
+score
+staff 1
+label = &quot;1. Trompete&quot;
+// overlength = 62
+// underlength = 68
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 2
+label = &quot;2. Trompete&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 3
+label = &quot;Posaune&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=bass
+	key = 2&amp;
+staff 4
+label = &quot;Alt-Sax&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 5
+label = &quot;Tenorsax&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 6
+label = &quot;Tenorhorn&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+// playtransposd = -12
+	clef=treble
+	key = 2&amp;
+staff 7
+label = &quot;Tuba&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=bass
+	key = 2&amp;
+music
+midi 1 1: 0 &quot;channel=1&quot;; 0 &quot;program=56&quot;;
+midi 2 1: 0 &quot;channel=2&quot;; 0 &quot;program=56&quot;;
+midi 3 1: 0 &quot;channel=3&quot;; 0 &quot;program=57&quot;;
+midi 4 1: 0 &quot;channel=4&quot;; 0 &quot;program=65&quot;;
+midi 5 1: 0 &quot;channel=5&quot;; 0 &quot;program=66&quot;;
+midi 6 1: 0 &quot;channel=6&quot;; 0 &quot;program=60&quot;;
+midi 7 1: 0 &quot;channel=7&quot;; 0 &quot;program=58&quot;;
+midi 1 1: 0 &quot;parameter=7,127&quot;;
+midi 1 1: 0 &quot;parameter=93,0&quot;;
+midi 1 1: 0 &quot;parameter=91,0&quot;;
+midi 1 1: 0 &quot;parameter=10,64&quot;;
+midi 2 1: 0 &quot;parameter=7,90&quot;;
+midi 2 1: 0 &quot;parameter=93,0&quot;;
+midi 2 1: 0 &quot;parameter=91,0&quot;;
+midi 2 1: 0 &quot;parameter=10,64&quot;;
+midi 3 1: 0 &quot;parameter=7,90&quot;;
+midi 3 1: 0 &quot;parameter=93,0&quot;;
+midi 3 1: 0 &quot;parameter=91,0&quot;;
+midi 3 1: 0 &quot;parameter=10,64&quot;;
+midi 4 1: 0 &quot;parameter=7,68&quot;;
+midi 4 1: 0 &quot;parameter=93,0&quot;;
+midi 4 1: 0 &quot;parameter=91,0&quot;;
+midi 4 1: 0 &quot;parameter=10,64&quot;;
+midi 5 1: 0 &quot;parameter=7,68&quot;;
+midi 5 1: 0 &quot;parameter=93,0&quot;;
+midi 5 1: 0 &quot;parameter=91,0&quot;;
+midi 5 1: 0 &quot;parameter=10,64&quot;;
+midi 6 1: 0 &quot;parameter=7,90&quot;;
+midi 6 1: 0 &quot;parameter=93,0&quot;;
+midi 6 1: 0 &quot;parameter=91,0&quot;;
+midi 6 1: 0 &quot;parameter=10,64&quot;;
+midi 7 1: 0 &quot;parameter=7,90&quot;;
+midi 7 1: 0 &quot;parameter=93,0&quot;;
+midi 7 1: 0 &quot;parameter=91,0&quot;;
+midi 7 1: 0 &quot;parameter=10,64&quot;;
+1 1: 1r; 
+midi 1 1: 1 &quot;parameter=7,100&quot;;
+boldital above 1: 1 &quot;f&quot;; // volumesign
+midi all: 1 &quot;tempo=240&quot;;
+rom above all: 1 &quot;( \(sm4n) = 240 )&quot;;
+2 1: 1r; 
+midi 2 1: 1 &quot;parameter=7,100&quot;;
+boldital above 2: 1 &quot;f&quot;; // volumesign
+3 1: 1r; 
+midi 3 1: 1 &quot;parameter=7,100&quot;;
+boldital above 3: 1 &quot;f&quot;; // volumesign
+4 1: 1r; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 1r; 
+midi 5 1: 1 &quot;parameter=7,66&quot;;
+boldital above 5: 1 &quot;mp&quot;; // volumesign
+6 1: 1r; 
+midi 6 1: 1 &quot;parameter=7,100&quot;;
+boldital above 6: 1 &quot;f&quot;; // volumesign
+7 1: 1r; 
+midi 7 1: 1 &quot;parameter=7,100&quot;;
+boldital above 7: 1 &quot;f&quot;; // volumesign
+bar // 1
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 2
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 3
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 4
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 5
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 6
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 7
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 8f bm; 8g; 8a; [up]8b ebm; 8c+ bm; 8d+; 8e+; 8en+ ebm; 
+phrase  4: 1 til 4.500000;
+5 1: 8f- bm; 8g-; 8a-; 8b- ebm; 8c bm; 8d; 8e; 8en ebm; 
+phrase  5: 1 til 4.500000;
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 8
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 9
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 10
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 11
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 12
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 13
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 14
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 15
+1 1: 4f+; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+2 1: [up]4b; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 16
+1 1: 1a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+midi 2 1: 1 &quot;parameter=7,66&quot;;
+boldital above 2: 1 &quot;mp&quot;; // volumesign
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+midi 3 1: 1 &quot;parameter=7,66&quot;;
+boldital above 3: 1 &quot;mp&quot;; // volumesign
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 17
+1 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1f; 
+midi 5 1: 1 &quot;parameter=7,66&quot;;
+boldital above 5: 1 &quot;mp&quot;; // volumesign
+6 1: 1a; 
+midi 6 1: 1 &quot;parameter=7,66&quot;;
+boldital above 6: 1 &quot;mp&quot;; // volumesign
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 18
+1 1: [with &gt;]1a-; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 19
+1 1: 4r; 4b-; [with -]8d; [with .]8f; 8r; [with &gt;]8a~; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 20
+1 1: 4.a; 8a; [with -]8a; [with -]8a; [with .]4a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 21
+1 1: 8r; [with &gt;]4.g; [with ^]4f; [with ^]4d; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 2c~; 2bn-; 
+6 1: 2a; 2a&amp;; 
+phrase  6: 1 til 1m + 1.000000;
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 22
+1 1: [with ^]4.f; 2c~; 8c; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+midi 2 1: 1 &quot;parameter=7,66&quot;;
+boldital above 2: 1 &quot;mp&quot;; // volumesign
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+midi 3 1: 1 &quot;parameter=7,66&quot;;
+boldital above 3: 1 &quot;mp&quot;; // volumesign
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 4c; 2.r; 
+6 1: 4g; 2.r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 23
+1 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 24
+1 1: 1b; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 25
+1 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 26
+1 1: [with &gt;]1c; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 27
+1 1: 4r; [with .]4e; [with -]8g; [with .]8b; 8r; [with &gt;]8a~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 28
+1 1: 4.a; 8a; [with -]8a; [with -]8a; [with .]4a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1a; 
+6 1: 1f; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 29
+1 1: 4r; [with &gt;]4f; [with -]8a; [with .]8f; 8r; [with &gt;]8d~; 
+2 1: 4f; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 30
+1 1: [with &gt;]1d~; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4a; [with -]8a bm; [with .]8a ebm; 8r; 8a~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 31
+1 1: [with &gt;]4d; 2.r; 
+2 1: 4f; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4a; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+midi 4 1: 1 &quot;parameter=7,100&quot;;
+boldital above 4: 1 &quot;f&quot;; // volumesign
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+midi 5 1: 1 &quot;parameter=7,100&quot;;
+boldital above 5: 1 &quot;f&quot;; // volumesign
+6 1: 1r; 
+7 1: 4b-; 2.r; 
+bar // 32
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4b-; [with -]8d; [with .]8f; 8r; [with &gt;]8a~; 
+4 1: 1a+; 
+5 1: 1a; 
+6 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 33
+1 1: 1r; 
+2 1: 1r; 
+3 1: [with &gt;]1a; 
+4 1: 4r; [with ^]4g+; [with -]8f+ bm; [with .]8d+ ebm; 8r; [with &gt;]8a~; 
+5 1: 4r; [with ^]4g; [with -]8f bm; [with .]8d ebm; 8r; [with &gt;]8a-~; 
+6 1: 1a; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 34
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+4 1: [with &gt;]1a; 
+5 1: [with &gt;]1a-; 
+6 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 35
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1a-; 
+4 1: 4r; 8g bm; 8a ebm; 8b bm; 8c+; 8d+; 8f+ ebm; 
+phrase  4: 2 til 1m + 1.000000;
+5 1: 4r; 8g- bm; 8a- ebm; 8b- bm; 8c; 8d; 8f ebm; 
+phrase  5: 2 til 1m + 1.000000;
+6 1: [with &gt;]1a-; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 36
+1 1: 1r; 
+2 1: 8r; 2.a-~; 8a-; 
+3 1: 8r; 2.d~; 8d; 
+4 1: 4a+; 8r; [with .]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with .]4a+; 
+5 1: 4a; 8r; [with .]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 8r; 2.f~; 8f; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 37
+1 1: 1r; 
+2 1: [with .]8a-; 2.r; 8r; 
+3 1: [with .]8d; 2.r; 8r; 
+4 1: 8r; [with &gt;]4.g+; [with &gt;]4f+; [with &gt;]4d+; 
+5 1: 8r; [with &gt;]4.g; [with &gt;]4f; [with &gt;]4d; 
+6 1: [with .]8f; 2.r; 8r; 
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 38
+1 1: 1r; 
+2 1: 8r; 2.b-~; 8b-; 
+3 1: 8r; 2.e~; 8e; 
+4 1: 4.f+; 2c+~; 8c+; 
+5 1: 4.f; 2c~; 8c; 
+6 1: 8r; 2.g~; 8g; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 39
+1 1: 1r; 
+2 1: [with .]8b-; 2.r; 8r; 
+3 1: [with .]8e; 2.r; 8r; 
+4 1: 2r; [with -]8c+ bm; [with .]8e+ ebm; 8r; [with .]8g+; 
+5 1: 2r; [with -]8c bm; [with .]8e ebm; 8r; [with .]8g; 
+6 1: [with .]8g; 2.r; 8r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 40
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4c; [with -]8e; [with .]8g; 8r; [with &gt;]8b~; 
+4 1: [with -]4.b+; 2b+~; 8b+; 
+5 1: [with -]4.b; 2b~; 8b; 
+6 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 41
+1 1: 1r; 
+2 1: 1r; 
+3 1: [with &gt;]1b; 
+4 1: 8r; [with &gt;]4.g+; [with -]8e+ bm; [with .]8d+ ebm; 8r; [with &gt;]8c+~; 
+5 1: 8r; [with &gt;]4.g; [with -]8e bm; [with .]8d ebm; 8r; [with &gt;]8c~; 
+6 1: 1b; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 42
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]1c+; 
+5 1: [with &gt;]1c; 
+6 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 43
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1c; 
+4 1: 4r; [with ^]4c+; 8e+ bm; 8f+ ebm; 8g+ bm; 8b+ ebm; 
+5 1: 4r; [with ^]4c; 8e bm; 8f ebm; [down] 8g bm; 8b ebm; 
+6 1: [with &gt;]1c; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 44
+1 1: 1r; 
+2 1: 8r; 2.d~; 8d; 
+3 1: 8r; 2.c~; 8c; 
+4 1: 4a+; 8r; [with -]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with .]4a+; 
+5 1: 4a; 8r; [with -]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 8r; 2.f~; 8f; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 45
+1 1: 1r; 
+2 1: [with .]8d; 2.r; 8r; 
+3 1: [with .]8c; 2.r; 8r; 
+4 1: 4r; [with ^]4f+; [with -]8d++ bm; [with .]8c++ ebm; 8r; [with &gt;]8b+~; 
+5 1: 4r; [with ^]4f; [with -]8d+ bm; [with .]8c+ ebm; 8r; [with &gt;]8b~; 
+6 1: [with .]8f; 2.r; 8r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 46
+1 1: 1r; 
+2 1: 8r; 2.f~; 8f; 
+3 1: 8r; 2.d~; 8d; 
+4 1: [with &gt;]1b+~; 
+5 1: [with &gt;]1b~; 
+6 1: 8r; 2.g~; 8g; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 47
+1 1: 2r; [with &gt;]2b; 
+2 1: 4f; 2.r; 
+3 1: 4d; 4r; [with &gt;]2b; 
+4 1: [with &gt;]4b+; 2.r; 
+5 1: [with &gt;]4b; 2.r; 
+6 1: 4g; 2.r; 
+7 1: 4b-; 2.r; 
+bar // 48
+1 1: [with &gt;]1a&amp;~; 
+2 1: 1r; 
+3 1: [with &gt;]1a~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8c; [with -]8e bm; [with .]8c ebm; 8r; [with -]8d~; 
+6 1: 4.r; [with .]8c; [with -]8e; [with .]8c; 8r; [with -]8d~; 
+7 1: 4f-; 4r; 4f-; 4r; 
+bar // 49
+1 1: [with &gt;]4a; [with .]4d; [with -]8e bm; [with .]8f ebm; 8r; [with &gt;]8g~; 
+2 1: 1r; 
+3 1: [with &gt;]4a; [with .]4d; [with -]8e; [with .]8f; 8r; [with .]8g~; 
+4 1: 1r; 
+5 1: [with -]1d; 
+6 1: [with -]1d; 
+7 1: 4b-; 4r; 4b-; 4r; 
+bar // 50
+1 1: [with &gt;]1g~; 
+2 1: 1r; 
+3 1: [with .]1g~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8b-; [with -]8d bm; [with .]8b- ebm; 8r; [with -]8c~; 
+6 1: 4.r; [with .]8b-; [with -]8d; [with .]8b-; 8r; [with -]8c~; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 51
+1 1: [with &gt;]4g; 4r; [with &gt;]2g; 
+2 1: 1r; 
+3 1: [with .]4g; 4r; [with &gt;]2g; 
+4 1: 1r; 
+5 1: [with -]1c; 
+6 1: [with -]1c; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 52
+1 1: [with &gt;]1g&amp;~; 
+2 1: 1r; 
+3 1: [with &gt;]1g&amp;~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8b-; [with -]8d&amp; bm; [with .]8b- ebm; 8r; [with -]8c~; 
+6 1: 4.r; [with .]8b-; [with -]8d&amp;; [with .]8b-; 8r; [with -]8c~; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 53
+1 1: [with &gt;]4g; [with .]4g; [with -]8b; [with .]8a; 8r; [with &gt;]8f~; 
+2 1: 1r; 
+3 1: [with &gt;]4g; [with .]4g&amp;; [with -]8b; [with .]8a; 8r; [with .]8f~; 
+4 1: 1r; 
+5 1: [with -]1c; 
+6 1: [with -]1c; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 54
+1 1: [with &gt;]1f~; 
+2 1: 2r; [with &gt;]2d; 
+3 1: [with .]1f~; 
+4 1: 2r; [with &gt;]2c+; 
+5 1: 1r; 
+6 1: 2r; [with &gt;]2a; 
+7 1: 4d; 4r; 4d; 4r; 
+bar // 55
+1 1: [with &gt;]1f; 
+2 1: 2r; [with &gt;]2d; 
+3 1: [with .]1f; 
+4 1: 2r; [with &gt;]2b; 
+5 1: 1r; 
+6 1: 2r; [with &gt;]2a; 
+7 1: 4g-; 4r; 4g-; 4r; 
+bar // 56
+1 1: [with .]4f+; [with .]4f+; [with -]8f+ bm; [with .]8f+ ebm; 8r; [with
+.]8f+; 
+2 1: [with .]4c+; [with .]4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; [with
+.]8c+; 
+3 1: [with .]4b-; [with .]4b-; [with -]8b- bm; [with .]8b- ebm; 8r; [with
+.]8b-; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: [with .]4b; [with .]4b; [with -]8b bm; [with .]8b ebm; 8r; [with .]8a; 
+7 1: 4f-; 4f-; 8f- bm; 8f- ebm; 8r; 8f-; 
+bar // 57
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 58
+1 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+2 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+3 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+4 1: 1a+; 
+5 1: 1a; 
+6 1: 1r; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 59
+1 1: 1a+; 
+2 1: 1a+; 
+3 1: 1a; 
+4 1: 4r; [with ^]4g+; [with -]8f+ bm; [with .]8d+ ebm; 8r; [with &gt;]8a~; 
+5 1: 4r; [with ^]4g; [with -]8f bm; [with .]8d ebm; 8r; [with &gt;]8a-~; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 60
+1 1: 4r; [with ^]4g+; [with -]8f+; [with .]8d+; 8r; [with &gt;]8a~; 
+2 1: 4r; [with ^]4g+; [with -]8f+; [with .]8d+; 8r; [with &gt;]8a~; 
+3 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+4 1: [with &gt;]1a; 
+5 1: [with &gt;]1a-; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 61
+1 1: [with .]4a; 2.r; 
+2 1: [with .]4a; 2.r; 
+3 1: [with .]4a-; 2.r; 
+4 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+6 1: 1r; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 62
+1 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+2 1: 4r; [with .]4a; 8r; [with .]8a; 8r; [with &gt;]8a; 
+3 1: 4r; [with .]4c; 8r; [with .]8c; 8r; [with &gt;]8c~; 
+4 1: [with .]4.a+; [with -]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with
+.]4a+; 
+5 1: [with .]4.a; [with -]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 4r; [with .]4d+; 8r; [with .]8d+; 8r; [with &gt;]8d+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 63
+1 1: [with &gt;]4f; 2.r; 
+2 1: [with &gt;]4a; 2.r; 
+3 1: [with &gt;]4c; 2.r; 
+4 1: 8r; [with &gt;]4.g+; [with &gt;]4f+; [with &gt;]4d+; 
+5 1: 8r; [with &gt;]4.g; [with &gt;]4f; [with &gt;]4d; 
+6 1: [with &gt;]4d+; 2.r; 
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 64
+1 1: 4r; [with .]4e; 8r; [with .]8e; 8r; [with &gt;]8e; 
+2 1: 4r; [with .]4g; 8r; [with .]8g; 8r; [with &gt;]8g; 
+3 1: 4r; [with .]4b-; 8r; [with .]8b-; 8r; [with &gt;]8b-~; 
+4 1: [with -]4.f+; 2c+~; 8c+; 
+5 1: [with -]4.f; 2c~; 8c; 
+6 1: 4r; [with .]4c+; 8r; [with .]8c+; 8r; [with &gt;]8c+~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 65
+1 1: [with &gt;]4e; 2.r; 
+2 1: [with &gt;]4g; 2.r; 
+3 1: [with &gt;]4b-; 2.r; 
+4 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+5 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+6 1: [with &gt;]4c+; 2.r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 66
+1 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+2 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+3 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+4 1: [with &gt;]1b+; 
+5 1: [with &gt;]1b; 
+6 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 67
+1 1: 1b+; 
+2 1: 1b+; 
+3 1: 1b; 
+4 1: 4r; [with .]4g+; [with -]8e+ bm; [with .]8d+ ebm; 8r; [with &gt;]8c+~; 
+5 1: 4r; [with .]4g; [with -]8e bm; [with .]8d ebm; 8r; [with &gt;]8c~; 
+6 1: 1b; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 68
+1 1: 4r; [with ^]4g+; [with -]8e+; [with .]8d+; 8r; [with &gt;]8c+~; 
+2 1: 4r; [with ^]4g+; [with -]8e+; [with .]8d+; 8r; [with &gt;]8c+~; 
+3 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]1c+; 
+5 1: [with &gt;]1c; 
+6 1: 4r; [with ^]4f; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 69
+1 1: [with &gt;]1c+; 
+2 1: [with &gt;]1c+; 
+3 1: [with &gt;]1c; 
+4 1: 4r; [with .]4e+; [with -]8g+ bm; [with .]8b+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4e; [with -][down] 8g bm; [with .]8b ebm; 8r; [with &gt;]8a~; 
+6 1: [with &gt;]1c; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 70
+1 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+2 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+3 1: 4r; [with .]4c; 8r; [with .]8c; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]4.a+; [with &gt;]8a+ bm; [with -]8a+; [with .]8a+ ebm; [with
+&gt;<i>]4a+~; 
+</I>5 1: [with &gt;]4.a; [with &gt;]8a bm; [with -]8a; [with .]8a ebm; [with &gt;]4a~; 
+6 1: 4r; [with .]4d+; 8r; [with .]8d+; 8r; [with &gt;]8d+~; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 71
+1 1: [with &gt;]4f; 2.r; 
+2 1: [with &gt;]4f; 2.r; 
+3 1: [with &gt;]4c; 2.r; 
+4 1: [with &gt;]4a+; [with .]4f+; [with -]8d++ bm; [with .]8c++ ebm; 8r; [with
+&gt;<i>]8b+~; 
+</I>5 1: [with &gt;]4a; [with .]4f; [with -]8d+ bm; [with .]8c+ ebm; 8r; [with
+&gt;<i>]8b~; 
+</I>6 1: [with &gt;]4d+; 2.r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 72
+1 1: 4r; [with .]4f; 8r; [with .]4f; 8r; 
+2 1: 4r; [with .]4b; 8r; [with .]4b; 8r; 
+3 1: 4r; [with .]4g-; 8r; [with .]4g-; 8r; 
+4 1: [with &gt;]1b+~; 
+5 1: [with &gt;]1b~; 
+6 1: 4r; [with .]4d+; 8r; [with .]4d+; 8r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 73
+1 1: [with .]4f; 2.r; 
+2 1: [with .]4b; 2.r; 
+3 1: [with .]4g-; 2.r; 
+4 1: [with &gt;]4b+; 4r; 8b+; 8a&amp;+; 8g+ bm; 8f+ ebm; 
+phrase  4: 3 til 1m + 1.000000;
+5 1: [with &gt;]4b; 4r; 8b; 8a&amp;; 8g bm; 8f ebm; 
+phrase  5: 3 til 1m + 1.000000;
+6 1: [with .]4d+; 2.r; 
+7 1: 4b-; 4r; 4c; 4d; 
+bar // 74
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4e+; 2.r; 
+5 1: 4e; 2.r; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 75
+score
+staff 1
+	key = 3&amp;
+staff 2
+	key = 3&amp;
+staff 3
+	key = 3&amp;
+staff 4
+	key = 3&amp;
+staff 5
+	key = 3&amp;
+staff 6
+	key = 3&amp;
+staff 7
+	key = 3&amp;
+music
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8b+ ebm; [with .]4b+; [with .]4b+; 
+5 1: 4r; [with .]8b bm; [with .]8b ebm; [with .]4b; [with .]4b; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 76
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4c++; [with .]4c++; [with .]4d++; 4r; 
+5 1: [with .]4c+; [with .]4c+; [with .]4d+; 4r; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 77
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8d++ ebm; [with .]4f++; [with .]4d++; 
+5 1: 4r; [with .]8b bm; [with .]8d+ ebm; [with .]4f+; [with .]4d+; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 78
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4e++; [with .]4e++; [with .]4e++; 4r; 
+5 1: [with .]4e+; [with .]4e+; [with .]4e+; 4r; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 79
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8b+ ebm; [with .]4b+; [with .]4b+; 
+5 1: 4r; [with .]8b bm; [with .]8b ebm; [with .]4b; [with .]4b; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 80
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4c++; [with .]4c++; [with .]4d++; 4r; 
+5 1: [with .]4c+; [with .]4c+; [with .]4d+; 4r; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 81
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8d++ ebm; [with .]4f++; 4d++; 
+5 1: 4r; [with .]8b bm; [with .]8d+ ebm; [with .]4f+; 4d+; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 82
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with ^][up]4e++; 2r; [with ^][up]4e++; 
+5 1: [with ^]4e+; 2r; [with ^]4e+; 
+6 1: 1r; 
+7 1: [with .]4e; 2r; [with .]4e; 
+bar // 83
+1 1: 4r; [with -]8b; [with .]4b; [with -]8g; [with .]4b; 
+2 1: 4r; [with -]8g; [with .]4g; [with -]8e; [with .]4g; 
+3 1: 1r; 
+4 1: 1b; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 84
+1 1: [with .]4c+; [with .]4c+; 2r; 
+2 1: [with .]4e; [with .]4e; 2r; 
+3 1: 1r; 
+4 1: 1b; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+endbar // 85
+
+
+and this is the resulting .ly file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  %
+%   LilyPond output generated by   %
+%       &quot;NoteEdit&quot; 2.8.1           %
+%                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\version &quot;2.8.1&quot;
+
+#(set-global-staff-size 20)
+
+flat = \markup { \raise #0.4 \smaller \musicglyph #&quot;accidentals--2&quot; }
+sharp = \markup { \raise #0.6 \smaller \musicglyph #&quot;accidentals-2&quot; }
+textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #&quot;scripts-coda&quot;}
+
+
+\header {
+        title = &quot;Latin American Fever &quot;
+        composer = &quot;Harald Kolasch &quot;
+        arranger = &quot;Thomas Wille &quot;
+        copyright = &quot;classical &quot;
+}
+
+BXXTrompeteA = \relative c' {
+        \set Staff.instrument = #&quot;1. Trompete &quot;
+        \clef G
+        \key bes \major
+        \time 4/4
+
+        \f  \tempo 4.=240
+ R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | R1 |   % 9
+        r4 f' r8 f4 r8 | f4 r8 f4. r4 |   % 11
+        r f r8 f4 r8 | f4 r8 f4. r4 |   % 13
+        r f r8 f4 r8 | f4 r8 f4. r4 |   % 15
+        r f r8 f4 r8 | f4 bes,,-. d8-- f-. r a-&gt; ~ |   % 17
+        a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 19
+        a1-&gt; | r4 bes d8-- f-. r a-&gt; ~ |   % 21
+        a4. a8 a-- a-- a4-. | r8 g4.-&gt; f4-^ d-^ |   % 23
+        f4.-^ c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 25
+        bes1 | r4 g-^ es8-- d-. r c-&gt; ~ |   % 27
+        c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 29
+        a4. a8 a-- a-- a4-. | r f-&gt; a8-- f-. r d-&gt; ~ |   % 31
+        d1-&gt; ~ | d4-&gt; r2. |   % 33
+        R1 | R1 |   % 35
+        R1 | R1 |   % 37
+        R1 | R1 |   % 39
+        R1 | R1 |   % 41
+        R1 | R1 |   % 43
+        R1 | R1 |   % 45
+        R1 | R1 |   % 47
+        R1 | r2 bes'-&gt; |   % 49
+        as!1-&gt; ~ | as4-&gt; d,-. es8-- f-. r g-&gt; ~ |   % 51
+        g1-&gt; ~ | g4-&gt; r g2-&gt; |   % 53
+        ges!1-&gt; ~ | ges4-&gt; ges-. bes8-- a-. r f-&gt; ~ |   % 55
+        f1-&gt; ~ | f-&gt; |   % 57
+        f'4-. f-. f8-- f-. r f-. | R1 |   % 59
+        r4 bes,-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+        r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+        r4 f-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 65
+        r4 es-. r8 es-. r es-&gt; | es4-&gt; r2. |   % 67
+        r4 c'-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+        r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+        r4 f,-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 73
+        r4 f-. r8 f4-. r8 | f4-. r2. |   % 75
+        R1 | \key es \major
+        R1 |   % 77
+        R1 | R1 |   % 79
+        R1 | R1 |   % 81
+        R1 | R1 |   % 83
+        R1 | r4 bes8-- bes4-. g8-- bes4-. |   % 85
+        c-. c-. r2
+        \bar &quot;|.&quot;
+}
+CXXTrompeteB = \relative c' {
+        \set Staff.instrument = #&quot;2. Trompete &quot;
+        \clef G
+        \key bes \major
+        \time 4/4
+
+        \f R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | R1 |   % 9
+        r4 bes' r8 bes4 r8 | bes4 r8 bes4. r4 |   % 11
+        r bes r8 bes4 r8 | bes4 r8 bes4. r4 |   % 13
+        r bes r8 bes4 r8 | bes4 r8 bes4. r4 |   % 15
+        r bes r8 bes4 r8 | bes4 r2. |   % 17
+        \mp r4 f f8-- f-. r f ~ | f4 r2. |   % 19
+        r4 f f8-- f-. r f ~ | f4 r2. |   % 21
+        r4 f f8-- f-. r f ~ | f4 r2. |   % 23
+        \mp r4 g g8-- g-. r g ~ | g4 r2. |   % 25
+        r4 g g8-- g-. r g ~ | g4 r2. |   % 27
+        r4 g g8-- g-. r g ~ | g4 r2. |   % 29
+        r4 f f8-- f-. r f ~ | f4 r2. |   % 31
+        r4 f f8-- f-. r f ~ | f4 r2. |   % 33
+        R1 | R1 |   % 35
+        R1 | R1 |   % 37
+        r8 a,2. ~ a8 | a-. r2. r8 |   % 39
+        r bes2. ~ bes8 | bes-. r2. r8 |   % 41
+        R1 | R1 |   % 43
+        R1 | R1 |   % 45
+        r8 d2. ~ d8 | d-. r2. r8 |   % 47
+        r f2. ~ f8 | f4 r2. |   % 49
+        R1 | R1 |   % 51
+        R1 | R1 |   % 53
+        R1 | R1 |   % 55
+        r2 d-&gt; | r d-&gt; |   % 57
+        c'4-. c-. c8-- c-. r c-. | R1 |   % 59
+        r4 bes-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+        r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+        r4 a-. r8 a-. r a-&gt; | a4-&gt; r2. |   % 65
+        r4 g-. r8 g-. r g-&gt; | g4-&gt; r2. |   % 67
+        r4 c-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+        r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+        r4 f,-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 73
+        r4 bes-. r8 bes4-. r8 | bes4-. r2. |   % 75
+        R1 | \key es \major
+        R1 |   % 77
+        R1 | R1 |   % 79
+        R1 | R1 |   % 81
+        R1 | R1 |   % 83
+        R1 | r4 g8-- g4-. es8-- g4-. |   % 85
+        es-. es-. r2
+        \bar &quot;|.&quot;
+}
+PosauneC = \relative c {
+        \set Staff.instrument = #&quot;Posaune &quot;
+        \clef bass
+        \key bes \major
+        \time 4/4
+
+        \f R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | R1 |   % 9
+        r4 es r8 es4 r8 | es4 r8 es4. r4 |   % 11
+        r es r8 es4 r8 | es4 r8 es4. r4 |   % 13
+        r es r8 es4 r8 | es4 r8 es4. r4 |   % 15
+        r es r8 es4 r8 | es4 r2. |   % 17
+        \mp r4 d d8-- d-. r d ~ | d4 r2. |   % 19
+        r4 d d8-- d-. r d ~ | d4 r2. |   % 21
+        r4 d d8-- d-. r d ~ | d4 r2. |   % 23
+        \mp r4 es es8-- es-. r es ~ | es4 r2. |   % 25
+        r4 es es8-- es-. r es ~ | es4 r2. |   % 27
+        r4 es es8-- es-. r es ~ | es4 r2. |   % 29
+        r4 es es8-- es-. r es ~ | es4 r2. |   % 31
+        r4 es es8-- es-. r es ~ | es4 r2. |   % 33
+        r4 bes-. d8-- f-. r a-&gt; ~ | a1-&gt; |   % 35
+        r4 g-. f8-- d-. r a-&gt; ~ | a1 |   % 37
+        r8 d2. ~ d8 | d-. r2. r8 |   % 39
+        r es2. ~ es8 | es-. r2. r8 |   % 41
+        r4 c-. es8-- g-. r bes-&gt; ~ | bes1-&gt; |   % 43
+        r4 g-. es8-- d-. r c-&gt; ~ | c1 |   % 45
+        r8 c2. ~ c8 | c-. r2. r8 |   % 47
+        r d2. ~ d8 | d4 r bes'2-&gt; |   % 49
+        a1-&gt; ~ | a4-&gt; d,-. es8-- f-. r g-. ~ |   % 51
+        g1-. ~ | g4-. r g2-&gt; |   % 53
+        ges!1-&gt; ~ | ges4-&gt; ges!-. bes8-- a-. r f-. ~ |   % 55
+        f1-. ~ | f-. |   % 57
+        bes,4-. bes-. bes8-- bes-. r bes-. | R1 |   % 59
+        r4 bes-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+        r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+        r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 65
+        r4 bes-. r8 bes-. r bes-&gt; ~ | bes4-&gt; r2. |   % 67
+        r4 c-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+        r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+        r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 73
+        r4 g-. r8 g4-. r8 | g4-. r2. |   % 75
+        R1 | \key es \major
+        R1 |   % 77
+        R1 | R1 |   % 79
+        R1 | R1 |   % 81
+        R1 | R1 |   % 83
+        R1 | R1 |   % 85
+        R1
+        \bar &quot;|.&quot;
+}
+AltXSaxD = \relative c' {
+        \set Staff.instrument = #&quot;Alt-Sax &quot;
+        \clef G
+        \key bes \major
+        \time 4/4
+
+        \mp R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | f8  ( g a bes c d es e! ) |   % 9
+        f1 ~ | f ~ |   % 11
+        f ~ | f |   % 13
+        f ~ | f |   % 15
+        f ~ | f |   % 17
+        \mp r4 c c8-- c-. r c ~ | c4 r2. |   % 19
+        r4 c c8-- c-. r c ~ | c4 r2. |   % 21
+        r4 c c8-- c-. r c ~ | c4 r2. |   % 23
+        \mp r4 d d8-- d-. r d ~ | d4 r2. |   % 25
+        r4 d d8-- d-. r d ~ | d4 r2. |   % 27
+        r4 d d8-- d-. r d ~ | d4 r2. |   % 29
+        r4 c c8-- c-. r c ~ | c4 r2. |   % 31
+        r4 a a8-- a-. r a ~ | a4 \f bes-. d8-- f-. r a-&gt; ~ |   % 33
+        a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 35
+        a1-&gt; | r4 g8  ( a bes c d f |   % 37
+        a4 ) r8 a-. a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 39
+        f4. c2 ~ c8 | r2 c8-- es-. r g-. |   % 41
+        bes4.-- bes2 ~ bes8 | r g4.-&gt; es8-- d-. r c-&gt; ~ |   % 43
+        c1-&gt; | r4 c-^ es8 f g bes |   % 45
+        a4 r8 a-- a-- a-- a4-. | r f-^ d'8-- c-. r bes-&gt; ~ |   % 47
+        bes1-&gt; ~ | bes4-&gt; r2. |   % 49
+        R1 | R1 |   % 51
+        R1 | R1 |   % 53
+        R1 | R1 |   % 55
+        r2 c,-&gt; | r bes-&gt; |   % 57
+        R1 | r4 bes-. d8-- f-. r a-&gt; ~ |   % 59
+        a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 61
+        a1-&gt; | r4 bes-. d8-- f-. r a-&gt; ~ |   % 63
+        a4.-. a8-- a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 65
+        f4.-- c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 67
+        bes1-&gt; | r4 g-. es8-- d-. r c-&gt; ~ |   % 69
+        c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 71
+        a4.-&gt; a8-&gt; a-- a-. a4-&gt; ~ | a-&gt; f-. d'8-- c-. r bes-&gt; ~ |   % 73
+        bes1-&gt; ~ | bes4-&gt; r bes8  ( as! g f |   % 75
+        es4 ) r2. | \key es \major
+        r4 bes'8-. bes-. bes4-. bes-. |   % 77
+        c-. c-. d-. r | r bes8-. d-. f4-. d-. |   % 79
+        es-. es-. es-. r | r bes8-. bes-. bes4-. bes-. |   % 81
+        c-. c-. d-. r | r bes8-. d-. f4-. d |   % 83
+        es-^ r2 es4-^ | bes,1 |   % 85
+        bes
+        \bar &quot;|.&quot;
+}
+TenorsaxE = \relative c' {
+        \set Staff.instrument = #&quot;Tenorsax &quot;
+        \clef G
+        \key bes \major
+        \time 4/4
+
+        \mp R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | f,8  ( g a bes c d es e! ) |   % 9
+        bes'1 ~ | bes ~ |   % 11
+        bes ~ | bes |   % 13
+        bes ~ | bes |   % 15
+        bes ~ | bes |   % 17
+        R1 | f1 \mp |   % 19
+        R1 | f1 |   % 21
+        R1 | c2 ~ b! |   % 23
+        c4 r2. | f1 |   % 25
+        R1 | R1 |   % 27
+        R1 | f1 |   % 29
+        a | R1 |   % 31
+        R1 | \f r4 bes,-. d8-- f-. r a-&gt; ~ |   % 33
+        a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 35
+        a1-&gt; | r4 g8  ( a bes c d f |   % 37
+        a4 ) r8 a-. a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 39
+        f4. c2 ~ c8 | r2 c8-- es-. r g-. |   % 41
+        bes4.-- bes2 ~ bes8 | r g4.-&gt; es8-- d-. r c-&gt; ~ |   % 43
+        c1-&gt; | r4 c-^ es8 f g bes |   % 45
+        a4 r8 a-- a-- a-- a4-. | r f-^ d'8-- c-. r bes-&gt; ~ |   % 47
+        bes1-&gt; ~ | bes4-&gt; r2. |   % 49
+        r4. c,8-. es-- c-. r d-- ~ | d1-- |   % 51
+        r4. bes8-. d-- bes-. r c-- ~ | c1-- |   % 53
+        r4. bes8-. des!-- bes-. r c-- ~ | c1-- |   % 55
+        R1 | R1 |   % 57
+        R1 | r4 bes-. d8-- f-. r a-&gt; ~ |   % 59
+        a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 61
+        a1-&gt; | r4 bes-. d8-- f-. r a-&gt; ~ |   % 63
+        a4.-. a8-- a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 65
+        f4.-- c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 67
+        bes1-&gt; | r4 g-. es8-- d-. r c-&gt; ~ |   % 69
+        c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 71
+        a4.-&gt; a8-&gt; a-- a-. a4-&gt; ~ | a-&gt; f-. d'8-- c-. r bes-&gt; ~ |   % 73
+        bes1-&gt; ~ | bes4-&gt; r bes8  ( as! g f |   % 75
+        es4 ) r2. | \key es \major
+        r4 bes'8-. bes-. bes4-. bes-. |   % 77
+        c-. c-. d-. r | r bes8-. d-. f4-. d-. |   % 79
+        es-. es-. es-. r | r bes8-. bes-. bes4-. bes-. |   % 81
+        c-. c-. d-. r | r bes8-. d-. f4-. d |   % 83
+        es-^ r2 es4-^ | R1 |   % 85
+        R1
+        \bar &quot;|.&quot;
+}
+TenorhornF = \relative c' {
+        \set Staff.instrument = #&quot;Tenorhorn &quot;
+        \clef G
+        \key bes \major
+        \time 4/4
+
+        \f R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        R1 | R1 |   % 7
+        R1 | R1 |   % 9
+        c'1 ~ | c ~ |   % 11
+        c ~ | c |   % 13
+        c ~ | c |   % 15
+        c ~ | c |   % 17
+        R1 | a1 \mp |   % 19
+        R1 | a1 |   % 21
+        R1 | a2  ( as! |   % 23
+        g4 ) r2. | a1 |   % 25
+        R1 | R1 |   % 27
+        R1 | a1 |   % 29
+        f | R1 |   % 31
+        R1 | R1 |   % 33
+        r4 bes,-. d8-- f-. r a-&gt; ~ | a1 |   % 35
+        r4 g-^ f8-- d-. r a-&gt; ~ | a1-&gt; |   % 37
+        r8 f'2. ~ f8 | f-. r2. r8 |   % 39
+        r g2. ~ g8 | g-. r2. r8 |   % 41
+        r4 c,-. es8-- g-. r bes-&gt; ~ | bes1 |   % 43
+        r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 45
+        r8 f2. ~ f8 | f-. r2. r8 |   % 47
+        r g2. ~ g8 | g4 r2. |   % 49
+        r4. c,8-. es-- c-. r d-- ~ | d1-- |   % 51
+        r4. bes8-. d-- bes-. r c-- ~ | c1-- |   % 53
+        r4. bes8-. des!-- bes-. r c-- ~ | c1-- |   % 55
+        r2 a'-&gt; | r a-&gt; |   % 57
+        bes4-. bes-. bes8-- bes-. r a-. | R1 |   % 59
+        R1 | R1 |   % 61
+        R1 | R1 |   % 63
+        r4 d-. r8 d-. r d-&gt; ~ | d4-&gt; r2. |   % 65
+        r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 67
+        r4 c,-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+        r4 f-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+        r4 d'-. r8 d-. r d-&gt; ~ | d4-&gt; r2. |   % 73
+        r4 d-. r8 d4-. r8 | d4-. r2. |   % 75
+        R1 | \key es \major
+        R1 |   % 77
+        R1 | R1 |   % 79
+        R1 | R1 |   % 81
+        R1 | R1 |   % 83
+        R1 | R1 |   % 85
+        R1
+        \bar &quot;|.&quot;
+}
+TubaG = \relative c {
+        \set Staff.instrument = #&quot;Tuba &quot;
+        \clef bass
+        \key bes \major
+        \time 4/4
+
+        \f R1 | R1 |   % 3
+        R1 | R1 |   % 5
+        bes4 r f r | c' r f, r |   % 7
+        bes r f r | c' r f, r |   % 9
+        bes r f r | c' r f, r |   % 11
+        bes r f r | c' r f, r |   % 13
+        bes r f r | c' r f, r |   % 15
+        bes r f r | c' r f, r |   % 17
+        bes r f r | c' r f, r |   % 19
+        bes r f r | bes r f r |   % 21
+        bes r f r | bes r b! r |   % 23
+        c r f, r | c' r g r |   % 25
+        c r g r | c r g r |   % 27
+        c r g r | c r g r |   % 29
+        f r a r | c r f, r |   % 31
+        bes r f r | bes r2. |   % 33
+        bes,4 r f' r | bes r f r |   % 35
+        bes r f r | bes, r f' r |   % 37
+        bes r f r | bes r b! r |   % 39
+        c r g r | c r g r |   % 41
+        c, r g' r | c r g r |   % 43
+        c r g r | c, r g' r |   % 45
+        f r a r | c r f, r |   % 47
+        bes r f r | bes r2. |   % 49
+        f4 r f r | bes r bes r |   % 51
+        es r bes r | es r bes r |   % 53
+        es r bes r | es r bes r |   % 55
+        d r d r | g, r g r |   % 57
+        f f f8 f r f | R1 |   % 59
+        bes,4 r f' r | bes r f r |   % 61
+        bes r f r | bes, r f' r |   % 63
+        bes r f r | bes r b! r |   % 65
+        c r g r | c r g r |   % 67
+        c, r g' r | c r g r |   % 69
+        c r g r | c, r g' r |   % 71
+        f r a r | c r f, r |   % 73
+        bes r f r | bes r c d |   % 75
+        es r bes r | \key es \major
+        es r bes r |   % 77
+        f' r bes, r | f' r bes, r |   % 79
+        es r bes r | es r bes r |   % 81
+        f' r bes, r | f' r bes, r |   % 83
+        es-. r2 es4-. | R1 |   % 85
+        R1
+        \bar &quot;|.&quot;
+}
+\score {
+        \relative &lt;&lt;
+                \context Staff = cBXXTrompeteAA &lt;&lt;
+                        \context Voice = cBXXTrompeteAA \BXXTrompeteA
+                &gt;&gt;
+
+                \context Staff = cCXXTrompeteBA &lt;&lt;
+                        \context Voice = cCXXTrompeteBA \CXXTrompeteB
+                &gt;&gt;
+
+                \context Staff = cPosauneCA &lt;&lt;
+                        \context Voice = cPosauneCA \PosauneC
+                &gt;&gt;
+
+                \context Staff = cAltXSaxDA &lt;&lt;
+                        \context Voice = cAltXSaxDA \AltXSaxD
+                &gt;&gt;
+
+                \context Staff = cTenorsaxEA &lt;&lt;
+                        \context Voice = cTenorsaxEA \TenorsaxE
+                &gt;&gt;
+
+                \context Staff = cTenorhornFA &lt;&lt;
+                        \context Voice = cTenorhornFA \TenorhornF
+                &gt;&gt;
+
+                \context Staff = cTubaGA &lt;&lt;
+                        \context Voice = cTubaGA \TubaG
+                &gt;&gt;
+
+                \set Score.skipBars = ##t
+                \set Score.melismaBusyProperties = #'()
+        &gt;&gt;
+}
+\paper {
+        #(set-paper-size &quot;a4&quot;)
+}
+
+ 
+
+
+
+* user mailing list for the score editor noteedit &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user at lists.berlios.de</A>&gt; [060908 08:48]:
+&gt;<i> Hi.
+</I>&gt;<i> 
+</I>&gt;<i> Sorry, but I cannot reproduce this. NoteEdit always places \f after the
+</I>&gt;<i> note correctly. Print preview and export then works fine. Does NoteEdit
+</I>&gt;<i> find LilyPond for you? (when you run NoteEdit, does it say in console:
+</I>&gt;<i> Found LilyPond 2.8.something?).
+</I>&gt;<i> 
+</I>&gt;<i> Can you send an example which doesn't work?
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Regards.
+</I>&gt;<i> - Matev??
+</I>&gt;<i> 
+</I>&gt;<i> user mailing list for the score editor noteedit pravi:
+</I>&gt;<i> &gt; Dear Mathev,
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; thanks for your answer.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; I downloaded lilypond 2.8.6 from www.lilypond.org, 
+</I>&gt;<i> &gt; and succeeded with the the compilation of the output of noteedit.
+</I>&gt;<i> &gt; In fact, the lilypond output is much nicer than the musixtex output.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Unfortunately i had to re-edit the lilypond file, because there are some 
+</I>&gt;<i> &gt; problems with the dynamic symbols. 
+</I>&gt;<i> &gt; Instead of inserting the dynamic symbol like &quot;\f&quot; *behind* the note as
+</I>&gt;<i> &gt; described in the lilypond documentation, noteedit places it *in front of* 
+</I>&gt;<i> &gt; the note.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; example:
+</I>&gt;<i> &gt; for a quarter a in forte the following notation would be correct:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; a4\f
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; but noteedit exports:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; \f a4
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Do you have any idea how I can get noteedit to convert the dynamic symbols
+</I>&gt;<i> &gt; correctly?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Or is this a bug and has to be corrected in the source code?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; regards Thomas
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; * user mailing list for the score editor noteedit &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user at lists.berlios.de</A>&gt; [060906 08:57]:
+</I>&gt;<i> &gt;   
+</I>&gt;<i> &gt;&gt; user mailing list for the score editor noteedit pravi:
+</I>&gt;<i> &gt;&gt;     
+</I>&gt;<i> &gt;&gt;&gt; Dear list,
+</I>&gt;<i> &gt;&gt;&gt;
+</I>&gt;<i> &gt;&gt;&gt; after I inserted a midi-statement in the lilypond-file I had created before,
+</I>&gt;<i> &gt;&gt;&gt; I could load the resuling midi-file in noteedit, and after a few steps I had
+</I>&gt;<i> &gt;&gt;&gt; my scores back.
+</I>&gt;<i> &gt;&gt;&gt;
+</I>&gt;<i> &gt;&gt;&gt; After I updated to noteedit 2.8.1 and continued editing.
+</I>&gt;<i> &gt;&gt;&gt;
+</I>&gt;<i> &gt;&gt;&gt; Now after hacking in 7 lines of 75 bars each there are two other problems:
+</I>&gt;<i> &gt;&gt;&gt;
+</I>&gt;<i> &gt;&gt;&gt; Lilypond export does not work. Noteedit exports a version 2.0 lilypond 
+</I>&gt;<i> &gt;&gt;&gt; file, although at start-up it had found my 2.2.6 lilypond installation.
+</I>&gt;<i> &gt;&gt;&gt; Lilypond 2.2.6 is unable to compile the version 2.0 file. Also convert-ly
+</I>&gt;<i> &gt;&gt;&gt; does not work in this case. 
+</I>&gt;<i> &gt;&gt;&gt;       
+</I>&gt;<i> &gt;&gt; Can you install the latest stable Lily? We tested NoteEdit with 2.8.x
+</I>&gt;<i> &gt;&gt; and it should work flawlessly.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; Regards.
+</I>&gt;<i> &gt;&gt; -Matev??
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> Noteedit-user mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">Noteedit-user at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">https://lists.berlios.de/mailman/listinfo/noteedit-user</A>
+</I>-------------- next part --------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  %
+%   LilyPond output generated by   %
+%       &quot;NoteEdit&quot; 2.8.1           %
+%                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\version &quot;2.8.1&quot;
+
+#(set-global-staff-size 20)
+
+flat = \markup { \raise #0.4 \smaller \musicglyph #&quot;accidentals--2&quot; }
+sharp = \markup { \raise #0.6 \smaller \musicglyph #&quot;accidentals-2&quot; }
+textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #&quot;scripts-coda&quot;}
+
+
+\header {
+	title = &quot;Latin American Fever &quot;
+	composer = &quot;Harald Kolasch &quot;
+	arranger = &quot;Thomas Wille &quot;
+	copyright = &quot;classical &quot;
+}
+
+BXXTrompeteA = \relative c' {
+	\set Staff.instrument = #&quot;1. Trompete &quot;
+	\clef G
+	\key bes \major
+	\time 4/4 
+	                   
+	\f  \tempo 4.=240
+ R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | R1 |   % 9
+	r4 f' r8 f4 r8 | f4 r8 f4. r4 |   % 11
+	r f r8 f4 r8 | f4 r8 f4. r4 |   % 13
+	r f r8 f4 r8 | f4 r8 f4. r4 |   % 15
+	r f r8 f4 r8 | f4 bes,,-. d8-- f-. r a-&gt; ~ |   % 17
+	a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 19
+	a1-&gt; | r4 bes d8-- f-. r a-&gt; ~ |   % 21
+	a4. a8 a-- a-- a4-. | r8 g4.-&gt; f4-^ d-^ |   % 23
+	f4.-^ c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 25
+	bes1 | r4 g-^ es8-- d-. r c-&gt; ~ |   % 27
+	c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 29
+	a4. a8 a-- a-- a4-. | r f-&gt; a8-- f-. r d-&gt; ~ |   % 31
+	d1-&gt; ~ | d4-&gt; r2. |   % 33
+	R1 | R1 |   % 35
+	R1 | R1 |   % 37
+	R1 | R1 |   % 39
+	R1 | R1 |   % 41
+	R1 | R1 |   % 43
+	R1 | R1 |   % 45
+	R1 | R1 |   % 47
+	R1 | r2 bes'-&gt; |   % 49
+	as!1-&gt; ~ | as4-&gt; d,-. es8-- f-. r g-&gt; ~ |   % 51
+	g1-&gt; ~ | g4-&gt; r g2-&gt; |   % 53
+	ges!1-&gt; ~ | ges4-&gt; ges-. bes8-- a-. r f-&gt; ~ |   % 55
+	f1-&gt; ~ | f-&gt; |   % 57
+	f'4-. f-. f8-- f-. r f-. | R1 |   % 59
+	r4 bes,-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+	r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+	r4 f-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 65
+	r4 es-. r8 es-. r es-&gt; | es4-&gt; r2. |   % 67
+	r4 c'-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+	r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+	r4 f,-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 73
+	r4 f-. r8 f4-. r8 | f4-. r2. |   % 75
+	R1 | \key es \major
+	R1 |   % 77
+	R1 | R1 |   % 79
+	R1 | R1 |   % 81
+	R1 | R1 |   % 83
+	R1 | r4 bes8-- bes4-. g8-- bes4-. |   % 85
+	c-. c-. r2 
+	\bar &quot;|.&quot;
+}
+CXXTrompeteB = \relative c' {
+	\set Staff.instrument = #&quot;2. Trompete &quot;
+	\clef G
+	\key bes \major
+	\time 4/4 
+	                   
+	\f R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | R1 |   % 9
+	r4 bes' r8 bes4 r8 | bes4 r8 bes4. r4 |   % 11
+	r bes r8 bes4 r8 | bes4 r8 bes4. r4 |   % 13
+	r bes r8 bes4 r8 | bes4 r8 bes4. r4 |   % 15
+	r bes r8 bes4 r8 | bes4 r2. |   % 17
+	\mp r4 f f8-- f-. r f ~ | f4 r2. |   % 19
+	r4 f f8-- f-. r f ~ | f4 r2. |   % 21
+	r4 f f8-- f-. r f ~ | f4 r2. |   % 23
+	\mp r4 g g8-- g-. r g ~ | g4 r2. |   % 25
+	r4 g g8-- g-. r g ~ | g4 r2. |   % 27
+	r4 g g8-- g-. r g ~ | g4 r2. |   % 29
+	r4 f f8-- f-. r f ~ | f4 r2. |   % 31
+	r4 f f8-- f-. r f ~ | f4 r2. |   % 33
+	R1 | R1 |   % 35
+	R1 | R1 |   % 37
+	r8 a,2. ~ a8 | a-. r2. r8 |   % 39
+	r bes2. ~ bes8 | bes-. r2. r8 |   % 41
+	R1 | R1 |   % 43
+	R1 | R1 |   % 45
+	r8 d2. ~ d8 | d-. r2. r8 |   % 47
+	r f2. ~ f8 | f4 r2. |   % 49
+	R1 | R1 |   % 51
+	R1 | R1 |   % 53
+	R1 | R1 |   % 55
+	r2 d-&gt; | r d-&gt; |   % 57
+	c'4-. c-. c8-- c-. r c-. | R1 |   % 59
+	r4 bes-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+	r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+	r4 a-. r8 a-. r a-&gt; | a4-&gt; r2. |   % 65
+	r4 g-. r8 g-. r g-&gt; | g4-&gt; r2. |   % 67
+	r4 c-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+	r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+	r4 f,-. r8 f-. r f-&gt; ~ | f4-&gt; r2. |   % 73
+	r4 bes-. r8 bes4-. r8 | bes4-. r2. |   % 75
+	R1 | \key es \major
+	R1 |   % 77
+	R1 | R1 |   % 79
+	R1 | R1 |   % 81
+	R1 | R1 |   % 83
+	R1 | r4 g8-- g4-. es8-- g4-. |   % 85
+	es-. es-. r2 
+	\bar &quot;|.&quot;
+}
+PosauneC = \relative c {
+	\set Staff.instrument = #&quot;Posaune &quot;
+	\clef bass
+	\key bes \major
+	\time 4/4 
+	                   
+	\f R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | R1 |   % 9
+	r4 es r8 es4 r8 | es4 r8 es4. r4 |   % 11
+	r es r8 es4 r8 | es4 r8 es4. r4 |   % 13
+	r es r8 es4 r8 | es4 r8 es4. r4 |   % 15
+	r es r8 es4 r8 | es4 r2. |   % 17
+	\mp r4 d d8-- d-. r d ~ | d4 r2. |   % 19
+	r4 d d8-- d-. r d ~ | d4 r2. |   % 21
+	r4 d d8-- d-. r d ~ | d4 r2. |   % 23
+	\mp r4 es es8-- es-. r es ~ | es4 r2. |   % 25
+	r4 es es8-- es-. r es ~ | es4 r2. |   % 27
+	r4 es es8-- es-. r es ~ | es4 r2. |   % 29
+	r4 es es8-- es-. r es ~ | es4 r2. |   % 31
+	r4 es es8-- es-. r es ~ | es4 r2. |   % 33
+	r4 bes-. d8-- f-. r a-&gt; ~ | a1-&gt; |   % 35
+	r4 g-. f8-- d-. r a-&gt; ~ | a1 |   % 37
+	r8 d2. ~ d8 | d-. r2. r8 |   % 39
+	r es2. ~ es8 | es-. r2. r8 |   % 41
+	r4 c-. es8-- g-. r bes-&gt; ~ | bes1-&gt; |   % 43
+	r4 g-. es8-- d-. r c-&gt; ~ | c1 |   % 45
+	r8 c2. ~ c8 | c-. r2. r8 |   % 47
+	r d2. ~ d8 | d4 r bes'2-&gt; |   % 49
+	a1-&gt; ~ | a4-&gt; d,-. es8-- f-. r g-. ~ |   % 51
+	g1-. ~ | g4-. r g2-&gt; |   % 53
+	ges!1-&gt; ~ | ges4-&gt; ges!-. bes8-- a-. r f-. ~ |   % 55
+	f1-. ~ | f-. |   % 57
+	bes,4-. bes-. bes8-- bes-. r bes-. | R1 |   % 59
+	r4 bes-. d8-- f-. r a-&gt; ~ | a1 |   % 61
+	r4 g-^ f8-- d-. r a-&gt; ~ | a4-. r2. |   % 63
+	r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 65
+	r4 bes-. r8 bes-. r bes-&gt; ~ | bes4-&gt; r2. |   % 67
+	r4 c-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+	r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+	r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 73
+	r4 g-. r8 g4-. r8 | g4-. r2. |   % 75
+	R1 | \key es \major
+	R1 |   % 77
+	R1 | R1 |   % 79
+	R1 | R1 |   % 81
+	R1 | R1 |   % 83
+	R1 | R1 |   % 85
+	R1 
+	\bar &quot;|.&quot;
+}
+AltXSaxD = \relative c' {
+	\set Staff.instrument = #&quot;Alt-Sax &quot;
+	\clef G
+	\key bes \major
+	\time 4/4 
+	                   
+	\mp R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | f8  ( g a bes c d es e! ) |   % 9
+	f1 ~ | f ~ |   % 11
+	f ~ | f |   % 13
+	f ~ | f |   % 15
+	f ~ | f |   % 17
+	\mp r4 c c8-- c-. r c ~ | c4 r2. |   % 19
+	r4 c c8-- c-. r c ~ | c4 r2. |   % 21
+	r4 c c8-- c-. r c ~ | c4 r2. |   % 23
+	\mp r4 d d8-- d-. r d ~ | d4 r2. |   % 25
+	r4 d d8-- d-. r d ~ | d4 r2. |   % 27
+	r4 d d8-- d-. r d ~ | d4 r2. |   % 29
+	r4 c c8-- c-. r c ~ | c4 r2. |   % 31
+	r4 a a8-- a-. r a ~ | a4 \f bes-. d8-- f-. r a-&gt; ~ |   % 33
+	a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 35
+	a1-&gt; | r4 g8  ( a bes c d f |   % 37
+	a4 ) r8 a-. a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 39
+	f4. c2 ~ c8 | r2 c8-- es-. r g-. |   % 41
+	bes4.-- bes2 ~ bes8 | r g4.-&gt; es8-- d-. r c-&gt; ~ |   % 43
+	c1-&gt; | r4 c-^ es8 f g bes |   % 45
+	a4 r8 a-- a-- a-- a4-. | r f-^ d'8-- c-. r bes-&gt; ~ |   % 47
+	bes1-&gt; ~ | bes4-&gt; r2. |   % 49
+	R1 | R1 |   % 51
+	R1 | R1 |   % 53
+	R1 | R1 |   % 55
+	r2 c,-&gt; | r bes-&gt; |   % 57
+	R1 | r4 bes-. d8-- f-. r a-&gt; ~ |   % 59
+	a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 61
+	a1-&gt; | r4 bes-. d8-- f-. r a-&gt; ~ |   % 63
+	a4.-. a8-- a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 65
+	f4.-- c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 67
+	bes1-&gt; | r4 g-. es8-- d-. r c-&gt; ~ |   % 69
+	c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 71
+	a4.-&gt; a8-&gt; a-- a-. a4-&gt; ~ | a-&gt; f-. d'8-- c-. r bes-&gt; ~ |   % 73
+	bes1-&gt; ~ | bes4-&gt; r bes8  ( as! g f |   % 75
+	es4 ) r2. | \key es \major
+	r4 bes'8-. bes-. bes4-. bes-. |   % 77
+	c-. c-. d-. r | r bes8-. d-. f4-. d-. |   % 79
+	es-. es-. es-. r | r bes8-. bes-. bes4-. bes-. |   % 81
+	c-. c-. d-. r | r bes8-. d-. f4-. d |   % 83
+	es-^ r2 es4-^ | bes,1 |   % 85
+	bes 
+	\bar &quot;|.&quot;
+}
+TenorsaxE = \relative c' {
+	\set Staff.instrument = #&quot;Tenorsax &quot;
+	\clef G
+	\key bes \major
+	\time 4/4 
+	                   
+	\mp R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | f,8  ( g a bes c d es e! ) |   % 9
+	bes'1 ~ | bes ~ |   % 11
+	bes ~ | bes |   % 13
+	bes ~ | bes |   % 15
+	bes ~ | bes |   % 17
+	R1 | f1 \mp |   % 19
+	R1 | f1 |   % 21
+	R1 | c2 ~ b! |   % 23
+	c4 r2. | f1 |   % 25
+	R1 | R1 |   % 27
+	R1 | f1 |   % 29
+	a | R1 |   % 31
+	R1 | \f r4 bes,-. d8-- f-. r a-&gt; ~ |   % 33
+	a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 35
+	a1-&gt; | r4 g8  ( a bes c d f |   % 37
+	a4 ) r8 a-. a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 39
+	f4. c2 ~ c8 | r2 c8-- es-. r g-. |   % 41
+	bes4.-- bes2 ~ bes8 | r g4.-&gt; es8-- d-. r c-&gt; ~ |   % 43
+	c1-&gt; | r4 c-^ es8 f g bes |   % 45
+	a4 r8 a-- a-- a-- a4-. | r f-^ d'8-- c-. r bes-&gt; ~ |   % 47
+	bes1-&gt; ~ | bes4-&gt; r2. |   % 49
+	r4. c,8-. es-- c-. r d-- ~ | d1-- |   % 51
+	r4. bes8-. d-- bes-. r c-- ~ | c1-- |   % 53
+	r4. bes8-. des!-- bes-. r c-- ~ | c1-- |   % 55
+	R1 | R1 |   % 57
+	R1 | r4 bes-. d8-- f-. r a-&gt; ~ |   % 59
+	a1 | r4 g-^ f8-- d-. r a-&gt; ~ |   % 61
+	a1-&gt; | r4 bes-. d8-- f-. r a-&gt; ~ |   % 63
+	a4.-. a8-- a-- a-- a4-. | r8 g4.-&gt; f4-&gt; d-&gt; |   % 65
+	f4.-- c2 ~ c8 | r4 c-. es8-- g-. r bes-&gt; ~ |   % 67
+	bes1-&gt; | r4 g-. es8-- d-. r c-&gt; ~ |   % 69
+	c1-&gt; | r4 es-. g8-- bes-. r a-&gt; ~ |   % 71
+	a4.-&gt; a8-&gt; a-- a-. a4-&gt; ~ | a-&gt; f-. d'8-- c-. r bes-&gt; ~ |   % 73
+	bes1-&gt; ~ | bes4-&gt; r bes8  ( as! g f |   % 75
+	es4 ) r2. | \key es \major
+	r4 bes'8-. bes-. bes4-. bes-. |   % 77
+	c-. c-. d-. r | r bes8-. d-. f4-. d-. |   % 79
+	es-. es-. es-. r | r bes8-. bes-. bes4-. bes-. |   % 81
+	c-. c-. d-. r | r bes8-. d-. f4-. d |   % 83
+	es-^ r2 es4-^ | R1 |   % 85
+	R1 
+	\bar &quot;|.&quot;
+}
+TenorhornF = \relative c' {
+	\set Staff.instrument = #&quot;Tenorhorn &quot;
+	\clef G
+	\key bes \major
+	\time 4/4 
+	                   
+	\f R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	R1 | R1 |   % 7
+	R1 | R1 |   % 9
+	c'1 ~ | c ~ |   % 11
+	c ~ | c |   % 13
+	c ~ | c |   % 15
+	c ~ | c |   % 17
+	R1 | a1 \mp |   % 19
+	R1 | a1 |   % 21
+	R1 | a2  ( as! |   % 23
+	g4 ) r2. | a1 |   % 25
+	R1 | R1 |   % 27
+	R1 | a1 |   % 29
+	f | R1 |   % 31
+	R1 | R1 |   % 33
+	r4 bes,-. d8-- f-. r a-&gt; ~ | a1 |   % 35
+	r4 g-^ f8-- d-. r a-&gt; ~ | a1-&gt; |   % 37
+	r8 f'2. ~ f8 | f-. r2. r8 |   % 39
+	r g2. ~ g8 | g-. r2. r8 |   % 41
+	r4 c,-. es8-- g-. r bes-&gt; ~ | bes1 |   % 43
+	r4 g-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 45
+	r8 f2. ~ f8 | f-. r2. r8 |   % 47
+	r g2. ~ g8 | g4 r2. |   % 49
+	r4. c,8-. es-- c-. r d-- ~ | d1-- |   % 51
+	r4. bes8-. d-- bes-. r c-- ~ | c1-- |   % 53
+	r4. bes8-. des!-- bes-. r c-- ~ | c1-- |   % 55
+	r2 a'-&gt; | r a-&gt; |   % 57
+	bes4-. bes-. bes8-- bes-. r a-. | R1 |   % 59
+	R1 | R1 |   % 61
+	R1 | R1 |   % 63
+	r4 d-. r8 d-. r d-&gt; ~ | d4-&gt; r2. |   % 65
+	r4 c-. r8 c-. r c-&gt; ~ | c4-&gt; r2. |   % 67
+	r4 c,-. es8-- g-. r bes-&gt; ~ | bes1 |   % 69
+	r4 f-^ es8-- d-. r c-&gt; ~ | c1-&gt; |   % 71
+	r4 d'-. r8 d-. r d-&gt; ~ | d4-&gt; r2. |   % 73
+	r4 d-. r8 d4-. r8 | d4-. r2. |   % 75
+	R1 | \key es \major
+	R1 |   % 77
+	R1 | R1 |   % 79
+	R1 | R1 |   % 81
+	R1 | R1 |   % 83
+	R1 | R1 |   % 85
+	R1 
+	\bar &quot;|.&quot;
+}
+TubaG = \relative c {
+	\set Staff.instrument = #&quot;Tuba &quot;
+	\clef bass
+	\key bes \major
+	\time 4/4 
+	                   
+	\f R1 | R1 |   % 3
+	R1 | R1 |   % 5
+	bes4 r f r | c' r f, r |   % 7
+	bes r f r | c' r f, r |   % 9
+	bes r f r | c' r f, r |   % 11
+	bes r f r | c' r f, r |   % 13
+	bes r f r | c' r f, r |   % 15
+	bes r f r | c' r f, r |   % 17
+	bes r f r | c' r f, r |   % 19
+	bes r f r | bes r f r |   % 21
+	bes r f r | bes r b! r |   % 23
+	c r f, r | c' r g r |   % 25
+	c r g r | c r g r |   % 27
+	c r g r | c r g r |   % 29
+	f r a r | c r f, r |   % 31
+	bes r f r | bes r2. |   % 33
+	bes,4 r f' r | bes r f r |   % 35
+	bes r f r | bes, r f' r |   % 37
+	bes r f r | bes r b! r |   % 39
+	c r g r | c r g r |   % 41
+	c, r g' r | c r g r |   % 43
+	c r g r | c, r g' r |   % 45
+	f r a r | c r f, r |   % 47
+	bes r f r | bes r2. |   % 49
+	f4 r f r | bes r bes r |   % 51
+	es r bes r | es r bes r |   % 53
+	es r bes r | es r bes r |   % 55
+	d r d r | g, r g r |   % 57
+	f f f8 f r f | R1 |   % 59
+	bes,4 r f' r | bes r f r |   % 61
+	bes r f r | bes, r f' r |   % 63
+	bes r f r | bes r b! r |   % 65
+	c r g r | c r g r |   % 67
+	c, r g' r | c r g r |   % 69
+	c r g r | c, r g' r |   % 71
+	f r a r | c r f, r |   % 73
+	bes r f r | bes r c d |   % 75
+	es r bes r | \key es \major
+	es r bes r |   % 77
+	f' r bes, r | f' r bes, r |   % 79
+	es r bes r | es r bes r |   % 81
+	f' r bes, r | f' r bes, r |   % 83
+	es-. r2 es4-. | R1 |   % 85
+	R1 
+	\bar &quot;|.&quot;
+}
+\score {
+	\relative &lt;&lt;
+		\context Staff = cBXXTrompeteAA &lt;&lt;
+			\context Voice = cBXXTrompeteAA \BXXTrompeteA
+		&gt;&gt;
+
+		\context Staff = cCXXTrompeteBA &lt;&lt;
+			\context Voice = cCXXTrompeteBA \CXXTrompeteB
+		&gt;&gt;
+
+		\context Staff = cPosauneCA &lt;&lt;
+			\context Voice = cPosauneCA \PosauneC
+		&gt;&gt;
+
+		\context Staff = cAltXSaxDA &lt;&lt;
+			\context Voice = cAltXSaxDA \AltXSaxD
+		&gt;&gt;
+
+		\context Staff = cTenorsaxEA &lt;&lt;
+			\context Voice = cTenorsaxEA \TenorsaxE
+		&gt;&gt;
+
+		\context Staff = cTenorhornFA &lt;&lt;
+			\context Voice = cTenorhornFA \TenorhornF
+		&gt;&gt;
+
+		\context Staff = cTubaGA &lt;&lt;
+			\context Voice = cTubaGA \TubaG
+		&gt;&gt;
+
+		\set Score.skipBars = ##t
+		\set Score.melismaBusyProperties = #'()
+	&gt;&gt;
+}
+\paper {
+	#(set-paper-size &quot;a4&quot;)
+}
+-------------- next part --------------
+header
+	title bold (20) &quot;Latin American Fever&quot;
+	title bold (12) &quot;Samba&quot;
+	title bold (11) &quot;Harald Kolasch&quot;
+	title bold (10) &quot;Thomas Wille&quot;
+footer
+	title bold (13) &quot;classical&quot;
+score
+	pedstyle = pedstar
+	staffs = 7
+	time = 4/4
+score
+staff 1
+label = &quot;1. Trompete&quot;
+// overlength = 62
+// underlength = 68
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 2
+label = &quot;2. Trompete&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 3
+label = &quot;Posaune&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=bass
+	key = 2&amp;
+staff 4
+label = &quot;Alt-Sax&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 5
+label = &quot;Tenorsax&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=treble
+	key = 2&amp;
+staff 6
+label = &quot;Tenorhorn&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+// playtransposd = -12
+	clef=treble
+	key = 2&amp;
+staff 7
+label = &quot;Tuba&quot;
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+	clef=bass
+	key = 2&amp;
+music
+midi 1 1: 0 &quot;channel=1&quot;; 0 &quot;program=56&quot;;
+midi 2 1: 0 &quot;channel=2&quot;; 0 &quot;program=56&quot;;
+midi 3 1: 0 &quot;channel=3&quot;; 0 &quot;program=57&quot;;
+midi 4 1: 0 &quot;channel=4&quot;; 0 &quot;program=65&quot;;
+midi 5 1: 0 &quot;channel=5&quot;; 0 &quot;program=66&quot;;
+midi 6 1: 0 &quot;channel=6&quot;; 0 &quot;program=60&quot;;
+midi 7 1: 0 &quot;channel=7&quot;; 0 &quot;program=58&quot;;
+midi 1 1: 0 &quot;parameter=7,127&quot;;
+midi 1 1: 0 &quot;parameter=93,0&quot;;
+midi 1 1: 0 &quot;parameter=91,0&quot;;
+midi 1 1: 0 &quot;parameter=10,64&quot;;
+midi 2 1: 0 &quot;parameter=7,90&quot;;
+midi 2 1: 0 &quot;parameter=93,0&quot;;
+midi 2 1: 0 &quot;parameter=91,0&quot;;
+midi 2 1: 0 &quot;parameter=10,64&quot;;
+midi 3 1: 0 &quot;parameter=7,90&quot;;
+midi 3 1: 0 &quot;parameter=93,0&quot;;
+midi 3 1: 0 &quot;parameter=91,0&quot;;
+midi 3 1: 0 &quot;parameter=10,64&quot;;
+midi 4 1: 0 &quot;parameter=7,68&quot;;
+midi 4 1: 0 &quot;parameter=93,0&quot;;
+midi 4 1: 0 &quot;parameter=91,0&quot;;
+midi 4 1: 0 &quot;parameter=10,64&quot;;
+midi 5 1: 0 &quot;parameter=7,68&quot;;
+midi 5 1: 0 &quot;parameter=93,0&quot;;
+midi 5 1: 0 &quot;parameter=91,0&quot;;
+midi 5 1: 0 &quot;parameter=10,64&quot;;
+midi 6 1: 0 &quot;parameter=7,90&quot;;
+midi 6 1: 0 &quot;parameter=93,0&quot;;
+midi 6 1: 0 &quot;parameter=91,0&quot;;
+midi 6 1: 0 &quot;parameter=10,64&quot;;
+midi 7 1: 0 &quot;parameter=7,90&quot;;
+midi 7 1: 0 &quot;parameter=93,0&quot;;
+midi 7 1: 0 &quot;parameter=91,0&quot;;
+midi 7 1: 0 &quot;parameter=10,64&quot;;
+1 1: 1r; 
+midi 1 1: 1 &quot;parameter=7,100&quot;;
+boldital above 1: 1 &quot;f&quot;; // volumesign
+midi all: 1 &quot;tempo=240&quot;;
+rom above all: 1 &quot;( \(sm4n) = 240 )&quot;;
+2 1: 1r; 
+midi 2 1: 1 &quot;parameter=7,100&quot;;
+boldital above 2: 1 &quot;f&quot;; // volumesign
+3 1: 1r; 
+midi 3 1: 1 &quot;parameter=7,100&quot;;
+boldital above 3: 1 &quot;f&quot;; // volumesign
+4 1: 1r; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 1r; 
+midi 5 1: 1 &quot;parameter=7,66&quot;;
+boldital above 5: 1 &quot;mp&quot;; // volumesign
+6 1: 1r; 
+midi 6 1: 1 &quot;parameter=7,100&quot;;
+boldital above 6: 1 &quot;f&quot;; // volumesign
+7 1: 1r; 
+midi 7 1: 1 &quot;parameter=7,100&quot;;
+boldital above 7: 1 &quot;f&quot;; // volumesign
+bar // 1
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 2
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 3
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 4
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 5
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 6
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 7
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 8f bm; 8g; 8a; [up]8b ebm; 8c+ bm; 8d+; 8e+; 8en+ ebm; 
+phrase  4: 1 til 4.500000;
+5 1: 8f- bm; 8g-; 8a-; 8b- ebm; 8c bm; 8d; 8e; 8en ebm; 
+phrase  5: 1 til 4.500000;
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 8
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 9
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 10
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 11
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 12
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 13
+1 1: 4f+; 8r; 4.f+; 4r; 
+2 1: [up]4b; 8r; [up]4.b; 4r; 
+3 1: 4e; 8r; 4.e; 4r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 14
+1 1: 4r; 4f+; 8r; 4f+; 8r; 
+2 1: 4r; [up]4b; 8r; [up]4b; 8r; 
+3 1: 4r; 4e; 8r; 4e; 8r; 
+4 1: 1f+~; 
+5 1: 1b~; 
+6 1: 1c+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 15
+1 1: 4f+; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+2 1: [up]4b; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 1f+; 
+5 1: 1b; 
+6 1: 1c+; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 16
+1 1: 1a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+midi 2 1: 1 &quot;parameter=7,66&quot;;
+boldital above 2: 1 &quot;mp&quot;; // volumesign
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+midi 3 1: 1 &quot;parameter=7,66&quot;;
+boldital above 3: 1 &quot;mp&quot;; // volumesign
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 17
+1 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1f; 
+midi 5 1: 1 &quot;parameter=7,66&quot;;
+boldital above 5: 1 &quot;mp&quot;; // volumesign
+6 1: 1a; 
+midi 6 1: 1 &quot;parameter=7,66&quot;;
+boldital above 6: 1 &quot;mp&quot;; // volumesign
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 18
+1 1: [with &gt;]1a-; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 19
+1 1: 4r; 4b-; [with -]8d; [with .]8f; 8r; [with &gt;]8a~; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 20
+1 1: 4.a; 8a; [with -]8a; [with -]8a; [with .]4a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4d; [with -]8d bm; [with .]8d ebm; 8r; 8d~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 21
+1 1: 8r; [with &gt;]4.g; [with ^]4f; [with ^]4d; 
+2 1: 4f; 2.r; 
+3 1: 4d; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 2c~; 2bn-; 
+6 1: 2a; 2a&amp;; 
+phrase  6: 1 til 1m + 1.000000;
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 22
+1 1: [with ^]4.f; 2c~; 8c; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+midi 2 1: 1 &quot;parameter=7,66&quot;;
+boldital above 2: 1 &quot;mp&quot;; // volumesign
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+midi 3 1: 1 &quot;parameter=7,66&quot;;
+boldital above 3: 1 &quot;mp&quot;; // volumesign
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+midi 4 1: 1 &quot;parameter=7,66&quot;;
+boldital above 4: 1 &quot;mp&quot;; // volumesign
+5 1: 4c; 2.r; 
+6 1: 4g; 2.r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 23
+1 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 24
+1 1: 1b; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 25
+1 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 26
+1 1: [with &gt;]1c; 
+2 1: 4r; 4g; [with -]8g bm; [with .]8g ebm; 8r; 8g~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4d+; [with -]8d+ bm; [with .]8d+ ebm; 8r; 8d+~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 27
+1 1: 4r; [with .]4e; [with -]8g; [with .]8b; 8r; [with &gt;]8a~; 
+2 1: 4g; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4d+; 2.r; 
+5 1: 1f; 
+6 1: 1a; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 28
+1 1: 4.a; 8a; [with -]8a; [with -]8a; [with .]4a; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; 8c+~; 
+5 1: 1a; 
+6 1: 1f; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 29
+1 1: 4r; [with &gt;]4f; [with -]8a; [with .]8f; 8r; [with &gt;]8d~; 
+2 1: 4f; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4c+; 2.r; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 30
+1 1: [with &gt;]1d~; 
+2 1: 4r; 4f; [with -]8f bm; [with .]8f ebm; 8r; 8f~; 
+3 1: 4r; 4e; [with -]8e bm; [with .]8e ebm; 8r; 8e~; 
+4 1: 4r; 4a; [with -]8a bm; [with .]8a ebm; 8r; 8a~; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 31
+1 1: [with &gt;]4d; 2.r; 
+2 1: 4f; 2.r; 
+3 1: 4e; 2.r; 
+4 1: 4a; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+midi 4 1: 1 &quot;parameter=7,100&quot;;
+boldital above 4: 1 &quot;f&quot;; // volumesign
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+midi 5 1: 1 &quot;parameter=7,100&quot;;
+boldital above 5: 1 &quot;f&quot;; // volumesign
+6 1: 1r; 
+7 1: 4b-; 2.r; 
+bar // 32
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4b-; [with -]8d; [with .]8f; 8r; [with &gt;]8a~; 
+4 1: 1a+; 
+5 1: 1a; 
+6 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 33
+1 1: 1r; 
+2 1: 1r; 
+3 1: [with &gt;]1a; 
+4 1: 4r; [with ^]4g+; [with -]8f+ bm; [with .]8d+ ebm; 8r; [with &gt;]8a~; 
+5 1: 4r; [with ^]4g; [with -]8f bm; [with .]8d ebm; 8r; [with &gt;]8a-~; 
+6 1: 1a; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 34
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+4 1: [with &gt;]1a; 
+5 1: [with &gt;]1a-; 
+6 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 35
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1a-; 
+4 1: 4r; 8g bm; 8a ebm; 8b bm; 8c+; 8d+; 8f+ ebm; 
+phrase  4: 2 til 1m + 1.000000;
+5 1: 4r; 8g- bm; 8a- ebm; 8b- bm; 8c; 8d; 8f ebm; 
+phrase  5: 2 til 1m + 1.000000;
+6 1: [with &gt;]1a-; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 36
+1 1: 1r; 
+2 1: 8r; 2.a-~; 8a-; 
+3 1: 8r; 2.d~; 8d; 
+4 1: 4a+; 8r; [with .]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with .]4a+; 
+5 1: 4a; 8r; [with .]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 8r; 2.f~; 8f; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 37
+1 1: 1r; 
+2 1: [with .]8a-; 2.r; 8r; 
+3 1: [with .]8d; 2.r; 8r; 
+4 1: 8r; [with &gt;]4.g+; [with &gt;]4f+; [with &gt;]4d+; 
+5 1: 8r; [with &gt;]4.g; [with &gt;]4f; [with &gt;]4d; 
+6 1: [with .]8f; 2.r; 8r; 
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 38
+1 1: 1r; 
+2 1: 8r; 2.b-~; 8b-; 
+3 1: 8r; 2.e~; 8e; 
+4 1: 4.f+; 2c+~; 8c+; 
+5 1: 4.f; 2c~; 8c; 
+6 1: 8r; 2.g~; 8g; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 39
+1 1: 1r; 
+2 1: [with .]8b-; 2.r; 8r; 
+3 1: [with .]8e; 2.r; 8r; 
+4 1: 2r; [with -]8c+ bm; [with .]8e+ ebm; 8r; [with .]8g+; 
+5 1: 2r; [with -]8c bm; [with .]8e ebm; 8r; [with .]8g; 
+6 1: [with .]8g; 2.r; 8r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 40
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4c; [with -]8e; [with .]8g; 8r; [with &gt;]8b~; 
+4 1: [with -]4.b+; 2b+~; 8b+; 
+5 1: [with -]4.b; 2b~; 8b; 
+6 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 41
+1 1: 1r; 
+2 1: 1r; 
+3 1: [with &gt;]1b; 
+4 1: 8r; [with &gt;]4.g+; [with -]8e+ bm; [with .]8d+ ebm; 8r; [with &gt;]8c+~; 
+5 1: 8r; [with &gt;]4.g; [with -]8e bm; [with .]8d ebm; 8r; [with &gt;]8c~; 
+6 1: 1b; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 42
+1 1: 1r; 
+2 1: 1r; 
+3 1: 4r; [with .]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]1c+; 
+5 1: [with &gt;]1c; 
+6 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 43
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1c; 
+4 1: 4r; [with ^]4c+; 8e+ bm; 8f+ ebm; 8g+ bm; 8b+ ebm; 
+5 1: 4r; [with ^]4c; 8e bm; 8f ebm; [down] 8g bm; 8b ebm; 
+6 1: [with &gt;]1c; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 44
+1 1: 1r; 
+2 1: 8r; 2.d~; 8d; 
+3 1: 8r; 2.c~; 8c; 
+4 1: 4a+; 8r; [with -]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with .]4a+; 
+5 1: 4a; 8r; [with -]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 8r; 2.f~; 8f; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 45
+1 1: 1r; 
+2 1: [with .]8d; 2.r; 8r; 
+3 1: [with .]8c; 2.r; 8r; 
+4 1: 4r; [with ^]4f+; [with -]8d++ bm; [with .]8c++ ebm; 8r; [with &gt;]8b+~; 
+5 1: 4r; [with ^]4f; [with -]8d+ bm; [with .]8c+ ebm; 8r; [with &gt;]8b~; 
+6 1: [with .]8f; 2.r; 8r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 46
+1 1: 1r; 
+2 1: 8r; 2.f~; 8f; 
+3 1: 8r; 2.d~; 8d; 
+4 1: [with &gt;]1b+~; 
+5 1: [with &gt;]1b~; 
+6 1: 8r; 2.g~; 8g; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 47
+1 1: 2r; [with &gt;]2b; 
+2 1: 4f; 2.r; 
+3 1: 4d; 4r; [with &gt;]2b; 
+4 1: [with &gt;]4b+; 2.r; 
+5 1: [with &gt;]4b; 2.r; 
+6 1: 4g; 2.r; 
+7 1: 4b-; 2.r; 
+bar // 48
+1 1: [with &gt;]1a&amp;~; 
+2 1: 1r; 
+3 1: [with &gt;]1a~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8c; [with -]8e bm; [with .]8c ebm; 8r; [with -]8d~; 
+6 1: 4.r; [with .]8c; [with -]8e; [with .]8c; 8r; [with -]8d~; 
+7 1: 4f-; 4r; 4f-; 4r; 
+bar // 49
+1 1: [with &gt;]4a; [with .]4d; [with -]8e bm; [with .]8f ebm; 8r; [with &gt;]8g~; 
+2 1: 1r; 
+3 1: [with &gt;]4a; [with .]4d; [with -]8e; [with .]8f; 8r; [with .]8g~; 
+4 1: 1r; 
+5 1: [with -]1d; 
+6 1: [with -]1d; 
+7 1: 4b-; 4r; 4b-; 4r; 
+bar // 50
+1 1: [with &gt;]1g~; 
+2 1: 1r; 
+3 1: [with .]1g~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8b-; [with -]8d bm; [with .]8b- ebm; 8r; [with -]8c~; 
+6 1: 4.r; [with .]8b-; [with -]8d; [with .]8b-; 8r; [with -]8c~; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 51
+1 1: [with &gt;]4g; 4r; [with &gt;]2g; 
+2 1: 1r; 
+3 1: [with .]4g; 4r; [with &gt;]2g; 
+4 1: 1r; 
+5 1: [with -]1c; 
+6 1: [with -]1c; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 52
+1 1: [with &gt;]1g&amp;~; 
+2 1: 1r; 
+3 1: [with &gt;]1g&amp;~; 
+4 1: 1r; 
+5 1: 4.r; [with .]8b-; [with -]8d&amp; bm; [with .]8b- ebm; 8r; [with -]8c~; 
+6 1: 4.r; [with .]8b-; [with -]8d&amp;; [with .]8b-; 8r; [with -]8c~; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 53
+1 1: [with &gt;]4g; [with .]4g; [with -]8b; [with .]8a; 8r; [with &gt;]8f~; 
+2 1: 1r; 
+3 1: [with &gt;]4g; [with .]4g&amp;; [with -]8b; [with .]8a; 8r; [with .]8f~; 
+4 1: 1r; 
+5 1: [with -]1c; 
+6 1: [with -]1c; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 54
+1 1: [with &gt;]1f~; 
+2 1: 2r; [with &gt;]2d; 
+3 1: [with .]1f~; 
+4 1: 2r; [with &gt;]2c+; 
+5 1: 1r; 
+6 1: 2r; [with &gt;]2a; 
+7 1: 4d; 4r; 4d; 4r; 
+bar // 55
+1 1: [with &gt;]1f; 
+2 1: 2r; [with &gt;]2d; 
+3 1: [with .]1f; 
+4 1: 2r; [with &gt;]2b; 
+5 1: 1r; 
+6 1: 2r; [with &gt;]2a; 
+7 1: 4g-; 4r; 4g-; 4r; 
+bar // 56
+1 1: [with .]4f+; [with .]4f+; [with -]8f+ bm; [with .]8f+ ebm; 8r; [with .]8f+; 
+2 1: [with .]4c+; [with .]4c+; [with -]8c+ bm; [with .]8c+ ebm; 8r; [with .]8c+; 
+3 1: [with .]4b-; [with .]4b-; [with -]8b- bm; [with .]8b- ebm; 8r; [with .]8b-; 
+4 1: 1r; 
+5 1: 1r; 
+6 1: [with .]4b; [with .]4b; [with -]8b bm; [with .]8b ebm; 8r; [with .]8a; 
+7 1: 4f-; 4f-; 8f- bm; 8f- ebm; 8r; 8f-; 
+bar // 57
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 58
+1 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+2 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+3 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+4 1: 1a+; 
+5 1: 1a; 
+6 1: 1r; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 59
+1 1: 1a+; 
+2 1: 1a+; 
+3 1: 1a; 
+4 1: 4r; [with ^]4g+; [with -]8f+ bm; [with .]8d+ ebm; 8r; [with &gt;]8a~; 
+5 1: 4r; [with ^]4g; [with -]8f bm; [with .]8d ebm; 8r; [with &gt;]8a-~; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 60
+1 1: 4r; [with ^]4g+; [with -]8f+; [with .]8d+; 8r; [with &gt;]8a~; 
+2 1: 4r; [with ^]4g+; [with -]8f+; [with .]8d+; 8r; [with &gt;]8a~; 
+3 1: 4r; [with ^]4g; [with -]8f; [with .]8d; 8r; [with &gt;]8a-~; 
+4 1: [with &gt;]1a; 
+5 1: [with &gt;]1a-; 
+6 1: 1r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 61
+1 1: [with .]4a; 2.r; 
+2 1: [with .]4a; 2.r; 
+3 1: [with .]4a-; 2.r; 
+4 1: 4r; [with .]4b; [with -]8d+ bm; [with .]8f+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4b-; [with -]8d bm; [with .]8f ebm; 8r; [with &gt;]8a~; 
+6 1: 1r; 
+7 1: 4b--; 4r; 4f-; 4r; 
+bar // 62
+1 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+2 1: 4r; [with .]4a; 8r; [with .]8a; 8r; [with &gt;]8a; 
+3 1: 4r; [with .]4c; 8r; [with .]8c; 8r; [with &gt;]8c~; 
+4 1: [with .]4.a+; [with -]8a+ bm; [with -]8a+; [with -]8a+ ebm; [with .]4a+; 
+5 1: [with .]4.a; [with -]8a bm; [with -]8a; [with -]8a ebm; [with .]4a; 
+6 1: 4r; [with .]4d+; 8r; [with .]8d+; 8r; [with &gt;]8d+~; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 63
+1 1: [with &gt;]4f; 2.r; 
+2 1: [with &gt;]4a; 2.r; 
+3 1: [with &gt;]4c; 2.r; 
+4 1: 8r; [with &gt;]4.g+; [with &gt;]4f+; [with &gt;]4d+; 
+5 1: 8r; [with &gt;]4.g; [with &gt;]4f; [with &gt;]4d; 
+6 1: [with &gt;]4d+; 2.r; 
+7 1: 4b-; 4r; 4bn-; 4r; 
+bar // 64
+1 1: 4r; [with .]4e; 8r; [with .]8e; 8r; [with &gt;]8e; 
+2 1: 4r; [with .]4g; 8r; [with .]8g; 8r; [with &gt;]8g; 
+3 1: 4r; [with .]4b-; 8r; [with .]8b-; 8r; [with &gt;]8b-~; 
+4 1: [with -]4.f+; 2c+~; 8c+; 
+5 1: [with -]4.f; 2c~; 8c; 
+6 1: 4r; [with .]4c+; 8r; [with .]8c+; 8r; [with &gt;]8c+~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 65
+1 1: [with &gt;]4e; 2.r; 
+2 1: [with &gt;]4g; 2.r; 
+3 1: [with &gt;]4b-; 2.r; 
+4 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+5 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+6 1: [with &gt;]4c+; 2.r; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 66
+1 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+2 1: 4r; [with .]4c+; [with -]8e+ bm; [with .]8g+ ebm; 8r; [with &gt;]8b+~; 
+3 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+4 1: [with &gt;]1b+; 
+5 1: [with &gt;]1b; 
+6 1: 4r; [with .]4c; [with -]8e bm; [with .]8g ebm; 8r; [with &gt;]8b~; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 67
+1 1: 1b+; 
+2 1: 1b+; 
+3 1: 1b; 
+4 1: 4r; [with .]4g+; [with -]8e+ bm; [with .]8d+ ebm; 8r; [with &gt;]8c+~; 
+5 1: 4r; [with .]4g; [with -]8e bm; [with .]8d ebm; 8r; [with &gt;]8c~; 
+6 1: 1b; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 68
+1 1: 4r; [with ^]4g+; [with -]8e+; [with .]8d+; 8r; [with &gt;]8c+~; 
+2 1: 4r; [with ^]4g+; [with -]8e+; [with .]8d+; 8r; [with &gt;]8c+~; 
+3 1: 4r; [with ^]4g; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]1c+; 
+5 1: [with &gt;]1c; 
+6 1: 4r; [with ^]4f; [with -]8e; [with .]8d; 8r; [with &gt;]8c~; 
+7 1: 4c; 4r; 4g-; 4r; 
+bar // 69
+1 1: [with &gt;]1c+; 
+2 1: [with &gt;]1c+; 
+3 1: [with &gt;]1c; 
+4 1: 4r; [with .]4e+; [with -]8g+ bm; [with .]8b+ ebm; 8r; [with &gt;]8a+~; 
+5 1: 4r; [with .]4e; [with -][down] 8g bm; [with .]8b ebm; 8r; [with &gt;]8a~; 
+6 1: [with &gt;]1c; 
+7 1: 4c-; 4r; 4g-; 4r; 
+bar // 70
+1 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+2 1: 4r; [with .]4f; 8r; [with .]8f; 8r; [with &gt;]8f~; 
+3 1: 4r; [with .]4c; 8r; [with .]8c; 8r; [with &gt;]8c~; 
+4 1: [with &gt;]4.a+; [with &gt;]8a+ bm; [with -]8a+; [with .]8a+ ebm; [with &gt;]4a+~; 
+5 1: [with &gt;]4.a; [with &gt;]8a bm; [with -]8a; [with .]8a ebm; [with &gt;]4a~; 
+6 1: 4r; [with .]4d+; 8r; [with .]8d+; 8r; [with &gt;]8d+~; 
+7 1: 4f-; 4r; 4a-; 4r; 
+bar // 71
+1 1: [with &gt;]4f; 2.r; 
+2 1: [with &gt;]4f; 2.r; 
+3 1: [with &gt;]4c; 2.r; 
+4 1: [with &gt;]4a+; [with .]4f+; [with -]8d++ bm; [with .]8c++ ebm; 8r; [with &gt;]8b+~; 
+5 1: [with &gt;]4a; [with .]4f; [with -]8d+ bm; [with .]8c+ ebm; 8r; [with &gt;]8b~; 
+6 1: [with &gt;]4d+; 2.r; 
+7 1: 4c; 4r; 4f-; 4r; 
+bar // 72
+1 1: 4r; [with .]4f; 8r; [with .]4f; 8r; 
+2 1: 4r; [with .]4b; 8r; [with .]4b; 8r; 
+3 1: 4r; [with .]4g-; 8r; [with .]4g-; 8r; 
+4 1: [with &gt;]1b+~; 
+5 1: [with &gt;]1b~; 
+6 1: 4r; [with .]4d+; 8r; [with .]4d+; 8r; 
+7 1: 4b-; 4r; 4f-; 4r; 
+bar // 73
+1 1: [with .]4f; 2.r; 
+2 1: [with .]4b; 2.r; 
+3 1: [with .]4g-; 2.r; 
+4 1: [with &gt;]4b+; 4r; 8b+; 8a&amp;+; 8g+ bm; 8f+ ebm; 
+phrase  4: 3 til 1m + 1.000000;
+5 1: [with &gt;]4b; 4r; 8b; 8a&amp;; 8g bm; 8f ebm; 
+phrase  5: 3 til 1m + 1.000000;
+6 1: [with .]4d+; 2.r; 
+7 1: 4b-; 4r; 4c; 4d; 
+bar // 74
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4e+; 2.r; 
+5 1: 4e; 2.r; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 75
+score
+staff 1
+	key = 3&amp;
+staff 2
+	key = 3&amp;
+staff 3
+	key = 3&amp;
+staff 4
+	key = 3&amp;
+staff 5
+	key = 3&amp;
+staff 6
+	key = 3&amp;
+staff 7
+	key = 3&amp;
+music
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8b+ ebm; [with .]4b+; [with .]4b+; 
+5 1: 4r; [with .]8b bm; [with .]8b ebm; [with .]4b; [with .]4b; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 76
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4c++; [with .]4c++; [with .]4d++; 4r; 
+5 1: [with .]4c+; [with .]4c+; [with .]4d+; 4r; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 77
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8d++ ebm; [with .]4f++; [with .]4d++; 
+5 1: 4r; [with .]8b bm; [with .]8d+ ebm; [with .]4f+; [with .]4d+; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 78
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4e++; [with .]4e++; [with .]4e++; 4r; 
+5 1: [with .]4e+; [with .]4e+; [with .]4e+; 4r; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 79
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8b+ ebm; [with .]4b+; [with .]4b+; 
+5 1: 4r; [with .]8b bm; [with .]8b ebm; [with .]4b; [with .]4b; 
+6 1: 1r; 
+7 1: 4e; 4r; 4b-; 4r; 
+bar // 80
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with .]4c++; [with .]4c++; [with .]4d++; 4r; 
+5 1: [with .]4c+; [with .]4c+; [with .]4d+; 4r; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 81
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: 4r; [with .]8b+ bm; [with .]8d++ ebm; [with .]4f++; 4d++; 
+5 1: 4r; [with .]8b bm; [with .]8d+ ebm; [with .]4f+; 4d+; 
+6 1: 1r; 
+7 1: 4f; 4r; 4b-; 4r; 
+bar // 82
+1 1: 1r; 
+2 1: 1r; 
+3 1: 1r; 
+4 1: [with ^][up]4e++; 2r; [with ^][up]4e++; 
+5 1: [with ^]4e+; 2r; [with ^]4e+; 
+6 1: 1r; 
+7 1: [with .]4e; 2r; [with .]4e; 
+bar // 83
+1 1: 4r; [with -]8b; [with .]4b; [with -]8g; [with .]4b; 
+2 1: 4r; [with -]8g; [with .]4g; [with -]8e; [with .]4g; 
+3 1: 1r; 
+4 1: 1b; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+bar // 84
+1 1: [with .]4c+; [with .]4c+; 2r; 
+2 1: [with .]4e; [with .]4e; 2r; 
+3 1: 1r; 
+4 1: 1b; 
+5 1: 1r; 
+6 1: 1r; 
+7 1: 1r; 
+endbar // 85
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000234.html">[Noteedit-user] problem solved, but there are new questions
+</A></li>
+	<LI>Next message: <A HREF="000236.html">[Noteedit-user] problem solved, but there are new questions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#235">[ date ]</a>
+              <a href="thread.html#235">[ thread ]</a>
+              <a href="subject.html#235">[ subject ]</a>
+              <a href="author.html#235">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

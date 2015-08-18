@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Up/Down Bow?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-June/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Up/Down%20Bow%3F&In-Reply-To=%3C42A2AE3F.6030101%40schwaben.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000076.html">
+   <LINK REL="Next"  HREF="000078.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Up/Down Bow?</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Up/Down%20Bow%3F&In-Reply-To=%3C42A2AE3F.6030101%40schwaben.de%3E"
+       TITLE="[Noteedit-user] Up/Down Bow?">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sun Jun  5 09:48:15 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000076.html">[Noteedit-user] Up/Down Bow?
+</A></li>
+        <LI>Next message: <A HREF="000078.html">[Noteedit-user] timidity problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#77">[ date ]</a>
+              <a href="thread.html#77">[ thread ]</a>
+              <a href="subject.html#77">[ subject ]</a>
+              <a href="author.html#77">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Johan,
+
+&gt;<i>... However, I need to 
+</I>&gt;<i>make bow markings, up-bow and down-bow for violin and other bowed string 
+</I>&gt;<i>instruments. Is it me that just can't find it, or is it missing from 
+</I>&gt;<i>Noteedit?
+</I>&gt;<i>  
+</I>Unfortunately, this is missing. Same with fingerings, for piano players
+important. So a noteedit score will look more like unedited original work ;)
+
+I can imagine that you could use sforzato and portato in NoteEdit and,
+if you export to lilypond, translate those in the .ly file with a little
+(perl-)script
+
+while (&lt;&gt;) {
+        s/-\^ /\\upbow /g;
+        s/-- /\\downbow /g;
+        print;
+}
+
+until this is implemented. Further questions are ok,
+Regards,
+Georg.
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000076.html">[Noteedit-user] Up/Down Bow?
+</A></li>
+	<LI>Next message: <A HREF="000078.html">[Noteedit-user] timidity problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#77">[ date ]</a>
+              <a href="thread.html#77">[ thread ]</a>
+              <a href="subject.html#77">[ subject ]</a>
+              <a href="author.html#77">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,173 @@
+From noteedit-user at lists.berlios.de  Thu Oct  4 01:10:23 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 3 Oct 2007 18:10:23 -0500
+Subject: [Noteedit-user] How to place two notes of unequal time value?
+Message-ID: <20071003231023.EFE631BF28D@ws1-1.us4.outblaze.com>
+
+Folks,
+
+I've been enjoying noteedit, and have been using it to help me learn how to play classical guitar pieces correctly, esp getting the rhythm/timing down. It's a great aid, but classical guitar can have polyphonic voices where two or more simultaneous but relatively independent melodic lines are written. I wanted some advise on score this with noteedit because so far I've only figured out how to place notes of the same value on the same beat, but use ties to lengthen the beat. I don't like this solution very much because it makes the music look different that my book arranges the scores. How to set up a quarter note and half not on the same staff? For example, I would like to write in noteedit quarter note A and half note C written as follows.  
+
+
+---------------
+
+---------------
+   |
+---|-----------
+  *|
+---------------
+  
+---------------
+ -o-
+   |
+   |
+
+Thanks, 
+-OSC
+
+P.s. Been looking at canorus, but haven't been able to run the latest due to undefined linking/lib symbols.
+
+-- 
+We've Got Your Name @ www.mail.com!!!
+Get a FREE E-mail Account Today - Choose From 100+ Domains
+
+
+
+From noteedit-user at lists.berlios.de  Thu Oct  4 21:16:29 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 04 Oct 2007 21:16:29 +0200
+Subject: [Noteedit-user] How to place two notes of unequal time value?
+In-Reply-To: <20071003231023.EFE631BF28D@ws1-1.us4.outblaze.com>
+References: <20071003231023.EFE631BF28D@ws1-1.us4.outblaze.com>
+Message-ID: <47053C0D.1060907@schwaben.de>
+
+user mailing list for the score editor noteedit schrieb:
+> Folks,
+>
+> I've been enjoying noteedit, and have been using it to help me learn how to play classical guitar pieces correctly, esp getting the rhythm/timing down. It's a great aid, but classical guitar can have polyphonic voices where two or more simultaneous but relatively independent melodic lines are written. I wanted some advise on score this with noteedit because so far I've only figured out how to place notes of the same value on the same beat, but use ties to lengthen the beat. I don't like this solution very much because it makes the music look different that my book arranges the scores. How to set up a quarter note and half not on the same staff? For example, I would like to write in noteedit quarter note A and half note C written as follows.  
+>
+>
+> ---------------
+>
+> ---------------
+>    |
+> ---|-----------
+>   *|
+> ---------------
+>   
+> ---------------
+>  -o-
+>    |
+>    |
+>
+> Thanks, 
+> -OSC
+>
+> P.s. Been looking at canorus, but haven't been able to run the latest due to undefined linking/lib symbols.
+>
+>   
+High OSC,
+
+in the menue format --> property of staff(?) --> voice, you can add more
+voices (and set there the stem direction of it). On the main menue icon
+bar, you see a number widget, looks like a lcd display, usually
+displaying A like all, on which you can choose the active voice by
+clicking with the right and left mouse button on it. For filling up
+unused parts of a voice you can use hidden rests.
+
+When I once did a lot of music with multiple voices it sometimes
+crashed, especially with ties, and deleting something, so I needed to
+save from time to time. But it works. Sometimes I prefer to leave the
+voices in NoteEdit in separate staffs, and put it only together in
+lilypond by hand.
+
+Regards,
+Georg
+
+
+
+From noteedit-user at lists.berlios.de  Sun Oct  7 20:40:26 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 7 Oct 2007 13:40:26 -0500
+Subject: [Noteedit-user] How to wrap the staff down the screen?
+Message-ID: <20071007184026.39ED916427D@ws1-4.us4.outblaze.com>
+
+Folks,
+As I add notes to the staff, it will continue on the same staff from left
+to right on screen. If I only have a single staff it is one very long
+line. How can I wrap the same staff down the page so that the next
+measure starts at the left hand margin (similar to text editor line
+wrap)?
+Thanks,
+-OSC
+
+-- 
+Want an e-mail address like mine?	
+Get a free e-mail account today at www.mail.com!
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20071007/09de3908/attachment.html>
+
+From noteedit-user at lists.berlios.de  Sun Oct  7 23:04:41 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 07 Oct 2007 23:04:41 +0200
+Subject: [Noteedit-user] How to wrap the staff down the screen?
+In-Reply-To: <20071007184026.39ED916427D@ws1-4.us4.outblaze.com>
+References: <20071007184026.39ED916427D@ws1-4.us4.outblaze.com>
+Message-ID: <470949E9.2070203@schwaben.de>
+
+user mailing list for the score editor noteedit schrieb:
+> Folks,
+> As I add notes to the staff, it will continue on the same staff from
+> left to right on screen. If I only have a single staff it is one very
+> long line. How can I wrap the same staff down the page so that the
+> next measure starts at the left hand margin (similar to text editor
+> line wrap)?
+Hi,
+
+this noteedit can't do. You have to work around it: Either export to
+lilypond for example and just look there on it, or, open in --> File -->
+new window a second window, so you can copy between the two windows when
+you load your file. It's like two edit sessions open.
+
+Regards,
+Georg
+
+> Thanks,
+> -OSC
+>
+>
+
+
+
+From noteedit-user at lists.berlios.de  Sun Oct 14 02:32:54 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 13 Oct 2007 19:32:54 -0500
+Subject: [Noteedit-user] Add bar for anacrusis
+Message-ID: <5678759e0710131732j414e64c5rb42aa4c5caada23@mail.gmail.com>
+
+Hey!
+
+I love using linux, and I love copying music from my school's original
+handwritten notations to easier readable computer generated notations, so I
+figured I'd give NoteEdit a go.
+
+Here's my problem though. On one of the pieces I am entering, I have an
+anacrusis that I need, which consists of one Bflat quarter note. Looking
+around on how to do this, I found this
+page<http://noteedit.berlios.de/doc/noteedit.pdf>which tells how to
+insert a bar manually, by either highlighting the
+post-bar note and clicking 'Tab', or by pressing '|' where the mouse is at.
+
+I tried the highlighting method to no avail. Went on and tried the mouse
+method, but that just inserts it before the clef!
+
+Is there any easy way to do this?
+
+Thanks!
+FlyingIsFun1217
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20071013/ef375d4e/attachment.html>
+

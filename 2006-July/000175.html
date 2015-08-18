@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compatibility Issue
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-July/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compatibility%20Issue&In-Reply-To=%3C44CC1FAE.6080202%40yahoo.com.br%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000174.html">
+   <LINK REL="Next"  HREF="000176.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compatibility Issue</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compatibility%20Issue&In-Reply-To=%3C44CC1FAE.6080202%40yahoo.com.br%3E"
+       TITLE="[Noteedit-user] Compatibility Issue">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Sun Jul 30 04:55:42 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000174.html">[Noteedit-user] Compatibility Issue
+</A></li>
+        <LI>Next message: <A HREF="000176.html">[Noteedit-user] Compatibility Issue
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#175">[ date ]</a>
+              <a href="thread.html#175">[ thread ]</a>
+              <a href="subject.html#175">[ subject ]</a>
+              <a href="author.html#175">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Matev&#197;&#190;,
+
+Thanks for the response.
+
+&gt;&gt;<i>
+</I>&gt;&gt;<i>I am wondering about if there is a way to use newer versions of NoteEdit 
+</I>&gt;&gt;<i>with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and I cannot get 
+</I>&gt;&gt;<i>a newer version without update *a lot* of packages along. Since I use a 
+</I>&gt;&gt;<i>dial-up connection, I can only upgrade the distro very rarely.
+</I>&gt;&gt;<i>  
+</I>&gt;<i> 
+</I>&gt;<i> NoteEdit needs KDE&gt;3.0, so if it doesn't work with 3.3.2, it's the
+</I>&gt;<i> Debian's maintainter decision.
+</I>
+With the libraries for KDE 3.3.2, I can use NoteEdit-2.7.4-1. The new 
+version in Debian testing is 2.8.0, but it requires updating the KDE 
+libraries, remove a lot of packages, and many other changes (almost an 
+entire distro upgrade).
+
+I tried with the RPM package for 2.8.0 (converted with alien) from:
+<A HREF="http://abcplus.sourceforge.net/#noteedit">http://abcplus.sourceforge.net/#noteedit</A>
+with no success.
+
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i>The same problem I find with GTK programs, and that is an additional 
+</I>&gt;&gt;<i>reason I prefer programs which do not require QT or GTK or any GUI at all.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>To make the things worse, it seems that there is no way even to compile 
+</I>&gt;&gt;<i>new versions of NoteEdit from the sources to get compability with 3.3.2.
+</I>&gt;&gt;<i>  
+</I>&gt;<i> 
+</I>&gt;<i> Could you be more precise? I'm using Debian myself and I can get the
+</I>&gt;<i> latest SVN version of NoteEdit compiled fine. You need to download the
+</I>&gt;<i> qt3 development packages and TSE3 sequencer and then type:
+</I>&gt;<i> $ make -f Makefile.cvs
+</I>&gt;<i> $ ./configure
+</I>&gt;<i> $ make
+</I>
+I have read somewhere that I would need to compile the entire KDE (!!!) 
+to do that. But I think I am confusing Debian package dependencies with 
+other issues. I could not install qt3 because the numberous dependencies 
+too.
+
+I am using Debian-3.1, release 0  +  Demudi-0.19 with some updates.
+
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i>Is there some way to face this problem? Perhaps statically linked 
+</I>&gt;&gt;<i>binaries? Any suggestion?
+</I>&gt;&gt;<i>  
+</I>&gt;<i> 
+</I>&gt;<i> I think statically linked libraries aren't the answer because NE depends
+</I>&gt;<i> heavily on the underlaying KDE system.  I don't know how the different
+</I>&gt;<i> version of KDEs would work together.
+</I>
+That seems bad. Sometimes I think that environments with integrated 
+software, like KDE or GNOME, are just a bad idea. Hopefuly in some time 
+point in the future a solution for better compatibility may arise so 
+that one can run programs alone without need installing an entire 
+desktop only because them...
+
+Is there any NoteEdit-2.8.* binary package for Debian-3.0 anywhere?
+
+Regards,
+Hudson
+
+		
+_______________________________________________________ 
+O Yahoo! est&#225; de cara nova. Venha conferir! 
+<A HREF="http://br.yahoo.com/preview">http://br.yahoo.com/preview</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000174.html">[Noteedit-user] Compatibility Issue
+</A></li>
+	<LI>Next message: <A HREF="000176.html">[Noteedit-user] Compatibility Issue
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#175">[ date ]</a>
+              <a href="thread.html#175">[ thread ]</a>
+              <a href="subject.html#175">[ subject ]</a>
+              <a href="author.html#175">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

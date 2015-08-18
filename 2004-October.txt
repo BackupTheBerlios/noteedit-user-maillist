@@ -1,0 +1,619 @@
+From noteedit-user-admin at lists.berlios.de  Sun Oct  3 12:56:00 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 3 Oct 2004 12:56:00 +0200
+Subject: [Noteedit-user] rest symbol printed twice
+Message-ID: <200410031256.00671.pampelmuse@aon.at>
+
+Hallo
+
+If I try to print the following part via export to ABC,
+then I get the rest sign twice.
+Is there any possibilities to switch this of?
+Thank you very much.
+--------
+header
+score
+        pedstyle = pedstar
+        staffs = 1
+score
+staff 1
+        vscheme = 2o
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+        clef=treble
+        key = 0&
+music
+midi 1 1: 0 "channel=1"; 0 "program=0";
+midi 1 1: 0 "parameter=7,80";
+midi 1 1: 0 "parameter=93,0";
+midi 1 1: 0 "parameter=91,0";
+midi 1 1: 0 "parameter=10,64";
+1 1: 8r;
+1 2: 8r;
+bar // 1
+--------
+>noteedit --version
+Qt: 3.3.2
+KDE: 3.2.2-0.1 Red Hat
+NoteEdit: 2.7.3
+>abcm2ps -V
+abcm2ps-4.7.3 (September 27, 2004)
+Compiled: Oct  3 2004
+Options: NONE
+Default format directory: /usr/local/share/abcm2ps
+
+mvfG
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Oct  3 16:55:58 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 3 Oct 2004 16:55:58 +0200
+Subject: [Noteedit-user] Hyphen inside lyrics
+Message-ID: <200410031655.59149.pampelmuse@aon.at>
+
+Hallo
+
+If I try to print the following part via export to ABC,
+I do not get the expected result.
+The printed lyrics use up more notes, than they use inside noteedit.
+(Inside Noteedit it looks OK.)
+How can this be changed?
+Thank you very much.
+--------
+header
+score
+        pedstyle = pedstar
+        staffs = 1
+        time = 4/4
+score
+staff 1
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+        clef=treble
+        key = 0&
+music
+midi 1 1: 0 "channel=1"; 0 "program=0";
+midi 1 1: 0 "parameter=7,80";
+midi 1 1: 0 "parameter=93,0";
+midi 1 1: 0 "parameter=91,0";
+midi 1 1: 0 "parameter=10,64";
+1 1: 4b; 4b; 4b; 4b;
+lyrics 1: "Ha ~llo Li ~nux ";
+bar // 1
+
+--------
+>noteedit --version
+Qt: 3.3.2
+KDE: 3.2.2-0.1 Red Hat
+NoteEdit: 2.7.3
+>abcm2ps -V
+abcm2ps-4.7.3 (September 27, 2004)
+Compiled: Oct ?3 2004
+Options: NONE
+Default format directory: /usr/local/share/abcm2ps
+
+mvfG
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Oct  3 19:02:39 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 3 Oct 2004 19:02:39 +0200
+Subject: [Noteedit-user] MUP warning
+Message-ID: <200410031902.39428.pampelmuse@aon.at>
+
+Hallo
+
+If I try to store the following
+--------
+header
+score
+        pedstyle = pedstar
+        staffs = 1
+        time = 4/4
+score
+staff 1
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+        clef=treble
+        key = 0&
+music
+midi 1 1: 0 "channel=1"; 0 "program=0";
+midi 1 1: 0 "parameter=7,80";
+midi 1 1: 0 "parameter=93,0";
+midi 1 1: 0 "parameter=91,0";
+midi 1 1: 0 "parameter=10,64";
+1 1: 4b; 4b;
+bar // 1
+1 1: 4b; 4b; 4b; 4b;
+bar // 2
+1 1: 4b; 4b;
+endbar // 3
+--------
+I get the following warning:
+--------
+Noteedit will save your score, and it can (probably) restore the score.
+But the file doesn't conform to MUP, so it will not work with the MUP 
+interpreter.
+-----------------------------------------------------
+staff 1; measure  1 : 107520 128th, should be: 128
+staff 1; measure  3 : 107520 128th, should be: 128
+--------
+ Is there a more clean way to get rid of this warning,
+instead of using
+"Don't show this message in future"
+
+Thank you very much.
+
+mvfG
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Oct  3 19:06:03 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 3 Oct 2004 19:06:03 +0200
+Subject: [Noteedit-user] stem direction
+Message-ID: <200410031906.03661.pampelmuse@aon.at>
+
+Hallo
+
+If I try to print via export to ABC the following
+-------
+header
+score
+        pedstyle = pedstar
+        staffs = 1
+        time = 4/4
+score
+staff 1
+        vscheme = 2o
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+// stempolicy 1 = stemup
+// stempolicy 2 = stemup
+        clef=treble
+        key = 0&
+music
+midi 1 1: 0 "channel=1"; 0 "program=0";
+midi 1 1: 0 "parameter=7,80";
+midi 1 1: 0 "parameter=93,0";
+midi 1 1: 0 "parameter=91,0";
+midi 1 1: 0 "parameter=10,64";
+1 1: [up]8d+; [up]8d+ bm; [up]8d+ ebm; [up]4d+; [up]8d+; [up]4d+;
+1 2: 8g; 8g bm; 8g ebm; 4g; 8g; 4g;
+endbar // 1
+-------
+
+The stem-direction is not the same.
+Is there a possibility to keep the stem direction in this case.
+
+Thank you very much.
+
+mvfG
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Oct  4 22:11:27 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 04 Oct 2004 22:11:27 +0200
+Subject: [Noteedit-user] MUP warning
+In-Reply-To: <200410031902.39428.pampelmuse@aon.at>
+References: <200410031902.39428.pampelmuse@aon.at>
+Message-ID: <4161AE6F.6050302@web.de>
+
+Hi Christoph,
+
+> I get the following warning:
+> --------
+> Noteedit will save your score, and it can (probably) restore the score.
+> But the file doesn't conform to MUP, so it will not work with the MUP 
+> interpreter.
+> -----------------------------------------------------
+> staff 1; measure  1 : 107520 128th, should be: 128
+> staff 1; measure  3 : 107520 128th, should be: 128
+> --------
+>  Is there a more clean way to get rid of this warning,
+> instead of using
+> "Don't show this message in future"
+
+You have typeset a score with a 4/4 measure. As you don't
+use the correct number of notes in the first and the last
+measure you get this warning. If you want to typeset an
+offbeat you need an to typeset the first bar (the german
+version of the noteedit handbook describes this). Noteedit
+starts placing of the bars at this bar.
+Another possibility is to disable the automatic beaming.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Oct  4 22:25:59 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 04 Oct 2004 22:25:59 +0200
+Subject: [Noteedit-user] Hyphen inside lyrics
+In-Reply-To: <200410031655.59149.pampelmuse@aon.at>
+References: <200410031655.59149.pampelmuse@aon.at>
+Message-ID: <4161B1D7.8000303@web.de>
+
+noteedit-user-admin at berlios.de wrote:
+> Hallo
+> 
+> If I try to print the following part via export to ABC,
+> I do not get the expected result.
+> The printed lyrics use up more notes, than they use inside noteedit.
+> (Inside Noteedit it looks OK.)
+> How can this be changed?
+> Thank you very much.
+
+This is a known problem for the current noteedit. See
+Feature Request #229 for a small discussion how to improve
+the lyrics output. It does happen with lilypond as well.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Oct  4 22:29:01 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 04 Oct 2004 22:29:01 +0200
+Subject: [Noteedit-user] rest symbol printed twice
+In-Reply-To: <200410031256.00671.pampelmuse@aon.at>
+References: <200410031256.00671.pampelmuse@aon.at>
+Message-ID: <4161B28D.9020500@web.de>
+
+Hi Christoph,
+
+noteedit-user-admin at berlios.de wrote:
+> Hallo
+> 
+> If I try to print the following part via export to ABC,
+> then I get the rest sign twice.
+> Is there any possibilities to switch this of?
+> Thank you very much.
+
+>>abcm2ps -V
+> 
+> abcm2ps-4.7.3 (September 27, 2004)
+> Compiled: Oct  3 2004
+> Options: NONE
+> Default format directory: /usr/local/share/abcm2ps
+> 
+> mvfG
+> 
+> Christoph
+
+Of course, you just have to debug noteedit at the
+right place ;-)
+Seriously: You should post a bug for it at the bug
+page on the developer.berlios.de/project/noteedit page.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Oct 10 19:35:41 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 10 Oct 2004 19:35:41 +0200
+Subject: [Noteedit-user] MUP warning
+In-Reply-To: <4161AE6F.6050302@web.de>
+References: <200410031902.39428.pampelmuse@aon.at> <4161AE6F.6050302@web.de>
+Message-ID: <200410101935.42272.pampelmuse@aon.at>
+
+Hallo
+
+On Monday 04 October 2004 22:11, noteedit-user-admin at berlios.de wrote:
+
+> You have typeset a score with a 4/4 measure. As you don't
+> use the correct number of notes in the first and the last
+> measure you get this warning. If you want to typeset an
+> offbeat you need an to typeset the first bar (the german
+> version of the noteedit handbook describes this). Noteedit
+> starts placing of the bars at this bar.
+> Another possibility is to disable the automatic beaming.
+
+Thanks for the hint with the german manual.
+Now all is much easier for me. ;-)
+But nevertheless: 
+Typesetting the first bar does not remove the MUP warning.
+
+with many friendly Greetings
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Oct 15 14:14:08 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Oct 2004 14:14:08 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+Message-ID: <200410151414.09765.kai.wassermann@gmx.de>
+
+Hello list!
+
+Until now I used noteedit (thanks again to the author for such a nice piece of 
+software) to write notes down for my choir, and to seperate the S-A-T-B in 
+several wav files. Now it is a detour to write the notes, save them as midi, 
+and then use a seperate midi-player to play the notes to control whether 
+there are still mistakes in the notes. So I'd like to use the 'play' button 
+in  noteedit. 
+Before I start noteedit, I start qsynth to have a synthesizer and qjack to 
+have an output for qsynth. Both work fine. Now I start noteedit and it says:
+
+LilyPond check: not available.
+cannot create an ALSA MIDI Scheduler
+error opening Midi Device --> music cannot be played
+TSE3 Copyright information :(c) Pete Goodliffe, 2000-2002. A Trax Software 
+Product. Version: 0.2.7
+QCheckBox::setProperty( "Checked", value ) failed: property invalid, read-only 
+or does not exist
+
+I googled a lot, but couldn't find a way to create a ALSA MIDI Scheduler.
+
+Can anyone of this list help me?
+
+TIA
+
+Kai
+
+-- 
+/"\   ---  JOIN NOW!  ---
+\ /  ASCII ribbon campaign
+ X       against HTML
+/ \    in mail and news
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Oct 15 18:37:54 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 15 Oct 2004 18:37:54 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+In-Reply-To: <200410151414.09765.kai.wassermann@gmx.de>
+References: <200410151414.09765.kai.wassermann@gmx.de>
+Message-ID: <200410151837.55087.pampelmuse@aon.at>
+
+Hallo
+
+On Friday 15 October 2004 14:14, Kai wrote:
+> Can anyone of this list help me?
+
+I have very good experience with "timidityserver".
+Just compile it as described in the noteedit-doc
+(do not forget this two configure options)
+and than just start
+/usr/local/bin/timidity -iA -B2,8 -Os1l -s 44100 &
+and after this start noteedit.
+Than select a midi-device.
+
+with many friendly greetings
+
+Christoph
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Oct 21 00:19:36 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 21 Oct 2004 00:19:36 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+In-Reply-To: <200410151837.55087.pampelmuse@aon.at>
+References: <200410151414.09765.kai.wassermann@gmx.de> <200410151837.55087.pampelmuse@aon.at>
+Message-ID: <200410210019.43467.kai.wassermann@gmx.de>
+
+Hello Christoph,
+
+> I have very good experience with "timidityserver".
+(...)
+> /usr/local/bin/timidity -iA -B2,8 -Os1l -s 44100 &
+
+I compiled timidity with several different options in my home and tested it 
+from there.
+kai at merkur ~ $ bin/timidity -iA -B2,8 -Os1l -s 44100
+Requested buffer size 2048, fragment size 1024
+ALSA pcm 'default' set buffer size 2048, period size 1024 bytes
+TiMidity starting in ALSA server mode
+Opening sequencer port: 128:0 128:1 128:2 128:3
+
+...seems to be fine.
+
+> and after this start noteedit.
+
+I did and got this output:
+
+kai at merkur ~ $ noteedit
+LilyPond check: not available.
+cannot create an ALSA MIDI Scheduler
+cannot create an OSS MIDI Scheduler
+error opening Midi Device --> music cannot be played
+
+:-(
+
+Kai
+
+P.S.: I compiled with these flags: 
+--prefix=$HOME --enable-audio=alsa --enable-server --enable-alsaseq 
+all from the manual page.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20041021/ee4d8366/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Tue Oct 26 02:52:33 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 26 Oct 2004 02:52:33 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+Message-ID: <417D9FD1.9020502@schwaben.de>
+
+Hello Kai,
+
+when I once had on Suse 9.1 (the 64-bit version) your problem*
+*
+
+cannot create an ALSA MIDI Scheduler
+cannot create an OSS MIDI Scheduler
+error opening Midi Device --> music cannot be played
+
+it became clear that this is a problem with the tse3 package (on my distribution?). tse3play didn't work, and compiling tse3 I gave up after one day then. But the good news is, if this is an option for you at all, tse3 works well on Suse 9.0 and 9.2.
+
+Please let me continue to talk: I'm glad that noteedit is in Suse 9.2 still included, something that this wonderful program deserves. And it works okay there after a short check. Nevertheless, with lilypond 2.2, there seem to be an compatability issue. Let me guess: the more cosmetic syntax changes in lilypond from 2.0 to 2.2.
+
+Hopefully this helps you,
+Best Regards,
+Georg.
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Oct 26 12:17:55 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 26 Oct 2004 12:17:55 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+In-Reply-To: <417D9FD1.9020502@schwaben.de>
+References: <417D9FD1.9020502@schwaben.de>
+Message-ID: <200410261217.57317.kai.wassermann@gmx.de>
+
+On Tuesday 26 October 2004 02:52, noteedit-user-admin at berlios.de wrote:
+
+> tse3 works well on Suse 9.0 and 9.2.
+
+Nice to know! Could you tell me which version of  tse3, noteedit, lilipond and 
+arts is delivered by SuSE 9.2? Perhaps it has to do with the versions of the 
+different programs.
+
+TIA
+
+Kai
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Oct 27 09:06:26 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Oct 2004 09:06:26 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+Message-ID: <417F48F2.1080907@schwaben.de>
+
+Hello Kai,
+
+with Suse 9.2 x86 comes
+    noteedit-2.7.3-2
+    tse3-0.2.7-214
+    lilypond-2.2.6-xx.
+On this machine I operated noteedit not with arts, but with jack and 
+timidity, ardour, which is my combo :). About lilypond: Every (two) 
+simple .ly file crashed with lilypond on this env, so there seems to be 
+an issue not related to other sound tools. On 9.0 I use lilypond-2.0.3 
+with noteedit-2.7.3, just for your info. And I'm just wondering what the 
+high patch levels of the Suse packages mean ..
+
+Regards, hopefully threading of this message will work now,
+Georg.
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Oct 27 11:31:22 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Oct 2004 11:31:22 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+In-Reply-To: <417F48F2.1080907@schwaben.de>
+References: <417F48F2.1080907@schwaben.de>
+Message-ID: <200410271131.23711.kai.wassermann@gmx.de>
+
+On Wednesday 27 October 2004 09:06, noteedit-user-admin at berlios.de wrote:
+
+>     noteedit-2.7.3-2
+>     tse3-0.2.7-214
+
+Til now I used noteedit 2.6.2, but now I made a local version of 
+noteedit-2.7.3. tse3 was actually the newest version. And now I can see in 
+Settings -> Configure -> Sound: Single aRTs midi output port. I select this 
+but nothing happens. :-( No sound to hear. :-(
+
+Thanks for your efforts.
+
+Kai
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Oct 27 23:18:27 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 27 Oct 2004 23:18:27 +0200
+Subject: [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+In-Reply-To: <200410271131.23711.kai.wassermann@gmx.de>
+References: <417F48F2.1080907@schwaben.de> <200410271131.23711.kai.wassermann@gmx.de>
+Message-ID: <418010A3.7060804@schwaben.de>
+
+When starting the new noteedit, do you see
+
+    TSE3 ALSA MIDI scheduler created
+
+in the shell? If yes, what appears when you use kaconnect or aconnect to 
+connect the alsa midi ports. Typically noteedit shows up as ports 129:0 
+or 131:0, and those need a working midi device to connect to. This is 
+probably true when working with alsa (oss I don't use, don't know). 
+These ports that show up can/can also/should be connected outside of 
+noteedit. Can you switch other midi-sources on your midi output device, 
+maybe jazz, and make it sound? If this works, switch noteedit on it. But 
+I guess your midi-setup is still working ...
+
+A thougt: I don't have an idea what arts is good for in the evolution of 
+alsa. I'm afraid it can grap the sound card. This is why I switch it 
+off. For me jack gets and owns the soundcard, and a 
+software-midi-synthesizer connects to jack. jack routes wav-data, alsa 
+routes midi-data. I'm afraid, that another scenario might not be 
+supported and working as well. I might be completely wrong.
+
+Georg.
+
+
+noteedit-user-admin at berlios.de wrote:
+
+>On Wednesday 27 October 2004 09:06, noteedit-user-admin at berlios.de wrote:
+>
+>
+>>    noteedit-2.7.3-2
+>>    tse3-0.2.7-214
+>>
+>
+>Til now I used noteedit 2.6.2, but now I made a local version of 
+>noteedit-2.7.3. tse3 was actually the newest version. And now I can see in 
+>Settings -> Configure -> Sound: Single aRTs midi output port. I select this 
+>but nothing happens. :-( No sound to hear. :-(
+>
+>Thanks for your efforts.
+>
+>Kai
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+
+
+

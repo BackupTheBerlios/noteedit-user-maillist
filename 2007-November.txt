@@ -1,0 +1,31 @@
+From noteedit-user at lists.berlios.de  Thu Nov 29 12:24:12 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 29 Nov 2007 12:24:12 +0100
+Subject: [Noteedit-user] Reminder: LAC 2008 in Cologne
+Message-ID: <474EA15C.8070406@web.de>
+
+Hi,
+
+I just quick point you to the upcoming LAC 2008 in Cologne, germany:
+http://lac.linuxaudio.org.
+
+As you see paper submission deadline is tomorrow at midnight. I did not
+intend to write papers. I hope I will able to attend the conference (i.e.
+I will do anything possible to make it happen).
+
+I planned as this year to make a Canorus workshop with Matevz and (if he wishes
+to)Georg. Any other one wanting to participate is most welcome! Up to now it is
+not possible to directly announce a workshop for the conference. Maybe this is
+done by submitting a paper, but I couldn't find any hint for that on the LAC page.
+
+Best,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+

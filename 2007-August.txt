@@ -1,0 +1,761 @@
+From noteedit-user at lists.berlios.de  Fri Aug  3 03:26:35 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 2 Aug 2007 18:26:35 -0700
+Subject: [Noteedit-user] Two ultra-noob questions
+Message-ID: <200708021826.35480.gcmbl@cebridge.net>
+
+Hello, Listies!
+
+I am embarrassed to be asking both of these question - clearly I am missing 
+something obvious, but here goes:
+
+I cannot for the life of me get NoteEdit to continue the staff of a single 
+voice onto a second line on the 'page'. The only way I have found to have 
+more than one line is to do Staff > New Staff, which seems to me to be 
+starting a second voice, as it requires a time signature instead of just a 
+clef, and starts the measure numbering over. It causes other complications as 
+well. I would like it to note four measures, then drop to a new line.
+
+Second question: In spite of my setting US Letter as the page size in the 
+print config dialogs, an A4 request is always sent to the printer. I can 
+print via the print preview, but this restricts my ability to set margins, 
+etc. I would like to set US Letter as the default page size.
+
+As must be clear from these questions, I am new both to music and to notation 
+software. I am very happy to find NoteEdit, and as soon as I get by these 
+initial bumps, am going to enjoy putting it to use in my Ultimate Quest - to 
+become an Intermediate Guitarist! Someday, someday...
+
+Thanks for your time!
+
+
+From noteedit-user at lists.berlios.de  Fri Aug  3 08:11:34 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 3 Aug 2007 08:11:34 +0200
+Subject: [Noteedit-user] Two ultra-noob questions
+In-Reply-To: <200708021826.35480.gcmbl@cebridge.net>
+References: <200708021826.35480.gcmbl@cebridge.net>
+Message-ID: <9a4db0e10708022311s71c84a74v799da7909ecbb92@mail.gmail.com>
+
+Hi,
+
+2007/8/3, user mailing list for the score editor noteedit <
+noteedit-user at lists.berlios.de>:
+>
+> Hello, Listies!
+>
+> I am embarrassed to be asking both of these question - clearly I am
+> missing
+> something obvious, but here goes:
+>
+> I cannot for the life of me get NoteEdit to continue the staff of a single
+> voice onto a second line on the 'page'. The only way I have found to have
+> more than one line is to do Staff > New Staff, which seems to me to be
+> starting a second voice, as it requires a time signature instead of just a
+> clef, and starts the measure numbering over. It causes other complications
+> as
+> well. I would like it to note four measures, then drop to a new line.
+
+
+NoteEdit only uses the horizontal view of the score  - that is  the
+unlimited long tracks of the staffs and other lines. If you want to print
+the score, the score is exported to LilyPond format and converted to PDF.
+LilyPond is a typesetter tool specialized for engraving the score (see
+http://www.lilypond.org).
+
+Second question: In spite of my setting US Letter as the page size in the
+> print config dialogs, an A4 request is always sent to the printer. I can
+> print via the print preview, but this restricts my ability to set margins,
+> etc. I would like to set US Letter as the default page size.
+
+
+You can set this in print dialog below where various options like export
+drum notes, font size, page etc. settings are available.
+
+
+Regards.
+- Matev?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070803/d706b2c0/attachment.html>
+
+From noteedit-user at lists.berlios.de  Fri Aug  3 09:15:28 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 3 Aug 2007 00:15:28 -0700
+Subject: [Noteedit-user] Two ultra-noob questions
+In-Reply-To: <9a4db0e10708022311s71c84a74v799da7909ecbb92@mail.gmail.com>
+References: <200708021826.35480.gcmbl@cebridge.net>
+	<9a4db0e10708022311s71c84a74v799da7909ecbb92@mail.gmail.com>
+Message-ID: <200708030015.28484.gcmbl@cebridge.net>
+
+Hello, Matev?!
+
+Thank you for your fast and useful reply! 
+
+I have tried the one-long-track trick, and it works just fine! Thank you for 
+straightening me out on that.
+
+I am still a bit lost in regards to the A4 bit, however. I have indeed set US 
+Letter in the 'Page Geometry' box on the 'Lilypond format' tab of the print 
+dialog. It still sends an A4 request to the printer. Other apps do print 
+normally, BTW. 
+
+Is there any other place I can look for a page size setting?
+
+Thanks again for your time!
+
+
+
+
+On Thursday 02 August 2007 23:11, user mailing list for the score editor 
+noteedit wrote:
+> Hi,
+>
+> 2007/8/3, user mailing list for the score editor noteedit <
+>
+> noteedit-user at lists.berlios.de>:
+> > Hello, Listies!
+> >
+> > I am embarrassed to be asking both of these question - clearly I am
+> > missing
+> > something obvious, but here goes:
+> >
+> > I cannot for the life of me get NoteEdit to continue the staff of a
+> > single voice onto a second line on the 'page'. The only way I have found
+> > to have more than one line is to do Staff > New Staff, which seems to me
+> > to be starting a second voice, as it requires a time signature instead of
+> > just a clef, and starts the measure numbering over. It causes other
+> > complications as
+> > well. I would like it to note four measures, then drop to a new line.
+>
+> NoteEdit only uses the horizontal view of the score  - that is  the
+> unlimited long tracks of the staffs and other lines. If you want to print
+> the score, the score is exported to LilyPond format and converted to PDF.
+> LilyPond is a typesetter tool specialized for engraving the score (see
+> http://www.lilypond.org).
+>
+> Second question: In spite of my setting US Letter as the page size in the
+>
+> > print config dialogs, an A4 request is always sent to the printer. I can
+> > print via the print preview, but this restricts my ability to set
+> > margins, etc. I would like to set US Letter as the default page size.
+>
+> You can set this in print dialog below where various options like export
+> drum notes, font size, page etc. settings are available.
+>
+>
+> Regards.
+> - Matev?
+
+
+From noteedit-user at lists.berlios.de  Fri Aug  3 10:58:46 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 3 Aug 2007 10:58:46 +0200
+Subject: [Noteedit-user] Two ultra-noob questions
+In-Reply-To: <200708030015.28484.gcmbl@cebridge.net>
+References: <200708021826.35480.gcmbl@cebridge.net>
+	<9a4db0e10708022311s71c84a74v799da7909ecbb92@mail.gmail.com>
+	<200708030015.28484.gcmbl@cebridge.net>
+Message-ID: <9a4db0e10708030158m502d2673lae8b09431434131a@mail.gmail.com>
+
+You can always export to LilyPond manually (File->Export->LilyPond) and edit
+the created file with your favourite text editor and set the page size
+somewhere at the beginning of the file. When done, run
+$ lilypond myfile.ly
+and it will produce a printable myfile.pdf for you.
+
+
+Regards.
+- Matev?
+
+2007/8/3, user mailing list for the score editor noteedit <
+noteedit-user at lists.berlios.de>:
+>
+> Hello, Matev?!
+>
+> Thank you for your fast and useful reply!
+>
+> I have tried the one-long-track trick, and it works just fine! Thank you
+> for
+> straightening me out on that.
+>
+> I am still a bit lost in regards to the A4 bit, however. I have indeed set
+> US
+> Letter in the 'Page Geometry' box on the 'Lilypond format' tab of the
+> print
+> dialog. It still sends an A4 request to the printer. Other apps do print
+> normally, BTW.
+>
+> Is there any other place I can look for a page size setting?
+>
+> Thanks again for your time!
+>
+>
+>
+>
+> On Thursday 02 August 2007 23:11, user mailing list for the score editor
+> noteedit wrote:
+> > Hi,
+> >
+> > 2007/8/3, user mailing list for the score editor noteedit <
+> >
+> > noteedit-user at lists.berlios.de>:
+> > > Hello, Listies!
+> > >
+> > > I am embarrassed to be asking both of these question - clearly I am
+> > > missing
+> > > something obvious, but here goes:
+> > >
+> > > I cannot for the life of me get NoteEdit to continue the staff of a
+> > > single voice onto a second line on the 'page'. The only way I have
+> found
+> > > to have more than one line is to do Staff > New Staff, which seems to
+> me
+> > > to be starting a second voice, as it requires a time signature instead
+> of
+> > > just a clef, and starts the measure numbering over. It causes other
+> > > complications as
+> > > well. I would like it to note four measures, then drop to a new line.
+> >
+> > NoteEdit only uses the horizontal view of the score  - that is  the
+> > unlimited long tracks of the staffs and other lines. If you want to
+> print
+> > the score, the score is exported to LilyPond format and converted to
+> PDF.
+> > LilyPond is a typesetter tool specialized for engraving the score (see
+> > http://www.lilypond.org).
+> >
+> > Second question: In spite of my setting US Letter as the page size in
+> the
+> >
+> > > print config dialogs, an A4 request is always sent to the printer. I
+> can
+> > > print via the print preview, but this restricts my ability to set
+> > > margins, etc. I would like to set US Letter as the default page size.
+> >
+> > You can set this in print dialog below where various options like export
+> > drum notes, font size, page etc. settings are available.
+> >
+> >
+> > Regards.
+> > - Matev?
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070803/66aa134b/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Aug 16 02:15:09 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 16 Aug 2007 10:15:09 +1000
+Subject: [Noteedit-user] Linking two staves
+Message-ID: <1187223309.30091.17.camel@karl>
+
+Hullo there.
+
+I feel like a fraud in this mailing list, because I know next to nothing
+about music (I can whistle, though...).
+
+I am trying to use Noteedit to transcribe a handwritten piece of music,
+so that I can print it out nicely.
+
+The handwritten piece has two staves, and the bar lines link the two
+staves neatly - the bar lines run from the top line of the top staff to
+the bottom line of the bottom staff so the bars "line up".
+
+I can get two staves in Noteedit, but I cannot "tie" the staves
+together. Is this possible in Noteedit, and if so how?
+
+Regards, K.
+
+PS: I looked at Canorus too, but it just crashed and crashed :-(
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+
+
+From noteedit-user at lists.berlios.de  Thu Aug 16 12:50:45 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 16 Aug 2007 20:50:45 +1000
+Subject: [Noteedit-user] Multiple staves...?
+Message-ID: <1187261446.30091.40.camel@karl>
+
+Another beginner question: How do I get more than one stave? I want a
+melody to be printed as several staves, one above the other, not as one
+long staff, which is all I can seem to do.
+
+"Staff->New staff" gives me a new staff alright, but it is tied to the
+staff above, not a continuation of it.
+
+??
+
+Regards, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+
+
+From noteedit-user at lists.berlios.de  Thu Aug 16 15:37:44 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 16 Aug 2007 15:37:44 +0200
+Subject: [Noteedit-user] Multiple staves...?
+In-Reply-To: <1187261446.30091.40.camel@karl>
+References: <1187261446.30091.40.camel@karl>
+Message-ID: <9a4db0e10708160637y3473c7a8h178049192cdf7732@mail.gmail.com>
+
+NoteEdit has unlimited lengths of the staff, so you don't need "line
+breaks". When you print music or export to PDF, it's engraved automatically
+by LilyPond or whichever typesetter you prefer.
+
+
+Regards.
+- Matev?
+
+2007/8/16, user mailing list for the score editor noteedit <
+noteedit-user at lists.berlios.de>:
+>
+> Another beginner question: How do I get more than one stave? I want a
+> melody to be printed as several staves, one above the other, not as one
+> long staff, which is all I can seem to do.
+>
+> "Staff->New staff" gives me a new staff alright, but it is tied to the
+> staff above, not a continuation of it.
+>
+> ??
+>
+> Regards, K.
+>
+> --
+> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+> http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070816/5c56698c/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Aug 16 15:39:42 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 16 Aug 2007 15:39:42 +0200
+Subject: [Noteedit-user] Linking two staves
+In-Reply-To: <1187223309.30091.17.camel@karl>
+References: <1187223309.30091.17.camel@karl>
+Message-ID: <9a4db0e10708160639k9a0a462u1c26424ba7d0cab9@mail.gmail.com>
+
+Use Format -> Document Layout. Select staffs you want to link and choose
+from Brace, Bracket and/or Barline.
+
+
+Regards.
+- Matev?
+
+2007/8/16, user mailing list for the score editor noteedit <
+noteedit-user at lists.berlios.de>:
+>
+> Hullo there.
+>
+> I feel like a fraud in this mailing list, because I know next to nothing
+> about music (I can whistle, though...).
+>
+> I am trying to use Noteedit to transcribe a handwritten piece of music,
+> so that I can print it out nicely.
+>
+> The handwritten piece has two staves, and the bar lines link the two
+> staves neatly - the bar lines run from the top line of the top staff to
+> the bottom line of the bottom staff so the bars "line up".
+>
+> I can get two staves in Noteedit, but I cannot "tie" the staves
+> together. Is this possible in Noteedit, and if so how?
+>
+> Regards, K.
+>
+> PS: I looked at Canorus too, but it just crashed and crashed :-(
+>
+> --
+> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+> Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+> http://www.biplane.com.au/~kauer/ <http://www.biplane.com.au/%7Ekauer/>                  +61-428-957160
+> (mob)
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070816/0af7b577/attachment.html>
+
+From noteedit-user at lists.berlios.de  Fri Aug 17 15:00:57 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 17 Aug 2007 23:00:57 +1000
+Subject: [Noteedit-user] Anacrucis in noteedit?
+Message-ID: <1187355657.6024.65.camel@karl>
+
+Is there any way to tell noteedit that the first little bit of a score
+is "short" (It think thetechnical term is "anacrucis"), so that Lilypond
+doesn't complain about the first and/or last bar's timings being wrong?
+
+I've worked around it by adding the rests to the first and last bars,
+but...
+
+And while I'm wasting your time, is there any simple way to tell
+Lilypond (preferably from inside noteedit) where you want the "line
+breaks"? I'd like four lines, each of two bars, but I get one line of
+three and one line of five bars (with the first mysteriously indented).
+I fear I may have to delve into the Lilypond notation language to fix
+this...
+
+Thanks, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 17 23:34:39 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 18 Aug 2007 07:34:39 +1000
+Subject: [Noteedit-user] Multiple staves...?
+In-Reply-To: <9a4db0e10708160637y3473c7a8h178049192cdf7732@mail.gmail.com>
+References: <1187261446.30091.40.camel@karl>
+	<9a4db0e10708160637y3473c7a8h178049192cdf7732@mail.gmail.com>
+Message-ID: <1187386479.21551.18.camel@karl>
+
+> NoteEdit has unlimited lengths of the staff, so you don't need "line
+> breaks". When you print music or export to PDF, it's engraved
+> automatically by LilyPond or whichever typesetter you prefer.
+> Regards.
+> - Matev?
+
+Thank you for this and your other answer. Much appreciated.
+
+It seems noteedit is very KDE-centric; printing turned into a nightmare.
+Now I just take the Lilypond output file from noteedit and do "lilypond
+filename" and lo! I get ps and pdf output with no problems at all; these
+I can then print myself.
+
+Of Canorus is noteedit without these difficulties, I can hardly wait.
+
+Regards, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+
+
+From noteedit-user at lists.berlios.de  Sun Aug 19 18:10:14 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 19 Aug 2007 18:10:14 +0200 (CEST)
+Subject: [Noteedit-user] Anacrucis in noteedit?
+In-Reply-To: <1187355657.6024.65.camel@karl>
+Message-ID: <320898.64416.qm@web23107.mail.ird.yahoo.com>
+
+For anacrusis use hidden rests (the blue cross with the red cross).
+
+Peter
+
+user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> schrieb: Is there any way to tell noteedit that the first little bit of a score
+is "short" (It think thetechnical term is "anacrucis"), so that Lilypond
+doesn't complain about the first and/or last bar's timings being wrong?
+
+I've worked around it by adding the rests to the first and last bars,
+but...
+
+And while I'm wasting your time, is there any simple way to tell
+Lilypond (preferably from inside noteedit) where you want the "line
+breaks"? I'd like four lines, each of two bars, but I get one line of
+three and one line of five bars (with the first mysteriously indented).
+I fear I may have to delve into the Lilypond notation language to fix
+this...
+
+Thanks, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+_______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+       
+---------------------------------
+Yahoo! Clever - Sie haben Fragen? Yahoo! Nutzer antworten Ihnen.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070819/831671b1/attachment.html>
+
+From noteedit-user at lists.berlios.de  Mon Aug 20 19:03:37 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 20 Aug 2007 19:03:37 +0200 (CEST)
+Subject: [Noteedit-user] Anacrucis in noteedit?
+In-Reply-To: <320898.64416.qm@web23107.mail.ird.yahoo.com>
+Message-ID: <174661.39602.qm@web23103.mail.ird.yahoo.com>
+
+Sorry, I meant the blue rest with the red cross.
+
+user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> schrieb: For anacrusis use hidden rests (the blue cross with the red cross).
+
+Peter
+
+user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> schrieb: Is there any way to tell noteedit that the first little bit of a score
+is "short" (It think thetechnical term is "anacrucis"), so that Lilypond
+doesn't complain about the first and/or last bar's timings being wrong?
+
+I've worked around it by adding the rests to the first and last bars,
+but...
+
+And while I'm wasting your time, is there any simple way to tell
+Lilypond (preferably from inside noteedit) where you want the "line
+breaks"? I'd like four lines, each of two bars, but I get one line of
+three and one line of five bars (with the first mysteriously indented).
+I fear I may have to delve into the Lilypond notation language to  fix
+this...
+
+Thanks, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+_______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+        
+
+---------------------------------
+Yahoo! Clever - Sie haben Fragen? Yahoo! Nutzer antworten Ihnen. _______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+       
+---------------------------------
+ Wissenswertes zum Thema PC, Zubeh?r oder Programme.BE A BETTER INTERNET-GURU!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070820/341bc53c/attachment.html>
+
+From noteedit-user at lists.berlios.de  Tue Aug 21 04:03:43 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 21 Aug 2007 12:03:43 +1000
+Subject: [Noteedit-user] Anacrucis in noteedit?
+In-Reply-To: <174661.39602.qm@web23103.mail.ird.yahoo.com>
+References: <174661.39602.qm@web23103.mail.ird.yahoo.com>
+Message-ID: <1187661823.15826.16.camel@karl>
+
+On Mon, 2007-08-20 at 19:03 +0200, user mailing list for the score
+editor noteedit wrote:
+> Sorry, I meant the blue rest with the red cross.
+
+Thank you! I actually sorted it out the hard way - went into the
+lilypond output and inserted "\partial XX" instructions.
+
+I must confess that as a new user of notepad I find it has a very
+counterintuitive and highly modal interface, with many unfortunate cul
+de sacs. For example, if I mark a set of notes and press "beam",
+noteedit will beam the notes together. But highlighting the beamed notes
+and pressing "beam again" does NOT unbeam them! The only way I found to
+correct such an error was to delete and reenter the notes. The
+"autobeam" function seems entirely capricious - noteedit always beams
+adjacent quavers together, no matter what I try to stop it doing so. It
+will beams three (in a 6/8 piece) then the fourth will not be beamed -
+but if I insert a fourth quaver *before* the three beamed ones, it will
+be autobeamed into the group. Good if that's what you want, not so good
+if that's NOT what you want. There seems to be no way to change the
+length of a note - say from quaver to semi-quaver - without deleting and
+reinserting the entire note.
+
+But maybe I'm missing something.
+
+Regards, K.
+
+-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Karl Auer (kauer at biplane.com.au)                   +61-2-64957160 (h)
+http://www.biplane.com.au/~kauer/                  +61-428-957160 (mob)
+
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 21 19:18:03 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 21 Aug 2007 19:18:03 +0200
+Subject: [Noteedit-user] Anacrucis in noteedit?
+In-Reply-To: <1187661823.15826.16.camel@karl>
+References: <174661.39602.qm@web23103.mail.ird.yahoo.com>
+	<1187661823.15826.16.camel@karl>
+Message-ID: <46CB1E4B.9090004@gmail.com>
+
+For changing the note length, go to edit mode (hit E key). This allows
+you to change properties of already placed elements.
+
+Regards.
+-Matev?
+
+user mailing list for the score editor noteedit pravi:
+> On Mon, 2007-08-20 at 19:03 +0200, user mailing list for the score
+> editor noteedit wrote:
+>   
+>> Sorry, I meant the blue rest with the red cross.
+>>     
+>
+> Thank you! I actually sorted it out the hard way - went into the
+> lilypond output and inserted "\partial XX" instructions.
+>
+> I must confess that as a new user of notepad I find it has a very
+> counterintuitive and highly modal interface, with many unfortunate cul
+> de sacs. For example, if I mark a set of notes and press "beam",
+> noteedit will beam the notes together. But highlighting the beamed notes
+> and pressing "beam again" does NOT unbeam them! The only way I found to
+> correct such an error was to delete and reenter the notes. The
+> "autobeam" function seems entirely capricious - noteedit always beams
+> adjacent quavers together, no matter what I try to stop it doing so. It
+> will beams three (in a 6/8 piece) then the fourth will not be beamed -
+> but if I insert a fourth quaver *before* the three beamed ones, it will
+> be autobeamed into the group. Good if that's what you want, not so good
+> if that's NOT what you want. There seems to be no way to change the
+> length of a note - say from quaver to semi-quaver - without deleting and
+> reinserting the entire note.
+>
+> But maybe I'm missing something.
+>
+> Regards, K.
+>
+>   
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 252 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070821/0fc49a04/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Sun Aug 26 22:27:25 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 26 Aug 2007 22:27:25 +0200
+Subject: [Noteedit-user] change volume for all voices
+Message-ID: <200708262227.26020.finkandreas@web.de>
+
+hello,
+
+i created a note sheet, with two staffs, and every staff has two voices. If I 
+set a volume sign, then only the first voice is affected. How can I change 
+the volume for both voices in the first staff? Or is there the possibility 
+two merge the first and the second voice?
+
+thanks for your help
+Andreas
+
+
+From noteedit-user at lists.berlios.de  Mon Aug 27 00:37:26 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 27 Aug 2007 00:37:26 +0200
+Subject: [Noteedit-user] change volume for all voices
+In-Reply-To: <200708262227.26020.finkandreas@web.de>
+References: <200708262227.26020.finkandreas@web.de>
+Message-ID: <46D200A6.6010600@gmail.com>
+
+MIDI settings like volume, instrument etc. can only be changed for the
+whole staff. So the only way is to move the second voice to a new staff.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> hello,
+>
+> i created a note sheet, with two staffs, and every staff has two voices. If I 
+> set a volume sign, then only the first voice is affected. How can I change 
+> the volume for both voices in the first staff? Or is there the possibility 
+> two merge the first and the second voice?
+>
+> thanks for your help
+> Andreas
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 252 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070827/b6cc0d44/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Mon Aug 27 08:04:32 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 27 Aug 2007 08:04:32 +0200
+Subject: [Noteedit-user] change volume for all voices
+In-Reply-To: <46D200A6.6010600@gmail.com>
+References: <200708262227.26020.finkandreas@web.de>
+	<46D200A6.6010600@gmail.com>
+Message-ID: <200708270804.32869.finkandreas@web.de>
+
+But if MIDI settings are changed for the whole staff, why keeps the second 
+voice its loudness, while the first voice will become louder/lower?
+To change the loudness for the second voice I have to go to "Staff -> Voices" 
+then click on the register staff, and change there the volume to something. 
+But it is not possible to change the volume with an loudness-sign. If using a 
+loudness-sign, only first voice will change its loudness... Why cannot all 
+voices change its loudness (that's what I expected from a loudness sign)
+
+Andreas
+
+
+Am Montag 27 August 2007 schrieb user mailing list for the score editor 
+noteedit:
+> MIDI settings like volume, instrument etc. can only be changed for the
+> whole staff. So the only way is to move the second voice to a new staff.
+>
+>
+> Regards.
+> - Matev?
+>
+> user mailing list for the score editor noteedit pravi:
+> > hello,
+> >
+> > i created a note sheet, with two staffs, and every staff has two voices.
+> > If I set a volume sign, then only the first voice is affected. How can I
+> > change the volume for both voices in the first staff? Or is there the
+> > possibility two merge the first and the second voice?
+> >
+> > thanks for your help
+> > Andreas
+> > _______________________________________________
+> > Noteedit-user mailing list
+> > Noteedit-user at lists.berlios.de
+> > https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+

@@ -1,0 +1,226 @@
+From noteedit-user-admin at lists.berlios.de  Tue Apr 12 19:33:25 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 12 Apr 2005 18:33:25 +0100
+Subject: [Noteedit-user] NoteEdit from terminal
+Message-ID: <1113327205.7694.1.camel@ubuntu.midominio>
+
+       Hello list. I've been looking for some documentation about how to
+execute NoteEdit from terminal, but I don't find anything. In "man
+noteedit" there are some options to execute some characteristics from
+terminal, but it's not enough.
+
+       My idea is to import a midi file and show the score. I know
+NoteEdit
+does it bye Tse3, but I woudl like to know how to do it from terminal.
+
+       Does anyone have any information about commands with NoteEdit?
+
+       Thank you very much.
+
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Apr 14 00:13:27 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 14 Apr 2005 00:13:27 +0200
+Subject: [Noteedit-user] NoteEdit from terminal
+In-Reply-To: <1113327205.7694.1.camel@ubuntu.midominio>
+References: <1113327205.7694.1.camel@ubuntu.midominio>
+Message-ID: <425D9987.6010204@web.de>
+
+Hello,
+
+>        Hello list. I've been looking for some documentation about how to
+> execute NoteEdit from terminal, but I don't find anything. In "man
+> noteedit" there are some options to execute some characteristics from
+> terminal, but it's not enough.
+
+You can invoke a help using the command line:
+noteedit --help
+
+>        My idea is to import a midi file and show the score. I know
+> NoteEdit
+> does it bye Tse3, but I woudl like to know how to do it from terminal.
+
+Importing via command line is currently not supported. Just write a
+feature request if you wish to have it added (mainly so we developers
+do not forget this wish 8-).
+
+>        Does anyone have any information about commands with NoteEdit?
+
+The command line help shows all available commands via command line.
+I don't know if noteedit was ever intentioned to be used as a tool
+invoked via command line. Of course loading not-files via command
+line is not a problem, but I have some problems with automatic export
+as there are no further options. Probably only the saved settings are
+used for converting a not-file.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Apr 14 15:17:22 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 14 Apr 2005 14:17:22 +0100
+Subject: [Noteedit-user] NoteEdit from terminal
+In-Reply-To: <425D9987.6010204@web.de>
+References: <1113327205.7694.1.camel@ubuntu.midominio>
+	 <425D9987.6010204@web.de>
+Message-ID: <1113484642.7710.19.camel@ubuntu.midominio>
+
+	Ok. Thank you very much. 
+
+	It's a shame NoteEdit can not be used from command line... :-( I'd have
+liked to import midi files to NoteEdit from my code... I'll tell
+developers then.
+
+
+
+
+El jue, 14-04-2005 a las 00:13 +0200, noteedit-user-admin at berlios.de
+escribi?:
+> Hello,
+> 
+> >        Hello list. I've been looking for some documentation about how to
+> > execute NoteEdit from terminal, but I don't find anything. In "man
+> > noteedit" there are some options to execute some characteristics from
+> > terminal, but it's not enough.
+> 
+> You can invoke a help using the command line:
+> noteedit --help
+> 
+> >        My idea is to import a midi file and show the score. I know
+> > NoteEdit
+> > does it bye Tse3, but I woudl like to know how to do it from terminal.
+> 
+> Importing via command line is currently not supported. Just write a
+> feature request if you wish to have it added (mainly so we developers
+> do not forget this wish 8-).
+> 
+> >        Does anyone have any information about commands with NoteEdit?
+> 
+> The command line help shows all available commands via command line.
+> I don't know if noteedit was ever intentioned to be used as a tool
+> invoked via command line. Of course loading not-files via command
+> line is not a problem, but I have some problems with automatic export
+> as there are no further options. Probably only the saved settings are
+> used for converting a not-file.
+> 
+> Best regards,
+> 
+> Reinhard Katzmann
+
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Apr 21 22:23:23 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 21 Apr 2005 22:23:23 +0200
+Subject: [Noteedit-user] Noteedit on the LAC 2005 in Karlsruhe
+Message-ID: <42680BBB.8050602@web.de>
+
+Hi,
+ann
+On Friday the 22. April (Tomorrow) I and Georg will hold
+an BOFS for noteedit. We will present noteedit to the
+interested audience and discuss the current development
+progress.
+
+We already collected and discussed some ideas:
+- Macros for noteedit making it easier to enter groups
+   of notes (somewhat based on feature request #518/519)
+- Improve midi input (manual edit mode), can be combined
+   with the macros
+
+Best regards,
+
+Reinhard Katzm
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Apr 21 22:33:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 21 Apr 2005 22:33:33 +0200
+Subject: [Noteedit-user] Noteedit on the LAC 2005 in Karlsruhe
+In-Reply-To: <42680BBB.8050602@web.de>
+References: <42680BBB.8050602@web.de>
+Message-ID: <42680E1D.9080901@web.de>
+
+Oh well, I forgot the time and the place:
+LAC2005 is in Karlsruhe (http://lac.zkm.de)
+and the BOFS is at 15.30.
+The conference is streamed. See http://lac2005.zkm.de/
+for more information.
+
+Thanks and best regards,
+
+Reinhard Katzmann
+
+noteedit-user-admin at berlios.de schrieb:
+> Hi,
+> ann
+> On Friday the 22. April (Tomorrow) I and Georg will hold
+> an BOFS for noteedit. We will present noteedit to the
+> interested audience and discuss the current development
+> progress.
+> 
+> We already collected and discussed some ideas:
+> - Macros for noteedit making it easier to enter groups
+>   of notes (somewhat based on feature request #518/519)
+> - Improve midi input (manual edit mode), can be combined
+>   with the macros
+> 
+> Best regards,
+> 
+> Reinhard Katzm
+
+
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Sun Apr 24 23:04:46 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 24 Apr 2005 23:04:46 +0200
+Subject: [Noteedit-user] BOFS of Noteedit on the LAC 2005
+Message-ID: <426C09EE.5030104@web.de>
+
+Hi,
+
+at the NoteEdit BOFS on Friday we've met two composers and the
+lilypond authors. We talked about different topics concerning the use of
+NoteEdit.
+
+I showed some of the changes currently under development, namely the
+integration of the voices and the staff properties dialog and some
+improvements to the menu structure.
+
+Georg talked about the improved lilypond integration in the current
+version of NoteEdit and some of the problems that have been removed.
+
+In the name of the NoteEdit team I want thank the organisators of the
+LAC 2005 for the very good and professional organisation of the whole
+conference. We could collect many ideas and had several discussions on
+the future and the value of NoteEdit.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+

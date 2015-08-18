@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2004-October/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Cannot%20create%20an%20ALSA%20MIDI%20Scheduler&In-Reply-To=%3C418010A3.7060804%40schwaben.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000022.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Cannot create an ALSA MIDI Scheduler</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Cannot%20create%20an%20ALSA%20MIDI%20Scheduler&In-Reply-To=%3C418010A3.7060804%40schwaben.de%3E"
+       TITLE="[Noteedit-user] Cannot create an ALSA MIDI Scheduler">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Wed Oct 27 23:18:27 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000022.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#23">[ date ]</a>
+              <a href="thread.html#23">[ thread ]</a>
+              <a href="subject.html#23">[ subject ]</a>
+              <a href="author.html#23">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>When starting the new noteedit, do you see
+
+    TSE3 ALSA MIDI scheduler created
+
+in the shell? If yes, what appears when you use kaconnect or aconnect to 
+connect the alsa midi ports. Typically noteedit shows up as ports 129:0 
+or 131:0, and those need a working midi device to connect to. This is 
+probably true when working with alsa (oss I don't use, don't know). 
+These ports that show up can/can also/should be connected outside of 
+noteedit. Can you switch other midi-sources on your midi output device, 
+maybe jazz, and make it sound? If this works, switch noteedit on it. But 
+I guess your midi-setup is still working ...
+
+A thougt: I don't have an idea what arts is good for in the evolution of 
+alsa. I'm afraid it can grap the sound card. This is why I switch it 
+off. For me jack gets and owns the soundcard, and a 
+software-midi-synthesizer connects to jack. jack routes wav-data, alsa 
+routes midi-data. I'm afraid, that another scenario might not be 
+supported and working as well. I might be completely wrong.
+
+Georg.
+
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A> wrote:
+
+&gt;<i>On Wednesday 27 October 2004 09:06, <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A> wrote:
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i>    noteedit-2.7.3-2
+</I>&gt;&gt;<i>    tse3-0.2.7-214
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>Til now I used noteedit 2.6.2, but now I made a local version of 
+</I>&gt;<i>noteedit-2.7.3. tse3 was actually the newest version. And now I can see in 
+</I>&gt;<i>Settings -&gt; Configure -&gt; Sound: Single aRTs midi output port. I select this 
+</I>&gt;<i>but nothing happens. :-( No sound to hear. :-(
+</I>&gt;<i>
+</I>&gt;<i>Thanks for your efforts.
+</I>&gt;<i>
+</I>&gt;<i>Kai
+</I>&gt;<i>_______________________________________________
+</I>&gt;<i>Noteedit-user mailing list
+</I>&gt;<i><A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">Noteedit-user at lists.berlios.de</A>
+</I>&gt;<i><A HREF="http://lists.berlios.de/mailman/listinfo/noteedit-user">http://lists.berlios.de/mailman/listinfo/noteedit-user</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000022.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#23">[ date ]</a>
+              <a href="thread.html#23">[ thread ]</a>
+              <a href="subject.html#23">[ subject ]</a>
+              <a href="author.html#23">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

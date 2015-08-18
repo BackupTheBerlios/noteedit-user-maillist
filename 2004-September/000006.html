@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Re: noteedit upgrade
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2004-September/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Re%3A%20noteedit%20upgrade&In-Reply-To=%3C4155D158.2090900%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000005.html">
+   <LINK REL="Next"  HREF="000007.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Re: noteedit upgrade</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Re%3A%20noteedit%20upgrade&In-Reply-To=%3C4155D158.2090900%40web.de%3E"
+       TITLE="[Noteedit-user] Re: noteedit upgrade">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sat Sep 25 22:13:12 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000005.html">[Noteedit-user] [Fwd: Re: noteedit upgrade]
+</A></li>
+        <LI>Next message: <A HREF="000007.html">[Noteedit-user] Re: noteedit upgrade
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Nigel Horne wrote:
+
+&gt;<i> Now to sort out sound. This is probably your biggest nightmare!
+</I>&gt;<i> I have never been able to get sound to work from Noteedit, though other Linux
+</I>&gt;<i> programs are OK. I have two sound devices, the on board chip (AC '97) that I ignore (of
+</I>&gt;<i> course) and a Soundblaster Live Drive II. The recording gear is connected to the
+</I>&gt;<i> Soundblaster.
+</I>
+I have never tried to get sound from Noteedit. I have only one Sound 
+device, an AC'97 type and I use Alsa.
+
+&gt;<i> From NoteEdit if I do settings-&gt;configure NoteEdit-&gt;Sound I see 6 (!!) devices:
+</I>&gt;<i> Emu10K1
+</I>&gt;<i> EMU10K1 MPU-401 (UART)
+</I>&gt;<i> Emu10k1 Port 0
+</I>&gt;<i> do. 1
+</I>&gt;<i> do. 2
+</I>&gt;<i> do. 3
+</I>
+If I load the snd-virmidi driver from the kernel I get some virtual midi 
+devices. Also other midi devices appear if I start the corresponding 
+program like the timidity server port. I don't see any sound devices.
+You should read the handbook, probably it contains some information.
+
+&gt;<i> Which ever I select I get no sound. So:
+</I>&gt;<i> 1) Why does the AC '97 not appear?
+</I>&gt;<i> 2) Wouldn't it be more sensible to say &quot;Creative Soundblaster&quot; than EMU10K1
+</I>&gt;<i> 3) Why so many soundblaster options (I think I actually know the answer to that one...)
+</I>&gt;<i> 4) Most important of all - why no sound?
+</I>
+1) I don't know, but the ac'97 is a very generic thing, there are 
+several drivers on Linux for ac'97 based sound chips (intel, sis, via).
+
+2) No, there are many different soundblaster cards out there, very
+cheap ones, the 128, the emu10k1 (aka SB Live), Audigy in different
+variants, AWE64 at last.
+
+3) I don't understand. But without such a sound card of course I can't
+
+4) Actually noteedit uses either tse3 or midi to play the notes you have
+typeset. I have never tried tse3 directly but with midi (using timidity
+as a midi server) it works finde for me.
+
+&gt;<i> Can you enrol me to your support group/forum please?
+</I>
+You can suscribe to the Noteedit-User Mailing List on 
+<A HREF="http://developer.berlios.de/projects/noteedit.">http://developer.berlios.de/projects/noteedit.</A> (See Mailing Lists).
+For forums (bug/feature/support) you can opt to get messages for new
+comments for the report you generated
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - <A HREF="http://pertergrin.berlios.de">http://pertergrin.berlios.de</A>
+GnuPG Public Key available on request
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000005.html">[Noteedit-user] [Fwd: Re: noteedit upgrade]
+</A></li>
+	<LI>Next message: <A HREF="000007.html">[Noteedit-user] Re: noteedit upgrade
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

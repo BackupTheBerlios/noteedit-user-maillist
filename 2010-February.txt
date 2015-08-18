@@ -1,0 +1,157 @@
+From noteedit-user at lists.berlios.de  Wed Feb 17 20:07:54 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 17 Feb 2010 11:07:54 -0800 (PST)
+Subject: [Noteedit-user] Problem with file - line -20: syntax error
+Message-ID: <513563.28456.qm@web51705.mail.re2.yahoo.com>
+
+Hi.
+
+I am with this problem. I saved one *.not file. I don't can to open it. It's the error message:
+
+line -20: syntax error
+
+
+What to do?
+
+
+Thanks.
+Sorry my poor english.
+Gilberto
+
+
+
+
+      ____________________________________________________________________________________
+Veja quais s?o os assuntos do momento no Yahoo! +Buscados
+http://br.maisbuscados.yahoo.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20100217/ea3be523/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Feb 18 15:43:02 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 18 Feb 2010 15:43:02 +0100
+Subject: [Noteedit-user] Problem with file - line -20: syntax error
+In-Reply-To: <513563.28456.qm@web51705.mail.re2.yahoo.com>
+References: <513563.28456.qm@web51705.mail.re2.yahoo.com>
+Message-ID: <4B7D51F6.8020209@web.de>
+
+Hi,
+
+Without having seen the file or actually exact steps how you produced
+(or where you downloaded) the not file I fear we cannot help you.
+
+Thanks for your interest in NoteEdit.
+
+Regards,
+
+Reinhard Katzmann
+
+Am 17.02.2010 20:07, schrieb user mailing list for the score editor noteedit:
+> Hi.
+> 
+> I am with this problem. I saved one *.not file. I don't can to open it.
+> It's the error message:
+> 
+> line -20: syntax error
+> 
+> 
+> What to do?
+> 
+> 
+> Thanks.
+> Sorry my poor english.
+> Gilberto
+> 
+> 
+> ------------------------------------------------------------------------
+> Veja quais s?o os assuntos do momento no Yahoo! + Buscados: Top 10
+> <http://br.rd.yahoo.com/mail/taglines/mail/*http://br.maisbuscados.yahoo.com/>
+> - Celebridades
+> <http://br.rd.yahoo.com/mail/taglines/mail/*http://br.maisbuscados.yahoo.com/celebridades/>
+> - M?sica
+> <http://br.rd.yahoo.com/mail/taglines/mail/*http://br.maisbuscados.yahoo.com/m%C3%BAsica/>
+> - Esportes
+> <http://br.rd.yahoo.com/mail/taglines/mail/*http://br.maisbuscados.yahoo.com/esportes/>
+> 
+> 
+> 
+> 
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user at lists.berlios.de  Fri Feb 19 01:04:54 2010
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 18 Feb 2010 16:04:54 -0800 (PST)
+Subject: [Noteedit-user] Problem with file - line -20: syntax error
+Message-ID: <111298.35413.qm@web51707.mail.re2.yahoo.com>
+
+Hello.
+
+Ok. This is the file with problem.
+The Noteedit version is 3.5.10.
+
+ I am sorry. 
+Gilberto
+
+
+
+--- Em qua, 17/2/10, user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> escreveu:
+
+De: user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de>
+Assunto: [Noteedit-user] Problem with file - line -20: syntax error
+Para: noteedit-user at lists.berlios.de
+Data: Quarta-feira, 17 de Fevereiro de 2010, 17:07
+
+Hi.
+
+I am with this problem. I saved one *.not file. I don't can to open it. It's the error message:
+
+line -20: syntax error
+
+
+What to do?
+
+
+Thanks.
+Sorry my poor english.
+Gilberto
+
+
+
+
+
+      Veja quais s?o os assuntos do momento no Yahoo! + Buscados: Top 10 - Celebridades - M?sica - Esportes
+-----Anexo incorporado-----
+
+_______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+
+      ____________________________________________________________________________________
+Veja quais s?o os assuntos do momento no Yahoo! +Buscados
+http://br.maisbuscados.yahoo.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20100218/1294d118/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: problem.not
+Type: text/x-mup
+Size: 6607 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20100218/1294d118/attachment.bin>
+

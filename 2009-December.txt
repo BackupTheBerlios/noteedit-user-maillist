@@ -1,0 +1,35 @@
+From noteedit-user at lists.berlios.de  Sat Dec 19 05:02:10 2009
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 19 Dec 2009 04:02:10 -0000
+Subject: [Noteedit-user] Guitar Score Problem (stem orientation)
+Message-ID: <3ca8db5c0912181954t543684d6p52b7649100423139@mail.gmail.com>
+
+Hi:
+
+I am a new user. I am trying to print a guitar score but I have a problem.
+When I am working on NoteEdit the stem orientation is right on screen, but
+when I print the score the situation is different because almost all the
+stems are backwards.
+
+I think that I need more vertical distance between scores in order to avoid
+this problem... but I don't know how to fix this setting.
+
+My typesetting  is Lilypond.
+
+You can find a screenshot in the attached file.
+
+Thanks,
+
+-- 
+Alfredo
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20091219/e5c092ff/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: NoteEdit_problem.png
+Type: image/png
+Size: 163635 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20091219/e5c092ff/attachment.png>
+

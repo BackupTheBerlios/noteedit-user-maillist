@@ -1,0 +1,2335 @@
+From noteedit-user at lists.berlios.de  Sun Aug  6 20:09:58 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 6 Aug 2006 20:09:58 +0200 (CEST)
+Subject: [Noteedit-user] Release of 2.8.1?
+Message-ID: <20060806180958.86227.qmail@web27515.mail.ukl.yahoo.com>
+
+Hallo,
+ 
+ I know you're ver busy on developing Canorus, but would'nt ist be time to release noteedit 2.8.1 ?
+ 
+ Peter
+ 
+ 		
+---------------------------------
+NEU: Fragen stellen - Wissen, Meinungen und Erfahrungen teilen. Jetzt auf Yahoo! Clever.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060806/58ffcc11/attachment.html>
+
+From noteedit-user at lists.berlios.de  Tue Aug  8 17:43:28 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 8 Aug 2006 11:43:28 -0400
+Subject: [Noteedit-user] [Noteedit] Samples?
+Message-ID: <8200bab70608080843qe9564e5lefe6d4c30b1f424e@mail.gmail.com>
+
+Hi, I'm a new Linux user, and I'm just wondering if anyone has a good
+example of a noteedit file showing some of its abilities, so I can get
+an idea how it looks.
+Thanks!
+-Chuckk
+
+
+
+-- 
+"Far and away the best prize that life has to offer is the chance to
+work hard at work worth doing."
+-Theodore Roosevelt
+
+
+From noteedit-user at lists.berlios.de  Tue Aug  8 19:48:54 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 08 Aug 2006 19:48:54 +0200
+Subject: [Noteedit-user] [Noteedit] Samples?
+In-Reply-To: <8200bab70608080843qe9564e5lefe6d4c30b1f424e@mail.gmail.com>
+References: <8200bab70608080843qe9564e5lefe6d4c30b1f424e@mail.gmail.com>
+Message-ID: <44D8CE86.6090304@gmail.com>
+
+Best is to look at NoteEdit's screenshots:
+http://noteedit.berlios.de/shots.html
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> Hi, I'm a new Linux user, and I'm just wondering if anyone has a good
+> example of a noteedit file showing some of its abilities, so I can get
+> an idea how it looks.
+> Thanks!
+> -Chuckk
+>   
+
+
+
+From noteedit-user at lists.berlios.de  Tue Aug  8 23:26:40 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 8 Aug 2006 17:26:40 -0400
+Subject: [Noteedit-user] [Noteedit] Samples?
+In-Reply-To: <44D8CE86.6090304@gmail.com>
+References: <8200bab70608080843qe9564e5lefe6d4c30b1f424e@mail.gmail.com>
+	<44D8CE86.6090304@gmail.com>
+Message-ID: <8200bab70608081426k170d253dn296691c728b7db7d@mail.gmail.com>
+
+Thanks.
+Some of the things I'm looking for are to be able to make noteheads
+invisible, to make entire notes invisible, with ties to show a note
+being held across where the note isn't there, clefs on different lines
+than their usual positions, and with 8va or 8vb above and below them,
+different sizes of notes on one part, stuff that isn't standard.  I'd
+like to be able to position anything manually when necessary.  I also
+need to write banjo tablature, and to write with no key signature (not
+just in C major, I need transposing instruments displayed without key
+signatures as well).  Harmonics for violins...  And arbitrarily odd
+time signatures...
+I guess I'm wondering how customizable things are, or if Western
+notation rules are pretty much enforced.
+
+I hope I don't sound like a punk demanding things of free developers-
+I don't mean to do that, it's just that I'm trying to make the switch
+to Linux, and if I can't find a way to do those things I'll have to
+keep booting Windows in order to use Finale, for the time being.  I
+don't think Lilypond is going to do it, I have to be able to move
+stuff with the mouse.
+-Chuckk
+
+
+
+On 8/8/06, user mailing list for the score editor noteedit
+<noteedit-user at lists.berlios.de> wrote:
+> Best is to look at NoteEdit's screenshots:
+> http://noteedit.berlios.de/shots.html
+>
+>
+> Regards.
+> - Matev?
+>
+> user mailing list for the score editor noteedit pravi:
+> > Hi, I'm a new Linux user, and I'm just wondering if anyone has a good
+> > example of a noteedit file showing some of its abilities, so I can get
+> > an idea how it looks.
+> > Thanks!
+> > -Chuckk
+> >
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>
+
+
+-- 
+"Far and away the best prize that life has to offer is the chance to
+work hard at work worth doing."
+-Theodore Roosevelt
+
+
+From noteedit-user at lists.berlios.de  Wed Aug  9 19:35:59 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 09 Aug 2006 19:35:59 +0200
+Subject: [Noteedit-user] Release of 2.8.1?
+In-Reply-To: <20060806180958.86227.qmail@web27515.mail.ukl.yahoo.com>
+References: <20060806180958.86227.qmail@web27515.mail.ukl.yahoo.com>
+Message-ID: <44DA1CFF.8020305@web.de>
+
+user mailing list for the score editor noteedit wrote:
+> Hallo,
+>
+> I know you're ver busy on developing Canorus, but would'nt ist be time
+> to release noteedit 2.8.1 ?
+>
+I've uploaded a 2.8.1 archive but can't test if it compiles, as my KDE
+is broken.
+(Would need to upgrade > 400 MB so this will wait until I have my Mandriva
+2007 Beta or better RC version).
+
+You can get it here:
+http://prdownload.berlios.de/noteedit/noteedit-2.8.1.tar.gz
+If somethings fails try make -f Makefile.cvs first. If that is the case
+someone
+needs to upload the modified archive again.
+
+I recommand to use KDE 3.4 as minimal version though any KDE3 version
+should work (but probably requires the above reconfiguration of the
+automake stuff).
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Wed Aug  9 20:08:18 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 09 Aug 2006 20:08:18 +0200
+Subject: [Noteedit-user] [Noteedit] Samples?
+In-Reply-To: <8200bab70608081426k170d253dn296691c728b7db7d@mail.gmail.com>
+References: <8200bab70608080843qe9564e5lefe6d4c30b1f424e@mail.gmail.com>	<44D8CE86.6090304@gmail.com>
+	<8200bab70608081426k170d253dn296691c728b7db7d@mail.gmail.com>
+Message-ID: <44DA2492.6020402@gmail.com>
+
+Hi Chuck.
+
+NoteEdit is more like composing tool. For printing, it exports the score
+to LilyPond and Lily's job is then to fit the score nicely to the paper
+(it produces PDF to print).
+
+I advise you to first create the base score in NoteEdit (easier score
+creation for the new user in comparison to Lily from scratch IMO) and
+then export it to LilyPond and add any more exotic stuff which NoteEdit
+doesn't support manually.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit wrote:
+> Thanks.
+> Some of the things I'm looking for are to be able to make noteheads
+> invisible, to make entire notes invisible, with ties to show a note
+> being held across where the note isn't there, clefs on different lines
+> than their usual positions, and with 8va or 8vb above and below them,
+> different sizes of notes on one part, stuff that isn't standard.  I'd
+> like to be able to position anything manually when necessary.  I also
+> need to write banjo tablature, and to write with no key signature (not
+> just in C major, I need transposing instruments displayed without key
+> signatures as well).  Harmonics for violins...  And arbitrarily odd
+> time signatures...
+> I guess I'm wondering how customizable things are, or if Western
+> notation rules are pretty much enforced.
+>
+> I hope I don't sound like a punk demanding things of free developers-
+> I don't mean to do that, it's just that I'm trying to make the switch
+> to Linux, and if I can't find a way to do those things I'll have to
+> keep booting Windows in order to use Finale, for the time being.  I
+> don't think Lilypond is going to do it, I have to be able to move
+> stuff with the mouse.
+> -Chuckk
+>
+>
+>
+> On 8/8/06, user mailing list for the score editor noteedit
+> <noteedit-user at lists.berlios.de> wrote:
+>   
+>> Best is to look at NoteEdit's screenshots:
+>> http://noteedit.berlios.de/shots.html
+>>
+>>
+>> Regards.
+>> - Matev?
+>>
+>> user mailing list for the score editor noteedit pravi:
+>>     
+>>> Hi, I'm a new Linux user, and I'm just wondering if anyone has a good
+>>> example of a noteedit file showing some of its abilities, so I can get
+>>> an idea how it looks.
+>>> Thanks!
+>>> -Chuckk
+>>>
+>>>       
+>> _______________________________________________
+>> Noteedit-user mailing list
+>> Noteedit-user at lists.berlios.de
+>> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>>
+>>     
+>
+>
+>   
+
+
+
+
+From noteedit-user at lists.berlios.de  Wed Aug  9 21:14:14 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 9 Aug 2006 21:14:14 +0200 (CEST)
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+Message-ID: <20060809191414.59411.qmail@web27507.mail.ukl.yahoo.com>
+
+      
+Hallo  Thank's for reply. Compiling of noteedit 2.8.1 works,
+but when I try to start the program, the old version 
+of noteedit 2.8.0 is starting (the same problem I 
+had with the beta of 2.8.1) Any hints?  Regards  Peter
+
+ 		
+---------------------------------
+Yahoo! 360? ? Bloggen und Leute treffen. Erstellen Sie jetzt Ihre eigene Seite ? kostenlos!. 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060809/358108af/attachment.html>
+
+From noteedit-user at lists.berlios.de  Wed Aug  9 21:34:32 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 09 Aug 2006 21:34:32 +0200
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <20060809191414.59411.qmail@web27507.mail.ukl.yahoo.com>
+References: <20060809191414.59411.qmail@web27507.mail.ukl.yahoo.com>
+Message-ID: <44DA38C8.9020700@gmail.com>
+
+Hi Peter.
+
+Did you remove your official (distribution) NoteEdit version and run
+make install under root after compiling the new version of NoteEdit?
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit wrote:
+> Hallo  Thank's for reply. Compiling of noteedit 2.8.1 works,
+> but when I try to start the program, the old version 
+> of noteedit 2.8.0 is starting (the same problem I 
+> had with the beta of 2.8.1) Any hints?  Regards  Peter
+>
+
+
+
+From noteedit-user at lists.berlios.de  Thu Aug 10 19:24:32 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 10 Aug 2006 19:24:32 +0200 (CEST)
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <44DA38C8.9020700@gmail.com>
+Message-ID: <20060810172432.13923.qmail@web27513.mail.ukl.yahoo.com>
+
+Remove the old version was successful. The problem is, Suse Linux 9.2 does'nt find the path, where Noteedit is installed. And therefore Noteedit does'nt find the Printpreview (or need I therefore a special program?) and the helpfile and so on. Maybe I have to set the path (but how to do)? 
+ 
+ Regards Peter
+ 
+  
+user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> schrieb: Hi Peter.
+
+Did you remove your official (distribution) NoteEdit version and run
+make install under root after compiling the new version of NoteEdit?
+
+
+Regards.
+- Matev??
+
+user mailing list for the score editor noteedit wrote:
+> Hallo  Thank's for reply. Compiling of noteedit 2.8.1 works,
+> but when I try to start the program, the old version 
+> of noteedit 2.8.0 is starting (the same problem I 
+> had with the beta of 2.8.1) Any hints?  Regards  Peter
+>
+
+_______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+http://bat.berlios.de/mailman/listinfo/noteedit-user
+
+
+ 		
+---------------------------------
+Yahoo! Messenger -  kostenlos* mit Familie und Freunden von PC zu PC telefonieren. 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060810/55c9775a/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Aug 10 19:39:37 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 10 Aug 2006 19:39:37 +0200
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <20060810172432.13923.qmail@web27513.mail.ukl.yahoo.com>
+References: <20060810172432.13923.qmail@web27513.mail.ukl.yahoo.com>
+Message-ID: <44DB6F59.7080505@gmail.com>
+
+Yes, you need a special program to use the print preview. We recommend
+using LilyPond. This is also the default preview program NoteEdit calls.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> Remove the old version was successful. The problem is, Suse Linux 9.2
+> does'nt find the path, where Noteedit is installed. And therefore
+> Noteedit does'nt find the Printpreview (or need I therefore a special
+> program?) and the helpfile and so on. Maybe I have to set the path
+> (but how to do)?
+>
+> Regards Peter
+>
+>
+> */user mailing list for the score editor noteedit
+> <noteedit-user at lists.berlios.de>/* schrieb:
+>
+>     Hi Peter.
+>
+>     Did you remove your official (distribution) NoteEdit version and run
+>     make install under root after compiling the new version of NoteEdit?
+>
+>
+>     Regards.
+>     - Matev??
+>
+>     user mailing list for the score editor noteedit wrote:
+>     > Hallo Thank's for reply. Compiling of noteedit 2.8.1 works,
+>     > but when I try to start the program, the old version
+>     > of noteedit 2.8.0 is starting (the same problem I
+>     > had with the beta of 2.8.1) Any hints? Regards Peter
+>     >
+>
+
+
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 11 18:02:16 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 11 Aug 2006 12:02:16 -0400
+Subject: [Noteedit-user] Edit functions not working
+Message-ID: <44DCAA08.6030908@bellsouth.net>
+
+I am using Note Edit on Suse 10.1, KDE 3.5.1a, AMD 64 system. A number
+of Note Edit's edit functions which worked on Suse 10.0 now do not work.
+Trouble with bar insertion (can only be done by copying a bar from
+another location), delete (can only be done by ctl plus mouse click),
+editing dotted notes, birds eye holds, and a few others I don't remember
+is not possible. Am considering re-compiling with a fix found under
+"delete" in bug reports, but would appreciate any additional
+information.   --ED--
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 11 21:54:14 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 11 Aug 2006 21:54:14 +0200 (CEST)
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <44DB6F59.7080505@gmail.com>
+Message-ID: <20060811195414.35491.qmail@web27515.mail.ukl.yahoo.com>
+
+      
+Hallo Matev,
+
+ The problem was, I had not installed GV 
+for print preview, so it was my own fault.
+
+ Thanks for help and for the great program.
+
+ Peter
+
+
+
+
+user mailing list for the score editor noteedit <noteedit-user at lists.berlios.de> schrieb: Yes, you need a special program to use the print preview. We recommend
+using LilyPond. This is also the default preview program NoteEdit calls.
+
+
+Regards.
+- Matev??
+
+user mailing list for the score editor noteedit pravi:
+> Remove the old version was successful. The problem is, Suse Linux 9.2
+> does'nt find the path, where Noteedit is installed. And therefore
+> Noteedit does'nt find the Printpreview (or need I therefore a special
+> program?) and the helpfile and so on. Maybe I have to set the path
+> (but how to do)?
+>
+> Regards Peter
+>
+>
+> */user mailing list for the score editor noteedit
+> /* schrieb:
+>
+>     Hi Peter.
+>
+>     Did you remove your official (distribution) NoteEdit version and run
+>     make install under root after compiling the new version of NoteEdit?
+>
+>
+>     Regards.
+>     - Matev?
+??
+>
+>     user mailing list for the score editor noteedit wrote:
+>     > Hallo Thank's for reply. Compiling of noteedit 2.8.1 works,
+>     > but when I try to start the program, the old version
+>     > of noteedit 2.8.0 is starting (the same problem I
+>     > had with the beta of 2.8.1) Any hints? Regards Peter
+>     >
+>
+
+
+_______________________________________________
+Noteedit-user mailing list
+Noteedit-user at lists.berlios.de
+http://bat.berlios.de/mailman/listinfo/noteedit-user
+
+
+ 		
+---------------------------------
+Yahoo! 360? ? Bloggen und Leute treffen. Erstellen Sie jetzt Ihre eigene Seite ? kostenlos!. 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060811/6c39e882/attachment.html>
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 17:56:40 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 17:56:40 +0200
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <20060809191414.59411.qmail@web27507.mail.ukl.yahoo.com>
+References: <20060809191414.59411.qmail@web27507.mail.ukl.yahoo.com>
+Message-ID: <44DDFA38.9020808@web.de>
+
+Hi,
+
+Try to remove any old NoteEdit versions before installing
+the new one. NoteEdit requires and installs a library and
+not only an executable.
+
+Best,
+
+Reinhard
+
+user mailing list for the score editor noteedit wrote:
+> Hallo  Thank's for reply. Compiling of noteedit 2.8.1 works,
+> but when I try to start the program, the old version 
+> of noteedit 2.8.0 is starting (the same problem I 
+> had with the beta of 2.8.1) Any hints?  Regards  Peter
+>
+> ------------------------------------------------------------------------
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 18:03:55 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 18:03:55 +0200
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <44DB6F59.7080505@gmail.com>
+References: <20060810172432.13923.qmail@web27513.mail.ukl.yahoo.com>
+	<44DB6F59.7080505@gmail.com>
+Message-ID: <44DDFBEB.1080606@web.de>
+
+Hi,
+
+I seem to remember that SuSE has kde installed at a special
+place. Did you set the KDEDIR variable to that place? it might
+be the case that NoteEdit installs it's files at a place where
+KDE cannot find them (like the help file).
+
+You can also manually set the paths with the configure
+script but that's a lot of more work.
+
+Best,
+
+Reinhard
+
+user mailing list for the score editor noteedit wrote:
+> Yes, you need a special program to use the print preview. We recommend
+> using LilyPond. This is also the default preview program NoteEdit calls.
+>
+>
+> Regards.
+> - Matev?
+>
+> user mailing list for the score editor noteedit pravi:
+>   
+>> Remove the old version was successful. The problem is, Suse Linux 9.2
+>> does'nt find the path, where Noteedit is installed. And therefore
+>> Noteedit does'nt find the Printpreview (or need I therefore a special
+>> program?) and the helpfile and so on. Maybe I have to set the path
+>> (but how to do)?
+>>
+>> Regards Peter
+>>
+>>
+>> */user mailing list for the score editor noteedit
+>> <noteedit-user at lists.berlios.de>/* schrieb:
+>>
+>>     Hi Peter.
+>>
+>>     Did you remove your official (distribution) NoteEdit version and run
+>>     make install under root after compiling the new version of NoteEdit?
+>>
+>>
+>>     Regards.
+>>     - Matev??
+>>
+>>     user mailing list for the score editor noteedit wrote:
+>>     > Hallo Thank's for reply. Compiling of noteedit 2.8.1 works,
+>>     > but when I try to start the program, the old version
+>>     > of noteedit 2.8.0 is starting (the same problem I
+>>     > had with the beta of 2.8.1) Any hints? Regards Peter
+>>     >
+>>
+>>     
+>
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>   
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 18:09:12 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 18:09:12 +0200
+Subject: [Noteedit-user] Edit functions not working
+In-Reply-To: <44DCAA08.6030908@bellsouth.net>
+References: <44DCAA08.6030908@bellsouth.net>
+Message-ID: <44DDFD28.9040404@web.de>
+
+Hi,
+
+Which version of NoteEdit do you use? For KDE >= 3.5.x
+version 2.8.1 is required. I still have to wait to update
+my system to 3.5.x (but I use Mandriva and not SuSE
+and I don't have a 64bit system to test it).
+
+Best,
+
+Reinhard
+
+user mailing list for the score editor noteedit wrote:
+> I am using Note Edit on Suse 10.1, KDE 3.5.1a, AMD 64 system. A number
+> of Note Edit's edit functions which worked on Suse 10.0 now do not work.
+> Trouble with bar insertion (can only be done by copying a bar from
+> another location), delete (can only be done by ctl plus mouse click),
+> editing dotted notes, birds eye holds, and a few others I don't remember
+> is not possible. Am considering re-compiling with a fix found under
+> "delete" in bug reports, but would appreciate any additional
+> information.   --ED--
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+>   
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 18:13:20 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 18:13:20 +0200
+Subject: [Noteedit-user] after installation 2.8.1 does'nt start
+In-Reply-To: <20060811195414.35491.qmail@web27515.mail.ukl.yahoo.com>
+References: <20060811195414.35491.qmail@web27515.mail.ukl.yahoo.com>
+Message-ID: <44DDFE20.3010506@web.de>
+
+Hi Peter,
+
+You can use any other program for print preview which
+supports display of pdf files (even better display of
+postscript and pdf files) like kpdf or kghostview. Just
+change the print preview settings.
+
+Best,
+
+Reinhard
+
+user mailing list for the score editor noteedit wrote:
+> Hallo Matev,
+>
+>  The problem was, I had not installed GV 
+> for print preview, so it was my own fault.
+>
+>  Thanks for help and for the great program.
+>
+>  Peter
+>
+>   
+>
+>
+> */user mailing list for the score editor noteedit
+> <noteedit-user at lists.berlios.de>/* schrieb:
+>
+>     Yes, you need a special program to use the print preview. We recommend
+>     using LilyPond. This is also the default preview program NoteEdit
+>     calls.
+>
+>
+>     Regards.
+>     - Matev??
+>
+>     user mailing list for the score editor noteedit pravi:
+>     > Remove the old version was successful. The problem is, Suse
+>     Linux 9.2
+>     > does'nt find the path, where Noteedit is installed. And therefore
+>     > Noteedit does'nt find the Printpreview (or need I therefore a
+>     special
+>     > program?) and the helpfile and so on. Maybe I have to set the path
+>     > (but how to do)?
+>     >
+>     > Regards Peter
+>     >
+>     >
+>     > */user mailing list for the score editor noteedit
+>     > /* schrieb:
+>     >
+>     > Hi Peter.
+>     >
+>     > Did you remove your official (distribution) NoteEdit version and run
+>     > make install under root after compiling the new version of NoteEdit?
+>     >
+>     >
+>     > Regards.
+>     > - Matev????
+>     >
+>     > user mailing list for the score editor noteedit wrote:
+>     > > Hallo Thank's for reply. Compiling of noteedit 2.8.1 works,
+>     > > but when I try to start the program, the old version
+>     > > of noteedit 2.8.0 is starting (the same problem I
+>     > > had with the beta of 2.8.1) Any hints? Regards Peter
+>     > >
+>     >
+>
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 18:38:05 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 18:38:05 +0200
+Subject: [Noteedit-user] [ANN] NoteEdit 2.8.1 released
+Message-ID: <44DE03ED.50206@web.de>
+
+Hi,
+
+The NoteEdit team is happy to announce the long awaited new release
+of the score editor NoteEdit.
+
+You can directly fetch the sources from here:
+http://download.berlios.de/noteedit/noteedit-2.8.1.tar.gz
+
+Please note:
+This is the last major release on NoteEdit. Since some month the core team
+concentrates it's development on the NoteEdit successor called Canorus.
+More information can be found here:
+http://canorus.berlios.de/wiki/index.php/Main_Page
+
+The new version 2.8.1 contains the following major changes since the
+last release:
+
+- New direct printing and print preview support using different backends:
+  - Implemented custom print dialog.
+  - New settings in Configure dialog for printing.
+  - Custom preview application (eg. kpdf, gpdf, xpdf, gv).
+  - Custom typesetting application (LilyPond, ABC, PMX/MusiXTeX).
+- Enhanced UI:
+  - mouse wheel behaviour improvements (zoom in/out, quick scroll, vertical
+  scroll),
+  - added keyboard shortcuts (select n-th voice directly, start/stop
+playback,
+  insert special barline, goto measure),
+  - few dialog improvements (insert clef or barline, page layout),
+  - new dialog: Insert special barline.
+  - remember the last position of action (useful when deleting the whole
+block
+  of the score),
+  - rewritten scroll behaviour (especially when the selected element is
+  out-of-scope),
+  - red border when Edit mode is active.
+  - added vertical line which connects all staves
+- MusicXML improvements:
+  - import arbitrary text.
+  - export arbitrary text.
+  - export all strings in UTF-8 encoding.
+- LilyPond export filter improvements:
+  - arranger is now exported.
+  - document page size is exported.
+  - rit./accel. signs are printed in italic.
+  - export all strings in UTF-8 encoding, if Lily >2.6 is found.
+  - official Lilypond font sizes are now supported
+- gcc4 complete compiler support. Many warning fixes and internal cleanups.
+- Many documentation additions and fixes.
+- New translations and translation updates
+
+More details (including bug fixes and detailed changes) can be found
+in the NEWS file and the ChangeLog file of the archive.
+
+The reasons for stopping major development on NoteEdit were discussed
+on the NoteEdit development mailing list some time ago. You can read
+the thread here:
+
+http://lists.berlios.de/pipermail/noteedit-devel/2006-February/000619.html
+
+Best regards,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor -
+http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 19:51:09 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 13:51:09 -0400
+Subject: [Noteedit-user] Edit functions not working
+In-Reply-To: <44DDFD28.9040404@web.de>
+References: <44DCAA08.6030908@bellsouth.net> <44DDFD28.9040404@web.de>
+Message-ID: <44DE150D.1080408@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi,
+>
+> Which version of NoteEdit do you use? For KDE >= 3.5.x
+> version 2.8.1 is required. I still have to wait to update
+> my system to 3.5.x (but I use Mandriva and not SuSE
+> and I don't have a 64bit system to test it).
+>
+> Best,
+>
+> Reinhard
+>
+> user mailing list for the score editor noteedit wrote:
+>   
+>> I am using Note Edit on Suse 10.1, KDE 3.5.1a, AMD 64 system. A number
+>> of Note Edit's edit functions which worked on Suse 10.0 now do not work.
+>> Trouble with bar insertion (can only be done by copying a bar from
+>> another location), delete (can only be done by ctl plus mouse click),
+>> editing dotted notes, birds eye holds, and a few others I don't remember
+>> is not possible. Am considering re-compiling with a fix found under
+>> "delete" in bug reports, but would appreciate any additional
+>> information.   --ED--
+>> _______________________________________________
+>> Noteedit-user mailing list
+>> Noteedit-user at lists.berlios.de
+>> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>>
+>>
+>>   
+>>     
+>
+>
+>   
+Thanks. This is what I had suspected, but I had not yet seen any info to
+that effect in my searches. (Suse 10.1 shipped with Noteedit 2.8.0?)
+Will try newer version as soon as I get Createrepo installed. Have been
+too busy editing music to attend to details like that.
+Thanks again. --ED--
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060812/b54c8b59/attachment.html>
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 20:07:07 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 14:07:07 -0400
+Subject: [Noteedit-user] [ANN] NoteEdit 2.8.1 released
+In-Reply-To: <44DE03ED.50206@web.de>
+References: <44DE03ED.50206@web.de>
+Message-ID: <44DE18CB.1030207@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi,
+>
+> The NoteEdit team is happy to announce the long awaited new release
+> of the score editor NoteEdit.
+>
+> You can directly fetch the sources from here:
+> http://download.berlios.de/noteedit/noteedit-2.8.1.tar.gz
+>
+> Please note:
+> This is the last major release on NoteEdit. Since some month the core team
+> concentrates it's development on the NoteEdit successor called Canorus.
+> More information can be found here:
+> http://canorus.berlios.de/wiki/index.php/Main_Page
+>
+> The new version 2.8.1 contains the following major changes since the
+> last release:
+>
+> - New direct printing and print preview support using different backends:
+>   - Implemented custom print dialog.
+>   - New settings in Configure dialog for printing.
+>   - Custom preview application (eg. kpdf, gpdf, xpdf, gv).
+>   - Custom typesetting application (LilyPond, ABC, PMX/MusiXTeX).
+> - Enhanced UI:
+>   - mouse wheel behaviour improvements (zoom in/out, quick scroll, vertical
+>   scroll),
+>   - added keyboard shortcuts (select n-th voice directly, start/stop
+> playback,
+>   insert special barline, goto measure),
+>   - few dialog improvements (insert clef or barline, page layout),
+>   - new dialog: Insert special barline.
+>   - remember the last position of action (useful when deleting the whole
+> block
+>   of the score),
+>   - rewritten scroll behaviour (especially when the selected element is
+>   out-of-scope),
+>   - red border when Edit mode is active.
+>   - added vertical line which connects all staves
+> - MusicXML improvements:
+>   - import arbitrary text.
+>   - export arbitrary text.
+>   - export all strings in UTF-8 encoding.
+> - LilyPond export filter improvements:
+>   - arranger is now exported.
+>   - document page size is exported.
+>   - rit./accel. signs are printed in italic.
+>   - export all strings in UTF-8 encoding, if Lily >2.6 is found.
+>   - official Lilypond font sizes are now supported
+> - gcc4 complete compiler support. Many warning fixes and internal cleanups.
+> - Many documentation additions and fixes.
+> - New translations and translation updates
+>
+> More details (including bug fixes and detailed changes) can be found
+> in the NEWS file and the ChangeLog file of the archive.
+>
+> The reasons for stopping major development on NoteEdit were discussed
+> on the NoteEdit development mailing list some time ago. You can read
+> the thread here:
+>
+> http://lists.berlios.de/pipermail/noteedit-devel/2006-February/000619.html
+>
+> Best regards,
+>
+> Reinhard
+>
+>   
+Thanks for the link. I had tried to download it from the home page, but
+received "page not found message."
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 12 23:22:28 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 12 Aug 2006 23:22:28 +0200
+Subject: [Noteedit-user] [ANN] NoteEdit 2.8.1 released
+In-Reply-To: <44DE18CB.1030207@bellsouth.net>
+References: <44DE03ED.50206@web.de> <44DE18CB.1030207@bellsouth.net>
+Message-ID: <44DE4694.40806@web.de>
+
+Hi,
+
+I just recently updated the download page. It still pointed to the
+meanwhile removed beta version.
+
+Best,
+
+Reinhard
+
+user mailing list for the score editor noteedit wrote:
+> user mailing list for the score editor noteedit wrote:
+>   
+>> Hi,
+>>
+>> The NoteEdit team is happy to announce the long awaited new release
+>> of the score editor NoteEdit.
+>>
+>> You can directly fetch the sources from here:
+>> http://download.berlios.de/noteedit/noteedit-2.8.1.tar.gz
+>>
+>> Please note:
+>> This is the last major release on NoteEdit. Since some month the core team
+>> concentrates it's development on the NoteEdit successor called Canorus.
+>> More information can be found here:
+>> http://canorus.berlios.de/wiki/index.php/Main_Page
+>>
+>>   
+>>     
+> Thanks for the link. I had tried to download it from the home page, but
+> received "page not found message."
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://bat.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+>   
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 15 20:14:25 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 15 Aug 2006 14:14:25 -0400
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+Message-ID: <44E20F01.4020104@bellsouth.net>
+
+I would be interested to know opinions of other users on which
+distributions work best for NoteEdit, or for music work in general. I am
+thinking of trying another distribution while I am working the bugs out
+of my current one. --ED--
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 15 20:44:21 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 15 Aug 2006 20:44:21 +0200
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <44E20F01.4020104@bellsouth.net>
+References: <44E20F01.4020104@bellsouth.net>
+Message-ID: <1155667462.7816.0.camel@localhost.localdomain>
+
+On Tue, 2006-08-15 at 14:14 -0400, user mailing list for the score
+editor noteedit wrote:
+> I would be interested to know opinions of other users on which
+> distributions work best for NoteEdit, or for music work in general. I am
+> thinking of trying another distribution while I am working the bugs out
+> of my current one. --ED--
+
+look at www.agnula.org.
+
+regards,
+christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060815/f4fc4173/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Tue Aug 15 21:32:43 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 15 Aug 2006 21:32:43 +0200
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <44E20F01.4020104@bellsouth.net>
+References: <44E20F01.4020104@bellsouth.net>
+Message-ID: <44E2215B.7010000@web.de>
+
+Hi Ed,
+
+user mailing list for the score editor noteedit wrote:
+> I would be interested to know opinions of other users on which
+> distributions work best for NoteEdit, or for music work in general. I am
+> thinking of trying another distribution while I am working the bugs out
+> of my current one. --ED--
+>   
+There are some music-specific distributions like Agnula Demudi
+(Debian/Ubuntu-based), Studio 64 (for 64bit machines) and a
+software archive called CCRMA for music apps build for RedHat
+Fedora (maybe even a complete CCRMA based distribution exists).
+For SuSE you should take a look at jacklab. Also multimedia distributions
+exists like dynebolic (Agnula actually aims to be a multimedia distribution
+as well).
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Wed Aug 16 00:48:21 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 16 Aug 2006 00:48:21 +0200
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <44E2215B.7010000@web.de>
+References: <44E20F01.4020104@bellsouth.net> <44E2215B.7010000@web.de>
+Message-ID: <44E24F35.7060602@schwaben.de>
+
+user mailing list for the score editor noteedit schrieb:
+> For SuSE you should take a look at jacklab.
+For NoteEdit traditionally packman did the job. Check this too.
+
+Georg
+
+
+
+From noteedit-user at lists.berlios.de  Wed Aug 16 12:49:04 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 16 Aug 2006 12:49:04 +0200
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <44E20F01.4020104@bellsouth.net>
+References: <44E20F01.4020104@bellsouth.net>
+Message-ID: <200608161249.04332.dr.burmester-beer@t-online.de>
+
+Am Dienstag, 15. August 2006 20:14 schrieb user mailing list for the score 
+editor noteedit:
+> I would be interested to know opinions of other users on which
+> distributions work best for NoteEdit, or for music work in general. I am
+> thinking of trying another distribution while I am working the bugs out
+> of my current one. --ED
+>
+
+Hallo ED,
+
+I had a lot of trouble with Suse 10.1 too. (In former times I used Noteedit 
+under Suse 9 and everything worked fine.)
+
+To solve my problem I uninstalled Noteedit 2.80 and took the Noteedit 2.81 
+tar.gz and compiled it by myself at /usr/local/src . I had to add some libs 
+that ./configure asked for (libtse3 was not so easy to be found, so I took 
+all tse3-stuff from the Suse-DVD that was offered). Starting the programm is 
+not so comfortible as before (prompt in spite of menue) but everything works 
+well. 
+
+Best regards
+
+Hans-Peter
+_____________________________________________ 
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+From noteedit-user at lists.berlios.de  Wed Aug 16 16:32:03 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 16 Aug 2006 10:32:03 -0400
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <200608161249.04332.dr.burmester-beer@t-online.de>
+References: <44E20F01.4020104@bellsouth.net>
+	<200608161249.04332.dr.burmester-beer@t-online.de>
+Message-ID: <44E32C63.40508@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Am Dienstag, 15. August 2006 20:14 schrieb user mailing list for the score 
+> editor noteedit:
+>   
+>> I would be interested to know opinions of other users on which
+>> distributions work best for NoteEdit, or for music work in general. I am
+>> thinking of trying another distribution while I am working the bugs out
+>> of my current one. --ED
+>>
+>>     
+>
+> Hallo ED,
+>
+> I had a lot of trouble with Suse 10.1 too. (In former times I used Noteedit 
+> under Suse 9 and everything worked fine.)
+>
+> To solve my problem I uninstalled Noteedit 2.80 and took the Noteedit 2.81 
+> tar.gz and compiled it by myself at /usr/local/src . I had to add some libs 
+> that ./configure asked for (libtse3 was not so easy to be found, so I took 
+> all tse3-stuff from the Suse-DVD that was offered). Starting the programm is 
+> not so comfortible as before (prompt in spite of menue) but everything works 
+> well. 
+>
+> Best regards
+>
+> Hans-Peter
+> _____________________________________________ 
+>   
+>> Noteedit-user mailing list
+>> Noteedit-user at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>>     
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+Thanks, I  have downloaded the source files and am planning to do just
+that. But I made the mistake of using the update icon from the panel
+menu, and now my YaST2 does not install or uninstall anything. I don't
+know if I will be able to fix this without re-installing the system, so
+have been putting off the work of hand installing NoteEdit 2.8.1 until I
+find out.  Meanwhile, I am downloading a copy of Debian to compare to
+SuSE, planning to run it from another HD. Thanks to Reinhard for info
+leading to this decision.
+--ED--
+
+Reinhard
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060816/b31293fb/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Aug 17 21:01:37 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 17 Aug 2006 21:01:37 +0200
+Subject: [Noteedit-user] Most compatable linux distro for NoteEdit
+In-Reply-To: <200608161249.04332.dr.burmester-beer@t-online.de>
+References: <44E20F01.4020104@bellsouth.net>
+	<200608161249.04332.dr.burmester-beer@t-online.de>
+Message-ID: <44E4BD11.3010800@schwaben.de>
+
+Hello all,
+> Hallo ED,
+>
+> I had a lot of trouble with Suse 10.1 too. (In former times I used Noteedit 
+> under Suse 9 and everything worked fine.)
+>
+>   
+The Suse's are served now with even the newest noteedit by packman,
+google for packman, suse, and you'll find  the rpm for NoteEdit.
+
+Regards,
+Georg
+
+
+
+From noteedit-user at lists.berlios.de  Thu Aug 17 22:14:09 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 17 Aug 2006 22:14:09 +0200
+Subject: [Noteedit-user] Articulation signs hang
+Message-ID: <200608172214.09152.dr.burmester-beer@t-online.de>
+
+Hallo list, 
+
+while probing noteedit 2.8.1 I could not switch off the articulation signs 
+like staccato, tenuto, sforzando and so on. It is no problem to change among 
+these signs, but there seems to be no way back to plain notes. The same 
+happens with piano-glyphs and drum-notes. This mistake causes no problem for 
+me because I do some post-processing with abcm2ps in every case to polish up 
+the score and fill in microtonals sometimes. But I thought it should be 
+mentioned.
+
+Best regards
+Hans-Peter
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 00:35:10 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 17 Aug 2006 18:35:10 -0400
+Subject: [Noteedit-user] Articulation signs hang
+In-Reply-To: <200608172214.09152.dr.burmester-beer@t-online.de>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>
+Message-ID: <44E4EF1E.3090704@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hallo list, 
+>
+> while probing noteedit 2.8.1 I could not switch off the articulation signs 
+> like staccato, tenuto, sforzando and so on. It is no problem to change among 
+> these signs, but there seems to be no way back to plain notes. The same 
+> happens with piano-glyphs and drum-notes. This mistake causes no problem for 
+> me because I do some post-processing with abcm2ps in every case to polish up 
+> the score and fill in microtonals sometimes. But I thought it should be 
+> mentioned.
+>
+> Best regards
+> Hans-Peter
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+I noticed many of these same problems with NoteEdit 2.8.0 under the
+system which requires 2.81 (KDE 3.5 and later, I was told.)  I  found I
+could delete the note and then replace sometimes to turn off these
+signs, or if that didn't work save the work piece and restart NoteEdit. 
+The most stubborn instances of this problem happened when using edit
+mode to add the feature, so I work around it by deleteing the note and
+re-inserting it as I want it. Hope to be working with 2.8.1 soon!  --ED-
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 04:41:45 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 17 Aug 2006 23:41:45 -0300
+Subject: [Noteedit-user] Articulation signs hang
+In-Reply-To: <44E4EF1E.3090704@bellsouth.net>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>
+	<44E4EF1E.3090704@bellsouth.net>
+Message-ID: <44E528E9.60500@yahoo.com.br>
+
+user mailing list for the score editor noteedit escreveu:
+> I noticed many of these same problems with NoteEdit 2.8.0 under the
+> system which requires 2.81 (KDE 3.5 and later, I was told.)  I  found I
+> could delete the note and then replace sometimes to turn off these
+> signs, or if that didn't work save the work piece and restart NoteEdit. 
+> The most stubborn instances of this problem happened when using edit
+> mode to add the feature, so I work around it by deleteing the note and
+> re-inserting it as I want it. Hope to be working with 2.8.1 soon!  --ED-
+
+That NoteEdit ``feature'' to hard-attach decorations to notes is more 
+like a bug. One cannot have both staccato and accent in a same note?
+
+Fortunately, that limitation is not planned for Canorus, as I could read 
+on the projetc page.
+
+Regards,
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+O Yahoo! est? de cara nova. Venha conferir! 
+http://br.yahoo.com
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 13:35:10 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 18 Aug 2006 13:35:10 +0200
+Subject: [Noteedit-user] Articulation signs hang
+In-Reply-To: <44E528E9.60500@yahoo.com.br>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>
+	<44E4EF1E.3090704@bellsouth.net> <44E528E9.60500@yahoo.com.br>
+Message-ID: <200608181335.10844.dr.burmester-beer@t-online.de>
+
+Am Freitag, 18. August 2006 04:41 schrieb user mailing list for the score 
+editor noteedit:
+
+> That NoteEdit ``feature'' to hard-attach decorations to notes is more
+> like a bug. One cannot have both staccato and accent in a same note?
+>
+> Fortunately, that limitation is not planned for Canorus, as I could read
+> on the projetc page.
+>
+> Regards,
+
+Hi Hudson,
+
+many thanks for your microtonal, cluster and space-notation stuff. Especially 
+the microtonals are very important for a proper notation of multiphonics on 
+woodwinds. 
+
+The completion of hard-attach decorations and articulation signs is easy to be 
+done in abc.
+
+But the insertion of microtonals in Canorus would be very helpful for a 
+correct playback of ones composition. No more laborious tests with 
+Zynaddsubfx. 
+
+Best regards
+
+Hans-Peter
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 14:23:52 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 18 Aug 2006 14:23:52 +0200
+Subject: [Noteedit-user] Articulation signs hang
+In-Reply-To: <200608181335.10844.dr.burmester-beer@t-online.de>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>	<44E4EF1E.3090704@bellsouth.net>
+	<44E528E9.60500@yahoo.com.br>
+	<200608181335.10844.dr.burmester-beer@t-online.de>
+Message-ID: <44E5B158.70302@gmail.com>
+
+user mailing list for the score editor noteedit pravi:
+> Am Freitag, 18. August 2006 04:41 schrieb user mailing list for the score 
+> editor noteedit:
+>
+>   
+>> That NoteEdit ``feature'' to hard-attach decorations to notes is more
+>> like a bug. One cannot have both staccato and accent in a same note?
+>>
+>> Fortunately, that limitation is not planned for Canorus, as I could read
+>> on the projetc page.
+>>
+>> Regards,
+>>     
+>
+> Hi Hudson,
+>
+> many thanks for your microtonal, cluster and space-notation stuff. Especially 
+> the microtonals are very important for a proper notation of multiphonics on 
+> woodwinds. 
+>
+> The completion of hard-attach decorations and articulation signs is easy to be 
+> done in abc.
+>
+> But the insertion of microtonals in Canorus would be very helpful for a 
+> correct playback of ones composition. No more laborious tests with 
+> Zynaddsubfx. 
+>   
+Microtonals could be easily played-back using the Tune MIDI property. It
+has +/- 64 steps of the whole tone. This way you could get the proximity
+of... 1/64 of the whole tone. Sounds like a nice feature for Canorus :)
+
+
+Regards.
+- Matev?
+
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 18:14:37 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 18 Aug 2006 13:14:37 -0300
+Subject: [Noteedit-user] Microtones (was: Articulation signs hang)
+In-Reply-To: <44E5B158.70302@gmail.com>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>	<44E4EF1E.3090704@bellsouth.net>	<44E528E9.60500@yahoo.com.br>	<200608181335.10844.dr.burmester-beer@t-online.de>
+	<44E5B158.70302@gmail.com>
+Message-ID: <44E5E76D.8060704@yahoo.com.br>
+
+Hi Matev??.
+
+> Microtonals could be easily played-back using the Tune MIDI property. It
+> has +/- 64 steps of the whole tone. This way you could get the proximity
+> of... 1/64 of the whole tone.
+
+Any microtonal composer will tell you that 1/64 of tone is simply too rough.
+
+You might use 14 bit pitchwell messages (bytes order are reversed), 
+giving a resolution of 1/8192 of tone. That is the resolution 
+implemented in abc2midi (http://ifdo.pugmarks.com/~seymour/runabc/top.html).
+
+An important issue is that such messages apply to all notes in a same 
+channel. As result, chords cannot have mixes of different microtonal 
+accidentals (currently in abc2midi, any microtonal accidentals in a 
+chord are ignored).
+
+> Sounds like a nice feature for Canorus :)
+
+Indeed.
+
+Cheers,
+Hudson
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N??o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap??ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+O Yahoo! est? de cara nova. Venha conferir! 
+http://br.yahoo.com
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 18:31:54 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 18 Aug 2006 13:31:54 -0300
+Subject: [Noteedit-user] Off-topic - special ABC stuff (was:
+ Articulation signs hang)
+In-Reply-To: <200608181335.10844.dr.burmester-beer@t-online.de>
+References: <200608172214.09152.dr.burmester-beer@t-online.de>	<44E4EF1E.3090704@bellsouth.net>
+	<44E528E9.60500@yahoo.com.br>
+	<200608181335.10844.dr.burmester-beer@t-online.de>
+Message-ID: <44E5EB7A.5070906@yahoo.com.br>
+
+user mailing list for the score editor noteedit escreveu:
+> Hi Hudson,
+
+Hello hans-Peter.
+
+> 
+> many thanks for your microtonal, cluster and space-notation stuff. Especially 
+> the microtonals are very important for a proper notation of multiphonics on 
+> woodwinds. 
+
+I guess you are refering to my ABC stuff: abcm2ps extensions (.fmt 
+files) and the microabc program?
+
+http://br.geocities.com/hfmlacerda/abc/abc-pt-2006-04-24.zip
+http://br.geocities.com/hfmlacerda/abc/?M=D
+http://br.geocities.com/hfmlacerda/abc/microabc.html
+
+I have made also a quarter-tone fingerings chart for recorder and a 
+equal-temperaments explorer for Csound:
+http://br.geocities.com/hfmlacerda/misc/
+
+Still about microtones, one can now use tclabc/tkabc 
+(http://moinejf.free.fr) as graphical interface for quartertone music. 
+This is my .tkabcrc file implementing several keystrokes:
+http://br.geocities.com/hfmlacerda/abc/_tkabcrc.txt
+
+> 
+> The completion of hard-attach decorations and articulation signs is easy to be 
+> done in abc.
+
+I called them ``hard-attached'' decorations because one cannot 
+edit/add/change the accents/articulations independantly of their carrier 
+notes in NoteEdit.
+
+> But the insertion of microtonals in Canorus would be very helpful for a 
+> correct playback of ones composition. No more laborious tests with 
+> Zynaddsubfx. 
+
+Have not still you tried microabc? You can generate microtonal MIDI 
+files with abc2midi, from a ABC file with aliases for the microtonal 
+pitches.
+
+Latest version of the program:
+http://br.geocities.com/hfmlacerda/abc/microabc-2006-07-29.zip
+
+Margo Schulter has used microabc to typeset her music using the Sagittal 
+(http://users.bigpond.net.au/d.keenan/sagittal/Sagittal.pdf) microtonal 
+notation system:
+http://www.bestii.com/~mschulter/microabc_neomedieval.zip
+
+Best regards,
+Hudson
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+Yahoo! Acesso Gr?tis - Internet r?pida e gr?tis. Instale 
+o discador agora! 
+http://br.acesso.yahoo.com
+
+
+From noteedit-user at lists.berlios.de  Fri Aug 18 19:06:45 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 18 Aug 2006 19:06:45 +0200 (CEST)
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <44E5EB7A.5070906@yahoo.com.br>
+Message-ID: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+
+      
+I can't convert MusixTex-Files (my favourite format) 
+with noteedit. 
+When I used Noteedit 2.8.0 an did convert them on the
+terminal it was not a problem.
+Maybe I need a newer version of Musixtex (my version: T.99-830 (Suse 9.2))?
+On this case: it is difficult/dangerous to install a newer one? And where can I get the sources?
+This is the error I get:
+
+Exporting with /usr/bin/musixtex note_19e8Ve.tex This is TeX, Version 3.14159 (Web2C 7.4.5)
+Finished export.
+
+Regards
+
+Peter
+
+
+
+ 		
+---------------------------------
+Yahoo! 360? ? Bloggen und Leute treffen. Erstellen Sie jetzt Ihre eigene Seite ? kostenlos!. 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060818/7eda97c8/attachment.html>
+
+From noteedit-user at lists.berlios.de  Sat Aug 19 00:32:57 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 19 Aug 2006 00:32:57 +0200
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+Message-ID: <200608190032.57638.dr.burmester-beer@t-online.de>
+
+Am Freitag, 18. August 2006 19:06 schrieb user mailing list for the score 
+editor noteedit:
+> I can't convert MusixTex-Files (my favourite format)
+> with noteedit.
+> When I used Noteedit 2.8.0 an did convert them on the
+> terminal it was not a problem.
+> Maybe I need a newer version of Musixtex (my version: T.99-830 (Suse 9.2))?
+> On this case: it is difficult/dangerous to install a newer one? And where
+> can I get the sources? This is the error I get:
+>
+> Exporting with /usr/bin/musixtex note_19e8Ve.tex This is TeX, Version
+> 3.14159 (Web2C 7.4.5) Finished export.
+>
+> Regards
+>
+> Peter
+>
+Hi Peter,
+
+have a look at 
+http://icking-music-archive.org/
+
+If you need help subscribe to the mailing-list.
+
+I found musixtex too difficult to handle and therefore switched to abcm2ps.
+Take a look at 
+http://abcplus.sourceforge.net/
+
+Best regards
+
+Hans-Peter
+>
+>
+>
+> ---------------------------------
+> Yahoo! 360? ? Bloggen und Leute treffen. Erstellen Sie jetzt Ihre eigene
+> Seite ? kostenlos!.
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 19 08:03:12 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 19 Aug 2006 02:03:12 -0400
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <200608190032.57638.dr.burmester-beer@t-online.de>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+	<200608190032.57638.dr.burmester-beer@t-online.de>
+Message-ID: <44E6A9A0.6020709@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Am Freitag, 18. August 2006 19:06 schrieb user mailing list for the score 
+> editor noteedit:
+>   
+>> I can't convert MusixTex-Files (my favourite format)
+>> with noteedit.
+>> When I used Noteedit 2.8.0 an did convert them on the
+>> terminal it was not a problem.
+>> Maybe I need a newer version of Musixtex (my version: T.99-830 (Suse 9.2))?
+>> On this case: it is difficult/dangerous to install a newer one? And where
+>> can I get the sources? This is the error I get:
+>>
+>> Exporting with /usr/bin/musixtex note_19e8Ve.tex This is TeX, Version
+>> 3.14159 (Web2C 7.4.5) Finished export.
+>>
+>> Regards
+>>
+>> Peter
+>>
+>>     
+> Hi Peter,
+>
+> have a look at 
+> http://icking-music-archive.org/
+>
+> If you need help subscribe to the mailing-list.
+>
+> I found musixtex too difficult to handle and therefore switched to abcm2ps.
+> Take a look at 
+> http://abcplus.sourceforge.net/
+>
+> Best regards
+>
+> Hans-Peter
+>   
+>>
+>> ---------------------------------
+>> Yahoo! 360? ? Bloggen und Leute treffen. Erstellen Sie jetzt Ihre eigene
+>> Seite ? kostenlos!.
+>>     
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>   
+I am fairly new to some of this software. What advantages do Musitex or
+abcm2ps have over lilypond, or is it more of a personal preferance? --ED--
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 19 12:07:32 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 19 Aug 2006 12:07:32 +0200
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <44E6A9A0.6020709@bellsouth.net>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+	<200608190032.57638.dr.burmester-beer@t-online.de>
+	<44E6A9A0.6020709@bellsouth.net>
+Message-ID: <200608191207.32736.dr.burmester-beer@t-online.de>
+
+Am Samstag, 19. August 2006 08:03 schrieb user mailing list for the score 
+editor noteedit:
+
+>
+> I am fairly new to some of this software. What advantages do Musitex or
+> abcm2ps have over lilypond, or is it more of a personal preferance? --ED--
+>
+
+Hi ED,
+
+Musixtex and Lilypond belong to the Latex-family in the largest sense. If you 
+want to edit the source-code of your composition (insert decoration or 
+advises for playing that noteedit does not offer) it is not so easy if you 
+are not a "texpert".
+ Abcm2ps is simple ASCII and generates a postscript-file scorename.ps with the 
+single command: abcm2ps -c -O= scorename.abc . The syntax of abc-files look 
+not so cryptic for musicians and is comparatively easy to handle.
+
+Best regards
+Hans-Peter
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 19 18:51:23 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 19 Aug 2006 18:51:23 +0200
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <200608191207.32736.dr.burmester-beer@t-online.de>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>	<200608190032.57638.dr.burmester-beer@t-online.de>	<44E6A9A0.6020709@bellsouth.net>
+	<200608191207.32736.dr.burmester-beer@t-online.de>
+Message-ID: <44E7418B.9050802@web.de>
+
+Hi ED,
+
+user mailing list for the score editor noteedit wrote:
+> Am Samstag, 19. August 2006 08:03 schrieb user mailing list for the score 
+> editor noteedit:
+>
+>   
+>> I am fairly new to some of this software. What advantages do Musitex or
+>> abcm2ps have over lilypond, or is it more of a personal preferance? --ED--
+>>
+>>     
+>
+> Hi ED,
+>
+> Musixtex and Lilypond belong to the Latex-family in the largest sense. If you 
+> want to edit the source-code of your composition (insert decoration or 
+> advises for playing that noteedit does not offer) it is not so easy if you 
+> are not a "texpert".
+>  Abcm2ps is simple ASCII and generates a postscript-file scorename.ps with the 
+> single command: abcm2ps -c -O= scorename.abc . The syntax of abc-files look 
+> not so cryptic for musicians and is comparatively easy to handle.
+>
+> Best regards
+> Hans-Peter
+>   
+Nearly correct, Lilypond though is no longer dependent on (La)TeX
+within it's current releases. Lilypond does not require TeX knowledge
+though to use it and it (like Musixtex) includes quite some examples.
+I prefer it mainly because I like the better output of it and has a much
+simpler syntax compared to Musixtex. There exists frontends for Musixtex
+(like PMX) offering a simpler syntax. Musixtex exists longer than Lilypond
+but AFAIK there is not much development going on compared to Lilypond.
+
+A short comparison of abc to the above two languages can be found on the
+abcplus homepage (abcplus.sf.net). One thing is probably not mentioned:
+Lilypond can be expanded with scripts.
+
+Canorus will also support abcplus at one day. Lilypond will surely be the
+first exporter we will implement (except someone having developed a abcplus
+parser can easily adapt it to Canorus).
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Mon Aug 21 02:13:54 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 20 Aug 2006 20:13:54 -0400
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <200608191207.32736.dr.burmester-beer@t-online.de>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>	<200608190032.57638.dr.burmester-beer@t-online.de>	<44E6A9A0.6020709@bellsouth.net>
+	<200608191207.32736.dr.burmester-beer@t-online.de>
+Message-ID: <44E8FAC2.5090804@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Am Samstag, 19. August 2006 08:03 schrieb user mailing list for the score 
+> editor noteedit:
+>
+>   
+>> I am fairly new to some of this software. What advantages do Musitex or
+>> abcm2ps have over lilypond, or is it more of a personal preferance? --ED--
+>>
+>>     
+>
+> Hi ED,
+>
+> Musixtex and Lilypond belong to the Latex-family in the largest sense. If you 
+> want to edit the source-code of your composition (insert decoration or 
+> advises for playing that noteedit does not offer) it is not so easy if you 
+> are not a "texpert".
+>  Abcm2ps is simple ASCII and generates a postscript-file scorename.ps with the 
+> single command: abcm2ps -c -O= scorename.abc . The syntax of abc-files look 
+> not so cryptic for musicians and is comparatively easy to handle.
+>
+> Best regards
+> Hans-Peter
+>   
+>> _______________________________________________
+>> Noteedit-user mailing list
+>> Noteedit-user at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>>     
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+Thanks Hans-Peter,
+     I am beginning to understand Lilypond to some extent, and it seems
+to have the same qualities you describe for abc.  Does abc do anything
+that Lilypond won't?
+                                     --ED--
+
+
+From noteedit-user at lists.berlios.de  Mon Aug 21 02:20:07 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 20 Aug 2006 20:20:07 -0400
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <44E7418B.9050802@web.de>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>	<200608190032.57638.dr.burmester-beer@t-online.de>	<44E6A9A0.6020709@bellsouth.net>	<200608191207.32736.dr.burmester-beer@t-online.de>
+	<44E7418B.9050802@web.de>
+Message-ID: <44E8FC37.6030307@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi ED,
+>
+> user mailing list for the score editor noteedit wrote:
+>   
+>> Am Samstag, 19. August 2006 08:03 schrieb user mailing list for the score 
+>> editor noteedit:
+>>
+>>   
+>>     
+>>> I am fairly new to some of this software. What advantages do Musitex or
+>>> abcm2ps have over lilypond, or is it more of a personal preferance? --ED--
+>>>
+>>>     
+>>>       
+>> Hi ED,
+>>
+>> Musixtex and Lilypond belong to the Latex-family in the largest sense. If you 
+>> want to edit the source-code of your composition (insert decoration or 
+>> advises for playing that noteedit does not offer) it is not so easy if you 
+>> are not a "texpert".
+>>  Abcm2ps is simple ASCII and generates a postscript-file scorename.ps with the 
+>> single command: abcm2ps -c -O= scorename.abc . The syntax of abc-files look 
+>> not so cryptic for musicians and is comparatively easy to handle.
+>>
+>> Best regards
+>> Hans-Peter
+>>   
+>>     
+> Nearly correct, Lilypond though is no longer dependent on (La)TeX
+> within it's current releases. Lilypond does not require TeX knowledge
+> though to use it and it (like Musixtex) includes quite some examples.
+> I prefer it mainly because I like the better output of it and has a much
+> simpler syntax compared to Musixtex. There exists frontends for Musixtex
+> (like PMX) offering a simpler syntax. Musixtex exists longer than Lilypond
+> but AFAIK there is not much development going on compared to Lilypond.
+>
+> A short comparison of abc to the above two languages can be found on the
+> abcplus homepage (abcplus.sf.net). One thing is probably not mentioned:
+> Lilypond can be expanded with scripts.
+>
+> Canorus will also support abcplus at one day. Lilypond will surely be the
+> first exporter we will implement (except someone having developed a abcplus
+> parser can easily adapt it to Canorus).
+>
+> Best,
+>
+> Reinhard
+>
+>   
+Thanks Reinhard,
+    This pretty well answers my question, and confirms what I had read
+on the subject before deciding to study Lilypond first.
+                                                      --ED--
+
+
+From noteedit-user at lists.berlios.de  Mon Aug 21 10:23:36 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 21 Aug 2006 10:23:36 +0200
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <44E8FAC2.5090804@bellsouth.net>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>
+	<200608191207.32736.dr.burmester-beer@t-online.de>
+	<44E8FAC2.5090804@bellsouth.net>
+Message-ID: <200608211023.36510.dr.burmester-beer@t-online.de>
+
+Am Montag, 21. August 2006 02:13 schrieb user mailing list for the score 
+editor noteedit:
+
+> Thanks Hans-Peter,
+>      I am beginning to understand Lilypond to some extent, and it seems
+> to have the same qualities you describe for abc.  Does abc do anything
+> that Lilypond won't?
+>                                      --ED--
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+Hi ED,
+
+if you need a pretty looking output of late-romantic scores you should prefer 
+Lilypond. If you need outstanding contemporary stuff you should try abcm2ps 
+with the addons of Hudson Lacerda (visite his site).
+
+I have to confess that I don't know Lilypond so well that I cannot say what 
+solutions it offers for modern notation-problems.
+
+Best regards
+Hans-Peter 
+
+
+From noteedit-user at lists.berlios.de  Mon Aug 21 22:27:45 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 21 Aug 2006 22:27:45 +0200
+Subject: [Noteedit-user] NoteEdit question
+In-Reply-To: <44E7CC70.4050400@kastanet.org>
+References: <44E7CC70.4050400@kastanet.org>
+Message-ID: <44EA1741.3030902@web.de>
+
+Hi Phil,
+
+I'm sorry but neither me nor Georg can help you with your problem
+as we are using other Linux distributions (Mandriva and SuSE).
+I crossposted my answer to the NE User Mailing List.
+If you follow the installation requirement NE should compile.
+Currently my system is so broken KDE-wise that I even
+can't compile NoteEdit myself.
+
+Best,
+
+Reinhard
+
+oreo wrote:
+> Hi,
+> sorry, gentlemen,
+> for contacting you directly about Noteedit.
+>
+> I have left posts on the Ubuntu forum, and no one has answered.
+>
+> I'm new to Linux, and using Ubuntu 6.06.
+> The version on the Synaptics Package Manager is 2.8.02. You probably
+> already know that it stops after showing the splash screen with a
+> SIGABRT error.
+> (http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo
+> <http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo>)
+>
+> I have downloaded the 2.8.1 version, but am having trouble following
+> the installation instructions.
+> (My lack of experience is showing, and the install seems to favor KDE,
+> and I am using Gnome.)
+>
+>     make -f Makefile.cvs
+>
+>     *** YOU'RE USING automake (GNU automake) 1.4-p6.
+>     *** KDE requires automake 1.6
+>     make[1]: *** [cvs] Error 1
+>     make: *** [all] Error 2
+>
+> I am wondering when the Synaptics Package Manager will be updated with
+> the new release.
+> Could you make  a DEB installation package available at your web site?
+> Does the new version cause the same SIGABRT crash for Ubuntu users?
+> Is there a fix for the error?
+>
+> Thanks so much.
+> I really would like to be able to use your program. It looks great.
+>
+> Phil
+>
+>
+> -- 
+> Phil & Gale Fields
+> 303 Ryan Ct.
+>  Siloam Springs, AR  72761
+> 479-524-8215, cell: 479-524-7005
+> ------------------------------------------------------------------------
+> e-mail:          phil at sweetums.net <mailto:phil at sweetums.net>
+> web page:    sweetums.net/oreo <http://www.sweetums.net/oreo>
+>
+> One King to rule them all,
+> One Son to find them,
+> One Blood to cleanse them all,
+> And from the dark unbind them.
+>
+>
+>
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 22 00:24:53 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 21 Aug 2006 18:24:53 -0400
+Subject: [Noteedit-user] can't convert MsuixTex-files
+In-Reply-To: <200608211023.36510.dr.burmester-beer@t-online.de>
+References: <20060818170645.81188.qmail@web27507.mail.ukl.yahoo.com>	<200608191207.32736.dr.burmester-beer@t-online.de>	<44E8FAC2.5090804@bellsouth.net>
+	<200608211023.36510.dr.burmester-beer@t-online.de>
+Message-ID: <44EA32B5.4090006@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Am Montag, 21. August 2006 02:13 schrieb user mailing list for the score 
+> editor noteedit:
+>
+>   
+>> Thanks Hans-Peter,
+>>      I am beginning to understand Lilypond to some extent, and it seems
+>> to have the same qualities you describe for abc.  Does abc do anything
+>> that Lilypond won't?
+>>                                      --ED--
+>> _______________________________________________
+>> Noteedit-user mailing list
+>> Noteedit-user at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>>     
+>
+> Hi ED,
+>
+> if you need a pretty looking output of late-romantic scores you should prefer 
+> Lilypond. If you need outstanding contemporary stuff you should try abcm2ps 
+> with the addons of Hudson Lacerda (visite his site).
+>
+> I have to confess that I don't know Lilypond so well that I cannot say what 
+> solutions it offers for modern notation-problems.
+>
+> Best regards
+> Hans-Peter 
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+Thanks again Hans-Peter:
+       I may have use for both.
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 22 00:42:50 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 21 Aug 2006 18:42:50 -0400
+Subject: [Noteedit-user] NoteEdit question
+In-Reply-To: <44EA1741.3030902@web.de>
+References: <44E7CC70.4050400@kastanet.org> <44EA1741.3030902@web.de>
+Message-ID: <44EA36EA.3000304@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi Phil,
+>
+> I'm sorry but neither me nor Georg can help you with your problem
+> as we are using other Linux distributions (Mandriva and SuSE).
+> I crossposted my answer to the NE User Mailing List.
+> If you follow the installation requirement NE should compile.
+> Currently my system is so broken KDE-wise that I even
+> can't compile NoteEdit myself.
+>
+> Best,
+>
+> Reinhard
+>
+> oreo wrote:
+>   
+>> Hi,
+>> sorry, gentlemen,
+>> for contacting you directly about Noteedit.
+>>
+>> I have left posts on the Ubuntu forum, and no one has answered.
+>>
+>> I'm new to Linux, and using Ubuntu 6.06.
+>> The version on the Synaptics Package Manager is 2.8.02. You probably
+>> already know that it stops after showing the splash screen with a
+>> SIGABRT error.
+>> (http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo
+>> <http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo>)
+>>
+>> I have downloaded the 2.8.1 version, but am having trouble following
+>> the installation instructions.
+>> (My lack of experience is showing, and the install seems to favor KDE,
+>> and I am using Gnome.)
+>>
+>>     make -f Makefile.cvs
+>>
+>>     *** YOU'RE USING automake (GNU automake) 1.4-p6.
+>>     *** KDE requires automake 1.6
+>>     make[1]: *** [cvs] Error 1
+>>     make: *** [all] Error 2
+>>
+>> I am wondering when the Synaptics Package Manager will be updated with
+>> the new release.
+>> Could you make  a DEB installation package available at your web site?
+>> Does the new version cause the same SIGABRT crash for Ubuntu users?
+>> Is there a fix for the error?
+>>
+>> Thanks so much.
+>> I really would like to be able to use your program. It looks great.
+>>
+>> Phil
+>>
+>>
+>> -- 
+>> Phil & Gale Fields
+>> 303 Ryan Ct.
+>>  Siloam Springs, AR  72761
+>> 479-524-8215, cell: 479-524-7005
+>> ------------------------------------------------------------------------
+>> e-mail:          phil at sweetums.net <mailto:phil at sweetums.net>
+>> web page:    sweetums.net/oreo <http://www.sweetums.net/oreo>
+>>
+>> One King to rule them all,
+>> One Son to find them,
+>> One Blood to cleanse them all,
+>> And from the dark unbind them.
+>>
+>>
+>>
+>>     
+>
+>
+>   
+Note to Phil;
+    I can sympathize with you on the installation problem. I just came
+thru about 2 weeks of the same kind of trouble with SuSE 10.1.  Can't
+help with Ubuntu, but if you were refering to the Debian package, there
+is an earlier version of Note  Edit  that comes with their CD set. I
+used that version with Suse 10.0 and believe it might do until you solve
+your Ubuntu problems.   --ED--
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 22 09:39:18 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 22 Aug 2006 09:39:18 +0200
+Subject: [Noteedit-user] NoteEdit question
+In-Reply-To: <44EA36EA.3000304@bellsouth.net>
+References: <44E7CC70.4050400@kastanet.org> <44EA1741.3030902@web.de>
+	<44EA36EA.3000304@bellsouth.net>
+Message-ID: <1156232358.6172.11.camel@localhost>
+
+Il giorno lun, 21/08/2006 alle 18.42 -0400, user mailing list for the
+score editor noteedit ha scritto:
+> user mailing list for the score editor noteedit wrote:
+> > Hi Phil,
+> >
+> > I'm sorry but neither me nor Georg can help you with your problem
+> > as we are using other Linux distributions (Mandriva and SuSE).
+> > I crossposted my answer to the NE User Mailing List.
+> > If you follow the installation requirement NE should compile.
+> > Currently my system is so broken KDE-wise that I even
+> > can't compile NoteEdit myself.
+> >
+> > Best,
+> >
+> > Reinhard
+> >
+> > oreo wrote:
+> >   
+> >> Hi,
+> >> sorry, gentlemen,
+> >> for contacting you directly about Noteedit.
+> >>
+> >> I have left posts on the Ubuntu forum, and no one has answered.
+> >>
+> >> I'm new to Linux, and using Ubuntu 6.06.
+> >> The version on the Synaptics Package Manager is 2.8.02. You probably
+> >> already know that it stops after showing the splash screen with a
+> >> SIGABRT error.
+> >> (http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo
+> >> <http://www.ubuntuforums.org/showthread.php?t=204907&highlight=oreo>)
+> >>
+> >> I have downloaded the 2.8.1 version, but am having trouble following
+> >> the installation instructions.
+> >> (My lack of experience is showing, and the install seems to favor KDE,
+> >> and I am using Gnome.)
+> >>
+> >>     make -f Makefile.cvs
+> >>
+> >>     *** YOU'RE USING automake (GNU automake) 1.4-p6.
+> >>     *** KDE requires automake 1.6
+> >>     make[1]: *** [cvs] Error 1
+> >>     make: *** [all] Error 2
+> >>
+> >> I am wondering when the Synaptics Package Manager will be updated with
+> >> the new release.
+> >> Could you make  a DEB installation package available at your web site?
+> >> Does the new version cause the same SIGABRT crash for Ubuntu users?
+> >> Is there a fix for the error?
+> >>
+> >> Thanks so much.
+> >> I really would like to be able to use your program. It looks great.
+> >>
+> >> Phil
+> >>
+> >>
+> >> -- 
+> >> Phil & Gale Fields
+> >> 303 Ryan Ct.
+> >>  Siloam Springs, AR  72761
+> >> 479-524-8215, cell: 479-524-7005
+> >> ------------------------------------------------------------------------
+> >> e-mail:          phil at sweetums.net <mailto:phil at sweetums.net>
+> >> web page:    sweetums.net/oreo <http://www.sweetums.net/oreo>
+> >>
+> >> One King to rule them all,
+> >> One Son to find them,
+> >> One Blood to cleanse them all,
+> >> And from the dark unbind them.
+> >>
+> >>
+> >>
+> >>     
+> >
+> >
+> >   
+> Note to Phil;
+>     I can sympathize with you on the installation problem. I just came
+> thru about 2 weeks of the same kind of trouble with SuSE 10.1.  Can't
+> help with Ubuntu, but if you were refering to the Debian package, there
+> is an earlier version of Note  Edit  that comes with their CD set. I
+> used that version with Suse 10.0 and believe it might do until you solve
+> your Ubuntu problems.   --ED--
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+
+To Phil:
+you can try to make this in Ubuntu:
+apt-get source noteedit
+cd noteedit-2.8.0
+
+in mainframewidget.ccp you must change line:
+keys_ = new KAccel(this);
+to
+keys_ = new KAccel((QWidget*)this->parent();
+
+then
+fakeroot dpkg-buildpackage
+cd...
+su -c dpkg -i noteedit*.deb
+
+In my situation (Ubuntu 6.06) it works good.
+The update manager even says you may change your version for update:not
+do it! Then when the new 2.8.1 will in the ubuntu repositories, we will
+look at.
+Regards
+Emilio
+(sorry for bad english)
+
+
+
+
+From noteedit-user at lists.berlios.de  Tue Aug 22 18:24:49 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 22 Aug 2006 12:24:49 -0400
+Subject: [Noteedit-user] NoteEdit on SuSE 10.1
+Message-ID: <44EB2FD1.4080506@bellsouth.net>
+
+Finally got my OS straightened out enough to install NoteEdit 2.8.1. 
+More of the edit functions work now, but I am still seeing some sort of
+disagreement between NoteEdit and KDE. Using the scroll bars in NoteEdit
+often causes the headers to disappear  and creates randomly placed lines
+through  my  desk top background and icons.  KDE team says this is not a
+bug in KDE.  Has anyone else experienced this sort of behavior?  Have a
+few screen shots, but don't know if I should send them to this list.  
+                           --ED--
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060822/a52fcd11/attachment.html>
+
+From noteedit-user at lists.berlios.de  Thu Aug 24 20:17:13 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 24 Aug 2006 14:17:13 -0400
+Subject: [Noteedit-user] [noteedit] Deleting notes
+Message-ID: <8200bab70608241117q52c4fe04ged79708ebbb8a6c3@mail.gmail.com>
+
+Do I have to do something special to delete notes and rests using the
+backspace or delete keys?  At the moment neither is deleting
+anything...
+I'm also not sure how to delete a beam that I entered, or delete a slur.
+
+Thanks!
+-Chuckk
+
+-- 
+"Far and away the best prize that life has to offer is the chance to
+work hard at work worth doing."
+-Theodore Roosevelt
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 26 04:22:56 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 25 Aug 2006 22:22:56 -0400
+Subject: [Noteedit-user] [noteedit] Deleting notes
+In-Reply-To: <8200bab70608241117q52c4fe04ged79708ebbb8a6c3@mail.gmail.com>
+References: <8200bab70608241117q52c4fe04ged79708ebbb8a6c3@mail.gmail.com>
+Message-ID: <44EFB080.2080105@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Do I have to do something special to delete notes and rests using the
+> backspace or delete keys?  At the moment neither is deleting
+> anything...
+> I'm also not sure how to delete a beam that I entered, or delete a slur.
+>
+> Thanks!
+> -Chuckk
+>
+>   
+Try pressing "Ctrl" key while clicking on what you want to delete.  This
+worked for me when I was using noteedit 2.8.0 on SuSE 10.1. Since I
+upgraded to 2.8.1 the delete key works for most things. There seems to
+be a disagreement between some versions of noteedit and KDE. You have to
+be using the proper versions of both to get the best results.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+From noteedit-user at lists.berlios.de  Sat Aug 26 04:32:08 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 25 Aug 2006 22:32:08 -0400
+Subject: [Noteedit-user] [noteedit] Deleting notes
+In-Reply-To: <8200bab70608241117q52c4fe04ged79708ebbb8a6c3@mail.gmail.com>
+References: <8200bab70608241117q52c4fe04ged79708ebbb8a6c3@mail.gmail.com>
+Message-ID: <44EFB2A8.5020709@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Do I have to do something special to delete notes and rests using the
+> backspace or delete keys?  At the moment neither is deleting
+> anything...
+> I'm also not sure how to delete a beam that I entered, or delete a slur.
+>
+> Thanks!
+> -Chuckk
+>
+>   
+Sorry I didn't finish my earlier reply, Chuckk;  my keyboard batteries
+went out suddenly. Any way, try using Ctrl while mouse clicking the
+element you want to delete.  For beams, go to edit mode, highlight the
+first notein the beam series, and turn off the beam button on the tool
+bar.  To delete slurs, if edit mode does not work, delete the first note
+of the slur, then replace it.
+                                                     --ED--
+
+

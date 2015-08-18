@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-July/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20noteedit-2.7.4%20on%20DeMuDi%20-%20print%20preview%20problem&In-Reply-To=%3C42E9584C.4070902%40yahoo.com.br%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000107.html">
+   <LINK REL="Next"  HREF="000109.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20noteedit-2.7.4%20on%20DeMuDi%20-%20print%20preview%20problem&In-Reply-To=%3C42E9584C.4070902%40yahoo.com.br%3E"
+       TITLE="[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Fri Jul 29 00:12:28 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000107.html">[Noteedit-user] ./configure fails
+</A></li>
+        <LI>Next message: <A HREF="000109.html">[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#108">[ date ]</a>
+              <a href="thread.html#108">[ thread ]</a>
+              <a href="subject.html#108">[ subject ]</a>
+              <a href="author.html#108">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi all,
+
+I have some problems with noteedit-2.7.4 *print preview* :
+
+0. NoteEdit cannot find abcm2ps under certain ciscustances (when 
+noteedit is called from a terminal; no problem when called from a 
+mini-command (fbrun)); the printing is cancelled at all.
+
+ErrMsg: &quot;abcm2ps was not found in your PATH, aborting&quot;
+
+localhost  hudson $ which abcm2ps
+/usr/local/bin/abcm2ps
+
+localhost  hudson $ echo $PATH
+/home/hudson/bin:/home/hudson/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
+                                   ^^^^^^^^^^^^^^
+
+1. NoteEdit preview with gv get errors, without message in gv error 
+window (I have gv-3.6.1 with gs-7.07.1);
+
+2. NoteEdit cannot generate PS files:
+
+ErrMsg: &quot;Catastrophe: KNotify&quot;
+&quot;A print error ocurred. Error message received from system:&quot;
+&quot;Cannot save print file to /home/hudson/print.ps. Check that you have 
+write access to it.&quot;
+
+(The error persists when set chmod 777 /home/hudson/print.ps; but PDF 
+printing is fine)
+
+I tried also install kghostview, but it cannot comunicate to 
+ghostscript, suggesting misconfigured printer.
+
+System info:
+NoteEdit-2.7.4 3.3.2, (3.1)
+Linux (i686) release 2.4.25-1-multimedia-686
+Debian Sarge GNU/Linux - DeMuDi-1.2.0 - (with updates)
+Window manager: fluxbox-0.9.3 on XFree86, res. 800x600, 15bit
+gv-3.6.1
+gs-7.07.1
+Printer EPSON-C20UX, configured by gnome-cups-manager, using cupsys-bsd
+
+Any suggestions?
+
+Cheer,
+Hudson Lacerda
+
+-- 
+Hudson Lacerda &lt;<A HREF="http://geocities.yahoo.com.br/hfmlacerda/">http://geocities.yahoo.com.br/hfmlacerda/</A>&gt;
+*N&#227;o deixe seu voto sumir! <A HREF="http://www.votoseguro.org/">http://www.votoseguro.org/</A>
+*Ap&#243;ie o manifesto! <A HREF="http://www.votoseguro.com/alertaprofessores/">http://www.votoseguro.com/alertaprofessores/</A>
+*Quem tem medo de GNU/Linux? <A HREF="http://linuxfud.org/">http://linuxfud.org/</A>
+
+	
+	
+		
+_______________________________________________________ 
+Yahoo! Acesso Gr&#225;tis - Internet r&#225;pida e gr&#225;tis. 
+Instale o discador agora! <A HREF="http://br.acesso.yahoo.com/">http://br.acesso.yahoo.com/</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000107.html">[Noteedit-user] ./configure fails
+</A></li>
+	<LI>Next message: <A HREF="000109.html">[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#108">[ date ]</a>
+              <a href="thread.html#108">[ thread ]</a>
+              <a href="subject.html#108">[ subject ]</a>
+              <a href="author.html#108">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

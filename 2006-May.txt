@@ -1,0 +1,875 @@
+From noteedit-user-admin at lists.berlios.de  Mon May  1 11:38:41 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 1 May 2006 11:38:41 +0200
+Subject: [Noteedit-user] Compile error
+Message-ID: <200605011138.41957.claudius.wettstein@gmx.de>
+
+Hi all,
+
+I tried to compile noteedit 2.8.1 beta on a Suse 10 system. 
+Unfortunately "make" stops with the following output:
+
+if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ 
+-DHAVE_CONFIG_H -I. -I. -I.. -I/opt/kde3/include 
+-I/usr/lib/qt3/include -I/usr/X11R6/include  -I/usr/include    
+-DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor -Wno-long-long 
+-Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+-D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion 
+-Wchar-subscripts -O2 -Wformat-security -Wmissing-format-attribute 
+-fno-exceptions -fno-check-new -fno-common  -MT pmxexportform.lo -MD 
+-MP -MF ".deps/pmxexportform.Tpo" \
+  -c -o pmxexportform.lo `test -f 'pmxexportform.cc' || echo 
+'./'`pmxexportform.cc; \
+then mv -f ".deps/pmxexportform.Tpo" ".deps/pmxexportform.Plo"; \
+else rm -f ".deps/pmxexportform.Tpo"; exit 1; \
+fi
+pmxexportform.cc:23:24: error: nscaleedit.h: No such file or directory
+make[3]: *** [pmxexportform.lo] Fehler 1
+make[3]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+make[2]: *** [all-recursive] Fehler 1
+make[2]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+make[1]: *** [all-recursive] Fehler 1
+make[1]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta'
+make: *** [all] Fehler 2
+
+Since I am not a programmer, I have no Idea how to correct this error. 
+Any help is quite appreciated.
+
+Thank you. 
+Claudius
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May  1 12:00:25 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 01 May 2006 12:00:25 +0200
+Subject: [Noteedit-user] Compile error
+In-Reply-To: <200605011138.41957.claudius.wettstein@gmx.de>
+References: <200605011138.41957.claudius.wettstein@gmx.de>
+Message-ID: <4455DC39.7070900@web.de>
+
+Hi Claudius,
+
+This problem was fixed some weeks ago, so if you want
+to try it out immediately fetch the current version from SVN
+which also fixed a path problem with print preview.
+
+The final release should appear really soon now, just
+how soon is another question :-)
+
+Search the archives for nscaleedit.h, there the cause & fix is
+explained for the problem.
+
+Best,
+
+Reinhard
+
+noteedit-user-admin at berlios.de wrote:
+> Hi all,
+>
+> I tried to compile noteedit 2.8.1 beta on a Suse 10 system. 
+> Unfortunately "make" stops with the following output:
+>
+> if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ 
+> -DHAVE_CONFIG_H -I. -I. -I.. -I/opt/kde3/include 
+> -I/usr/lib/qt3/include -I/usr/X11R6/include  -I/usr/include    
+> -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor -Wno-long-long 
+> -Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+> -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion 
+> -Wchar-subscripts -O2 -Wformat-security -Wmissing-format-attribute 
+> -fno-exceptions -fno-check-new -fno-common  -MT pmxexportform.lo -MD 
+> -MP -MF ".deps/pmxexportform.Tpo" \
+>   -c -o pmxexportform.lo `test -f 'pmxexportform.cc' || echo 
+> './'`pmxexportform.cc; \
+> then mv -f ".deps/pmxexportform.Tpo" ".deps/pmxexportform.Plo"; \
+> else rm -f ".deps/pmxexportform.Tpo"; exit 1; \
+> fi
+> pmxexportform.cc:23:24: error: nscaleedit.h: No such file or directory
+> make[3]: *** [pmxexportform.lo] Fehler 1
+> make[3]: Leaving directory 
+> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+> make[2]: *** [all-recursive] Fehler 1
+> make[2]: Leaving directory 
+> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+> make[1]: *** [all-recursive] Fehler 1
+> make[1]: Leaving directory 
+> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta'
+> make: *** [all] Fehler 2
+>
+> Since I am not a programmer, I have no Idea how to correct this error. 
+> Any help is quite appreciated.
+>
+> Thank you. 
+> Claudius
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+>   
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May  1 23:14:57 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 1 May 2006 23:14:57 +0200
+Subject: [Noteedit-user] Compile error
+In-Reply-To: <4455DC39.7070900@web.de>
+References: <200605011138.41957.claudius.wettstein@gmx.de> <4455DC39.7070900@web.de>
+Message-ID: <200605012314.57531.claudius.wettstein@gmx.de>
+
+Am Montag, 1. Mai 2006 12:00 schrieb noteedit-user-admin at berlios.de:
+> Hi Claudius,
+>
+> This problem was fixed some weeks ago, so if you want
+> to try it out immediately fetch the current version from SVN
+> which also fixed a path problem with print preview.
+>
+> The final release should appear really soon now, just
+> how soon is another question :-)
+>
+> Search the archives for nscaleedit.h, there the cause & fix is
+> explained for the problem.
+>
+> Best,
+>
+> Reinhard
+
+Hi Reinhard,
+
+thank you very much for your quick answer. I was trying the latest 
+SVN-Beta und was happy  to see it compile properly. The program 
+itself is getting better and better :)
+
+Best,
+Claudius
+
+
+From noteedit-user-admin at lists.berlios.de  Sat May 27 22:10:40 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 27 May 2006 22:10:40 +0200
+Subject: [Noteedit-user] Release Candidate 2.8.1 of NoteEdit published
+Message-ID: <4478B240.3090801@web.de>
+
+Hi,
+
+Finally the release candidate one week later than planned due to the
+german documentation updated has been released by me. As usual
+report any problems with the release candidate to this list. The only
+planned changes are updates to the translations as there were quite
+some user interface updates during the beta period.
+Have fun with the RC!
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun May 28 11:18:58 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 28 May 2006 11:18:58 +0200
+Subject: [Noteedit-user] keyboard insertion
+Message-ID: <44796B02.80308@aconnect.de>
+
+Hi,
+
+I 'm new here. I use noteedit 2.8.0, debian testing, sony vaio notebook, 
+gnome 2.14 desktop.
+
+The keyboard insertion mode doesn`t work for me. I can't neither change 
+the note lenght with the keybord, nor the insertion point. Nothing 
+happens, when I press the "A" button.
+
+Any idea here?
+
+Regards Bolko
+
+
+From noteedit-user-admin at lists.berlios.de  Sun May 28 20:57:22 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 28 May 2006 20:57:22 +0200
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <44796B02.80308@aconnect.de>
+References: <44796B02.80308@aconnect.de>
+Message-ID: <4479F292.9000006@web.de>
+
+Hi,
+
+I've just tested with NoteEdit 2.8.1 Release candidate:
+- Activate keyboard insertion mode
+- Add clef, key signature and time signature
+- optionally switch on automatic beam/bar insertion (configuration)
+- Select mouse position with cursors
+- Press Enter
+-> A red note appears for me.
+
+Regards,
+
+Reinhard
+
+
+noteedit-user-admin at berlios.de wrote:
+> Hi,
+>
+> I 'm new here. I use noteedit 2.8.0, debian testing, sony vaio
+> notebook, gnome 2.14 desktop.
+>
+> The keyboard insertion mode doesn`t work for me. I can't neither
+> change the note lenght with the keybord, nor the insertion point.
+> Nothing happens, when I press the "A" button.
+>
+> Any idea here?
+>
+> Regards Bolko
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun May 28 20:57:22 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 28 May 2006 20:57:22 +0200
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <44796B02.80308@aconnect.de>
+References: <44796B02.80308@aconnect.de>
+Message-ID: <4479F292.9000006@web.de>
+
+Hi,
+
+I've just tested with NoteEdit 2.8.1 Release candidate:
+- Activate keyboard insertion mode
+- Add clef, key signature and time signature
+- optionally switch on automatic beam/bar insertion (configuration)
+- Select mouse position with cursors
+- Press Enter
+-> A red note appears for me.
+
+Regards,
+
+Reinhard
+
+
+noteedit-user-admin at berlios.de wrote:
+> Hi,
+>
+> I 'm new here. I use noteedit 2.8.0, debian testing, sony vaio
+> notebook, gnome 2.14 desktop.
+>
+> The keyboard insertion mode doesn`t work for me. I can't neither
+> change the note lenght with the keybord, nor the insertion point.
+> Nothing happens, when I press the "A" button.
+>
+> Any idea here?
+>
+> Regards Bolko
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sun May 28 21:16:26 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 28 May 2006 21:16:26 +0200
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <44796B02.80308@aconnect.de>
+References: <44796B02.80308@aconnect.de>
+Message-ID: <4479F70A.70704@schwaben.de>
+
+noteedit-user-admin at berlios.de schrieb:
+> Hi,
+>
+> I 'm new here. I use noteedit 2.8.0, debian testing, sony vaio
+> notebook, gnome 2.14 desktop.
+>
+> The keyboard insertion mode doesn`t work for me. I can't neither
+> change the note lenght with the keybord, nor the insertion point.
+> Nothing happens, when I press the "A" button.
+>
+> Any idea here?
+>
+> Regards Bolko
+
+Hi,
+
+with noteedit 2.8.0 on openSuse I see the same here. With a newer
+version, let's say the release candidate 2.8.1, changing the note length
+with the keyboard is working. Inserting the note itself with the
+(computer) keyboard is not so helpful, I guess. I'm doing that with
+mouse or midi keyboard.
+
+Hopefully you can get hold of the new version and use it instead?!
+
+Regards,
+Georg
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May 29 06:37:00 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 29 May 2006 06:37:00 +0200
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <4479F70A.70704@schwaben.de>
+References: <44796B02.80308@aconnect.de> <4479F70A.70704@schwaben.de>
+Message-ID: <447A7A6C.8000508@schwaben.de>
+
+noteedit-user-admin at berlios.de schrieb:
+> noteedit-user-admin at berlios.de schrieb:
+>   
+>>
+>> The keyboard insertion mode doesn`t work for me. I can't neither
+>> change the note lenght with the keybord, nor the insertion point.
+>> Nothing happens, when I press the "A" button.
+>>
+>>     
+> ....
+> Hopefully you can get hold of the new version and use it instead?!
+>
+>   
+Hi,
+
+a small addition: With the release candidate the insertion of a note
+works per keyboard only when the red keyboard icon is activated and you
+press shift. With shift+A I get an note A. In the shortcut definition
+dialog it's defined like this.
+
+Regards,
+Georg
+ 
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May 29 09:34:14 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 29 May 2006 09:34:14 +0200
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <44796B02.80308@aconnect.de>
+References: <44796B02.80308@aconnect.de>
+Message-ID: <1148888054.5099.8.camel@localhost>
+
+Il giorno dom, 28/05/2006 alle 11.18 +0200,
+noteedit-user-admin at berlios.de ha scritto:
+> Hi,
+> 
+> I 'm new here. I use noteedit 2.8.0, debian testing, sony vaio notebook, 
+> gnome 2.14 desktop.
+> 
+> The keyboard insertion mode doesn`t work for me. I can't neither change 
+> the note lenght with the keybord, nor the insertion point. Nothing 
+> happens, when I press the "A" button.
+> 
+> Any idea here?
+> 
+> Regards Bolko
+
+I had the same problem. If you can't use a new version, you may do this:
+
+apt-get source noteedit
+
+in mainframewidget.ccp you may change the follow line
+keys_ = new Kaccel(this);
+to
+keys_ = new Kaccel((QWidget*)this->parent();
+then
+cd noteedit-2.8.0
+fakeroot dpkg-buildpackage
+cd..
+su -c dpkg -i noteedit*.deb
+
+I have received these instructions and now (in Ubuntu 6.06) noteedit
+works well.
+Regards
+Emilio
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May 29 15:50:42 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 29 May 2006 10:50:42 -0300
+Subject: [Noteedit-user] keyboard insertion
+In-Reply-To: <447A7A6C.8000508@schwaben.de>
+References: <44796B02.80308@aconnect.de> <4479F70A.70704@schwaben.de> <447A7A6C.8000508@schwaben.de>
+Message-ID: <447AFC32.2030500@yahoo.com.br>
+
+noteedit-user-admin at berlios.de escreveu:
+> Hi,
+> 
+> a small addition: With the release candidate the insertion of a note
+> works per keyboard only when the red keyboard icon is activated and you
+> press shift. With shift+A I get an note A. In the shortcut definition
+> dialog it's defined like this.
+
+Does this work with CapsLock active instead of using Shift?
+
+I like the keyboard input in the form a|b|c|d|e|f|g for pitches, it 
+allows fast insertion of notes. I think also that all features should be 
+available without need of using the mouse or complex keystrokes for 
+basic operations.
+
+I have yet another question:
+
+Is there already a fix for the impossibility to insert two or more 
+articulation marks like staccato, tenuto and accents? Those 
+insert-note-with-articulation buttons were a really bad idea.
+
+Regards,
+Hudson
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+*Ajude a eliminar DRM:     http://defectivebydesign.org/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+Abra sua conta no Yahoo! Mail: 1GB de espa?o, alertas de e-mail no celular e anti-spam realmente eficaz. 
+http://mail.yahoo.com.br/
+
+
+From noteedit-user-admin at lists.berlios.de  Tue May 30 17:14:39 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 30 May 2006 17:14:39 +0200
+Subject: [Noteedit-user] multiple voices and keys
+Message-ID: <1149002080.9426.6.camel@localhost.localdomain>
+
+hello,
+
+I'm using noteedit 2.8.1.
+I want to have two voices in one staff.
+The whole piece is witten in a-moll (a minor?), so there have to be 4
+flats (b es as des)
+if i want to enter an "es" in the second voice it prints an additional
+flat-sign in front of it. why? there is already one flat-sign at the
+beginning of the line. (but it seems that this is only used for the
+first voice)
+
+what am i doing wrong?
+
+also, i'm looking for a way to add a header (title, komposer, etc.) to
+the document.
+
+regards,
+christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060530/abba8694/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Tue May 30 19:38:25 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 30 May 2006 19:38:25 +0200
+Subject: [Noteedit-user] multiple voices and keys
+In-Reply-To: <1149002080.9426.6.camel@localhost.localdomain>
+References: <1149002080.9426.6.camel@localhost.localdomain>
+Message-ID: <447C8311.6080404@schwaben.de>
+
+noteedit-user-admin at berlios.de schrieb:
+> hello,
+>
+> I'm using noteedit 2.8.1.
+> I want to have two voices in one staff.
+> The whole piece is witten in a-moll (a minor?), so there have to be 4
+> flats (b es as des)
+> if i want to enter an "es" in the second voice it prints an additional
+> flat-sign in front of it. why? there is already one flat-sign at the
+> beginning of the line. (but it seems that this is only used for the
+> first voice)
+>   
+Your discovery is strange, indeed. As a first workaround, you could
+start with insertion of the additional flat. Later notes in the second
+voice seem to get no additional flats. With the (whole staff) command
+extras -> reduce accidentals you can clean it up. Maybe you can also
+clean it up with extras -> set all to flats, which works only on a
+selected region, which sometimes is what you want. This only as a fast
+answer, maybe we have to dig more in it.
+
+(And I think you meant another pitch, not a minor?)
+
+
+> what am i doing wrong?
+>
+> also, i'm looking for a way to add a header (title, komposer, etc.) to
+> the document.
+>
+>   
+Look in Format -> score information
+> regards,
+> christoph
+>
+>   
+Regards,
+Georg
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue May 30 20:24:20 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 30 May 2006 20:24:20 +0200
+Subject: [Noteedit-user] multiple voices and keys
+In-Reply-To: <1149002080.9426.6.camel@localhost.localdomain>
+References: <1149002080.9426.6.camel@localhost.localdomain>
+Message-ID: <200605302024.20834.ulrich.herbst@gmx.de>
+
+On Tuesday 30 May 2006 17:14, noteedit-user-admin at berlios.de wrote:
+> hello,
+>
+> I'm using noteedit 2.8.1.
+> I want to have two voices in one staff.
+> The whole piece is witten in a-moll (a minor?), so there have to be 4
+> flats (b es as des)
+> if i want to enter an "es" in the second voice it prints an additional
+> flat-sign in front of it. why? there is already one flat-sign at the
+> beginning of the line. (but it seems that this is only used for the
+> first voice)
+>
+> what am i doing wrong?
+
+Hi christoph,
+
+sorry, but a minor (a-Moll) has no flats (and no sharps).
+
+If you have 4 flats at the beginning of the line, then you want to insert just 
+"e", that becomes "es" automatically (at least for me).
+
+Uli
+-- 
+
+                            Ulrich Herbst
+                         ulrich.herbst at gmx.de
+
+-------------------------------------------------------------------------------
+unix Sys Admin: noun. [Info Tech] Persons who are interested in
+computer science and literature but understands neither.
+(The Unix-Hater's handbook)
+
+
+From noteedit-user-admin at lists.berlios.de  Tue May 30 21:45:44 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 30 May 2006 21:45:44 +0200
+Subject: [Noteedit-user] multiple voices and keys
+In-Reply-To: <447C8311.6080404@schwaben.de>
+References: <1149002080.9426.6.camel@localhost.localdomain> <447C8311.6080404@schwaben.de>
+Message-ID: <1149018345.9426.21.camel@localhost.localdomain>
+
+Hello,
+
+On Tue, 2006-05-30 at 19:38 +0200, noteedit-user-admin at berlios.de wrote:
+> noteedit-user-admin at berlios.de schrieb:
+
+There seems to be something wrong with the list setup. Shouldn't the
+original senders be listed?
+
+> Your discovery is strange, indeed. As a first workaround, you could
+> start with insertion of the additional flat. Later notes in the second
+> voice seem to get no additional flats. With the (whole staff) command
+> extras -> reduce accidentals you can clean it up.
+
+There is no menu "extras", but I found "Reduce Accidentals" under
+"Tools". This works well as a workaround. Thanks.
+
+> (And I think you meant another pitch, not a minor?)
+Yes, of course. I meant A flat major. I'm used to use the german terms
+and I'm a little confused by the english terms.
+
+> Look in Format -> score information
+Thanks.
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060530/80abab55/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 13:56:20 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 13:56:20 +0200
+Subject: [Noteedit-user] repetition-sign (:||) not bar-aligned
+Message-ID: <1149076581.8262.37.camel@localhost.localdomain>
+
+Hello,
+
+The piece starts with an offbeat of one quarter. (3/4 time signature)
+The repetition sign (and the final bar) ist after the second quarter and
+before the third and last quarter of a bar.
+
+Inserting the repetition sign after the second quarter works, but if I
+continue after this sign, It behaves as if it is a complete new bar.
+
+What I want is this: ("d" represents one quarter)
+3/4  d|ddd|dd:||d|ddd|ddd|dd||
+
+How can I realise this?
+
+regards,
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060531/182aceb1/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 17:10:22 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 17:10:22 +0200
+Subject: [Noteedit-user] Lyrics spacing
+Message-ID: <1149088223.8262.48.camel@localhost.localdomain>
+
+Hello,
+
+I have another question:
+
+Two staffs and attached to the first one, there are 4 lines of lyrics.
+Via format->staff properties, I am able to adjust the distances between
+the staffs and the lyrics, but the distance between the single lines of
+lyrics is not adjustable. Currently the lyrics overlap.
+
+Also the exported musixtex file produces a dvi, where the lyrics and the
+second staff collide, but the distances between the lyrics are OK.
+
+Is there an elegant way to adjust this or do I have to dive into the tex
+file?
+
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060531/96d9c029/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 19:50:22 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 19:50:22 +0200
+Subject: [Noteedit-user] multiple voices and keys
+In-Reply-To: <1149018345.9426.21.camel@localhost.localdomain>
+References: <1149002080.9426.6.camel@localhost.localdomain> <447C8311.6080404@schwaben.de> <1149018345.9426.21.camel@localhost.localdomain>
+Message-ID: <447DD75E.2040709@web.de>
+
+Hi Christoph,
+
+noteedit-user-admin at berlios.de wrote:
+> Hello,
+>
+> On Tue, 2006-05-30 at 19:38 +0200, noteedit-user-admin at berlios.de wrote:
+>   
+>> noteedit-user-admin at berlios.de schrieb:
+>>     
+>
+> There seems to be something wrong with the list setup. Shouldn't the
+> original senders be listed?
+>   
+No it shouldn't. If I do that, everyone get spammed quite quickly.
+The list already suffers from large amounts spam and I don't want
+that members get spam because they joined the list.
+
+>> Your discovery is strange, indeed. As a first workaround, you could
+>> start with insertion of the additional flat. Later notes in the second
+>> voice seem to get no additional flats. With the (whole staff) command
+>> extras -> reduce accidentals you can clean it up.
+>>     
+>
+> There is no menu "extras", but I found "Reduce Accidentals" under
+> "Tools". This works well as a workaround. Thanks.
+>   
+Good to hear that.
+>> (And I think you meant another pitch, not a minor?)
+>>     
+> Yes, of course. I meant A flat major. I'm used to use the german terms
+> and I'm a little confused by the english terms.
+>   
+I haven't tried that up to now, so I can't tell if there's a
+problem or if you did something wrong.
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 20:25:53 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 20:25:53 +0200
+Subject: [Noteedit-user] repetition-sign (:||) not bar-aligned
+In-Reply-To: <1149076581.8262.37.camel@localhost.localdomain>
+References: <1149076581.8262.37.camel@localhost.localdomain>
+Message-ID: <447DDFB1.4080609@schwaben.de>
+
+Hi,
+
+again a crude workaround with hidden rests: With these you can stuff
+every bar as a 3 beat bar, and in printout you get what you want. At
+least in lilypond I got it. When listening to it, you hear the extra
+rests, but I guess this is not disturbing. The hidden rest is the icon
+after the triplet.
+
+Regards,
+Georg
+
+
+
+noteedit-user-admin at berlios.de schrieb:
+> Hello,
+>
+> The piece starts with an offbeat of one quarter. (3/4 time signature)
+> The repetition sign (and the final bar) ist after the second quarter and
+> before the third and last quarter of a bar.
+>
+> Inserting the repetition sign after the second quarter works, but if I
+> continue after this sign, It behaves as if it is a complete new bar.
+>
+> What I want is this: ("d" represents one quarter)
+> 3/4  d|ddd|dd:||d|ddd|ddd|dd||
+>
+> How can I realise this?
+>
+> regards,
+> Christoph
+>
+>   
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 22:01:39 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 22:01:39 +0200
+Subject: [SPAM] - Re: [Noteedit-user] repetition-sign (:||) notbar-aligned - Bayesian Filter detected spam
+In-Reply-To: <447DDFB1.4080609@schwaben.de>
+References: <1149076581.8262.37.camel@localhost.localdomain> <447DDFB1.4080609@schwaben.de>
+Message-ID: <1149105701.8239.1.camel@localhost.localdomain>
+
+Hello,
+
+On Wed, 2006-05-31 at 20:25 +0200, noteedit-user-admin at berlios.de wrote:
+> Hi,
+> 
+> again a crude workaround with hidden rests: With these you can stuff
+> every bar as a 3 beat bar, and in printout you get what you want. At
+> least in lilypond I got it. When listening to it, you hear the extra
+> rests, but I guess this is not disturbing. The hidden rest is the icon
+> after the triplet.
+> 
+> Regards,
+> Georg
+
+I found another workaround:
+I produced the music data using another program and exporeted/imported
+it via musicxml. so noteedit is capable of displaying it.
+
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060531/d763ff43/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed May 31 22:03:21 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 31 May 2006 22:03:21 +0200
+Subject: [Noteedit-user] multiple voices and keys
+In-Reply-To: <447DD75E.2040709@web.de>
+References: <1149002080.9426.6.camel@localhost.localdomain> <447C8311.6080404@schwaben.de> <1149018345.9426.21.camel@localhost.localdomain>  <447DD75E.2040709@web.de>
+Message-ID: <1149105802.8239.4.camel@localhost.localdomain>
+
+Hello,
+
+On Wed, 2006-05-31 at 19:50 +0200, noteedit-user-admin at berlios.de wrote:
+> Hi Christoph,
+> 
+> noteedit-user-admin at berlios.de wrote:
+> > Hello,
+> >
+> > On Tue, 2006-05-30 at 19:38 +0200, noteedit-user-admin at berlios.de wrote:
+> >   
+> >> noteedit-user-admin at berlios.de schrieb:
+> >>     
+> >
+> > There seems to be something wrong with the list setup. Shouldn't the
+> > original senders be listed?
+> >   
+> No it shouldn't. If I do that, everyone get spammed quite quickly.
+> The list already suffers from large amounts spam and I don't want
+> that members get spam because they joined the list.
+> 
+
+Ah. OK. understood.
+
+> > Yes, of course. I meant A flat major. I'm used to use the german terms
+> > and I'm a little confused by the english terms.
+> >   
+> I haven't tried that up to now, so I can't tell if there's a
+> problem or if you did something wrong.
+
+There is no problem. I had a thinking error.
+
+Regards,
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060531/eefb8c9c/attachment.pgp>
+

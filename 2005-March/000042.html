@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] export liylond 2.4 lyrics problem
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-March/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20export%20liylond%202.4%20lyrics%20problem&In-Reply-To=%3C423111DF.9040704%40schwaben.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000041.html">
+   <LINK REL="Next"  HREF="000045.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] export liylond 2.4 lyrics problem</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20export%20liylond%202.4%20lyrics%20problem&In-Reply-To=%3C423111DF.9040704%40schwaben.de%3E"
+       TITLE="[Noteedit-user] export liylond 2.4 lyrics problem">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Fri Mar 11 04:34:55 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000041.html">[Noteedit-user] Compiling under Debian Sid
+</A></li>
+        <LI>Next message: <A HREF="000045.html">[Noteedit-user] Re: noteedit-2.7.4 released
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi all,
+
+before completing the implementation I would like to share with you a 
+lilypond export format, mainly a modfied \score block, which will give 
+us more features, I think. It allows us to put lyrics in print not only 
+beneath the staff, but also over or in mixed fashion anywhere in the 
+score. I attach an exported .ly file where you can see the basic format 
+and maybe do experiments.
+
+To have in noteedit lyrics always below the music is perfectly okay, 
+because in noteedit you are an aranger. But in printout it should be 
+easily possible to make everything more compact, for example, combine 
+two voices and flip the lyrics as you whish. I just inted to export this 
+format also as a helpful hint for the user that he might be able to 
+modify the exported file and create a patch. It took me quite some time 
+to extract everything out of the lilypond documention. And Matev&#382;, this 
+is the format I once mentioned.
+
+Any thoughts about it are welcome. I hope to close bug #3403 with this 
+whithin next week. I just would like to mention, that multi voice (not 
+chords) usage crashed quite easily for me, so I avoid it currently.
+
+Best Regards,
+Georg
+
+
+
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: lexport.ly
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20050311/d8805dce/attachment.ksh">https://lists.berlios.de/pipermail/noteedit-user/attachments/20050311/d8805dce/attachment.ksh</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000041.html">[Noteedit-user] Compiling under Debian Sid
+</A></li>
+	<LI>Next message: <A HREF="000045.html">[Noteedit-user] Re: noteedit-2.7.4 released
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

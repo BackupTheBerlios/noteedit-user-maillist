@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compiling under Debian Sid
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-March/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compiling%20under%20Debian%20Sid&In-Reply-To=%3C422F763F.4060900%40guest.arnes.si%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000044.html">
+   <LINK REL="Next"  HREF="000042.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compiling under Debian Sid</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compiling%20under%20Debian%20Sid&In-Reply-To=%3C422F763F.4060900%40guest.arnes.si%3E"
+       TITLE="[Noteedit-user] Compiling under Debian Sid">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Wed Mar  9 23:18:39 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000044.html">[Noteedit-user] under Debian Sid
+</A></li>
+        <LI>Next message: <A HREF="000042.html">[Noteedit-user] export liylond 2.4 lyrics problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#41">[ date ]</a>
+              <a href="thread.html#41">[ thread ]</a>
+              <a href="subject.html#41">[ subject ]</a>
+              <a href="author.html#41">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>You need at least kdelibs4-dev, libqt3-mt-dev and libqt3-headers 
+package. Note that you have to add the 
+--with-qt-includes=/usr/include/qt3 parameter when running configure 
+script, otherwise NoteEdit won't find the Qt library.
+
+
+- Matev&#382;
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A> wrote:
+
+&gt;<i>Hi,
+</I>&gt;<i>
+</I>&gt;<i>since the actual debian-package is 2.7.1-2 I tried to compile
+</I>&gt;<i>noteedit 2.7.4 from source and got the errors listed below.  I'm not
+</I>&gt;<i>using kde, so maybe I just have to install some other kde-related
+</I>&gt;<i>packages?  I called configure without any options.
+</I>&gt;<i>
+</I>&gt;<i>Can someone help me getting noteedit compiled, please?
+</I>&gt;<i>
+</I>&gt;<i>TIA
+</I>&gt;<i>Til
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+</I>&gt;<i>-I/usr/local/qt/include -I/usr/X11R6/include -I/usr/include
+</I>&gt;<i>-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+</I>&gt;<i>-Wp,-MD,.deps/mididevicelistbox.pp -c mididevicelistbox.cpp  -fPIC
+</I>&gt;<i>-DPIC -o .libs/mididevicelistbox.o
+</I>&gt;<i>In file included from mididevicelistbox.cpp:1:
+</I>&gt;<i>/usr/include/kde/kdebug.h:182: error: _LLONG' was not declared in
+</I>&gt;<i>this scope
+</I>&gt;<i>/usr/include/kde/kdebug.h:182: error: parse error before )' token
+</I>&gt;<i>/usr/include/kde/kdebug.h:182: error: dbgstream&amp;
+</I>&gt;<i>kdbgstream::operator&lt;&lt;(...)' 
+</I>&gt;<i>   must take exactly one argument
+</I>&gt;<i>/usr/include/kde/kdebug.h:192: error: _ULLONG' was not declared in
+</I>&gt;<i>this scope
+</I>&gt;<i>/usr/include/kde/kdebug.h:192: error: parse error before )' token
+</I>&gt;<i>/usr/include/kde/kdebug.h:192: error: dbgstream&amp;
+</I>&gt;<i>kdbgstream::operator&lt;&lt;(...)' 
+</I>&gt;<i>   must take exactly one argument
+</I>&gt;<i>/usr/include/kde/kdebug.h:192: error: dbgstream&amp;
+</I>&gt;<i>kdbgstream::operator&lt;&lt;(...)' 
+</I>&gt;<i>   and dbgstream&amp; kdbgstream::operator&lt;&lt;(...)' cannot be overloaded
+</I>&gt;<i>/usr/include/kde/kdebug.h: In member function dbgstream&amp; 
+</I>&gt;<i>   kdbgstream::operator&lt;&lt;(...)':
+</I>&gt;<i>/usr/include/kde/kdebug.h:184: error: 	' undeclared (first use this
+</I>&gt;<i>function)
+</I>&gt;<i>/usr/include/kde/kdebug.h:184: error: (Each undeclared identifier is
+</I>&gt;<i>reported 
+</I>&gt;<i>   only once for each function it appears in.)
+</I>&gt;<i>/usr/include/kde/kdebug.h: At global scope:
+</I>&gt;<i>/usr/include/kde/kdebug.h:535: error: _LLONG' was not declared in
+</I>&gt;<i>this scope
+</I>&gt;<i>/usr/include/kde/kdebug.h:535: error: variable declaration is not
+</I>&gt;<i>allowed here
+</I>&gt;<i>/usr/include/kde/kdebug.h:535: error: syntax error before {' token
+</I>&gt;<i>/usr/include/kde/kdebug.h:540: error: ISO C++ forbids defining types
+</I>&gt;<i>within 
+</I>&gt;<i>   return type
+</I>&gt;<i>[...]
+</I>&gt;<i>_______________________________________________
+</I>&gt;<i>Noteedit-user mailing list
+</I>&gt;<i><A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">Noteedit-user at lists.berlios.de</A>
+</I>&gt;<i><A HREF="http://lists.berlios.de/mailman/listinfo/noteedit-user">http://lists.berlios.de/mailman/listinfo/noteedit-user</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  
+</I>&gt;<i>
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000044.html">[Noteedit-user] under Debian Sid
+</A></li>
+	<LI>Next message: <A HREF="000042.html">[Noteedit-user] export liylond 2.4 lyrics problem
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#41">[ date ]</a>
+              <a href="thread.html#41">[ thread ]</a>
+              <a href="subject.html#41">[ subject ]</a>
+              <a href="author.html#41">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

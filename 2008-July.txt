@@ -1,0 +1,68 @@
+From noteedit-user at lists.berlios.de  Mon Jul 21 06:35:55 2008
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Mon, 21 Jul 2008 12:35:55 +0800 (CST)
+Subject: [Noteedit-user] Start without midi device
+Message-ID: <796783.32282.qm@web72706.mail.tp2.yahoo.com>
+
+I'm using Ubuntu with coLinux?this is a bit hard to set a sound device. Does it anyway to start Noteedit without sound connection as a pure editor? --nosequencer worked for Rosegarden4 but --noalsa seems not work here.
+
+root at ubuntu:~# noteedit --noalsa
+LilyPond check: found version: 2.6.3
+TSE3: Alsa scheduler error.
+      Alsa is not running on this machine
+terminate called after throwing an instance of 'TSE3::MidiSchedulerError'
+  what():  Failed to create the MIDI scheduler
+KCrash: Application 'noteedit' crashing...
+Warning: connect() failed: : No such file or directory
+KCrash cannot reach kdeinit, launching directly.
+root at ubuntu:~#
+
+
+      _______________________________________________________________________________________________________
+????????????????? ???????? 
+http://sev.search.yahoo.net
+
+
+From noteedit-user at lists.berlios.de  Wed Jul 23 19:17:50 2008
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 23 Jul 2008 19:17:50 +0200
+Subject: [Noteedit-user] Start without midi device
+In-Reply-To: <796783.32282.qm@web72706.mail.tp2.yahoo.com>
+References: <796783.32282.qm@web72706.mail.tp2.yahoo.com>
+Message-ID: <488767BE.5080101@schwaben.de>
+
+user mailing list for the score editor noteedit schrieb:
+> I'm using Ubuntu with coLinux?this is a bit hard to set a sound device. Does it anyway to start Noteedit without sound connection as a pure editor? --nosequencer worked for Rosegarden4 but --noalsa seems not work here.
+>
+> root at ubuntu:~# noteedit --noalsa
+> LilyPond check: found version: 2.6.3
+> TSE3: Alsa scheduler error.
+>       Alsa is not running on this machine
+> terminate called after throwing an instance of 'TSE3::MidiSchedulerError'
+>   what():  Failed to create the MIDI scheduler
+> KCrash: Application 'noteedit' crashing...
+> Warning: connect() failed: : No such file or directory
+> KCrash cannot reach kdeinit, launching directly.
+> root at ubuntu:~#
+>
+>   
+Hi,
+
+you need to have installed the tse3 package. Noteedit can run without a working alsa/midi setup, so --noalsa is of no use that I personally am aware of.
+
+Regards,
+Georg
+
+
+
+>       _______________________________________________________________________________________________________
+> ????????????????? ???????? 
+> http://sev.search.yahoo.net
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>   
+
+
+

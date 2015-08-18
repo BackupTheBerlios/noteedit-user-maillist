@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Cannot create an ALSA MIDI Scheduler
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2004-October/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Cannot%20create%20an%20ALSA%20MIDI%20Scheduler&In-Reply-To=%3C200410210019.43467.kai.wassermann%40gmx.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000017.html">
+   <LINK REL="Next"  HREF="000019.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Cannot create an ALSA MIDI Scheduler</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Cannot%20create%20an%20ALSA%20MIDI%20Scheduler&In-Reply-To=%3C200410210019.43467.kai.wassermann%40gmx.de%3E"
+       TITLE="[Noteedit-user] Cannot create an ALSA MIDI Scheduler">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Thu Oct 21 00:19:36 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000017.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+        <LI>Next message: <A HREF="000019.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#18">[ date ]</a>
+              <a href="thread.html#18">[ thread ]</a>
+              <a href="subject.html#18">[ subject ]</a>
+              <a href="author.html#18">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello Christoph,
+
+&gt;<i> I have very good experience with &quot;timidityserver&quot;.
+</I>(...)
+&gt;<i> /usr/local/bin/timidity -iA -B2,8 -Os1l -s 44100 &amp;
+</I>
+I compiled timidity with several different options in my home and tested it 
+from there.
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">kai at merkur</A> ~ $ bin/timidity -iA -B2,8 -Os1l -s 44100
+Requested buffer size 2048, fragment size 1024
+ALSA pcm 'default' set buffer size 2048, period size 1024 bytes
+TiMidity starting in ALSA server mode
+Opening sequencer port: 128:0 128:1 128:2 128:3
+
+...seems to be fine.
+
+&gt;<i> and after this start noteedit.
+</I>
+I did and got this output:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">kai at merkur</A> ~ $ noteedit
+LilyPond check: not available.
+cannot create an ALSA MIDI Scheduler
+cannot create an OSS MIDI Scheduler
+error opening Midi Device --&gt; music cannot be played
+
+:<i>-(
+</I>
+Kai
+
+P.S.: I compiled with these flags: 
+--prefix=$HOME --enable-audio=alsa --enable-server --enable-alsaseq 
+all from the manual page.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20041021/ee4d8366/attachment.pgp">https://lists.berlios.de/pipermail/noteedit-user/attachments/20041021/ee4d8366/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000017.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+	<LI>Next message: <A HREF="000019.html">[Noteedit-user] Cannot create an ALSA MIDI Scheduler
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#18">[ date ]</a>
+              <a href="thread.html#18">[ thread ]</a>
+              <a href="subject.html#18">[ subject ]</a>
+              <a href="author.html#18">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

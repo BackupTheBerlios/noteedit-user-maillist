@@ -1,0 +1,74 @@
+From noteedit-user-admin at lists.berlios.de  Tue Jan 31 22:02:35 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 31 Jan 2006 19:02:35 -0200
+Subject: [Noteedit-user] regards and problems
+In-Reply-To: <200601312149.40799.emilioprocaccini@inwind.it>
+References: <200601312149.40799.emilioprocaccini@inwind.it>
+Message-ID: <43DFD06B.6040604@yahoo.com.br>
+
+noteedit-user-admin at berlios.de escreveu:
+...
+> have problems if i try to upgrade the kde's software  and  libraries, 
+> specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+> others no make effect. Is it usual ? If you have  time to answer me, i really 
+
+Run kcontrol and check keyboard configurations.
+
+Cheers,
+Hudson
+
+-- 
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N??o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap??ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+
+	
+
+	
+		
+_______________________________________________________ 
+Yahoo! doce lar. Fa?a do Yahoo! sua homepage. 
+http://br.yahoo.com/homepageset.html 
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Jan 31 22:02:49 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 31 Jan 2006 19:02:49 -0200
+Subject: [Noteedit-user] regards and problems
+In-Reply-To: <200601312149.40799.emilioprocaccini@inwind.it>
+References: <200601312149.40799.emilioprocaccini@inwind.it>
+Message-ID: <43DFD079.7000106@yahoo.com.br>
+
+noteedit-user-admin at berlios.de escreveu:
+...
+> have problems if i try to upgrade the kde's software  and  libraries, 
+> specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+> others no make effect. Is it usual ? If you have  time to answer me, i really 
+
+Run kcontrol and check keyboard configurations.
+
+Cheers,
+Hudson
+
+-- 
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N??o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap??ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+
+	
+
+	
+		
+_______________________________________________________ 
+Yahoo! doce lar. Fa?a do Yahoo! sua homepage. 
+http://br.yahoo.com/homepageset.html 
+
+
+

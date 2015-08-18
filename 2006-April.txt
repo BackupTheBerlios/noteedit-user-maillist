@@ -1,0 +1,210 @@
+From noteedit-user-admin at lists.berlios.de  Sun Apr  2 13:53:02 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 2 Apr 2006 13:53:02 +0200
+Subject: [Noteedit-user] Lyrics linebreak/stanza problem
+Message-ID: <200604021353.07212.badelberg@gmx.de>
+
+Hi noteedit list,
+sorry for my english. I have the following problem:
+
+In stanza 1 has the iteration an other text. How can I write this in the 
+stanza-editor?
+
+Examples1:
+Mein klei- ner gr?- ner Kak- tus steht drau- ?en am Bal- kon, hol- le- ri, 
+hol- le- ri, hol- le- ro. Was<repeat />
+brauch ich ro- te Ro- sen ...
+
+Thanks for your help
+best regards
+Bj?rn
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060402/3d735750/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Sun Apr  2 18:48:22 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 02 Apr 2006 18:48:22 +0200
+Subject: [Noteedit-user] Lyrics linebreak/stanza problem
+In-Reply-To: <200604021353.07212.badelberg@gmx.de>
+References: <200604021353.07212.badelberg@gmx.de>
+Message-ID: <44300056.2090009@schwaben.de>
+
+Hi,
+
+the solution you have to use is a little crude: NoteEdit knows only
+lyrics without repeats. As such they are exported to lilypond. When you
+want to attach a repeat with lyrics, you have to use the next stanza as
+a whole, fill up the unused lyrics with under quotes. To make it more
+beautiful you can later edit the stanza markings in the .ly file.
+
+Hopefully I understood your issue,
+Georg
+
+
+
+noteedit-user-admin at berlios.de schrieb:
+> Hi noteedit list,
+> sorry for my english. I have the following problem:
+>
+> In stanza 1 has the iteration an other text. How can I write this in the 
+> stanza-editor?
+>
+> Examples1:
+> Mein klei- ner gr?- ner Kak- tus steht drau- ?en am Bal- kon, hol- le- ri, 
+> hol- le- ri, hol- le- ro. Was<repeat />
+> brauch ich ro- te Ro- sen ...
+>
+> Thanks for your help
+> best regards
+> Bj?rn
+>   
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Apr  3 09:57:30 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 3 Apr 2006 09:57:30 +0200
+Subject: [Noteedit-user] Lyrics linebreak/stanza problem
+In-Reply-To: <44300056.2090009@schwaben.de>
+References: <200604021353.07212.badelberg@gmx.de> <44300056.2090009@schwaben.de>
+Message-ID: <200604030957.32209.badelberg@gmx.de>
+
+Hi,
+thanks for your help. You had understood my issue. That's not easy by my 
+english. 
+
+My problem is unfixed. Its working good now. At finally, I have a question to 
+lilypond. How can I use figures (as 1,2,3,...) or special characters (as 
++,&,...) in stanza lyrics? I read, that isn't supported by lilypond. 
+
+Bye and best regards
+Bj?rn
+
+Am Sonntag, 2. April 2006 18:48 schrieb noteedit-user-admin at berlios.de:
+> Hi,
+>
+> the solution you have to use is a little crude: NoteEdit knows only
+> lyrics without repeats. As such they are exported to lilypond. When you
+> want to attach a repeat with lyrics, you have to use the next stanza as
+> a whole, fill up the unused lyrics with under quotes. To make it more
+> beautiful you can later edit the stanza markings in the .ly file.
+>
+> Hopefully I understood your issue,
+> Georg
+>
+> noteedit-user-admin at berlios.de schrieb:
+> > Hi noteedit list,
+> > sorry for my english. I have the following problem:
+> >
+> > In stanza 1 has the iteration an other text. How can I write this in the
+> > stanza-editor?
+> >
+> > Examples1:
+> > Mein klei- ner gr?- ner Kak- tus steht drau- ?en am Bal- kon, hol- le-
+> > ri, hol- le- ri, hol- le- ro. Was<repeat />
+> > brauch ich ro- te Ro- sen ...
+> >
+> > Thanks for your help
+> > best regards
+> > Bj?rn
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060403/830f1d32/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Apr 26 20:28:48 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 26 Apr 2006 20:28:48 +0200
+Subject: [Noteedit-user] NoteEdit Workshop at the LAC 2006 26.04 15.00
+Message-ID: <444FBBE0.5040009@web.de>
+
+Hello NoteEdit enthusiast,
+
+On Friday 28.04.06 at 15.00 will be a NoteEdit workshop
+at the LAC (Linux Audio Conference) in Karlsruhe/ZKM.
+
+The LAC is streamed into the internet (probably excluding
+some workshops as they run in parallel on that day). Here
+an exctract of the official announcement:
+
+Joern Nettingsmeier wrote:
+
+the linux audio conference 2006, which takes place at the zkm in karlsruhe/germany from
+april 27 to april 30, will be streamed live for your convenience, inspiration and enjoyment.
+
+all presentations (which are listed on http://lac.zkm.de/2006/program.shtml) are covered as
+ogg vorbis audio streams...
+
+...the stream urls are listed at http://lac.zkm.de/2006/streaming.shtml.
+
+there will be chat channels to go with the streams, where you can report problems, discuss the
+presentations and also ask questions which will be relayed to the live audience by the local chat
+operators here at zkm. these channels are #lac2006 for general issues and chitchat, and
+#lac2006-track1 and #lac2006-track2 for questions and remarks about the current presentation, all
+on irc.freenode.net.
+
+best,
+
+
+j?rn
+
+
+So those participating on the LAC or wanting to visit the Workshop are
+sincerely invited
+to come. Me and Georg will do the following program:
+
+NoteEdit - Current state and future development
+<http://lac.zkm.de/2006/program.shtml#katzmann_rudolph>
+
+    * (Direct) Printing with NoteEdit
+          o Postscript / PDF
+          o Lilypond 2.8.x
+          o Script (custom) , like conv-lily etc.
+
+    * Improved UI
+          o direct special bar insertion
+          o new keyboard+mouse shortcuts (like zoom in, fast pan,
+            vertical scroll)
+          o Export User Interface
+          o Improved Cioy & Paste actions
+          o Edit mode: red border
+
+    * Midi output with NoteEdit
+          o Basis, timidity
+          o qsynth/fluidsynth (resources)
+          o aelous, soundsampler specimen
+
+    * Future of NoteEdit
+          o Canorus + Wiki "Open Development"
+          o Prototype presentation (hopefully :)
+          o Scripting + (Rt)Midi
+          o Platform independency with Qt4
+          o Developer Documentation
+
+    * or alternative: Questions from the audience
+
+
+Best Regards,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+

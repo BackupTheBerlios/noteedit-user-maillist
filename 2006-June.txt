@@ -1,0 +1,204 @@
+From noteedit-user-admin at lists.berlios.de  Thu Jun  1 08:27:07 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 01 Jun 2006 08:27:07 +0200
+Subject: [Noteedit-user] repetition-sign (:||) not bar-aligned
+In-Reply-To: <447DDFB1.4080609@schwaben.de>
+References: <1149076581.8262.37.camel@localhost.localdomain> <447DDFB1.4080609@schwaben.de>
+Message-ID: <447E88BB.8040304@web.de>
+
+noteedit-user-admin at berlios.de wrote:
+> Hi,
+>
+> again a crude workaround with hidden rests: With these you can stuff
+> every bar as a 3 beat bar, and in printout you get what you want. At
+> least in lilypond I got it. When listening to it, you hear the extra
+> rests, but I guess this is not disturbing. The hidden rest is the icon
+> after the triplet.
+>   
+
+It should work with pmx / musixtex as well as both support hidden
+rests as well. A long time ago I used pmx for "producing" music
+pieces, nowadays it's lilypond.
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Jun  1 16:13:05 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 01 Jun 2006 11:13:05 -0300
+Subject: [Noteedit-user] repetition-sign (:||) not bar-aligned
+In-Reply-To: <447E88BB.8040304@web.de>
+References: <1149076581.8262.37.camel@localhost.localdomain> <447DDFB1.4080609@schwaben.de> <447E88BB.8040304@web.de>
+Message-ID: <447EF5F1.40604@yahoo.com.br>
+
+noteedit-user-admin at berlios.de escreveu:
+> noteedit-user-admin at berlios.de wrote:
+> 
+>>Hi,
+>>
+>>again a crude workaround with hidden rests: With these you can stuff
+>>every bar as a 3 beat bar, and in printout you get what you want. At
+>>least in lilypond I got it. When listening to it, you hear the extra
+>>rests, but I guess this is not disturbing. The hidden rest is the icon
+>>after the triplet.
+>>  
+> 
+> 
+> It should work with pmx / musixtex as well as both support hidden
+> rests as well. A long time ago I used pmx for "producing" music
+> pieces, nowadays it's lilypond.
+
+abcm2ps does also support compressed (Zn - multimeasure) and hidden (x - 
+not multimeasure) rests.
+
+Hudson
+
+> 
+> Best,
+> 
+> Reinhard
+> 
+
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+*Ajude a eliminar DRM:     http://defectivebydesign.org/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+Abra sua conta no Yahoo! Mail: 1GB de espa?o, alertas de e-mail no celular e anti-spam realmente eficaz. 
+http://mail.yahoo.com.br/
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jun  9 10:10:25 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 9 Jun 2006 09:10:25 +0100
+Subject: [Noteedit-user] Enharmonic transposition
+Message-ID: <200606090910.27053.rob@arwhalley.freeuk.com>
+
+Is there any way, either in insert or edit mode, that a note can easily be 
+changed to its enharmonic equivalent?
+MIDI import has to guess which accidentals to apply and of course, sometimes 
+gets it wrong. The only option I have found is to change the entire staff to 
+all flat or all sharp and this doesn't solve the problem.
+If this is not possible at the moment, are there any plans to introduce this 
+feature in the future?
+Many thanks.
+Rob Whalley 
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Jun  9 10:11:23 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 9 Jun 2006 09:11:23 +0100
+Subject: [Noteedit-user] Changing notes to rests and vice versa
+Message-ID: <200606090911.24688.rob@arwhalley.freeuk.com>
+
+Is it possible to change a rest into a note, and vice versa, without having to 
+delete and re-enter? It is clear how to alter the duration of a rest or note 
+in edit mode, but not how to flip between the two.
+Many thanks.
+Rob Whalley 
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Jun 21 20:34:54 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 21 Jun 2006 20:34:54 +0200
+Subject: [Noteedit-user] [Fwd: Noteedit Confusion]
+Message-ID: <4499914E.6030207@web.de>
+
+Forwarded.. I currently lack the time to answer it, will forward answers
+to the author.
+
+Best,
+
+Reinhard
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: unknown sender
+Subject: no subject
+Date: no date
+Size: 3443
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060621/c8bcaa59/attachment.mht>
+
+From noteedit-user-admin at lists.berlios.de  Wed Jun 21 20:43:03 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 21 Jun 2006 20:43:03 +0200
+Subject: [Noteedit-user] [Fwd: Noteedit Confusion]
+In-Reply-To: <4499914E.6030207@web.de>
+References: <4499914E.6030207@web.de>
+Message-ID: <44999337.6050604@gmail.com>
+
+Looks like a KDE issue in NE 2.8.0 where keyboard stopped to work.
+Otherwise I can't remember any bug about not being able to delete a
+music element (any music element!). Tough luck :( .
+
+I think this issue is now fixed correctly in 2.8.1 and the latest KDE
+for some time.
+
+> I have a college degree in Music History and I'm a retired public school music teacher, but Noteedit brought me to my knees. I tried to join the discussion forum (list) , but even that was difficult.  I did successfully (in a limited way ) created a small transposition of a saxophone part with Lilypond.
+>
+> Here's the issue I have with Note edit.  I tried to delete the key signature which happened to be F maj, and I couldn't.  Highlighting or selecting it and then deleting or back spacing didn't work.  Selecting a new key signature didn't do any real good either.  It just piled another one on.  I tried to import a Lilypond file, but couldn't do that either.  I tied to set a song title and couldn't do that.
+>   
+
+Any other suggestions?
+
+
+Regards.
+- Matev?
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Jun 21 20:07:21 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 21 Jun 2006 13:07:21 -0500
+Subject: [Noteedit-user] Enharmonic transposition
+In-Reply-To: <200606090910.27053.rob@arwhalley.freeuk.com>
+References: <200606090910.27053.rob@arwhalley.freeuk.com>
+Message-ID: <44998AD9.50801@charter.net>
+
+noteedit-user-admin at berlios.de wrote:
+> Is there any way, either in insert or edit mode, that a note can easily be 
+> changed to its enharmonic equivalent?
+> MIDI import has to guess which accidentals to apply and of course, sometimes 
+> gets it wrong. The only option I have found is to change the entire staff to 
+> all flat or all sharp and this doesn't solve the problem.
+> If this is not possible at the moment, are there any plans to introduce this 
+> feature in the future?
+> Many thanks.
+> Rob Whalley 
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+I just tried this and it works for me.  I started a new song with the 
+key ofEb.  I entered for quarter notes on the bottom line E (treble 
+clef).  I then highlighted the last note and selected Tools -> Set all 
+to sharp.  It  converted only the selected note to d#.  I hope this helps.
+Galen
+
+

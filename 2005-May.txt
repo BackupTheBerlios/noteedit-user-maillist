@@ -1,0 +1,250 @@
+From noteedit-user-admin at lists.berlios.de  Tue May  3 22:56:44 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 03 May 2005 22:56:44 +0200
+Subject: [Noteedit-user] Announce: Noteedit 2.8.0 Beta 1
+Message-ID: <4277E58C.5030507@web.de>
+
+Hi,
+
+Noteedit 2.8.0 Beta 1 has been released. This is the first beta in the 
+release cycle of the coming 2.8.0 release of NoteEdit. Test it hard and 
+report any bugs to the developer mailing list or in the Bug tracker of 
+the noteedit berlios developer page (preferred).
+
+http://developer.berlios.de/projects/noteedit.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Wed May  4 20:42:52 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 04 May 2005 20:42:52 +0200
+Subject: [Noteedit-user] Re: [Noteedit-devel] Announce: Noteedit 2.8.0 Beta 1
+In-Reply-To: <427902EF.3070905@guest.arnes.si>
+References: <4277E58C.5030507@web.de> <427902EF.3070905@guest.arnes.si>
+Message-ID: <427917AC.3050202@web.de>
+
+noteedit-devel-admin at berlios.de schrieb:
+> I cannot compile it. In noteedit/mainframewidget.cpp around line 320, 
+> there are some wierdness. I removed the <<<<<<< before and <<<<<<<< 
+> after lines and it compiled fine. I'd release beta1.1 asasp.
+> 
+
+Ups, I just saw that I had a conflict in exactly that file when
+I redid a checkout. Strange, that it only hit me in the release
+directory and not in my other one I used as a base for this one.
+Also all the .svn directories are now deleted. Still the archive
+seems to be a bit too large for me.
+
+I'm on my way uploading a new beta-1 archive. Sorry for the accident.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Thu May 12 19:53:53 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 12 May 2005 19:53:53 +0200
+Subject: [Noteedit-user] Noteedit 2.8.1 lilypond 2.4.2 fonts problem
+Message-ID: <1745864132@web.de>
+
+Hi,
+
+I don?t know if this is a problem of noteedit or lilypond or what else. In the ".ps " or ".pdf"- output is an ugli font and the german "umlauts" are lacking. In the ".dvi" output the font is fine but the notes are incomplete.
+Can anybody help me??
+
+Thanks
+(Debian Sid (kanotix) kernel2.6.11)
+
+Manfred Ilg
+__________________________________________________________
+Mit WEB.DE FreePhone mit hoechster Qualitaet ab 0 Ct./Min.
+weltweit telefonieren! http://freephone.web.de/?mc=021201
+
+
+
+From noteedit-user-admin at lists.berlios.de  Thu May 12 21:31:12 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 12 May 2005 21:31:12 +0200
+Subject: [Noteedit-user] Noteedit 2.8.1 lilypond 2.4.2 fonts problem
+In-Reply-To: <1745864132@web.de>
+References: <1745864132@web.de>
+Message-ID: <4283AF00.2070703@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+>Hi,
+>
+>I don?t know if this is a problem of noteedit or lilypond or what else. In the ".ps " or ".pdf"- output is an ugli font and the german "umlauts" are lacking. In the ".dvi" output the font is fine but the notes are incomplete.
+>Can anybody help me??
+>
+Hi Manfred,
+
+on Suse 9.3 I'm seeing almost the same problem. But the dvi-file is
+perfect with xdvi. Maybe you're missing some TeX/Metafont-Package. Try
+to install everything you need to compile lilypond in this area if
+nothing helps. Is a simple lily sample file printing ok? I guess it's
+not a noteedit problem. If I'm working on a song I use a small script,
+actually a makefile, to invoke these programs in a row:
+
+SONG = corelli
+SONG = bowl_of
+SONG = cantaloup_island
+SONG = fantasie
+
+all:
+        lilypond $(SONG).ly
+        dvips $(SONG).dvi
+        ps2pdf $(SONG).ps
+        acroread $(SONG).pdf
+
+Exporting lyrics works on my system if I export in latin1 encoding.
+NoteEdit seems to be very good in this area. Heard that lilypond plans
+to support unicode in newer versions.
+If you need more help, ask again on the list, there might be better
+expertise available.
+Regards,
+Georg
+
+>Thanks
+>(Debian Sid (kanotix) kernel2.6.11)
+>
+>Manfred Ilg
+>__________________________________________________________
+>Mit WEB.DE FreePhone mit hoechster Qualitaet ab 0 Ct./Min.
+>weltweit telefonieren! http://freephone.web.de/?mc=021201
+>
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri May 13 16:14:48 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 13 May 2005 16:14:48 +0200
+Subject: [Noteedit-user] noteedit lilypond fonts trouble
+Message-ID: <1747753522@web.de>
+
+Thanks for your advice,
+
+now I can handle it with "dvips song.dvi" and I get a pretty ps-file with correct german "umlauts"
+
+
+Manfred Ilg
+__________________________________________________________
+Mit WEB.DE FreePhone mit hoechster Qualitaet ab 0 Ct./Min.
+weltweit telefonieren! http://freephone.web.de/?mc=021201
+
+
+
+From noteedit-user-admin at lists.berlios.de  Fri May 13 16:39:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 13 May 2005 16:39:33 +0200
+Subject: [Noteedit-user] Noteedit 2.8.1 lilypond 2.4.2 fonts problem
+In-Reply-To: <4283AF00.2070703@schwaben.de>
+References: <1745864132@web.de> <4283AF00.2070703@schwaben.de>
+Message-ID: <4284BC25.40404@guest.arnes.si>
+
+>NoteEdit seems to be very good in this area. Heard that lilypond plans
+>to support unicode in newer versions.
+>
+Yes, utf8 support is already supported since 2.5.6!
+
+
+Regards.
+- Matev?
+
+
+From noteedit-user-admin at lists.berlios.de  Sat May 14 13:58:57 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 14 May 2005 13:58:57 +0200
+Subject: [Noteedit-user] Building NoteEdit on Qt/KDE platforms < 3.2
+Message-ID: <4285E801.6060607@web.de>
+
+Hi,
+
+I just checked in a new version of the configure.in.in file
+being the base file for the configure. If you are on an older
+system, check it out and run "make -f Makefile.cvs" and you should
+now be able to compile noteedit on your system as well.
+
+To do this manually edit configure.in.in and change the first line
+#MIN_CONFIG
+
+to
+#MIN_CONFIG(3.0.0)
+
+Older versions of KDE and QT are no longer supported. If you need
+NoteEdit for these platforms you have to stick with the 3.7.4 version.
+
+Future releases than 2.8.0-b2 will contain a configure file for
+the Qt/KDE version < 3.2.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Mon May 16 14:42:31 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 16 May 2005 14:42:31 +0200
+Subject: [Noteedit-user] Noteedit 2.8.1 lilypond 2.4.2 fonts problem (solved)
+Message-ID: <1751958370@web.de>
+
+Hi, 
+
+I installed the ec-fonts-mftraced_1.0.12-1_all.deb  from the lilypond site (www.lilypond.org/download/fonts) instead of the deb, which is in Sid and everything (pdf,ps and dvi-output) is fine.
+
+greetings
+
+
+Manfred Ilg
+__________________________________________________________
+Mit WEB.DE FreePhone mit hoechster Qualitaet ab 0 Ct./Min.
+weltweit telefonieren! http://freephone.web.de/?mc=021201
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed May 18 08:22:49 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 18 May 2005 08:22:49 +0200
+Subject: [Noteedit-user] Noteedit 2.8.1 lilypond 2.4.2 fonts problem (solved)
+In-Reply-To: <1751958370@web.de>
+References: <1751958370@web.de>
+Message-ID: <428ADF39.8080100@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+>Hi, 
+>
+>I installed the ec-fonts-mftraced_1.0.12-1_all.deb  from the lilypond site (www.lilypond.org/download/fonts) instead of the deb, which is in Sid and everything (pdf,ps and dvi-output) is fine.
+>  
+Good! Updating with this package through alien didn't help here. Maybe
+lilypond 2.4.5 is also needed, according to the lilypond-user archives,
+because my Suse 9.3 lives on tetex 3.0.
+Probably I'll stick with my little script for now.
+
+Regards,
+Georg.
+
+

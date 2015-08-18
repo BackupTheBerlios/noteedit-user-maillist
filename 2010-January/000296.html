@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] patch: concurrent uptext and downtext in lilypond	export
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2010-January/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20patch%3A%20concurrent%20uptext%20and%20downtext%20in%20lilypond%0A%09export&In-Reply-To=%3Calpine.DEB.1.10.0910312153590.17409%40dront.rosnix%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000295.html">
+   <LINK REL="Next"  HREF="000297.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] patch: concurrent uptext and downtext in lilypond	export</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20patch%3A%20concurrent%20uptext%20and%20downtext%20in%20lilypond%0A%09export&In-Reply-To=%3Calpine.DEB.1.10.0910312153590.17409%40dront.rosnix%3E"
+       TITLE="[Noteedit-user] patch: concurrent uptext and downtext in lilypond	export">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Mon Jan 11 16:11:31 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000295.html">[Noteedit-user] Guitar Score Problem (stem orientation)
+</A></li>
+        <LI>Next message: <A HREF="000297.html">[Noteedit-user] How do I add a title?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#296">[ date ]</a>
+              <a href="thread.html#296">[ thread ]</a>
+              <a href="subject.html#296">[ subject ]</a>
+              <a href="author.html#296">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi!
+
+Yes, I know development have moved on to Canorus, and hope it proceeds 
+smoothly. However, if anyone is interested I have a patched a small bug:
+
+Concurrent text sections or dynamics was not exported properly to 
+lilypond. For example, if you have both a piano and and forte between two 
+notes (perhaps useful when ending a crescendo) only the last &quot;\f&quot; would be 
+exported. In the same way, only the last text section would be 
+exported (for example, no &quot;Allargando&quot; above and &quot;tutti&quot; below possible).
+
+This patch fixes that (by using a list), and allows any number of 
+text/dynamics to be exported. It may be useful also if you, like me, are 
+embedding lilypond syntax in the noteedit source (to get many lilypond 
+features not directly supported by export) and post-processing the 
+exported .ly. (I can send my post-processor if anyone is interested).
+
+regards
+Per Eric Ros&#233;n, Uppsala, Sweden
+--
+^): Per Eric Ros&#233;n <A HREF="http://rosnix.net/~per/">http://rosnix.net/~per/</A>
+/   <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">per at rosnix.net</A> GPG 7A7A BD68 ADC0 01E1 F560 79FD 33D1 1EC3 1EBB 7311
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: noteedit-2.8.1-pending_texts.diff
+Type: text/x-diff
+Size: 9764 bytes
+Desc: 
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20100111/3e455d7a/attachment.diff">https://lists.berlios.de/pipermail/noteedit-user/attachments/20100111/3e455d7a/attachment.diff</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000295.html">[Noteedit-user] Guitar Score Problem (stem orientation)
+</A></li>
+	<LI>Next message: <A HREF="000297.html">[Noteedit-user] How do I add a title?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#296">[ date ]</a>
+              <a href="thread.html#296">[ thread ]</a>
+              <a href="subject.html#296">[ subject ]</a>
+              <a href="author.html#296">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

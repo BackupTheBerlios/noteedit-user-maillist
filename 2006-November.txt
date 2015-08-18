@@ -1,0 +1,305 @@
+From noteedit-user at lists.berlios.de  Fri Nov  3 11:13:27 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 3 Nov 2006 11:13:27 +0100
+Subject: [Noteedit-user] .deb ?
+Message-ID: <200611031113.28443.karl.kashofer@gmx.at>
+
+Hi !
+
+Does anyone here have a repository or a .deb of noteedit 2.8.1 for kubuntu 
+6.06 ?
+
+thanks,
+karl
+
+
+From noteedit-user at lists.berlios.de  Sat Nov  4 03:35:19 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 03 Nov 2006 21:35:19 -0500
+Subject: [Noteedit-user] .deb ?
+In-Reply-To: <200611031113.28443.karl.kashofer@gmx.at>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+Message-ID: <454BFC67.8080402@bellsouth.net>
+
+user mailing list for the score editor noteedit wrote:
+> Hi !
+>
+> Does anyone here have a repository or a .deb of noteedit 2.8.1 for kubuntu 
+> 6.06 ?
+>
+> thanks,
+> karl
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+I am not familiar with kubuntu. Will it use RPM,s? If not, and if you
+can't something specifically for kubuntu, you may have to build from source.
+Wish I could be more help, but I'm just learning myself. I only
+responded because I haven't seen much activity on this list lately.
+                         -- ED --
+
+
+From noteedit-user at lists.berlios.de  Sat Nov  4 11:06:59 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 04 Nov 2006 11:06:59 +0100
+Subject: [Noteedit-user] .deb ?
+In-Reply-To: <200611031113.28443.karl.kashofer@gmx.at>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+Message-ID: <454C6643.9040702@gmail.com>
+
+Ubuntu Edgy already includes NoteEdit-2.8.1 in universe repository.
+Change your sources in /etc/apt/sources.list to edgy and NoteEdit will
+upgrade itself.
+
+If you don't want to upgrade the whole system, only switch repository to
+edgy and upgrade NoteEdit without the whole system upgrade. It should
+work fine.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> Hi !
+>
+> Does anyone here have a repository or a .deb of noteedit 2.8.1 for kubuntu 
+> 6.06 ?
+>
+> thanks,
+> karl
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+
+
+
+
+From noteedit-user at lists.berlios.de  Sat Nov  4 13:04:47 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 4 Nov 2006 13:04:47 +0100
+Subject: [Noteedit-user] ne 2.8.1 in dapper (was:  .deb ?)
+In-Reply-To: <454C6643.9040702@gmail.com>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<454C6643.9040702@gmail.com>
+Message-ID: <1162641887.6364.23.camel@localhost.localdomain>
+
+Hello Karl,
+
+On Sat, 2006-11-04 at 11:06 +0100, user mailing list for the score
+editor noteedit wrote:
+> Ubuntu Edgy already includes NoteEdit-2.8.1 in universe repository.
+> Change your sources in /etc/apt/sources.list to edgy and NoteEdit will
+> upgrade itself.
+> 
+> If you don't want to upgrade the whole system, only switch repository to
+> edgy and upgrade NoteEdit without the whole system upgrade. It should
+> work fine.
+
+But the edgy-noteedit will require some edgy-version-libraries.
+And these libraries will require other libraries to be a newer version.
+
+You are lucky that I have compiled ne-2.8.1-rc1 some time ago and
+installed it using checkinstall. During the install, there was a .deb
+generated. I put it on my webspace for you
+http://www.pisi.de/noteedit-2.8.1-rc_2.8.1-rc-1_i386.deb .
+
+It depends on libtse3.
+dapper contains libtse3-0.3.1, but my deb is linked against 0.2.7.
+The following command helps if it complains about not finding
+libtse3-0.2.7 and you have the 0.3.1-er version installed)
+
+sudo ln -s  /usr/lib/libtse3-0.3.1.so /usr/lib/libtse3-0.2.7.so
+
+Let me know if it helps.
+
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20061104/a52955b4/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Sat Nov  4 19:05:56 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 4 Nov 2006 19:05:56 +0100
+Subject: [Noteedit-user] ne 2.8.1 in dapper (was:  .deb ?)
+In-Reply-To: <1162641887.6364.23.camel@localhost.localdomain>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<454C6643.9040702@gmail.com>
+	<1162641887.6364.23.camel@localhost.localdomain>
+Message-ID: <200611041905.56626.karl.kashofer@gmx.at>
+
+Hi !
+
+> You are lucky that I have compiled ne-2.8.1-rc1 some time ago and
+> installed it using checkinstall. During the install, there was a .deb
+> generated. I put it on my webspace for you
+> http://www.pisi.de/noteedit-2.8.1-rc_2.8.1-rc-1_i386.deb .
+
+Thanks!
+
+> It depends on libtse3.
+> dapper contains libtse3-0.3.1, but my deb is linked against 0.2.7.
+> The following command helps if it complains about not finding
+> libtse3-0.2.7 and you have the 0.3.1-er version installed)
+>
+> sudo ln -s  /usr/lib/libtse3-0.3.1.so /usr/lib/libtse3-0.2.7.so
+
+Unfortunately this did not work.
+
+Alas, I managed to compile it from source, and thanks to your suggestion i 
+used checkinstall to make my own .deb !
+
+But there is one thing which really bugs me right now:
+I seem to have lost "Print" and "Print Preview" from the "File" Menu.
+I know the two items were there yesterday when I first compiled and tested it, 
+but now they are gone. (and yes, lilypond is installed and is detected during 
+noteedit startup)
+
+Anyone knows what could be the reason to this mystery ?
+
+Thanks,
+Karl
+
+
+From noteedit-user at lists.berlios.de  Sat Nov  4 19:18:23 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 4 Nov 2006 19:18:23 +0100
+Subject: [Noteedit-user] ne 2.8.1 in dapper (was:  .deb ?)
+In-Reply-To: <200611041905.56626.karl.kashofer@gmx.at>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<1162641887.6364.23.camel@localhost.localdomain>
+	<200611041905.56626.karl.kashofer@gmx.at>
+Message-ID: <200611041918.23558.karl.kashofer@gmx.at>
+
+Hmmm....
+
+> But there is one thing which really bugs me right now:
+> I seem to have lost "Print" and "Print Preview" from the "File" Menu.
+> I know the two items were there yesterday when I first compiled and tested
+> it, but now they are gone. (and yes, lilypond is installed and is detected
+> during noteedit startup)
+
+Printing works fine when I press CTRL-P
+Is there a keyboard-shortcut for the print-preview ?
+
+Weird?
+Cheers,
+Karl
+
+
+From noteedit-user at lists.berlios.de  Sun Nov  5 00:26:31 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 5 Nov 2006 00:26:31 +0100
+Subject: [Noteedit-user] ne 2.8.1 in dapper (was:  .deb ?)
+In-Reply-To: <200611041918.23558.karl.kashofer@gmx.at>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<1162641887.6364.23.camel@localhost.localdomain>
+	<200611041905.56626.karl.kashofer@gmx.at>
+	<200611041918.23558.karl.kashofer@gmx.at>
+Message-ID: <1162682792.1717.2.camel@localhost.localdomain>
+
+Karl,
+
+On Sat, 2006-11-04 at 19:18 +0100, user mailing list for the score
+editor noteedit wrote:
+> > But there is one thing which really bugs me right now:
+> > I seem to have lost "Print" and "Print Preview" from the "File" Menu.
+
+There is neither "Print" nor "Print Preview" in the "File" Menu of my
+version.
+
+> > I know the two items were there yesterday when I first compiled and tested
+> > it, but now they are gone. (and yes, lilypond is installed and is detected
+> > during noteedit startup)
+> Printing works fine when I press CTRL-P
+> Is there a keyboard-shortcut for the print-preview ?
+
+Maybe this is a KDE option.
+But I'm not familiar with KDE.
+
+Christoph
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20061105/a95a016d/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Sun Nov  5 18:52:46 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 5 Nov 2006 18:52:46 +0100
+Subject: [Noteedit-user] ne 2.8.1 in dapper (was:  .deb ?)
+In-Reply-To: <1162682792.1717.2.camel@localhost.localdomain>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<200611041918.23558.karl.kashofer@gmx.at>
+	<1162682792.1717.2.camel@localhost.localdomain>
+Message-ID: <200611051852.48802.karl.kashofer@gmx.at>
+
+Hi !
+
+> editor noteedit wrote:
+> > > But there is one thing which really bugs me right now:
+> > > I seem to have lost "Print" and "Print Preview" from the "File" Menu.
+>
+> There is neither "Print" nor "Print Preview" in the "File" Menu of my
+> version.
+
+Hehehe, i figured it out !
+You have to remove the original noteedit 2.8.0 package from your distribution.
+
+Apparently there is some problem with having both versions installed, you will 
+notice that the splash screen shows 2.8.0 when both are installed, but 2.8.1 
+when you install only 2.8.1, and it also hides the Print items from the file 
+menu.
+
+Now the reason i had the original package still installed is that the help is 
+not working in 2.8.1. Anyone know how to get the manual working in 2.8.1 ?
+Or alternatively how to get the help html files out of 2.8.0 ?
+
+Thanks,
+Karl
+
+
+From noteedit-user at lists.berlios.de  Wed Nov 15 04:26:57 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 14 Nov 2006 22:26:57 -0500
+Subject: [Noteedit-user] :  ne 2.8.1 in dapper (was: .deb ?)
+In-Reply-To: <454BFC67.8080402@bellsouth.net>
+References: <200611031113.28443.karl.kashofer@gmx.at>
+	<454BFC67.8080402@bellsouth.net>
+Message-ID: <200611142226.57241.e_mccanless@bellsouth.net>
+
+	Question:
+
+	Now the reason i had the original package still installed is that the help is 
+	not working in 2.8.1. Anyone know how to get the manual working in 2.8.1 ?
+	Or alternatively how to get the help html files out of 2.8.0 ?
+
+	Thanks,
+	Karl
+
+In my distribution (SUSE 10.1) the handbook is in the KDE help center, which 
+NoteEdit links to from the help menu. This can be accessed from the KDE help 
+center by search for "noteedit".
+
+Or, use the Handbook at:  http://noteedit.berlios.de/doc/index.html
+
+Sorry if this is late info. I am having trouble with my mail, and had to pull 
+your question from the archives.
+
+-- 
+-- ED --
+
+

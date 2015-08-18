@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] 2.8.0 Release Candidate 1 released
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-June/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%202.8.0%20Release%20Candidate%201%20released&In-Reply-To=%3C42A1B990.6000100%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000076.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] 2.8.0 Release Candidate 1 released</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%202.8.0%20Release%20Candidate%201%20released&In-Reply-To=%3C42A1B990.6000100%40web.de%3E"
+       TITLE="[Noteedit-user] 2.8.0 Release Candidate 1 released">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sat Jun  4 16:24:16 CEST 2005</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000076.html">[Noteedit-user] Up/Down Bow?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#75">[ date ]</a>
+              <a href="thread.html#75">[ thread ]</a>
+              <a href="subject.html#75">[ subject ]</a>
+              <a href="author.html#75">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This is the release candidate in the release cycle of the coming 2.8.0 
+release of NoteEdit.
+If you still find bugs post them in the Bug tracker. or mail them to the 
+developer mailing list.
+Known bugs can be found in the Bug tracker as well.
+
+Since now, we were successfully maintaining the original English, German 
+(most of NE developers), Slovenian (myself) and Slovakian (Zdenko 
+Podobn&#253;) translation. However, we did not recieve any progress report or 
+confirmation about the translations to other languages.
+Let me remind you that the deadline to commit the translation files is 
+on Sunday, 12th June 2005, 23:59 CET.
+Translations not being sent until Sunday will not make it to the stable 
+2.8.0 version.
+
+Please contact us immediately if you're making or going to make the 
+translation work for your language. If we won't recieve a confirmation 
+within 48 hours, we will assume that this message didn't reach
+you and we'll start to search for another translators.
+
+Release 2.8.0 RC1
+--------------------
+New features:
+- Updated translations and fixed Makefile to include Slovenian translation.
+- RFE #573 - Soprano clef added.
+- Score info fields and staff names can now include double quotes (&quot;), 
+updated
+export filters.
+- RFE #730 - Direct MIDI import - one-click MIDI file import implemented.
+- RFE #729 - warning message before TSE3 -&gt; Score added.
+- Automatic bar placement disabled if no time signature defined.
+- Allow bar placement in empty staffs with no clef/key/time signature.
+- Merged staff properties and voice dialog.
+- Staff properties can now change all staffs at once, not only the 
+current one.
+- Menu point staff -&gt; voices invokes the staff properties.
+- More improvements to the menu: Easier access via keys, some better 
+menu names
+   (like Close / Quit, Select Multi Staff).
+- Main window title now includes score title and subtitle by default, if 
+none
+   defined yet, it the current uses file name.
+- Many score layout window improvements (bottom-up selection, resized 
+buttons to
+   fit captions on buttons, added form caption).
+- Removed fuzzyness from german translation and updated all po(t) files
+   (others will have fuzzyness as well until translated).
+- Removed a thrilling MusiXTeX warning when exporting and replaced it with a
+   nice notice dialog.
+- New icon.
+- Implemented splash screen.
+- New playback shortcut. Changed Edit Mode and Insert Rest default 
+shortcuts.
+- Save main window position and size (default: available screen geometry).
+- Toolbar settings of every toolbar are saved and restored.
+- Integrated patch 403 - Better menu structure.
+- Removed &quot;Report Bug&quot; menu item from help menu.
+- The last selected key or time signature is now remembered and gets 
+selected
+   automatically when inserting it the second time.
+- configure now works on FreeBSD (thanks to Raphael Langerhorst)
+
+Bug fixes:
+- Fixed #3944 - polyphony importing wrong in MusicXML.
+- Fixed #3969 - Score layout: Text on buttons uncomplete.
+- Fixed #3595 - dbl quotes in some score info fields leads to invalid files.
+- Fixed #3935 - deleting element doesn't make document edited - also 
+some rework
+                 in delete element code.
+- Fixed #3934 - discard changes dialog ignored on exit.
+- Fixed #3914 - crash when a pasting to new staff.
+- Fixed #3504 - bad file save without clef.
+- Fixed #3861 - Multirests in non-4/4 measure broken.
+- Fixed #3862 - measures after multirests not numbered correctly.
+- Fixed #3183 - multistaff broken - warning message added.
+- Fixed #3403 - export lilypond 2.4 lyrics problem.
+- Fixed #3418 - Doesn't save icon settings
+- Fixed #3484 - crash on midi import.
+- Fixed #3503 - hard crash on midi export.
+- Fixed #3505 - ABC export when leading repeat open and other voices.
+- Fixed #3786 - midi export crashes noteedit.
+- Fixed #3791 - staff-&gt;delete / import recording warnings wrong.
+- Fixed typo in staff properties dialog (&quot;Voice:&quot; -&gt; &quot;Instrument:&quot;).
+- Fixed #2930 - noteedit stops playing still held notes in other voices.
+- Fixed #4119 - Stem directions in voice dialog don't get rememberd.
+
+Remarks:
+- LilyPond export of different drum notes inside a single chord is 
+suppressed to
+   prevent choking of Lily. The user should use multiple voices instead.
+
+
+Download the release candidate here: 
+<A HREF="http://download.berlios.de/noteedit/noteedit-2.8.0-rc1.tar.gz">http://download.berlios.de/noteedit/noteedit-2.8.0-rc1.tar.gz</A>
+
+Best Regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - <A HREF="http://noteedit.berlios.de">http://noteedit.berlios.de</A>
+Project: Pertergrin - a RPG system - <A HREF="http://www.pertergrin.de">http://www.pertergrin.de</A>
+GnuPG Public Key available on request
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000076.html">[Noteedit-user] Up/Down Bow?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#75">[ date ]</a>
+              <a href="thread.html#75">[ thread ]</a>
+              <a href="subject.html#75">[ subject ]</a>
+              <a href="author.html#75">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,263 @@
+From noteedit-user at lists.berlios.de  Fri Dec  1 17:52:01 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 01 Dec 2006 17:52:01 +0100
+Subject: [Noteedit-user] installing 2.8.1 with prefix=$HOME
+Message-ID: <200612011752.01285.kai.wassermann@gmx.de>
+
+Hello,
+
+I want to test 2.8.1 separately from my 2.8.0 and configure it therefor with 
+prefix=$HOME (and adapted libdir and includedir). After compiling the 'make 
+install' fails. Where do I have to edit something?
+
+TIA
+
+Kai
+
+P.S.: The error message:
+
+/usr/bin/install -c -p -m 
+644 ./hi22-action-pedonicon.png /home/kai/share/apps/noteedit/icons/hicolor/22x22/actions/pedonicon.png
+make[3]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+make[2]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+make[2]: Entering directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[3]: Entering directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+/bin/sh ../admin/mkinstalldirs /usr/kde/3.5/lib
+ /bin/sh ../libtool --silent --mode=install /usr/bin/install -c -p  
+libnoteedit.la /usr/kde/3.5/lib/libnoteedit.la
+/usr/bin/install: cannot create regular file 
+`/usr/kde/3.5/lib/libnoteedit.so.0.1.0': Permission denied
+make[3]: *** [install-libLTLIBRARIES] Error 1
+make[3]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[2]: *** [install-am] Error 2
+make[2]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[1]: *** [install-recursive] Error 1
+make[1]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make: *** [install-recursive] Error 1
+
+
+From noteedit-user at lists.berlios.de  Fri Dec  1 17:56:54 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 01 Dec 2006 17:56:54 +0100
+Subject: [Noteedit-user] installing 2.8.1 with prefix=$HOME
+In-Reply-To: <200612011752.01285.kai.wassermann@gmx.de>
+References: <200612011752.01285.kai.wassermann@gmx.de>
+Message-ID: <45705ED6.7020003@gmail.com>
+
+Run make install with root permissions.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> Hello,
+>
+> I want to test 2.8.1 separately from my 2.8.0 and configure it therefor with 
+> prefix=$HOME (and adapted libdir and includedir). After compiling the 'make 
+> install' fails. Where do I have to edit something?
+>
+> TIA
+>
+> Kai
+>
+> P.S.: The error message:
+>
+> /usr/bin/install -c -p -m 
+> 644 ./hi22-action-pedonicon.png /home/kai/share/apps/noteedit/icons/hicolor/22x22/actions/pedonicon.png
+> make[3]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+> make[2]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+> make[2]: Entering directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[3]: Entering directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> /bin/sh ../admin/mkinstalldirs /usr/kde/3.5/lib
+>  /bin/sh ../libtool --silent --mode=install /usr/bin/install -c -p  
+> libnoteedit.la /usr/kde/3.5/lib/libnoteedit.la
+> /usr/bin/install: cannot create regular file 
+> `/usr/kde/3.5/lib/libnoteedit.so.0.1.0': Permission denied
+> make[3]: *** [install-libLTLIBRARIES] Error 1
+> make[3]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[2]: *** [install-am] Error 2
+> make[2]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[1]: *** [install-recursive] Error 1
+> make[1]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make: *** [install-recursive] Error 1
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 252 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20061201/a33d786c/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Fri Dec  1 18:56:09 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 01 Dec 2006 18:56:09 +0100
+Subject: [Noteedit-user] installing 2.8.1 with prefix=$HOME
+In-Reply-To: <45705ED6.7020003@gmail.com>
+References: <200612011752.01285.kai.wassermann@gmx.de>
+	<45705ED6.7020003@gmail.com>
+Message-ID: <200612011856.09608.kai.wassermann@gmx.de>
+
+Hello,
+
+On Friday 01 December 2006 17:56, you wrote:
+> Run make install with root permissions.
+
+I thought that if I want to install an application in my $HOME, I do not need 
+to be root. -- How do I install noteedit without root-permissions? (OK, I 
+have root permissions but there should be a way without them.)
+
+Thank you for your quick reply.
+
+Best regards,
+
+Kai
+
+
+From noteedit-user at lists.berlios.de  Fri Dec  1 23:57:34 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 01 Dec 2006 23:57:34 +0100
+Subject: [Noteedit-user] installing 2.8.1 with prefix=$HOME
+In-Reply-To: <200612011752.01285.kai.wassermann@gmx.de>
+References: <200612011752.01285.kai.wassermann@gmx.de>
+Message-ID: <4570B35E.4070702@gmail.com>
+
+Configure with --exec-prefix=$HOME as well.
+
+
+Regards.
+- Matev?
+
+user mailing list for the score editor noteedit pravi:
+> Hello,
+>
+> I want to test 2.8.1 separately from my 2.8.0 and configure it therefor with 
+> prefix=$HOME (and adapted libdir and includedir). After compiling the 'make 
+> install' fails. Where do I have to edit something?
+>
+> TIA
+>
+> Kai
+>
+> P.S.: The error message:
+>
+> /usr/bin/install -c -p -m 
+> 644 ./hi22-action-pedonicon.png /home/kai/share/apps/noteedit/icons/hicolor/22x22/actions/pedonicon.png
+> make[3]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+> make[2]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+> make[2]: Entering directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[3]: Entering directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> /bin/sh ../admin/mkinstalldirs /usr/kde/3.5/lib
+>  /bin/sh ../libtool --silent --mode=install /usr/bin/install -c -p  
+> libnoteedit.la /usr/kde/3.5/lib/libnoteedit.la
+> /usr/bin/install: cannot create regular file 
+> `/usr/kde/3.5/lib/libnoteedit.so.0.1.0': Permission denied
+> make[3]: *** [install-libLTLIBRARIES] Error 1
+> make[3]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[2]: *** [install-am] Error 2
+> make[2]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make[1]: *** [install-recursive] Error 1
+> make[1]: Leaving directory 
+> `/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+> make: *** [install-recursive] Error 1
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>   
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 252 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20061201/2e0e2c47/attachment.pgp>
+
+From noteedit-user at lists.berlios.de  Fri Dec  8 09:20:33 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 08 Dec 2006 00:20:33 -0800
+Subject: [Noteedit-user] beaming, custom chords and editing
+Message-ID: <45792051.4080906@nWood.org>
+
+Hi,
+
+I'm really enjoying Noteedit.  Thanks for all of your work.  I'm running 
+2.8.1 on Ubuntu Dapper (using Gnome) but I have KDE libraries installed 
+and things seem to be working pretty well.
+
+I'd be grateful for info about any (or all) of the following problems:
+
+Beaming:
+
+I have set my staff to 4/4. I am trying to enter a half rest, 8th rest 
+and then 3 8th notes.  I want the 2nd two 8th notes beamed but I want 
+the first to stand on its own. If I simply enter 3 8th notes, they all 
+get beamed together. If I enter the first two 8th notes (upbeat of 3 and 
+downbeat of 4) and then I hit Backspace they are un-beamed, but then 
+when I enter the 3rd 8th note they all get beamed again. I've tried 
+various combinations of using Backspace and clicking the Beam button on 
+the tool bar but so far have not been able to achieve what I want.  I 
+also tried marking the two 8th notes that I want to un-beam as a block 
+and then clicking the Beam button a couple of times. Nothing seems to 
+change.  I could probably edit the exported file, but if it's possible 
+to do this in Noteedit, I'd love to know.
+
+I think the answer might be Edit > AutoBeam...but I don't see a way of 
+indicating how many notes I want automatically beamed.
+
+Custom Chords:
+
+I'm creating leadsheets for use in a jazz context. I would like to enter 
+chord changes and I would like these changes to transpose when I 
+transpose the piece.  For this reason I don't want to enter the chords 
+as arbitrary text.  At the top of the Insert > Chord dialog there is a 
+text box that looks like it might be a place to enter a custom chord 
+symbol.  For example, I would like to be able to enter "B-7b5" or 
+"F#7+9".  Is there a way to do this? 
+
+Editing:
+
+I went to edit mode to change a measure in the middle of the piece.  
+Somehow I ended up with a bar of 4.5 beats: 8th rest followed by 8 8th 
+notes.  The only way I was able to fix this was to delete all of the bar 
+(did Undo several times) after the offending measure, re-enter the bad 
+measure and then reenter the rest of the piece.  Is there a better way I 
+could have done that? Is there a way to get Noteedit to recalculate the 
+measures and correct the bars?
+
+
+Thank you very much for your time.
+
+Brian
+
+
+

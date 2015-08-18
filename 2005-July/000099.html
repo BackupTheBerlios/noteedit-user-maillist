@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] to print file.ly
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-July/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20to%20print%20file.ly&In-Reply-To=%3C42E5FDF9.9050306%40guest.arnes.si%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000096.html">
+   <LINK REL="Next"  HREF="000097.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] to print file.ly</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20to%20print%20file.ly&In-Reply-To=%3C42E5FDF9.9050306%40guest.arnes.si%3E"
+       TITLE="[Noteedit-user] to print file.ly">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Tue Jul 26 11:10:17 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000096.html">[Noteedit-user] to print file.ly
+</A></li>
+        <LI>Next message: <A HREF="000097.html">[Noteedit-user] to print file.ly
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#99">[ date ]</a>
+              <a href="thread.html#99">[ thread ]</a>
+              <a href="subject.html#99">[ subject ]</a>
+              <a href="author.html#99">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi!
+
+&gt;<i> I joint the 2 files, .not and .ly
+</I>
+I looked at them and found out that you're not using the latest
+version of NoteEdit (&lt;2.7.4). There are many LilyPond export
+improvements made in 2.7.4 and 2.8.0, so I advice you to update to the
+latest version of NE. I opened the .not file and fix some spacings
+(using underspace/overspace so the lyrics doesn't hit the staff) and
+simply export it to LilyPond. And then:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">matevz at mojazver</A>:~/tmp$ convert-ly --edit Anonyme_jaiunmari_4vx.ly
+/usr/bin/convert-ly (GNU LilyPond) 2.4.5
+Processing `Anonyme_jaiunmari_4vx.ly' ... Applying conversions:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">matevz at mojazver</A>:~/tmp$ lilypond Anonyme_jaiunmari_4vx.ly
+GNU LilyPond 2.4.5
+Processing `Anonyme_jaiunmari_4vx.ly'
+Parsing...
+Interpreting music... [8][16][24]
+Preprocessing graphical objects...
+Calculating line breaks... [3][6][9][12][15][18][21]
+Layout output to `Anonyme_jaiunmari_4vx.tex'...
+Converting to `Anonyme_jaiunmari_4vx.dvi'...
+Converting to `Anonyme_jaiunmari_4vx.ps'...
+Converting to `Anonyme_jaiunmari_4vx.pdf'...
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">matevz at mojazver</A>:~/tmp$
+
+It worked out of the box. I'm attaching the results.
+
+About your problem, I think there's something with your LilyPond
+installation messed up. Did you install libguile library (or
+everything related to guile) beside the LilyPond? If that doesn't
+help, contact the user mailing list at LilyPond
+(<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">lilypond-user at gnu.org</A>) and the maintainer for Mandrake.
+
+For the version of LilyPond, you should simply run lilypond --version
+and it should print the LilyPond version out.
+
+
+Regards.
+- - Matev&#382;
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - <A HREF="http://enigmail.mozdev.org">http://enigmail.mozdev.org</A>
+
+iD8DBQFC5f34m1IQqmP8KVgRAo2iAJwNVr6Rz23W1Kgr3TvpU2AoT9ZyNACdHHwQ
+BSaN1kDo6m2Xt0q/D2XLgfM=
+=NsFh
+-----END PGP SIGNATURE-----
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_j'aiunmari_4vx.not
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ksh">https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ksh</A>&gt;
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Anonyme_jaiunmari_4vx.ly
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment-0001.ksh">https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment-0001.ksh</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Anonyme_jaiunmari_4vx.ps
+Type: application/postscript
+Size: 255346 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ps">https://lists.berlios.de/pipermail/noteedit-user/attachments/20050726/24edbe90/attachment.ps</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000096.html">[Noteedit-user] to print file.ly
+</A></li>
+	<LI>Next message: <A HREF="000097.html">[Noteedit-user] to print file.ly
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#99">[ date ]</a>
+              <a href="thread.html#99">[ thread ]</a>
+              <a href="subject.html#99">[ subject ]</a>
+              <a href="author.html#99">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

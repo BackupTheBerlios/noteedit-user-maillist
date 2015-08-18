@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-July/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20noteedit-2.7.4%20on%20DeMuDi%20-%20print%20preview%20problem&In-Reply-To=%3C42EBA799.6040002%40guest.arnes.si%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000108.html">
+   <LINK REL="Next"  HREF="000110.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20noteedit-2.7.4%20on%20DeMuDi%20-%20print%20preview%20problem&In-Reply-To=%3C42EBA799.6040002%40guest.arnes.si%3E"
+       TITLE="[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sat Jul 30 18:15:21 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000108.html">[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+</A></li>
+        <LI>Next message: <A HREF="000110.html">[Noteedit-user] NoteEdit Won't Save
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#109">[ date ]</a>
+              <a href="thread.html#109">[ thread ]</a>
+              <a href="subject.html#109">[ subject ]</a>
+              <a href="author.html#109">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Did you try to link abcm2ps executable to /usr/bin only (local
+directories can sometimes got excluded from path) and re-run NoteEdit:
+$ ln /usr/local/bin/abcm2ps /usr/bin -s
+
+If this doesn't work, you should try to first export to ABC manually
+and then run
+$ abcm2ps exported_file.abc
+
+This way you can export to other formats as well (personally, I prefer
+LilyPond). For Lily:
+$ convert-ly --edit exported_file.ly
+$ lilypond exported_file.ly.
+
+Both ways will hopefully produce a usable PDF and PS output.
+
+I'm not really sure why your problem occurs, but direct printing from
+NoteEdit is going to have a complete rewrite in version 2.8.1.
+
+
+Regards.
+- - Matev&#382;
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A> wrote:
+
+&gt;<i> Hi all,
+</I>&gt;<i>
+</I>&gt;<i> I have some problems with noteedit-2.7.4 *print preview* :
+</I>&gt;<i>
+</I>&gt;<i> 0. NoteEdit cannot find abcm2ps under certain ciscustances (when
+</I>&gt;<i> noteedit is called from a terminal; no problem when called from a
+</I>&gt;<i> mini-command (fbrun)); the printing is cancelled at all.
+</I>&gt;<i>
+</I>&gt;<i> ErrMsg: &quot;abcm2ps was not found in your PATH, aborting&quot;
+</I>&gt;<i>
+</I>&gt;<i> localhost hudson $ which abcm2ps /usr/local/bin/abcm2ps
+</I>&gt;<i>
+</I>&gt;<i> localhost hudson $ echo $PATH
+</I>&gt;<i> /home/hudson/bin:/home/hudson/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ^^^^^^^^^^^^^^
+</I>&gt;<i>
+</I>&gt;<i> 1. NoteEdit preview with gv get errors, without message in gv error
+</I>&gt;<i> window (I have gv-3.6.1 with gs-7.07.1);
+</I>&gt;<i>
+</I>&gt;<i> 2. NoteEdit cannot generate PS files:
+</I>&gt;<i>
+</I>&gt;<i> ErrMsg: &quot;Catastrophe: KNotify&quot; &quot;A print error ocurred. Error
+</I>&gt;<i> message received from system:&quot; &quot;Cannot save print file to
+</I>&gt;<i> /home/hudson/print.ps. Check that you have write access to it.&quot;
+</I>&gt;<i>
+</I>&gt;<i> (The error persists when set chmod 777 /home/hudson/print.ps; but
+</I>&gt;<i> PDF printing is fine)
+</I>&gt;<i>
+</I>&gt;<i> I tried also install kghostview, but it cannot comunicate to
+</I>&gt;<i> ghostscript, suggesting misconfigured printer.
+</I>&gt;<i>
+</I>&gt;<i> System info: NoteEdit-2.7.4 3.3.2, (3.1) Linux (i686) release
+</I>&gt;<i> 2.4.25-1-multimedia-686 Debian Sarge GNU/Linux - DeMuDi-1.2.0 -
+</I>&gt;<i> (with updates) Window manager: fluxbox-0.9.3 on XFree86, res.
+</I>&gt;<i> 800x600, 15bit gv-3.6.1 gs-7.07.1 Printer EPSON-C20UX, configured
+</I>&gt;<i> by gnome-cups-manager, using cupsys-bsd
+</I>&gt;<i>
+</I>&gt;<i> Any suggestions?
+</I>&gt;<i>
+</I>&gt;<i> Cheer, Hudson Lacerda
+</I>&gt;<i>
+</I>-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - <A HREF="http://enigmail.mozdev.org">http://enigmail.mozdev.org</A>
+
+iD8DBQFC66eYm1IQqmP8KVgRAi2XAJ9SPEzR0ECk1uAWFpSjrNekmsIH6wCeO+vD
+/vnP6aNjZLAN3hgS//An30M=
+=CB7a
+-----END PGP SIGNATURE-----
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000108.html">[Noteedit-user] noteedit-2.7.4 on DeMuDi - print preview problem
+</A></li>
+	<LI>Next message: <A HREF="000110.html">[Noteedit-user] NoteEdit Won't Save
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#109">[ date ]</a>
+              <a href="thread.html#109">[ thread ]</a>
+              <a href="subject.html#109">[ subject ]</a>
+              <a href="author.html#109">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

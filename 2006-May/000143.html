@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compile error
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-May/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compile%20error&In-Reply-To=%3C200605011138.41957.claudius.wettstein%40gmx.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000144.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compile error</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compile%20error&In-Reply-To=%3C200605011138.41957.claudius.wettstein%40gmx.de%3E"
+       TITLE="[Noteedit-user] Compile error">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Mon May  1 11:38:41 CEST 2006</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000144.html">[Noteedit-user] Compile error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi all,
+
+I tried to compile noteedit 2.8.1 beta on a Suse 10 system. 
+Unfortunately &quot;make&quot; stops with the following output:
+
+if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ 
+-DHAVE_CONFIG_H -I. -I. -I.. -I/opt/kde3/include 
+-I/usr/lib/qt3/include -I/usr/X11R6/include  -I/usr/include    
+-DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor -Wno-long-long 
+-Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+-D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion 
+-Wchar-subscripts -O2 -Wformat-security -Wmissing-format-attribute 
+-fno-exceptions -fno-check-new -fno-common  -MT pmxexportform.lo -MD 
+-MP -MF &quot;.deps/pmxexportform.Tpo&quot; \
+  -c -o pmxexportform.lo `test -f 'pmxexportform.cc' || echo 
+'./'`pmxexportform.cc; \
+then mv -f &quot;.deps/pmxexportform.Tpo&quot; &quot;.deps/pmxexportform.Plo&quot;; \
+else rm -f &quot;.deps/pmxexportform.Tpo&quot;; exit 1; \
+fi
+pmxexportform.cc:23:24: error: nscaleedit.h: No such file or directory
+make[3]: *** [pmxexportform.lo] Fehler 1
+make[3]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+make[2]: *** [all-recursive] Fehler 1
+make[2]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+make[1]: *** [all-recursive] Fehler 1
+make[1]: Leaving directory 
+`/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta'
+make: *** [all] Fehler 2
+
+Since I am not a programmer, I have no Idea how to correct this error. 
+Any help is quite appreciated.
+
+Thank you. 
+Claudius
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000144.html">[Noteedit-user] Compile error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

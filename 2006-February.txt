@@ -1,0 +1,289 @@
+From noteedit-user-admin at lists.berlios.de  Wed Feb  1 03:49:40 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 31 Jan 2006 21:49:40 -0500
+Subject: [Noteedit-user] regards and problems
+Message-ID: <200601312149.40799.emilioprocaccini@inwind.it>
+
+My name is Emilio Procaccini. I lives in Fabriano (An) Italy where i teach 
+piano and young orchestra in a middle school. Synce  few years i make all my 
+arrangements by notation software. I beginned with finale 2000 and now, after 
+i discovered gnu-linux and open-source, i am enjoing to work with noteedit. 
+After 2.7 versions, now i try to work with 2.8.0.2. It's very good, but i 
+have problems if i try to upgrade the kde's software  and  libraries, 
+specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+others no make effect. Is it usual ? If you have  time to answer me, i really 
+enjoi.
+Many many regards  and thank for your work.
+Emilio Procaccini
+
+p.s. sorry for my too bad english
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Feb  1 15:02:23 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 1 Feb 2006 15:02:23 +0100
+Subject: [Noteedit-user] (no subject)
+Message-ID: <200602011502.23588.christophebenz@yahoo.fr>
+
+> have problems if i try to upgrade the kde's software  and  libraries, 
+> specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+> others no make effect. Is it usual ? If you have  time to answer me, i 
+really 
+
+>Run kcontrol and check keyboard configurations.
+
+Hello,
+
+The keyboard shortcuts doesn't work for me too.
+With a previous version of Noteedit, it worked good.
+
+I posted this "bug" in the Noteedit berlios.de page. Perhaps I shouldn't.
+https://developer.berlios.de/bugs/?func=detailbug&bug_id=6263&group_id=2232
+
+I don't understand what do you mean exactly. What do I have to check more 
+precisely ?
+
+I use a Debian unstable, with Noteedit 2.8.0.
+
+Thank you
+
+-- 
+Christophe Benz
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060201/ea7e3c91/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Feb  1 17:08:02 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 01 Feb 2006 14:08:02 -0200
+Subject: [Noteedit-user] (no subject)
+In-Reply-To: <200602011502.23588.christophebenz@yahoo.fr>
+References: <200602011502.23588.christophebenz@yahoo.fr>
+Message-ID: <43E0DCE2.10702@yahoo.com.br>
+
+noteedit-user-admin at berlios.de escreveu:
+...
+>>Run kcontrol and check keyboard configurations.
+...
+> I don't understand what do you mean exactly. What do I have to check more 
+> precisely ?
+> 
+> I use a Debian unstable, with Noteedit 2.8.0.
+
+I have no KDE, but I have kconfig installed to configure KDE programs.
+
+It seems that:
+- your KDE keyboard configurations are wrong;
+	and/or:
+- your X configurations is wrong.
+
+For kde, run kconfig (KDE Control Center) and check/try with keyboard 
+options.
+
+For X, I don't know if you use xorg or xfree86. The command (as root!) 
+can be one from:
+
+dpkg-reconfigure xserver-xfreee86
+dpkg-reconfigure xserver-xorg (I am not sure, I use xfree86)
+
+For console, if there are also problems with it, should be:
+
+kbdconfig
+
+-- 
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+
+	
+
+	
+		
+_______________________________________________________ 
+Yahoo! doce lar. Fa?a do Yahoo! sua homepage. 
+http://br.yahoo.com/homepageset.html 
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Feb  1 19:00:35 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 01 Feb 2006 19:00:35 +0100
+Subject: [Noteedit-user] regards and problems
+In-Reply-To: <200601312149.40799.emilioprocaccini@inwind.it>
+References: <200601312149.40799.emilioprocaccini@inwind.it>
+Message-ID: <43E0F743.2060101@gmail.com>
+
+Hi Emilio!
+
+Confirmed, I also have problem with keys using Debian's NoteEdit 2.8.0-2
+and TSE3 0.3.1-4. However, using the latest SVN version, I didn't
+encounter the problem (maybe I was still using KDE 3.4 before??). I'll
+dig into it and try to figure something out. We already have some
+findings from Adam:
+
+> I had an issue with hotkeys with KDE 3.5. Being not even able to delete notes 
+> I started investigating this issue and found out that it can be fixed by 
+> changing a line in mainframewidget.cpp:
+> 
+> keys_ = new KAccel(this);
+> to
+> keys_ = new KAccel((QWidget*)this->parent());
+
+
+I'll look at it.
+
+Btw, I'm using Debian unstable, KDE 3.5, Xorg and Linux kernel 2.6.15.1.
+
+
+Regards.
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+>My name is Emilio Procaccini. I lives in Fabriano (An) Italy where i teach 
+>piano and young orchestra in a middle school. Synce  few years i make all my 
+>arrangements by notation software. I beginned with finale 2000 and now, after 
+>i discovered gnu-linux and open-source, i am enjoing to work with noteedit. 
+>After 2.7 versions, now i try to work with 2.8.0.2. It's very good, but i 
+>have problems if i try to upgrade the kde's software  and  libraries, 
+>specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+>others no make effect. Is it usual ? If you have  time to answer me, i really 
+>enjoi.
+>Many many regards  and thank for your work.
+>Emilio Procaccini
+>
+>p.s. sorry for my too bad english
+>
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Feb  1 19:29:33 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 01 Feb 2006 19:29:33 +0100
+Subject: [Noteedit-user] (no subject)
+In-Reply-To: <200602011502.23588.christophebenz@yahoo.fr>
+References: <200602011502.23588.christophebenz@yahoo.fr>
+Message-ID: <43E0FE0D.2020101@web.de>
+
+Hi,
+
+A hint which might solve the keyboard problem was posted on the
+developer mailing list
+(http://lists.berlios.de/pipermail/noteedit-devel/2006-January/000593.html).
+
+I myself don't have kde installed so I can't help you much with
+hints how to solve the problem. The 3.4.2 KDE kcontrol has
+possibilities to change keyboard shortcuts (Accessibility->Keyboard
+Shortcuts). Maybe changing the something in the application
+shortcut tab helps as well.
+
+Regards,
+
+Reinhard
+
+noteedit-user-admin at berlios.de wrote:
+>>have problems if i try to upgrade the kde's software  and  libraries, 
+>>specially if i move from kdelibs4c2a 4:3.4.3-2 to 4:3.5.0-3: "del" key and 
+>>others no make effect. Is it usual ? If you have  time to answer me, i 
+> 
+> really 
+> 
+> 
+>>Run kcontrol and check keyboard configurations.
+> 
+> 
+> Hello,
+> 
+> The keyboard shortcuts doesn't work for me too.
+> With a previous version of Noteedit, it worked good.
+> 
+> I posted this "bug" in the Noteedit berlios.de page. Perhaps I shouldn't.
+> https://developer.berlios.de/bugs/?func=detailbug&bug_id=6263&group_id=2232
+> 
+> I don't understand what do you mean exactly. What do I have to check more 
+> precisely ?
+> 
+> I use a Debian unstable, with Noteedit 2.8.0.
+> 
+> Thank you
+> 
+
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Feb  2 04:04:29 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 2 Feb 2006 04:04:29 +0100
+Subject: [Noteedit-user] regards and problems
+In-Reply-To: <43E0F743.2060101@gmail.com>
+References: <200601312149.40799.emilioprocaccini@inwind.it> <43E0F743.2060101@gmail.com>
+Message-ID: <200602020404.33479.christophebenz@yahoo.fr>
+
+Le Mercredi 1 F?vrier 2006 19:00, noteedit-user-admin at berlios.de a ?crit?:
+> Hi Emilio!
+>
+> Confirmed, I also have problem with keys using Debian's NoteEdit 2.8.0-2
+> and TSE3 0.3.1-4. However, using the latest SVN version, I didn't
+> encounter the problem (maybe I was still using KDE 3.4 before??). I'll
+> dig into it and try to figure something out. We already have some
+>
+> findings from Adam:
+> > I had an issue with hotkeys with KDE 3.5. Being not even able to delete
+> > notes I started investigating this issue and found out that it can be
+> > fixed by changing a line in mainframewidget.cpp:
+> >
+> > keys_ = new KAccel(this);
+> > to
+> > keys_ = new KAccel((QWidget*)this->parent());
+
+Thank you very much.
+
+I use Debian unstable, so I downloaded the source package, I patched the wrong 
+line by hand, then I rebuilt the package :
+
+apt-get source noteedit
+cd noteedit-2.8.0
+fakeroot dpkg-buildpackage
+cd ..
+su -c dpkg -i noteedit*.deb
+
+It works great now.
+
+-- 
+Christophe Benz
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060202/5a6f34f2/attachment.pgp>
+
+From noteedit-user-admin at lists.berlios.de  Wed Feb 15 11:45:30 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 15 Feb 2006 02:45:30 -0800 (PST)
+Subject: [Noteedit-user] noteedit for mac
+Message-ID: <20060215104530.70625.qmail@web54211.mail.yahoo.com>
+
+How can I compile noteedit in the Mac OS 10.4?
+
+Gil Claudio
+
+__________________________________________________
+Do You Yahoo!?
+Tired of spam?  Yahoo! Mail has the best spam protection around 
+http://mail.yahoo.com 
+
+

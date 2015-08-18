@@ -1,0 +1,484 @@
+From noteedit-user-admin at lists.berlios.de  Sat Jul  1 14:53:10 2006
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 01 Jul 2006 14:53:10 +0200
+Subject: [Noteedit-user] New here ... Help (F1) in NoteEdit not found
+Message-ID: <20060701125310.225260@gmx.net>
+
+Hello,
+I'm new here in the list, and I'm a newbe on LINUX - 1 year experience on Redhat9 and SuSE 9.2. 
+My system now is SuSE 10.1 on a AMD Sempron3000+ - machine. 
+Installed libtse3 is ver.0.3.1
+
+I'm a programmer of a brilliant Multimedia-Midi-sequencer for the Commodore AMIGA computers and it's clones(AROS,MorphOS and OS4). Also I tried a port to JAVA (much incomplete yet). I'm a studied church musician.
+
+Today I could compile and install NoteEdit complete ... but with some problems I had to solve:
+
+1. the "config" couldn't recognize the libtse3, which is placed in /user/lib. Also not with the option --with-libtse3-libs=/opt/lib.
+
+2. the tse3-includes where not available on the SuSE 10.1 Install-DVD, so I installed them by hand to /opt/kde3/include/tse3 from the archive from the tse-site.
+
+3. To ensure configure doesn't break I added these two lines after line 31612
+lib_libtse3=/usr/lib
+inc_libtse3=/opt/kde3/include/tse3
+
+4. I deinstalled the version 2.8.1, which came with SuSE 10.1, because in this compilation the keyboard doesn't work.
+
+5. 'make' and 'make install' worked with some warnings (mostly the well know cast-warnings), but without to break.
+
+6. Configured new the KDE-menu-entry for NoteEdit (example: the icons were in another dir in SuSE 10.1 from the previous installation).
+
+Now all works OK (as far as I could see ... up to now), but when I press F1, the Help doesn't start. From the central SuSE-Help I can call the Help for NoteEdit.
+Is it possible to solve this ?
+
+At last: NoteEdit is a very impressive good Notation Editor. Sure, at the beginning (like in each program) the most time is needed to read the very good made manual.
+
+If someone have had worked with programs like Finale or Sibelius before, some new things must be learned. But don't complain about missing features ... read the manual complete. Anything is not so comfortable, like in Finale or Sibelius, but NoteEdit is Freeware, and the commercials, like Finale or Sibelius are very expensive, and the result (on the printed sheets) is not so much better.
+
+I congratulate the developers for this real good program, and I can guess how much efforts are neccessary, to make such a good program. Keep on your good work.
+
+Kindly
+Alfred
+
+
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: alfred.j.faust.vcf
+Type: text/x-vcard
+Size: 243 bytes
+Desc: vcard
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060701/7f2d2dc3/attachment.vcf>
+
+From noteedit-user at lists.berlios.de  Fri Jul 21 21:41:33 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 21 Jul 2006 21:41:33 +0200
+Subject: [Noteedit-user] Wish list
+Message-ID: <200607212141.33576.ulrich.herbst@gmx.de>
+
+Hi,
+
+I'm using noteedit for many years now and mostly, I insert notes by typing 
+letters (I'm not using a midi keyboard).
+
+1.) I can make dottes quarter notes with pressing eg "4 . c <ENTER>". But 
+often there is a pattern like "4.c <ENTER> 5d <ENTER>", that is, after a 
+dotted note there is a half length note following.
+Can we make noteedit to have a key for "enter dotted note and next note is 
+just half length" ? Capella does this with the "," key.
+For my above pattern, you would have to type "4,c<ENTER>d<ENTER>"
+
+2.) Can we have keys for changing the actual note to "legato", 
+"staccato","accent",... ?
+
+Uli
+
+-- 
+
+                            Ulrich Herbst
+                         ulrich.herbst at gmx.de
+
+-------------------------------------------------------------------------------
+Fachbegriffe der Informatik - Einfach erkl?rt:
+104: fork(2)
+        New processes are created by other processes, just like new
+        humans. New humans are created by other humans, of course,
+        not by processes. (Unix System Administration Handbook)
+
+
+From noteedit-user at lists.berlios.de  Sat Jul 29 01:57:52 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Fri, 28 Jul 2006 20:57:52 -0300
+Subject: [Noteedit-user] Compatibility Issue
+Message-ID: <44CAA480.7040302@yahoo.com.br>
+
+Hi.
+
+I am wondering about if there is a way to use newer versions of NoteEdit 
+with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and I cannot get 
+a newer version without update *a lot* of packages along. Since I use a 
+dial-up connection, I can only upgrade the distro very rarely.
+
+The same problem I find with GTK programs, and that is an additional 
+reason I prefer programs which do not require QT or GTK or any GUI at all.
+
+To make the things worse, it seems that there is no way even to compile 
+new versions of NoteEdit from the sources to get compability with 3.3.2.
+
+Is there some way to face this problem? Perhaps statically linked 
+binaries? Any suggestion?
+
+Cheers,
+Hudson
+
+-- 
+   '-------------------------------------------------------------------.
+Hudson Lacerda <http://geocities.yahoo.com.br/hfmlacerda/>
+*N?o deixe seu voto sumir! http://www.votoseguro.org/
+*Ap?ie o Manifesto:        http://www.votoseguro.com/alertaprofessores/
+
+                     == THE WAR IN IRAQ COSTS ==
+http://nationalpriorities.org/index.php?option=com_wrapper&Itemid=182
+   .-------------------------------------------------------------------'
+--
+
+
+		
+_______________________________________________________ 
+Yahoo! Acesso Gr?tis - Internet r?pida e gr?tis. Instale 
+o discador agora! 
+http://br.acesso.yahoo.com
+
+
+From noteedit-user at lists.berlios.de  Sun Jul 30 04:05:52 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 30 Jul 2006 04:05:52 +0200
+Subject: [Noteedit-user] Compatibility Issue
+In-Reply-To: <44CAA480.7040302@yahoo.com.br>
+References: <44CAA480.7040302@yahoo.com.br>
+Message-ID: <44CC1400.3040408@gmail.com>
+
+user mailing list for the score editor noteedit pravi:
+> Hi.
+>
+> I am wondering about if there is a way to use newer versions of NoteEdit 
+> with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and I cannot get 
+> a newer version without update *a lot* of packages along. Since I use a 
+> dial-up connection, I can only upgrade the distro very rarely.
+>   
+NoteEdit needs KDE>3.0, so if it doesn't work with 3.3.2, it's the
+Debian's maintainter decision.
+
+> The same problem I find with GTK programs, and that is an additional 
+> reason I prefer programs which do not require QT or GTK or any GUI at all.
+>
+> To make the things worse, it seems that there is no way even to compile 
+> new versions of NoteEdit from the sources to get compability with 3.3.2.
+>   
+Could you be more precise? I'm using Debian myself and I can get the
+latest SVN version of NoteEdit compiled fine. You need to download the
+qt3 development packages and TSE3 sequencer and then type:
+$ make -f Makefile.cvs
+$ ./configure
+$ make
+
+> Is there some way to face this problem? Perhaps statically linked 
+> binaries? Any suggestion?
+>   
+I think statically linked libraries aren't the answer because NE depends
+heavily on the underlaying KDE system. I don't know how the different
+version of KDEs would work together.
+
+
+Regards.
+- Matev?
+
+
+
+
+
+From noteedit-user at lists.berlios.de  Sun Jul 30 04:55:42 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sat, 29 Jul 2006 23:55:42 -0300
+Subject: [Noteedit-user] Compatibility Issue
+In-Reply-To: <44CC1400.3040408@gmail.com>
+References: <44CAA480.7040302@yahoo.com.br> <44CC1400.3040408@gmail.com>
+Message-ID: <44CC1FAE.6080202@yahoo.com.br>
+
+Hi Matev??,
+
+Thanks for the response.
+
+>>
+>>I am wondering about if there is a way to use newer versions of NoteEdit 
+>>with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and I cannot get 
+>>a newer version without update *a lot* of packages along. Since I use a 
+>>dial-up connection, I can only upgrade the distro very rarely.
+>>  
+> 
+> NoteEdit needs KDE>3.0, so if it doesn't work with 3.3.2, it's the
+> Debian's maintainter decision.
+
+With the libraries for KDE 3.3.2, I can use NoteEdit-2.7.4-1. The new 
+version in Debian testing is 2.8.0, but it requires updating the KDE 
+libraries, remove a lot of packages, and many other changes (almost an 
+entire distro upgrade).
+
+I tried with the RPM package for 2.8.0 (converted with alien) from:
+http://abcplus.sourceforge.net/#noteedit
+with no success.
+
+> 
+> 
+>>The same problem I find with GTK programs, and that is an additional 
+>>reason I prefer programs which do not require QT or GTK or any GUI at all.
+>>
+>>To make the things worse, it seems that there is no way even to compile 
+>>new versions of NoteEdit from the sources to get compability with 3.3.2.
+>>  
+> 
+> Could you be more precise? I'm using Debian myself and I can get the
+> latest SVN version of NoteEdit compiled fine. You need to download the
+> qt3 development packages and TSE3 sequencer and then type:
+> $ make -f Makefile.cvs
+> $ ./configure
+> $ make
+
+I have read somewhere that I would need to compile the entire KDE (!!!) 
+to do that. But I think I am confusing Debian package dependencies with 
+other issues. I could not install qt3 because the numberous dependencies 
+too.
+
+I am using Debian-3.1, release 0  +  Demudi-0.19 with some updates.
+
+> 
+> 
+>>Is there some way to face this problem? Perhaps statically linked 
+>>binaries? Any suggestion?
+>>  
+> 
+> I think statically linked libraries aren't the answer because NE depends
+> heavily on the underlaying KDE system.  I don't know how the different
+> version of KDEs would work together.
+
+That seems bad. Sometimes I think that environments with integrated 
+software, like KDE or GNOME, are just a bad idea. Hopefuly in some time 
+point in the future a solution for better compatibility may arise so 
+that one can run programs alone without need installing an entire 
+desktop only because them...
+
+Is there any NoteEdit-2.8.* binary package for Debian-3.0 anywhere?
+
+Regards,
+Hudson
+
+		
+_______________________________________________________ 
+O Yahoo! est? de cara nova. Venha conferir! 
+http://br.yahoo.com/preview
+
+
+From noteedit-user at lists.berlios.de  Sun Jul 30 11:27:55 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 30 Jul 2006 11:27:55 +0200
+Subject: [Noteedit-user] Compatibility Issue
+In-Reply-To: <44CC1FAE.6080202@yahoo.com.br>
+References: <44CAA480.7040302@yahoo.com.br> <44CC1400.3040408@gmail.com>
+	<44CC1FAE.6080202@yahoo.com.br>
+Message-ID: <44CC7B9B.6090409@gmail.com>
+
+user mailing list for the score editor noteedit pravi:
+> Hi Matev?,
+>
+> Thanks for the response.
+>
+>>>
+>>> I am wondering about if there is a way to use newer versions of
+>>> NoteEdit with kdebase-3.3.2. I have NoteEdit 2.7.4 (on Debian), and
+>>> I cannot get a newer version without update *a lot* of packages
+>>> along. Since I use a dial-up connection, I can only upgrade the
+>>> distro very rarely.
+>>>  
+>>
+>> NoteEdit needs KDE>3.0, so if it doesn't work with 3.3.2, it's the
+>> Debian's maintainter decision.
+>
+> With the libraries for KDE 3.3.2, I can use NoteEdit-2.7.4-1. The new
+> version in Debian testing is 2.8.0, but it requires updating the KDE
+> libraries, remove a lot of packages, and many other changes (almost an
+> entire distro upgrade).
+>
+> I tried with the RPM package for 2.8.0 (converted with alien) from:
+> http://abcplus.sourceforge.net/#noteedit
+> with no success.
+>
+You can always unpack the .deb package manually ($ ar x
+noteedit-2.8.0.deb), change the dependencies manually in the
+control.tar.gz and repack it and install the package.
+>>
+>>
+>>> The same problem I find with GTK programs, and that is an additional
+>>> reason I prefer programs which do not require QT or GTK or any GUI
+>>> at all.
+>>>
+>>> To make the things worse, it seems that there is no way even to
+>>> compile new versions of NoteEdit from the sources to get compability
+>>> with 3.3.2.
+>>>  
+>>
+>> Could you be more precise? I'm using Debian myself and I can get the
+>> latest SVN version of NoteEdit compiled fine. You need to download the
+>> qt3 development packages and TSE3 sequencer and then type:
+>> $ make -f Makefile.cvs
+>> $ ./configure
+>> $ make
+>
+> I have read somewhere that I would need to compile the entire KDE
+> (!!!) to do that. But I think I am confusing Debian package
+> dependencies with other issues. I could not install qt3 because the
+> numberous dependencies too.
+>
+> I am using Debian-3.1, release 0  +  Demudi-0.19 with some updates.
+No, NoteEdit isn't part of the KDE, it's only "integrated" meaning that
+is uses some of its libraries, so the icons, font style, sound engine
+ARTS in the past, were taken from the current KDE environment. You don't
+need to recompile to whole KDE to compile NoteEdit.
+
+>>> Is there some way to face this problem? Perhaps statically linked
+>>> binaries? Any suggestion?
+>>>  
+>>
+>> I think statically linked libraries aren't the answer because NE depends
+>> heavily on the underlaying KDE system.  I don't know how the different
+>> version of KDEs would work together.
+>
+> That seems bad. Sometimes I think that environments with integrated
+> software, like KDE or GNOME, are just a bad idea. Hopefuly in some
+> time point in the future a solution for better compatibility may arise
+> so that one can run programs alone without need installing an entire
+> desktop only because them...
+>
+> Is there any NoteEdit-2.8.* binary package for Debian-3.0 anywhere?
+Not that I know of currently, sorry. You should try the testing/unstable
+package and change the dependencies manually as I said before. It should
+work :).
+
+
+Regards.
+- Matev?
+
+
+
+
+From noteedit-user at lists.berlios.de  Sun Jul 30 11:52:17 2006
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Sun, 30 Jul 2006 11:52:17 +0200
+Subject: [Noteedit-user] [Fwd: Verschiedene Anmerkungen zu Noteedit]
+Message-ID: <44CC8151.20301@web.de>
+
+Hi Matevz & Co.,
+
+I'll try to translate the feedback of a german user of NoteEdit
+
+Dear Mr Katzmann,
+
+Since some yeare I use NoteEdit to create MusiXTeX Code in easy manner.
+NoteEdit was always a great help to accomplish it especially easen the
+input .
+
+I'd like to make some remarks to the program especially as you have
+called upon it.
+
+The user interface is notedly good. The input is in my opinion much
+easier as with many commercial programs on Windows (like Finale or
+Capella). Unfortunately
+the display on the screen is complex (crowded). I don't expect WISYWIG
+but still
+the screen display could be a little bit more polished.
+
+What I really find annoying is the input of slurs (ties?). On a
+polyphonic movement 
+only one slur can be set. Also the arrangement of the slurs above or
+below the
+staff does not work correctly. Here the program is in the need for an
+important improvement.
+
+At the moment I can't switch off the fermatas at the beta 2.8.1 version.
+If I activate
+the fermata function every following note has an fermata sign on it.
+
+The generated TeX-Code does not always correspond the music typographic
+rules.
+On eigth notes f.e. larger distances are created especially in
+conjunction with Text
+than it is typically  seen in the music typography.
+
+Also I wouldn't disagree to enhance NoteEdit to a extensive tool
+handling the export and import of all the freely available music
+notation languages (ABC, MusixTeX, Lilypond, MusicXML etc.) to allow a 
+versatile  exchange especially in the face of
+the commercial programs.
+
+I was very happy to hear that a development team was founded to continue the
+development of NoteEdit. Despite all the critics I'm very thankful for
+all the
+work already achieved and looking forward to the coming versions.
+
+With best regards yours Martin Trautner
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - http://canorus.berlios.de
+GnuPG Public Key available on request
+
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: unknown sender
+Subject: no subject
+Date: no date
+Size: 38
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20060730/7f5e4c6d/attachment.mht>
+
+From m.trautner at gmx.de  Fri Jul 28 17:10:54 2006
+From: m.trautner at gmx.de (Martin Trautner)
+Date: Fri, 28 Jul 2006 17:10:54 +0200
+Subject: Verschiedene Anmerkungen zu Noteedit
+Message-ID: <200607281710.54186.m.trautner@gmx.de>
+
+Lieber Herr Katzmann,
+
+seit einigen Jahren benutze ich Noteedit, um auf einfache Weise MusixTeX-Code 
+zu erzeugen. Noteedit hat sich dabei immer als gro?e Hilfe erwiesen, die die 
+Eingabe sehr erleichtert hat.
+
+Gerne w?rde ich einige Anmerkungen zum Programm machen, zumal Sie auf der 
+Homepage von Noteedit dazu aufgerufen haben.
+
+Die Bedienoberfl?che ist ausgesprochen gut. Die Noteneingabe ist meines 
+Erachtens wesentlicher leichter als bei vielen kommerziellen Programmen unter 
+Windows (zum Beispiele Finale oder Capella). Leider ist die Darstellung auf 
+dem Bildschirm un?bersichtlich. Ich erwarte kein WYSIWG, aber etwas 
+aufger?umter k?nnte die Bildschirmdarstellung schon sein.
+
+Was ich als besonders l?stig empfinde, ist die Eingabe von Bindeb?gen. Bei 
+einem mehrstimmigen Satz l?sst sich nur ein Bindebogen eingeben. Auch die 
+Anordnung des Bindebogens ober- und unterhalb der Notenzeilen funktioniert 
+nicht richtig. Hier liegt entschieden Verbesserungsbedarf vor. 
+
+Im Moment lassen sich bei der Beta-Version 2.8.1die Fermaten nicht abstellen. 
+Aktiviere ich f?r eine Note die Fermaten-Funktion, wird jede weitere Noten 
+ebenfalls mit einer Fermate bei der Eingabe versehen. 
+
+Der erzeugte TeX-Code entspricht nicht immer den musiktypographischen Regeln. 
+Bei Achtelnoten werden beispielsweise besonders in Verbindung mit Text gr??ere 
+Abst?nde erzeugt als in der Musiktypographie ?blich.
+
+Ich f?nde es im ?brigen nicht schlecht, Noteedit zu einem umfassenden Werkzeug 
+auszubauen, das sowohl den Export als auch den Import aller g?ngigen freien 
+Musiknotationssprachen (ABC, MusixTeX, Lilypond, MusicXML usw.) beherrscht, 
+um einen vielseitigen Austausch auch in Hinblick auf kommerzielle Programme 
+zu erm?glichen.
+
+Ich habe mich sehr gefreut, dass sich ein Entwickler-Team nach dem Ausscheiden 
+von J?rg Anders gefunden hat, um die Arbeit an Noteedit fortzuf?hren. Ich bin 
+bei aller Kritik dankbar f?r die geleistete Arbeit und freue mich auf 
+kommende Versionen.
+
+Mit besten Gr??en, Ihr Martin Trautner
+
+
+
+-- 
+
+
+Martin Trautner
+Ahornweg 2
+D-50189 Elsdorf
+Telefon +49 2274 6760
+EMail martin.trautner at gmx.de
+
+
+--------------090004010503090400080002--
+
+

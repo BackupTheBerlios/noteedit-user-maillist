@@ -1,0 +1,130 @@
+From noteedit-user-admin at lists.berlios.de  Mon Sep  5 21:26:11 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 05 Sep 2005 21:26:11 +0200
+Subject: [Noteedit-user] Re: Noteedit disappears
+In-Reply-To: <200509012224.39462.marcospcmusica@yahoo.com.ar>
+References: <200509010244.03930.marcospcmusica@yahoo.com.ar> <43175593.3020309@web.de> <200509012224.39462.marcospcmusica@yahoo.com.ar>
+Message-ID: <431C9BD3.6060906@web.de>
+
+Hi Marcos,
+
+Thanks for your detailed answer to my questions. I also forwarded
+it to the NoteEdit Mailing lists in case other are interested in
+the Musix distribution as well.
+
+
+Marcos Guglielmetti schrieb:
+> Hola Reinhard:
+> 
+>>Hi Marcos,
+>>
+>>Thanks for your feedback. Can you elaborate a bit about Musix GNU+Linux?
+> 
+> 
+> 
+> 	Of course, we are transtaling docs, because we are all almos argetinian 
+> people.
+> 
+> 	But you could take a look into
+> 
+> https://www.musix.org.ar/wiki/index.php/Documentation
+> 
+> 	I know, this is too general for you, so, I will explain a bit more.
+> 
+> 
+>>Is this a music distribution ? 
+> 
+> 
+> 	Yes, for musicians
+> 
+> 
+>>If yes on what kind of Linux 
+>>distribution is it based?
+> 
+> 
+> 	Knoppix 3.8.2 spanish ver. We are doing a hard work translating documents and 
+> scripts to english, it is almost done, and we have a release candidate now. 
+> In a few ours it will be available by FTP and torrent: Musix 0.26 rc20
+> 	
+> 
+> 
+>>If yes is it possible to download 
+>>ISOs (or buy them) anywhere in Europe (Germany preferred for me) ?
+> 
+> 
+> 	Yes. The Musix 0.23 CD comes with noteedit  2.7.4-1.demudi1 or 2.7.1-2 0
+>  from debian, i dont remember.
+> 
+> 	But Musix 0.26 has Noteedit 2.8.0, from your tarball
+> 
+> 
+> 
+>>Can you describe the setup (Kernel version,
+> 
+> 
+> 	Musix 0.26:
+> 	The live CD comes with kernel 2.6.11 from knoppix, but if you install it on 
+> your HD I will install the kernel-multimedia 2.6.12-3 from DeMuDi too.
+> 
+> 
+>>sound card, sound 
+>>system (probably alsa) and modules used ? 
+> 
+> 
+> 	ALSA, just alsa, with a lot of apps using JACK: ardour, rosegarden, jamin, 
+> creox, jack-rack, a lot of synths, etc.
+> 
+> 
+>>Also did you have 
+>>the tse3 patches (and the latest version) when you compiled
+>>tse3 ?
+> 
+> 
+> I am looking for the changelog... here it is:
+> 
+> ^^^^^^^^^^^^^^^^^^^^
+> http://tse3.sourceforge.net/
+> http://sourceforge.net/project/showfiles.php?group_id=3700&package_id=3650
+> 
+> ./configure
+> 
+> make
+> 
+> error in make: violaci?n de segmento, tse3play did not get configured
+> 
+> make install
+> 
+> anyhow, it had been installed:
+> 
+> ls /usr/lib/libtse*
+> /usr/lib/libtse3  /usr/lib/libtse3.0  /usr/lib/libtse3.0.0.0  /usr/lib/libtse3.la
+> ^^^^^^^^^^^^^^^^^^^^
+> 
+> Maybe it could be this "tse3play did not get configured" subject?
+> 
+
+Concerning the patches for tse3: There are compile fixes for gcc 3.4 and 
+amd64 as well as a fix for alsa1.x and sustain. Also NoteEdit 2.8.0 will 
+not compile with gcc 4.0 (fixed in the SVN repository of NoteEdit).
+
+To really find out what went wrong with tse3play configuring you would
+need to either show us your config.log or check the output from
+configure (i.e. what was missing when tse3 was configured).
+
+Concerning the problem that 2.8.0 disappears: This is already fixed in 
+the SVN repository in case you did not read the corresponding mail on 
+the NoteEdit ML.
+
+Just one question is left: How does Musix compare to Demudi or better
+asked wherein do your goals differ from other audio distributions ?
+
+Regards,
+
+Reinhard
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+GnuPG Public Key available on request
+
+

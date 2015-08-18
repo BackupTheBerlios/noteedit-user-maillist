@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] installing 2.8.1 with prefix=$HOME
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-December/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20installing%202.8.1%20with%20prefix%3D%24HOME&In-Reply-To=%3C200612011752.01285.kai.wassermann%40gmx.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000248.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] installing 2.8.1 with prefix=$HOME</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20installing%202.8.1%20with%20prefix%3D%24HOME&In-Reply-To=%3C200612011752.01285.kai.wassermann%40gmx.de%3E"
+       TITLE="[Noteedit-user] installing 2.8.1 with prefix=$HOME">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Fri Dec  1 17:52:01 CET 2006</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000248.html">[Noteedit-user] installing 2.8.1 with prefix=$HOME
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#247">[ date ]</a>
+              <a href="thread.html#247">[ thread ]</a>
+              <a href="subject.html#247">[ subject ]</a>
+              <a href="author.html#247">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello,
+
+I want to test 2.8.1 separately from my 2.8.0 and configure it therefor with 
+prefix=$HOME (and adapted libdir and includedir). After compiling the 'make 
+install' fails. Where do I have to edit something?
+
+TIA
+
+Kai
+
+P.S.: The error message:
+
+/usr/bin/install -c -p -m 
+644 ./hi22-action-pedonicon.png /home/kai/share/apps/noteedit/icons/hicolor/22x22/actions/pedonicon.png
+make[3]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+make[2]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit/icons'
+make[2]: Entering directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[3]: Entering directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+/bin/sh ../admin/mkinstalldirs /usr/kde/3.5/lib
+ /bin/sh ../libtool --silent --mode=install /usr/bin/install -c -p  
+libnoteedit.la /usr/kde/3.5/lib/libnoteedit.la
+/usr/bin/install: cannot create regular file 
+`/usr/kde/3.5/lib/libnoteedit.so.0.1.0': Permission denied
+make[3]: *** [install-libLTLIBRARIES] Error 1
+make[3]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[2]: *** [install-am] Error 2
+make[2]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make[1]: *** [install-recursive] Error 1
+make[1]: Leaving directory 
+`/home/kai/downloads/noteedit-2.8.1/noteedit-2.8.1/noteedit'
+make: *** [install-recursive] Error 1
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000248.html">[Noteedit-user] installing 2.8.1 with prefix=$HOME
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#247">[ date ]</a>
+              <a href="thread.html#247">[ thread ]</a>
+              <a href="subject.html#247">[ subject ]</a>
+              <a href="author.html#247">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

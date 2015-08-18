@@ -1,0 +1,20 @@
+From noteedit-user at lists.berlios.de  Wed Oct 22 17:52:33 2008
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Wed, 22 Oct 2008 17:52:33 +0200
+Subject: [Noteedit-user] N-Tupels
+Message-ID: <48FF4C41.7080204@freenet.de>
+
+Hello,
+
+I am trying to write quintuples (is this the right expression?) with 
+noteedit. It works basically fine with the N-Tuplets feature, but it 
+interferes with the bar-measurement. In a 4/4 after inserting 2 
+quintuples of eighths (=2 quarter), when  I try to insert a third one 
+(first inserting 5 eights, total length now  9/8) noteedit breaks the 
+bar and doesn't allow to reorganize the last five notes to a quintuple.
+
+Hope that's somehow understandable :-)
+Daniel.
+
+
+

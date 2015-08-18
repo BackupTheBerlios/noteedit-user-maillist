@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Noob Questions
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2007-March/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Noob%20Questions&In-Reply-To=%3C45E7776E.3000205%40nWood.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000252.html">
+   <LINK REL="Next"  HREF="000254.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Noob Questions</H1>
+    <B>user mailing list for the score editor noteedit</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Noob%20Questions&In-Reply-To=%3C45E7776E.3000205%40nWood.org%3E"
+       TITLE="[Noteedit-user] Noob Questions">noteedit-user at lists.berlios.de
+       </A><BR>
+    <I>Fri Mar  2 02:01:34 CET 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000252.html">[Noteedit-user] Noob Questions
+</A></li>
+        <LI>Next message: <A HREF="000254.html">[Noteedit-user] Canorus 0.2.5 is out
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#253">[ date ]</a>
+              <a href="thread.html#253">[ thread ]</a>
+              <a href="subject.html#253">[ subject ]</a>
+              <a href="author.html#253">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Karen,
+
+I use Ubuntu and have played around with NoteEdit - have been meaning to 
+get back to it.
+
+I'm not in front of my linux box right now, but if memory serves...I 
+think that there may not be a way to get the &quot;C&quot; from NoteEdit.  You 
+should be prepared for a lot of little issues like this with NoteEdit 
+and with any other open source notation editor.  I don't think that any 
+can hold a candle to Sibelius (except that they all blow it away in price).
+
+Here's what I would do: Enter your music as best you can.  Skip any 
+problems that you get stuck on.  Then export your music to Lilypond (or 
+one of the other text formats that NE supports).  Manually edit the 
+Lilypond file (you'll need to learn Lilypond: 
+<A HREF="http://lilypond.org/doc/v2.10/Documentation/user/lilypond/Tutorial">http://lilypond.org/doc/v2.10/Documentation/user/lilypond/Tutorial</A>) with 
+a text editor (Emacs has a lilypond mode - Vi might too) and then print 
+the music.  You should expect this process to be slower than writing out 
+the music by hand on manuscript.  Lilypond produces really nice music 
+though.
+
+The NE team is now working on Canorus (<A HREF="http://canorus.berlios.de/">http://canorus.berlios.de/</A>) you 
+should keep an eye on that. Denemo 
+(<A HREF="http://savannah.gnu.org/projects/denemo/">http://savannah.gnu.org/projects/denemo/</A>) is another project, but it is 
+less mature than NE.  You might also take a look at Rosegarden which you 
+can download with apt or synaptic if it is not already under one of your 
+Gnome (or KDE?) menus.
+
+Best of luck.  What is your instrument?  Let me know how it goes.
+
+Below is a message that I sent to this list (no response) detailing some 
+other problems that you might run into.
+&gt;<i> Hi,
+</I>&gt;<i>
+</I>&gt;<i> I'm really enjoying Noteedit.  Thanks for all of your work.  I'm 
+</I>&gt;<i> running 2.8.1 on Ubuntu Dapper (using Gnome) but I have KDE libraries 
+</I>&gt;<i> installed and things seem to be working pretty well.
+</I>&gt;<i>
+</I>&gt;<i> I'd be grateful for info about any (or all) of the following problems:
+</I>&gt;<i>
+</I>&gt;<i> Beaming:
+</I>&gt;<i>
+</I>&gt;<i> I have set my staff to 4/4. I am trying to enter a half rest, 8th rest 
+</I>&gt;<i> and then 3 8th notes.  I want the 2nd two 8th notes beamed but I want 
+</I>&gt;<i> the first to stand on its own. If I simply enter 3 8th notes, they all 
+</I>&gt;<i> get beamed together. If I enter the first two 8th notes (upbeat of 3 
+</I>&gt;<i> and downbeat of 4) and then I hit Backspace they are un-beamed, but 
+</I>&gt;<i> then when I enter the 3rd 8th note they all get beamed again. I've 
+</I>&gt;<i> tried various combinations of using Backspace and clicking the Beam 
+</I>&gt;<i> button on the tool bar but so far have not been able to achieve what I 
+</I>&gt;<i> want.  I also tried marking the two 8th notes that I want to un-beam 
+</I>&gt;<i> as a block and then clicking the Beam button a couple of times. 
+</I>&gt;<i> Nothing seems to change.  I could probably edit the exported file, but 
+</I>&gt;<i> if it's possible to do this in Noteedit, I'd love to know.
+</I>&gt;<i>
+</I>&gt;<i> I think the answer might be Edit &gt; AutoBeam...but I don't see a way of 
+</I>&gt;<i> indicating how many notes I want automatically beamed.
+</I>&gt;<i>
+</I>&gt;<i> Custom Chords:
+</I>&gt;<i>
+</I>&gt;<i> I'm creating leadsheets for use in a jazz context. I would like to 
+</I>&gt;<i> enter chord changes and I would like these changes to transpose when I 
+</I>&gt;<i> transpose the piece.  For this reason I don't want to enter the chords 
+</I>&gt;<i> as arbitrary text.  At the top of the Insert &gt; Chord dialog there is a 
+</I>&gt;<i> text box that looks like it might be a place to enter a custom chord 
+</I>&gt;<i> symbol.  For example, I would like to be able to enter &quot;B-7b5&quot; or 
+</I>&gt;<i> &quot;F#7+9&quot;.  Is there a way to do this?
+</I>&gt;<i> Editing:
+</I>&gt;<i>
+</I>&gt;<i> I went to edit mode to change a measure in the middle of the piece.  
+</I>&gt;<i> Somehow I ended up with a bar of 4.5 beats: 8th rest followed by 8 8th 
+</I>&gt;<i> notes.  The only way I was able to fix this was to delete all of the 
+</I>&gt;<i> bar (did Undo several times) after the offending measure, re-enter the 
+</I>&gt;<i> bad measure and then reenter the rest of the piece.  Is there a better 
+</I>&gt;<i> way I could have done that? Is there a way to get Noteedit to 
+</I>&gt;<i> recalculate the measures and correct the bars?
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Thank you very much for your time.
+</I>&gt;<i>
+</I>&gt;<i> Brian
+</I>
+
+Brian
+
+user mailing list for the score editor noteedit wrote:
+&gt;<i> Hi,
+</I>&gt;<i>
+</I>&gt;<i> I'm Karen Rodgers, a recent user of both Ubuntu, and NoteEdit.  I'm a music 
+</I>&gt;<i> major, and quite frankly, a cheapskate (else I'd be using Sibelius).
+</I>&gt;<i>
+</I>&gt;<i> I am having trouble making the program do what I want.  This is a problem, 
+</I>&gt;<i> as my semester project must be done with a music editor.  I'd like to turn 
+</I>&gt;<i> in some of my assignments in using it as well, so I get a feel for this 
+</I>&gt;<i> thing.  So far, that has not been a rousing success.  How do I get it to 
+</I>&gt;<i> use the letter &quot;C&quot; to indicate
+</I>&gt;<i> &quot;common&quot; time (yes, I know it's the same as 4/4, but if &quot;C&quot; is what's 
+</I>&gt;<i> written on the assignment in the book, it had better be on the homework as 
+</I>&gt;<i> well.
+</I>&gt;<i>
+</I>&gt;<i> Thank you for your time,
+</I>&gt;<i>
+</I>&gt;<i> Karen Rodgers
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> Noteedit-user mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">Noteedit-user at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">https://lists.berlios.de/mailman/listinfo/noteedit-user</A>
+</I>&gt;<i>   
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000252.html">[Noteedit-user] Noob Questions
+</A></li>
+	<LI>Next message: <A HREF="000254.html">[Noteedit-user] Canorus 0.2.5 is out
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#253">[ date ]</a>
+              <a href="thread.html#253">[ thread ]</a>
+              <a href="subject.html#253">[ subject ]</a>
+              <a href="author.html#253">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

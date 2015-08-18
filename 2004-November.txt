@@ -1,0 +1,110 @@
+From noteedit-user-admin at lists.berlios.de  Wed Nov 17 05:55:21 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 16 Nov 2004 21:55:21 -0700
+Subject: [Noteedit-user] LiveCD distro with Noteedit?
+Message-ID: <6b0a17e004111620555d96215e@mail.gmail.com>
+
+I have a couple of friends who aren't quite ready or able to switch to
+Linux, and I'm looking for a LiveCD (Knoppix, Mepis, Morphix, DSL
+etc.) that includes noteedit so I don't have people at my house half
+the night borrowing my computer to typeset their music.
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Nov 17 09:57:34 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 17 Nov 2004 09:57:34 +0100
+Subject: [Noteedit-user] LiveCD distro with Noteedit?
+In-Reply-To: <6b0a17e004111620555d96215e@mail.gmail.com>
+References: <6b0a17e004111620555d96215e@mail.gmail.com>
+Message-ID: <419B127E.3000704@schwaben.de>
+
+Hi Barry,
+
+the Suse 9.1 Live-CD Audio Edition had noteedit with it for shure, if 
+you can find it on the net. A good try might be a new 9.2 live-DVD/CD 
+instead.
+Regards,
+Georg.
+
+
+noteedit-user-admin at berlios.de wrote:
+
+>I have a couple of friends who aren't quite ready or able to switch to
+>Linux, and I'm looking for a LiveCD (Knoppix, Mepis, Morphix, DSL
+>etc.) that includes noteedit so I don't have people at my house half
+>the night borrowing my computer to typeset their music.
+>
+>>From googling, it looks like older knoppix  had it, but I can't find
+>it on my current CD.
+>
+>If anyone has created a custom versionn that includes noteedit, I
+>would be interested in their experience, also.
+>
+>Thanks,
+>Barry Roberts
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Nov 17 17:19:55 2004
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 17 Nov 2004 16:19:55 +0000
+Subject: [Noteedit-user] LiveCD distro with Noteedit?
+In-Reply-To: <419B127E.3000704@schwaben.de>
+References: <6b0a17e004111620555d96215e@mail.gmail.com>
+	 <419B127E.3000704@schwaben.de>
+Message-ID: <6b0a17e004111708196c0e8f45@mail.gmail.com>
+
+No luck on 9.2 LiveCD.  Maybe I'll look around and see if I can find a 9.1
+
+Thanks,
+Barry
+
+
+On Wed, 17 Nov 2004 09:57:34 +0100, noteedit-user-admin at berlios.de
+<noteedit-user-admin at berlios.de> wrote:
+> Hi Barry,
+> 
+> the Suse 9.1 Live-CD Audio Edition had noteedit with it for shure, if
+> you can find it on the net. A good try might be a new 9.2 live-DVD/CD
+> instead.
+> Regards,
+> Georg.
+> 
+> 
+> 
+> 
+> noteedit-user-admin at berlios.de wrote:
+> 
+> >I have a couple of friends who aren't quite ready or able to switch to
+> >Linux, and I'm looking for a LiveCD (Knoppix, Mepis, Morphix, DSL
+> >etc.) that includes noteedit so I don't have people at my house half
+> >the night borrowing my computer to typeset their music.
+> >
+> >>From googling, it looks like older knoppix  had it, but I can't find
+> >it on my current CD.
+> >
+> >If anyone has created a custom versionn that includes noteedit, I
+> >would be interested in their experience, also.
+> >
+> >Thanks,
+> >Barry Roberts
+> >_______________________________________________
+> >Noteedit-user mailing list
+> >Noteedit-user at lists.berlios.de
+> >http://lists.berlios.de/mailman/listinfo/noteedit-user
+> >
+> >
+> 
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+
+

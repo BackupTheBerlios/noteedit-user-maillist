@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Hyphen inside lyrics
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2004-October/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Hyphen%20inside%20lyrics&In-Reply-To=%3C200410031655.59149.pampelmuse%40aon.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000014.html">
+   <LINK REL="Next"  HREF="000013.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Hyphen inside lyrics</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Hyphen%20inside%20lyrics&In-Reply-To=%3C200410031655.59149.pampelmuse%40aon.at%3E"
+       TITLE="[Noteedit-user] Hyphen inside lyrics">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sun Oct  3 16:55:58 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000014.html">[Noteedit-user] rest symbol printed twice
+</A></li>
+        <LI>Next message: <A HREF="000013.html">[Noteedit-user] Hyphen inside lyrics
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hallo
+
+If I try to print the following part via export to ABC,
+I do not get the expected result.
+The printed lyrics use up more notes, than they use inside noteedit.
+(Inside Noteedit it looks OK.)
+How can this be changed?
+Thank you very much.
+--------
+header
+score
+        pedstyle = pedstar
+        staffs = 1
+        time = 4/4
+score
+staff 1
+// overlength = 60
+// underlength = 60
+// lyricsdist = 60
+        clef=treble
+        key = 0&amp;
+music
+midi 1 1: 0 &quot;channel=1&quot;; 0 &quot;program=0&quot;;
+midi 1 1: 0 &quot;parameter=7,80&quot;;
+midi 1 1: 0 &quot;parameter=93,0&quot;;
+midi 1 1: 0 &quot;parameter=91,0&quot;;
+midi 1 1: 0 &quot;parameter=10,64&quot;;
+1 1: 4b; 4b; 4b; 4b;
+lyrics 1: &quot;Ha ~llo Li ~nux &quot;;
+bar // 1
+
+--------
+&gt;<i>noteedit --version
+</I>Qt: 3.3.2
+KDE: 3.2.2-0.1 Red Hat
+NoteEdit: 2.7.3
+&gt;<i>abcm2ps -V
+</I>abcm2ps-4.7.3 (September 27, 2004)
+Compiled: Oct &#160;3 2004
+Options: NONE
+Default format directory: /usr/local/share/abcm2ps
+
+mvfG
+
+Christoph
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000014.html">[Noteedit-user] rest symbol printed twice
+</A></li>
+	<LI>Next message: <A HREF="000013.html">[Noteedit-user] Hyphen inside lyrics
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

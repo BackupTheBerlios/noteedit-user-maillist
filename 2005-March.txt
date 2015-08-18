@@ -1,0 +1,1276 @@
+From noteedit-user-admin at lists.berlios.de  Wed Mar  9 15:48:09 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 9 Mar 2005 15:48:09 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+Message-ID: <20050309144809.GA16295@schubbi-net.local>
+
+Hi,
+
+since the actual debian-package is 2.7.1-2 I tried to compile
+noteedit 2.7.4 from source and got the errors listed below.  I'm not
+using kde, so maybe I just have to install some other kde-related
+packages?  I called configure without any options.
+
+Can someone help me getting noteedit compiled, please?
+
+TIA
+Til
+
+
+
+c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+-I/usr/local/qt/include -I/usr/X11R6/include -I/usr/include
+-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+-Wp,-MD,.deps/mididevicelistbox.pp -c mididevicelistbox.cpp  -fPIC
+-DPIC -o .libs/mididevicelistbox.o
+In file included from mididevicelistbox.cpp:1:
+/usr/include/kde/kdebug.h:182: error: _LLONG' was not declared in
+this scope
+/usr/include/kde/kdebug.h:182: error: parse error before )' token
+/usr/include/kde/kdebug.h:182: error: dbgstream&
+kdbgstream::operator<<(...)' 
+   must take exactly one argument
+/usr/include/kde/kdebug.h:192: error: _ULLONG' was not declared in
+this scope
+/usr/include/kde/kdebug.h:192: error: parse error before )' token
+/usr/include/kde/kdebug.h:192: error: dbgstream&
+kdbgstream::operator<<(...)' 
+   must take exactly one argument
+/usr/include/kde/kdebug.h:192: error: dbgstream&
+kdbgstream::operator<<(...)' 
+   and dbgstream& kdbgstream::operator<<(...)' cannot be overloaded
+/usr/include/kde/kdebug.h: In member function dbgstream& 
+   kdbgstream::operator<<(...)':
+/usr/include/kde/kdebug.h:184: error: 	' undeclared (first use this
+function)
+/usr/include/kde/kdebug.h:184: error: (Each undeclared identifier is
+reported 
+   only once for each function it appears in.)
+/usr/include/kde/kdebug.h: At global scope:
+/usr/include/kde/kdebug.h:535: error: _LLONG' was not declared in
+this scope
+/usr/include/kde/kdebug.h:535: error: variable declaration is not
+allowed here
+/usr/include/kde/kdebug.h:535: error: syntax error before {' token
+/usr/include/kde/kdebug.h:540: error: ISO C++ forbids defining types
+within 
+   return type
+[...]
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Mar  9 20:59:44 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 09 Mar 2005 20:59:44 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+In-Reply-To: <20050309144809.GA16295@schubbi-net.local>
+References: <20050309144809.GA16295@schubbi-net.local>
+Message-ID: <422F55B0.7040408@schwaben.de>
+
+Hello Til,
+
+before going too much into details: Might it be helpful first to build 
+noteedit 2.7.1, that you get most of the packages needed, that apt tells 
+you what you need to install? On my Suse I first installed the 
+source-rpm of noteedit and did rpmbuild. The rpm-spec file triggered the 
+installation of many many packages.
+
+The file INSTALL might also be helpful. Give a note if you don't have luck.
+Best Regards,
+Georg Rudolph.
+
+
+
+noteedit-user-admin at berlios.de wrote:
+
+>Hi,
+>
+>since the actual debian-package is 2.7.1-2 I tried to compile
+>noteedit 2.7.4 from source and got the errors listed below.  I'm not
+>using kde, so maybe I just have to install some other kde-related
+>packages?  I called configure without any options.
+>
+>Can someone help me getting noteedit compiled, please?
+>
+>TIA
+>Til
+>
+>
+>
+>c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+>-I/usr/local/qt/include -I/usr/X11R6/include -I/usr/include
+>-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+>-Wp,-MD,.deps/mididevicelistbox.pp -c mididevicelistbox.cpp  -fPIC
+>-DPIC -o .libs/mididevicelistbox.o
+>In file included from mididevicelistbox.cpp:1:
+>/usr/include/kde/kdebug.h:182: error: _LLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:182: error: parse error before )' token
+>/usr/include/kde/kdebug.h:182: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   must take exactly one argument
+>/usr/include/kde/kdebug.h:192: error: _ULLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:192: error: parse error before )' token
+>/usr/include/kde/kdebug.h:192: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   must take exactly one argument
+>/usr/include/kde/kdebug.h:192: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   and dbgstream& kdbgstream::operator<<(...)' cannot be overloaded
+>/usr/include/kde/kdebug.h: In member function dbgstream& 
+>   kdbgstream::operator<<(...)':
+>/usr/include/kde/kdebug.h:184: error: 	' undeclared (first use this
+>function)
+>/usr/include/kde/kdebug.h:184: error: (Each undeclared identifier is
+>reported 
+>   only once for each function it appears in.)
+>/usr/include/kde/kdebug.h: At global scope:
+>/usr/include/kde/kdebug.h:535: error: _LLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:535: error: variable declaration is not
+>allowed here
+>/usr/include/kde/kdebug.h:535: error: syntax error before {' token
+>/usr/include/kde/kdebug.h:540: error: ISO C++ forbids defining types
+>within 
+>   return type
+>[...]
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>  
+>
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Mar  9 23:18:39 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 09 Mar 2005 23:18:39 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+In-Reply-To: <20050309144809.GA16295@schubbi-net.local>
+References: <20050309144809.GA16295@schubbi-net.local>
+Message-ID: <422F763F.4060900@guest.arnes.si>
+
+You need at least kdelibs4-dev, libqt3-mt-dev and libqt3-headers 
+package. Note that you have to add the 
+--with-qt-includes=/usr/include/qt3 parameter when running configure 
+script, otherwise NoteEdit won't find the Qt library.
+
+
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+>Hi,
+>
+>since the actual debian-package is 2.7.1-2 I tried to compile
+>noteedit 2.7.4 from source and got the errors listed below.  I'm not
+>using kde, so maybe I just have to install some other kde-related
+>packages?  I called configure without any options.
+>
+>Can someone help me getting noteedit compiled, please?
+>
+>TIA
+>Til
+>
+>
+>
+>c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+>-I/usr/local/qt/include -I/usr/X11R6/include -I/usr/include
+>-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+>-Wp,-MD,.deps/mididevicelistbox.pp -c mididevicelistbox.cpp  -fPIC
+>-DPIC -o .libs/mididevicelistbox.o
+>In file included from mididevicelistbox.cpp:1:
+>/usr/include/kde/kdebug.h:182: error: _LLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:182: error: parse error before )' token
+>/usr/include/kde/kdebug.h:182: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   must take exactly one argument
+>/usr/include/kde/kdebug.h:192: error: _ULLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:192: error: parse error before )' token
+>/usr/include/kde/kdebug.h:192: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   must take exactly one argument
+>/usr/include/kde/kdebug.h:192: error: dbgstream&
+>kdbgstream::operator<<(...)' 
+>   and dbgstream& kdbgstream::operator<<(...)' cannot be overloaded
+>/usr/include/kde/kdebug.h: In member function dbgstream& 
+>   kdbgstream::operator<<(...)':
+>/usr/include/kde/kdebug.h:184: error: 	' undeclared (first use this
+>function)
+>/usr/include/kde/kdebug.h:184: error: (Each undeclared identifier is
+>reported 
+>   only once for each function it appears in.)
+>/usr/include/kde/kdebug.h: At global scope:
+>/usr/include/kde/kdebug.h:535: error: _LLONG' was not declared in
+>this scope
+>/usr/include/kde/kdebug.h:535: error: variable declaration is not
+>allowed here
+>/usr/include/kde/kdebug.h:535: error: syntax error before {' token
+>/usr/include/kde/kdebug.h:540: error: ISO C++ forbids defining types
+>within 
+>   return type
+>[...]
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+>  
+>
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar 11 04:34:55 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Mar 2005 04:34:55 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+Message-ID: <423111DF.9040704@schwaben.de>
+
+Hi all,
+
+before completing the implementation I would like to share with you a 
+lilypond export format, mainly a modfied \score block, which will give 
+us more features, I think. It allows us to put lyrics in print not only 
+beneath the staff, but also over or in mixed fashion anywhere in the 
+score. I attach an exported .ly file where you can see the basic format 
+and maybe do experiments.
+
+To have in noteedit lyrics always below the music is perfectly okay, 
+because in noteedit you are an aranger. But in printout it should be 
+easily possible to make everything more compact, for example, combine 
+two voices and flip the lyrics as you whish. I just inted to export this 
+format also as a helpful hint for the user that he might be able to 
+modify the exported file and create a patch. It took me quite some time 
+to extract everything out of the lilypond documention. And Matev?, this 
+is the format I once mentioned.
+
+Any thoughts about it are welcome. I hope to close bug #3403 with this 
+whithin next week. I just would like to mention, that multi voice (not 
+chords) usage crashed quite easily for me, so I avoid it currently.
+
+Best Regards,
+Georg
+
+
+
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: lexport.ly
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050311/d8805dce/attachment.ksh>
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar 11 08:43:35 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Mar 2005 08:43:35 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+In-Reply-To: <422F55B0.7040408@schwaben.de>
+References: <20050309144809.GA16295@schubbi-net.local> <422F55B0.7040408@schwaben.de>
+Message-ID: <20050311074335.GA4796@schubbi-net.local>
+
+* On 09.03. noteedit-user-admin at berlios.de
+(noteedit-user-admin at berlios.de) muttered:
+
+> Might it be helpful first to build 
+> noteedit 2.7.1, that you get most of the packages needed, that apt tells 
+> you what you need to install?
+
+Before downloading the source of noteedit 2.7.4 I installed noteedit
+2.7.1 using apt-get to get the required packages automatically.
+
+kdelibs4-dev, libqt3-mt-dev and libqt3-headers are installed:
+
+ii  kdelibs4-dev   3.3.2-3
+ii  libqt3-mt-dev  3.3.3-8
+ii  libqt3-headers 3.3.3-8
+
+And these additional qt-packages:
+
+ii libqt2 2.3.2-14
+ii libqt3c102-mt 3.3.3-8
+ii libqthreads-12 1.6.7-1
+ii qt3-dev-tools 3.3.3-8
+
+And these additional kde-packages:
+
+ii kdelibs-bin 3.3.2-3
+ii kdelibs-data 3.3.2-3
+ii kdelibs4 3.3.2-3
+
+
+Running
+./configure --with-qt-includes=/usr/include/qt3
+make says:
+
+c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+-I/usr/include/qt3 -I/usr/X11R6/include -I/usr/include
+-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+-Wp,-MD,.deps/chord.pp -c chord.cpp  -fPIC -DPIC -o .libs/chord.o
+In file included from chord.cpp:24:
+tabtrack.h:19:20: qarray.h: No such file or directory
+In file included from ../noteedit/muselement.h:28,
+                 from ../noteedit/mainframewidget.h:38,
+                 from chord.cpp:37:
+../noteedit/resource.h:30:19: qlist.h: No such file or directory
+make[2]: *** [chord.lo] Error 1
+make[2]: Leaving directory
+/usr/local/src/noteedit/noteedit-2.7.4/kguitar_excerpt'
+
+
+> The file INSTALL might also be helpful.
+
+It tells me to set --prefix=<path_to_your_kde_installation>, so...
+
+til at debian:~ - kde-config --prefix
+/usr
+
+...I ran
+./configure --prefix=/usr --with-qt-includes=/usr/include/qt3
+with make giving the same result as above without --prefix.
+
+> Give a note if you don't have
+> luck.
+
+So I do.  ;-)
+
+Regards
+Til
+
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar 11 12:05:48 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Mar 2005 12:05:48 +0100
+Subject: [Noteedit-user] under Debian Sid
+In-Reply-To: <20050311074335.GA4796@schubbi-net.local>
+References: <20050309144809.GA16295@schubbi-net.local> <422F55B0.7040408@schwaben.de> <20050311074335.GA4796@schubbi-net.local>
+Message-ID: <42317B8C.2080601@pacageek.org>
+
+Have some problem with noteedit 2.7.1-2 under Debian Sid
+May be some dependancy problems?
+The attached screnshot >>
+ 
+Georges
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: NoteEditShot.jpg
+Type: image/jpeg
+Size: 102812 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050311/28ae0532/attachment.jpg>
+
+From noteedit-user-admin at lists.berlios.de  Fri Mar 11 17:38:17 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Fri, 11 Mar 2005 17:38:17 +0100
+Subject: [Noteedit-user] Re: noteedit-2.7.4 released
+Message-ID: <87fyz216km.fsf@peder.flower>
+
+> Hi all,
+> we are proud to announce the noteedit release 2.7.4! Download it and enjoy!
+
+Congratulations, and thanks for taking over NoteEdit development.
+
+Feel free to announce releases to the lilypond-user mailing list.
+
+Good luck!
+Jan.
+
+-- 
+Jan Nieuwenhuizen <janneke at gnu.org> | GNU LilyPond - The music typesetter
+http://www.xs4all.nl/~jantien       | http://www.lilypond.org
+
+
+From noteedit-user-admin at lists.berlios.de  Sat Mar 12 00:39:04 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Mar 2005 00:39:04 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+Message-ID: <20050311_233904_007300.matevz.jekovec@guest.arnes.si>
+
+qarray.h is located in libqt3-compat-headers package. Install it as well 
+and it should work.
+
+
+Regards.
+- Matev?
+
+>Running
+>./configure --with-qt-includes=/usr/include/qt3
+>make says:
+>
+>c++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde
+>-I/usr/include/qt3 -I/usr/X11R6/include -I/usr/include
+>-DQT_THREAD_SUPPORT -D_REENTRANT -O2 -fno-exceptions -fno-check-new
+>-Wp,-MD,.deps/chord.pp -c chord.cpp  -fPIC -DPIC -o .libs/chord.o
+>In file included from chord.cpp:24:
+>tabtrack.h:19:20: qarray.h: No such file or directory
+>In file included from ../noteedit/muselement.h:28,
+>                 from ../noteedit/mainframewidget.h:38,
+>                 from chord.cpp:37:
+>../noteedit/resource.h:30:19: qlist.h: No such file or directory
+>make[2]: *** [chord.lo] Error 1
+>make[2]: Leaving directory
+>/usr/local/src/noteedit/noteedit-2.7.4/kguitar_excerpt'
+>
+>  
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sat Mar 12 00:50:18 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Mar 2005 00:50:18 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+Message-ID: <20050311_235018_010314.matevz.jekovec@guest.arnes.si>
+
+Yes, that's the structure I had in mind as well. Everything is moving
+around contexts: staff context, lyrics context, chords context,
+tablature context, general bas markings context, harmonic analysis
+context etc. Lyrics with multiple stanzas are treated as a separate
+Lyrics contexts for each stanza. That's what you actually implemented
+and it's perfectly ok.
+
+One question though: Does numbers 1. and 2. (stanza numbers) appear at
+the beginning of the stanza (or after it?)? Because I think you should
+write the \set stanza = "1." BEFORE the actual lyrics... but I'm not
+sure:).
+
+
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+> Hi all,
+>
+> before completing the implementation I would like to share with you
+a lilypond export format, mainly a modfied \score block, which will
+give us more features, I think. It allows us to put lyrics in print
+not only beneath the staff, but also over or in mixed fashion anywhere
+in the score. I attach an exported .ly file where you can see the
+basic format and maybe do experiments.
+>
+> To have in noteedit lyrics always below the music is perfectly okay,
+because in noteedit you are an aranger. But in printout it should be
+easily possible to make everything more compact, for example, combine
+two voices and flip the lyrics as you whish. I just inted to export
+this format also as a helpful hint for the user that he might be able
+to modify the exported file and create a patch. It took me quite some
+time to extract everything out of the lilypond documention. And
+Matev?, this is the format I once mentioned.
+>
+> Any thoughts about it are welcome. I hope to close bug #3403 with
+this whithin next week. I just would like to mention, that multi voice
+(not chords) usage crashed quite easily for me, so I avoid it currently.
+>
+> Best Regards,
+> Georg
+>
+>
+>
+>
+>
+>
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>%                                  %
+>%   LilyPond output generated by   %
+>%           "noteedit"             %
+>%                                  %
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>
+>\version "2.4.2"
+>
+>#(set-global-staff-size 16)
+>
+>flat = \markup { \raise #0.4 \smaller \musicglyph #"accidentals--2" }
+>sharp = \markup { \raise #0.6 \smaller \musicglyph #"accidentals-2" }
+>textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph
+#"scripts-coda"}
+>
+>StaffA = \relative c' {
+>	\clef G
+>	\key g \major
+>	\time 4/4 
+>	                   
+>	g'4 b8 b d4 e | f! e d b |   % 3
+>	g1 | g 
+>	\bar "|."
+>}
+>StaffATextA = \lyricmode {
+>		Dum dum dum dum dum dum dum dum 
+>		dum dum doo. 
+>		}
+>StaffATextB = \lyricmode {
+>		Tsk da da da tsk da da da 
+>		dai daa soo
+>		}
+>StaffB = \relative c' {
+>	\clef G
+>	\key g \major
+>	\time 4/4 
+>	                   
+>	g'4 b d e | f! e8 e d4 b |   % 3
+>	g1 | g 
+>	\bar "|."
+>}
+>StaffBTextA = \lyricmode {
+>		shum dum shum dum shum dum dum dum 
+>		dum dum soo. 
+>		}
+>StaffBTextB = \lyricmode {
+>		Tsk da dum dum tsk da dum dum 
+>		dai daa doo
+>}
+>\score {
+>	\relative <<
+>		\context Staff = cStaffAA <<
+>			\context Voice = cStaffAA \StaffA
+>		>>
+>		\context Lyrics = cStaffAA { \set stanza = "1." }
+>		\context Lyrics = cStaffAB { \set stanza = "2." }
+>
+>		\context Staff = cStaffBB <<
+>			\context Voice = cStaffBB \StaffB
+>		>>
+>		\context Lyrics = cStaffBA { \set stanza = "1." }
+>		\context Lyrics = cStaffBB { \set stanza = "2." }
+>
+>		\context Lyrics = cStaffAA \lyricsto cStaffAA \StaffATextA
+>		\context Lyrics = cStaffAB \lyricsto cStaffAA \StaffATextB
+>		\context Lyrics = cStaffBA \lyricsto cStaffBB \StaffBTextA
+>		\context Lyrics = cStaffBB \lyricsto cStaffBB \StaffBTextB
+>	>>
+>}
+>%\score {
+>%	\simultaneous {
+>%		\set Score.skipBars = ##t
+>%		\set Score.melismaBusyProperties = #'()
+>%		\oldaddlyrics 
+>%		\context Staff="StaffA" \StaffA
+>%		\context Lyrics="StaffAText" \StaffAText
+>%		\oldaddlyrics 
+>%		\context Staff="StaffB" \StaffB
+>%		\context Lyrics="StaffBText" \StaffBText
+>%	}
+>%	\layout {
+>%		linewidth = 170.000 \mm
+>%		textheight = 250.000 \mm
+>%	}
+>%
+>
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Sat Mar 12 01:24:56 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Mar 2005 01:24:56 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <20050311_235018_010314.matevz.jekovec@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si>
+Message-ID: <423236D8.6070408@guest.arnes.si>
+
+Woops, sorry for the last post. My brains are a bit soured already at 
+this hour:). \set stanza is ok. You first set it
+
+		\context Lyrics = cStaffAA { \set stanza = "1." }
+		\context Lyrics = cStaffAB { \set stanza = "2." }
+		\context Lyrics = cStaffBA { \set stanza = "1." }
+		\context Lyrics = cStaffBB { \set stanza = "2." }
+
+and then use the actual text with:
+
+		\context Lyrics = cStaffAA \lyricsto cStaffAA \StaffATextA
+		\context Lyrics = cStaffAB \lyricsto cStaffAA \StaffATextB
+		\context Lyrics = cStaffBA \lyricsto cStaffBB \StaffBTextA
+		\context Lyrics = cStaffBB \lyricsto cStaffBB \StaffBTextB
+
+and so on.
+
+- M
+
+noteedit-user-admin at berlios.de wrote:
+
+>Yes, that's the structure I had in mind as well. Everything is moving
+>around contexts: staff context, lyrics context, chords context,
+>tablature context, general bas markings context, harmonic analysis
+>context etc. Lyrics with multiple stanzas are treated as a separate
+>Lyrics contexts for each stanza. That's what you actually implemented
+>and it's perfectly ok.
+>
+>One question though: Does numbers 1. and 2. (stanza numbers) appear at
+>the beginning of the stanza (or after it?)? Because I think you should
+>write the \set stanza = "1." BEFORE the actual lyrics... but I'm not
+>sure:).
+>
+>
+>- Matev?
+>
+>noteedit-user-admin at berlios.de wrote:
+>
+>  
+>
+>>Hi all,
+>>
+>>before completing the implementation I would like to share with you
+>>    
+>>
+>a lilypond export format, mainly a modfied \score block, which will
+>give us more features, I think. It allows us to put lyrics in print
+>not only beneath the staff, but also over or in mixed fashion anywhere
+>in the score. I attach an exported .ly file where you can see the
+>basic format and maybe do experiments.
+>  
+>
+>>To have in noteedit lyrics always below the music is perfectly okay,
+>>    
+>>
+>because in noteedit you are an aranger. But in printout it should be
+>easily possible to make everything more compact, for example, combine
+>two voices and flip the lyrics as you whish. I just inted to export
+>this format also as a helpful hint for the user that he might be able
+>to modify the exported file and create a patch. It took me quite some
+>time to extract everything out of the lilypond documention. And
+>Matev?, this is the format I once mentioned.
+>  
+>
+>>Any thoughts about it are welcome. I hope to close bug #3403 with
+>>    
+>>
+>this whithin next week. I just would like to mention, that multi voice
+>(not chords) usage crashed quite easily for me, so I avoid it currently.
+>  
+>
+>>Best Regards,
+>>Georg
+>>
+>>
+>>
+>>
+>>
+>>
+>>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>>%                                  %
+>>%   LilyPond output generated by   %
+>>%           "noteedit"             %
+>>%                                  %
+>>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>>
+>>\version "2.4.2"
+>>
+>>#(set-global-staff-size 16)
+>>
+>>flat = \markup { \raise #0.4 \smaller \musicglyph #"accidentals--2" }
+>>sharp = \markup { \raise #0.6 \smaller \musicglyph #"accidentals-2" }
+>>textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph
+>>    
+>>
+>#"scripts-coda"}
+>  
+>
+>>StaffA = \relative c' {
+>>	\clef G
+>>	\key g \major
+>>	\time 4/4 
+>>	                   
+>>	g'4 b8 b d4 e | f! e d b |   % 3
+>>	g1 | g 
+>>	\bar "|."
+>>}
+>>StaffATextA = \lyricmode {
+>>		Dum dum dum dum dum dum dum dum 
+>>		dum dum doo. 
+>>		}
+>>StaffATextB = \lyricmode {
+>>		Tsk da da da tsk da da da 
+>>		dai daa soo
+>>		}
+>>StaffB = \relative c' {
+>>	\clef G
+>>	\key g \major
+>>	\time 4/4 
+>>	                   
+>>	g'4 b d e | f! e8 e d4 b |   % 3
+>>	g1 | g 
+>>	\bar "|."
+>>}
+>>StaffBTextA = \lyricmode {
+>>		shum dum shum dum shum dum dum dum 
+>>		dum dum soo. 
+>>		}
+>>StaffBTextB = \lyricmode {
+>>		Tsk da dum dum tsk da dum dum 
+>>		dai daa doo
+>>}
+>>\score {
+>>	\relative <<
+>>		\context Staff = cStaffAA <<
+>>			\context Voice = cStaffAA \StaffA
+>>		>>
+>>		\context Lyrics = cStaffAA { \set stanza = "1." }
+>>		\context Lyrics = cStaffAB { \set stanza = "2." }
+>>
+>>		\context Staff = cStaffBB <<
+>>			\context Voice = cStaffBB \StaffB
+>>		>>
+>>		\context Lyrics = cStaffBA { \set stanza = "1." }
+>>		\context Lyrics = cStaffBB { \set stanza = "2." }
+>>
+>>		\context Lyrics = cStaffAA \lyricsto cStaffAA \StaffATextA
+>>		\context Lyrics = cStaffAB \lyricsto cStaffAA \StaffATextB
+>>		\context Lyrics = cStaffBA \lyricsto cStaffBB \StaffBTextA
+>>		\context Lyrics = cStaffBB \lyricsto cStaffBB \StaffBTextB
+>>	>>
+>>}
+>>%\score {
+>>%	\simultaneous {
+>>%		\set Score.skipBars = ##t
+>>%		\set Score.melismaBusyProperties = #'()
+>>%		\oldaddlyrics 
+>>%		\context Staff="StaffA" \StaffA
+>>%		\context Lyrics="StaffAText" \StaffAText
+>>%		\oldaddlyrics 
+>>%		\context Staff="StaffB" \StaffB
+>>%		\context Lyrics="StaffBText" \StaffBText
+>>%	}
+>>%	\layout {
+>>%		linewidth = 170.000 \mm
+>>%		textheight = 250.000 \mm
+>>%	}
+>>%
+>>
+>>    
+>>
+>
+>
+>_______________________________________________
+>Noteedit-user mailing list
+>Noteedit-user at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/noteedit-user
+>
+>
+>  
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050312/2d439185/attachment.html>
+
+From noteedit-user-admin at lists.berlios.de  Sat Mar 12 12:50:48 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Mar 2005 12:50:48 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <423236D8.6070408@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si>
+Message-ID: <4232D798.8050208@schwaben.de>
+
+Hi Matev?,
+
+thanks for your comments.
+
+>>... Everything is moving
+>>around contexts: staff context, lyrics context, chords context,
+>>tablature context, general bas markings context, harmonic analysis
+>>context etc. Lyrics with multiple stanzas are treated as a separate
+>>Lyrics contexts for each stanza.
+>>
+Ok, but I'm still a bit confused and doing it blindly, these contexts ... :)
+
+Before checking in I will sort out PianoStaff- and other braces. What 
+makes me still work hard without success is exporting a drum staff, drum 
+notes enabled, with different kinds of drum notes in one chord (in one 
+voice). Maybe someone on the list can give me a hint how lilypond want's 
+to have that. I attach a small example to play with. The error message I 
+get is
+
+lexport.ly:37:41: Fehler: syntax error, unexpected MUSIC_IDENTIFIER, 
+expecting DRUM_PITCH or NOTENAME_PITCH or '>':
+        \bcr g'8 \btr a \bcr b g e' e d < g, \bt
+                                                r e' > | \bcr g a b g e' 
+e d e |   % 3 not good
+
+Maybe we have to go a different route with \drummode instead of only 
+choosing other note heads? And if we don't find a solution, hm, we 
+should go the save road then ...
+
+Best Regards,
+Georg.
+
+
+
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: lexport.ly
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050312/2fa36f5f/attachment.ksh>
+
+From noteedit-user-admin at lists.berlios.de  Sat Mar 12 17:14:33 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sat, 12 Mar 2005 17:14:33 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <4232D798.8050208@schwaben.de>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de>
+Message-ID: <42331569.7030403@guest.arnes.si>
+
+Hm... wierd. I forwarded the problem to the LilyPond-devel mailing list. 
+They'd probably know better than me:).
+
+About the \drummode mode, I think that NoteEdit really needs the concept 
+of contexts like in LilyPond in the future. So if you'd insert a 
+percussion staff, all the notes will be drum notes, if you insert an 
+ordanary staff, you'd get normal notes and 5-line staff, if you insert 
+tablature, you'd get 6-line staff and tablature notation etc. Until 
+then, using different style of noteheads is the best possible solution IMO.
+
+
+Regards.
+- Matev?
+
+noteedit-user-admin at berlios.de wrote:
+
+> Hi Matev?,
+>
+> thanks for your comments.
+>
+>>> ... Everything is moving
+>>> around contexts: staff context, lyrics context, chords context,
+>>> tablature context, general bas markings context, harmonic analysis
+>>> context etc. Lyrics with multiple stanzas are treated as a separate
+>>> Lyrics contexts for each stanza.
+>>>
+> Ok, but I'm still a bit confused and doing it blindly, these contexts 
+> ... :)
+>
+> Before checking in I will sort out PianoStaff- and other braces. What 
+> makes me still work hard without success is exporting a drum staff, 
+> drum notes enabled, with different kinds of drum notes in one chord 
+> (in one voice). Maybe someone on the list can give me a hint how 
+> lilypond want's to have that. I attach a small example to play with. 
+> The error message I get is
+>
+> lexport.ly:37:41: Fehler: syntax error, unexpected MUSIC_IDENTIFIER, 
+> expecting DRUM_PITCH or NOTENAME_PITCH or '>':
+>        \bcr g'8 \btr a \bcr b g e' e d < g, \bt
+>                                                r e' > | \bcr g a b g 
+> e' e d e |   % 3 not good
+>
+> Maybe we have to go a different route with \drummode instead of only 
+> choosing other note heads? And if we don't find a solution, hm, we 
+> should go the save road then ...
+>
+> Best Regards,
+> Georg.
+>
+>
+>
+>------------------------------------------------------------------------
+>
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>%                                  %
+>%   LilyPond output generated by   %
+>%           "noteedit"             %
+>%                                  %
+>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>
+>\version "2.4.2"
+>
+>#(set-global-staff-size 16)
+>
+>bcr = { \override Voice.NoteHead #'style = #'cross
+>}
+>bdf = { \override Voice.NoteHead #'style = #'default
+>}
+>bcc = { \override Voice.NoteHead #'style = #'xcircle
+>}
+>btr = { \override Voice.NoteHead #'style = #'triangle
+>}
+>
+>flat = \markup { \raise #0.4 \smaller \musicglyph #"accidentals--2" }
+>sharp = \markup { \raise #0.6 \smaller \musicglyph #"accidentals-2" }
+>textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #"scripts-coda"}
+>
+>
+>\header {
+>	copyright = "classical"
+>}
+>
+>DrumsC = \relative c {
+>	\set Staff.instrument = #"Drums"
+>	\clef percussion
+>	\time 4/4 
+>	
+>	%\bcr g'8 \btr a \bcr b g e' e d < g, e' > | \bcr g a b g e' e d e |   % 3 good
+>
+>	\bcr g'8 \btr a \bcr b g e' e d < g, \btr e' > | \bcr g a b g e' e d e |   % 3 not good
+>
+>	g, a b g e' e d e | g, a b g e' e d e 
+>	\bar "|."
+>}
+>\score {
+>	\relative <<
+>		\context Staff = cDrumsCC <<
+>			\context Voice = cDrumsCC \DrumsC
+>		>>
+>
+>	\set Score.skipBars = ##t
+>	\set Score.melismaBusyProperties = #'()
+>	>>
+>}
+>\score {
+>	\simultaneous {
+>		\set Score.skipBars = ##t
+>		\set Score.melismaBusyProperties = #'()
+>			}
+>	\layout {
+>		linewidth = 170.000 \mm
+>		textheight = 250.000 \mm
+>	}
+>}
+>  
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050312/111090f4/attachment.html>
+
+From noteedit-user-admin at lists.berlios.de  Sun Mar 13 15:33:30 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Sun, 13 Mar 2005 15:33:30 +0100
+Subject: [Noteedit-user] Compiling under Debian Sid
+In-Reply-To: <20050311_233904_007300.matevz.jekovec@guest.arnes.si>
+References: <20050311074335.GA4796@schubbi-net.local> <20050311_233904_007300.matevz.jekovec@guest.arnes.si>
+Message-ID: <20050313143330.GB10507@schubbi-net.local>
+
+* On 12.03. noteedit-user-admin at berlios.de
+(noteedit-user-admin at berlios.de) muttered:
+
+> qarray.h is located in libqt3-compat-headers package. Install it as well 
+> and it should work.
+
+Yes, it does. Thank you!
+
+Regards
+Til
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Mar 14 09:28:53 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 14 Mar 2005 09:28:53 +0100
+Subject: [Noteedit-user] Re: noteedit-2.7.4 released
+In-Reply-To: <87fyz216km.fsf@peder.flower>
+References: <87fyz216km.fsf@peder.flower>
+Message-ID: <42354B45.2070208@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+
+>>we are proud to announce the noteedit release 2.7.4! Download it and enjoy!
+>>
+>
+>Feel free to announce releases to the lilypond-user mailing list.
+>
+>Good luck!
+>Jan.
+>
+>
+Thanks! And I'll do that gladly, and even soon, when a few more rough 
+edges are smoothed out ;)
+
+Best Regards,
+Georg Rudolph
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Mar 14 10:03:47 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 14 Mar 2005 10:03:47 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <42331569.7030403@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si>
+Message-ID: <42355373.50103@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+
+> Hm... wierd. I forwarded the problem to the LilyPond-devel mailing 
+> list. They'd probably know better than me:).
+>
+This was a good idea! I looked  a bit around on the lily lists, and 
+found a possible path: Instead of < ... > we could choose
+
+    << ... \\ ... >>
+
+and get a different context. We can then switch noteheads, but 
+octaviation gets out of sync and steming gets uncoordinated, so it would 
+need more investigation. So for the moment, I tend to switch notehead 
+changing inside a chord off. Maybe you could play with and maybe have an 
+idea?
+
+> About the \drummode mode, I think that NoteEdit really needs the 
+> concept of contexts like in LilyPond in the future. So if you'd insert 
+> a percussion staff, all the notes will be drum notes, if you insert an 
+> ordanary staff, you'd get normal notes and 5-line staff, if you insert 
+> tablature, you'd get 6-line staff and tablature notation etc. Until 
+> then, using different style of noteheads is the best possible solution 
+> IMO.
+>
+> Regards.
+> - Matev?
+
+Thanks for sharing. The free mixing of drum notes and usual ones should 
+be possible also in the future. It makes changing the drum sound very 
+easy. A mapping of a clean drum stuff to a standard drum notation could 
+be a solution, maybe. Probably we should have as many drum note heads 
+like for example lilypond for this. I'll also think about it ...
+
+Best Regards,
+Georg
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 15 00:52:26 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 15 Mar 2005 00:52:26 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <42355373.50103@schwaben.de>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si> <42355373.50103@schwaben.de>
+Message-ID: <423623BA.2090303@guest.arnes.si>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+|>
+| This was a good idea! I looked  a bit around on the lily lists, and
+|  found a possible path: Instead of < ... > we could choose
+|
+| << ... \\ ... >>
+|
+I checked the Lily mailing list later and found out the same thing you
+did. The style of noteheads is hardcoded to the voice. So if you
+change the style of noteheads, it changes the style of the whole voice
+automatically, so there's nothing useful here, we could make. I think
+the best suitable option is not to have different style of noteheads
+in one voice at all. The solution would be for eg. adding additional
+voice only for that part of the score (and of course aligning the
+stems, so it'd look like one voice). But you should do all that
+manually for now.
+
+
+Regards.
+- - Matev?
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.0 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFCNiO3m1IQqmP8KVgRAq/OAJ4qb1B5nXgOPq57EFAqUZ8ihCrQgACfY9sd
+vooHvsuYe0F4LJ235VmiwvA=
+=PIbX
+-----END PGP SIGNATURE-----
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 22 22:32:28 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 22 Mar 2005 22:32:28 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <423623BA.2090303@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si> <42355373.50103@schwaben.de> <423623BA.2090303@guest.arnes.si>
+Message-ID: <42408EEC.1030600@schwaben.de>
+
+High Matev? and all,
+
+noteedit can now again export lyrics with multiple verses. Check it out 
+if you like, comments are welcome.
+
+The drum notes problem is also "fixed", in that changes inside chords 
+are not propagated. But instead you can use different voices, and that 
+works quite well. This I only learnt now. Different voices I should use 
+much more. All examples in the source tree are now rendered reasonable 
+well in lilypond.The use of contexts could be extended to multiple voices.
+
+What puzzled me: A \PianoStaff only allows positioning of lyrics below 
+the pair of staff. Maybe this is also a candidate for a question on the 
+lilypond list. And bracing and bracketing when some staffs are not 
+selected I will work out soon (score layout). And which lilypond 
+versions backwards we could not test/brake?
+
+This mail I send again, because I didn't see come it through.
+Best Regards,
+Georg
+
+
+
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Tue Mar 22 09:35:23 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Tue, 22 Mar 2005 09:35:23 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <423623BA.2090303@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si> <42355373.50103@schwaben.de> <423623BA.2090303@guest.arnes.si>
+Message-ID: <423FD8CB.80707@schwaben.de>
+
+High Matev? and all,
+
+noteedit can now again export lyrics with multiple verses. Check it out, 
+comments are welcome.
+
+The drum notes problem is also "fixed", in that changes inside chords 
+are not propagated. But instead you can use different voices, and that 
+works quite well, what I only learnt now, have to use it more. All 
+examples in the source tree are now rendered reasonable well in lilypond.
+
+What puzzled me: A \PianoStaff only allows positioning of lyrics below 
+the pair of staff. Maybe this is also a candidate for a question on the 
+lilypond list. And bracing and bracketing when some staffs are not 
+selected I will work out soon (score layout). And which lilypond 
+versions backwards we could not test/brake?
+
+Best Regards,
+Georg
+
+
+
+
+
+From noteedit-user-admin at lists.berlios.de  Wed Mar 23 19:29:44 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Wed, 23 Mar 2005 19:29:44 +0100
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <42408EEC.1030600@schwaben.de>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si> <42355373.50103@schwaben.de> <423623BA.2090303@guest.arnes.si> <42408EEC.1030600@schwaben.de>
+Message-ID: <4241B598.9070800@guest.arnes.si>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+
+noteedit-user-admin at berlios.de wrote:
+
+| What puzzled me: A \PianoStaff only allows positioning of lyrics
+| below the pair of staff. Maybe this is also a candidate for a
+| question on the lilypond list. And bracing and bracketing when some
+|  staffs are not selected I will work out soon (score layout). And
+| which lilypond versions backwards we could not test/brake?
+
+Hm... why should you have lyrics in piano staff anyway? All choir and
+other sung music is always inside a bracket (and not brace - brace is
+stronger. It always includes single instrument - piano, organ etc.).
+But I don't know if that's what Lilypond wanted to really implement in
+this case. On the other hand, I don't remember an example where you
+should use \pianoStaff and needed lyrics for it. \choirStaff should
+support lyrics between the pair of staves instead.
+
+About Lily versions, under Debian the problem is that Debian testing
+and unstable both include 2.2.6 version of Lilypond. So we cannot make
+any changes until both testing and unstable include 2.4.x in their
+repository if we want to stick to and only to 2.4.x. However, we can
+drop support for versions prior to 2.2.x. What about Fedora, SuSE,
+Mandrake?
+
+
+- - Matevz
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.0 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFCQbWXm1IQqmP8KVgRAhfiAJ9dXKsa/XtsknDuSeO9DiLW5uFuTQCeMSb0
+h0csyFjaWwGyLIc45/Z8Zyc=
+=WDn/
+-----END PGP SIGNATURE-----
+
+
+
+From noteedit-user-admin at lists.berlios.de  Mon Mar 28 15:09:02 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Mon, 28 Mar 2005 15:09:02 +0200
+Subject: [Noteedit-user] export liylond 2.4 lyrics problem
+In-Reply-To: <4241B598.9070800@guest.arnes.si>
+References: <20050311_235018_010314.matevz.jekovec@guest.arnes.si> <423236D8.6070408@guest.arnes.si> <4232D798.8050208@schwaben.de> <42331569.7030403@guest.arnes.si> <42355373.50103@schwaben.de> <423623BA.2090303@guest.arnes.si> <42408EEC.1030600@schwaben.de> <4241B598.9070800@guest.arnes.si>
+Message-ID: <424801EE.5070605@schwaben.de>
+
+noteedit-user-admin at berlios.de wrote:
+
+>
+> Hm... why should you have lyrics in piano staff anyway?
+>
+High Matevz,
+
+occasionally I stumbled over a command to allow lyrcis inside 
+GrandStaff. Because I like it orthogonally, I added it when needed. Yes, 
+it's more when doing not so classical designs. I closed bug #3403 and 
+added a few lines to our NEWS file. Two, three more bugfixes and we make 
+a new release? :)
+
+> About Lily versions, under Debian the problem is that Debian testing
+> and unstable both include 2.2.6 version of Lilypond. So we cannot make
+> any changes until both testing and unstable include 2.4.x in their
+> repository if we want to stick to and only to 2.4.x. However, we can
+> drop support for versions prior to 2.2.x. What about Fedora, SuSE,
+> Mandrake?
+>
+Agreed. I tested with lily 2.0.3, so 2.2 should work also like before. 
+SuSE had problems with lily out of the box, 9.3 will do hopefully 
+better, already with 2.4 i hope. Btw., packman supplies rpm's for SuSE, 
+so new releases will spread easily.
+
+Best Regards,
+Georg.
+
+
+
+From noteedit-user-admin at lists.berlios.de  Thu Mar 31 21:01:24 2005
+From: noteedit-user-admin at lists.berlios.de (noteedit-user-admin at lists.berlios.de)
+Date: Thu, 31 Mar 2005 21:01:24 +0200
+Subject: [Noteedit-user] Howto: Create PDF / HTML Documentation
+Message-ID: <424C4904.4070507@web.de>
+
+Hi!
+
+I just wanted to let you know how you can create a html and even
+a pdf/ps documentation from the index.docbook file.
+
+If you want to create the german version of the documentation
+you need to copy the german index.docbook from the doc/de into the
+doc/noteedit directory.
+
+Now change to the doc/noteedit directory.
+
+Call "meinproc index.docbook"
+This creates several html files from the docbook file.
+
+You can now watch the documentation with
+<favourite browser> index.html
+
+To create a PDF file you need htmldoc.
+
+I use the user interface for creating the doc, but it can be
+done via command line as well. As this is easy I leave it as
+exercise to the reader ;-)
+
+Input: Select all html files from the file requester
+Sort the html files like in the table of content from the index.html file
+index.html file is the title file.
+Output: PDF
+Page: Page Size (A4)
+
+I encountered 5 table errors when "Generate"ing the document.
+The result is a 134 (german version) long pdf file. The table
+of contents is currently twice present, one of them could be
+omitted.
+
+See appendix (of the mail, not of the documentation ;-)
+for the noteedit.book htmldoc file.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - http://www.pertergrin.de
+Project: Noteedit - a score editor - http://noteedit.berlios.de
+GnuPG Public Key available on request
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: noteedit.book
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20050331/faa916f9/attachment.ksh>
+

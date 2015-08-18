@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Howto: Create PDF / HTML Documentation
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2005-March/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Howto%3A%20Create%20PDF%20/%20HTML%20Documentation&In-Reply-To=%3C424C4904.4070507%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000058.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Howto: Create PDF / HTML Documentation</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Howto%3A%20Create%20PDF%20/%20HTML%20Documentation&In-Reply-To=%3C424C4904.4070507%40web.de%3E"
+       TITLE="[Noteedit-user] Howto: Create PDF / HTML Documentation">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Thu Mar 31 21:01:24 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000058.html">[Noteedit-user] export liylond 2.4 lyrics problem
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#59">[ date ]</a>
+              <a href="thread.html#59">[ thread ]</a>
+              <a href="subject.html#59">[ subject ]</a>
+              <a href="author.html#59">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi!
+
+I just wanted to let you know how you can create a html and even
+a pdf/ps documentation from the index.docbook file.
+
+If you want to create the german version of the documentation
+you need to copy the german index.docbook from the doc/de into the
+doc/noteedit directory.
+
+Now change to the doc/noteedit directory.
+
+Call &quot;meinproc index.docbook&quot;
+This creates several html files from the docbook file.
+
+You can now watch the documentation with
+&lt;favourite browser&gt; index.html
+
+To create a PDF file you need htmldoc.
+
+I use the user interface for creating the doc, but it can be
+done via command line as well. As this is easy I leave it as
+exercise to the reader ;-)
+
+Input: Select all html files from the file requester
+Sort the html files like in the table of content from the index.html file
+index.html file is the title file.
+Output: PDF
+Page: Page Size (A4)
+
+I encountered 5 table errors when &quot;Generate&quot;ing the document.
+The result is a 134 (german version) long pdf file. The table
+of contents is currently twice present, one of them could be
+omitted.
+
+See appendix (of the mail, not of the documentation ;-)
+for the noteedit.book htmldoc file.
+
+Best regards,
+
+Reinhard Katzmann
+-- 
+Software-Engineer, Developer for Embedded Devices
+Project: Pertergrin - a RPG system - <A HREF="http://www.pertergrin.de">http://www.pertergrin.de</A>
+Project: Noteedit - a score editor - <A HREF="http://noteedit.berlios.de">http://noteedit.berlios.de</A>
+GnuPG Public Key available on request
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: noteedit.book
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/noteedit-user/attachments/20050331/faa916f9/attachment.ksh">https://lists.berlios.de/pipermail/noteedit-user/attachments/20050331/faa916f9/attachment.ksh</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000058.html">[Noteedit-user] export liylond 2.4 lyrics problem
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#59">[ date ]</a>
+              <a href="thread.html#59">[ thread ]</a>
+              <a href="subject.html#59">[ subject ]</a>
+              <a href="author.html#59">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

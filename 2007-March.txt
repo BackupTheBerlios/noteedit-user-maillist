@@ -1,0 +1,193 @@
+From noteedit-user at lists.berlios.de  Fri Mar  2 01:07:33 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 01 Mar 2007 16:07:33 -0800
+Subject: [Noteedit-user] Noob Questions
+Message-ID: <5.1.0.14.0.20070301160228.01f72600@pop.coxmail.com>
+
+Hi,
+
+I'm Karen Rodgers, a recent user of both Ubuntu, and NoteEdit.  I'm a music 
+major, and quite frankly, a cheapskate (else I'd be using Sibelius).
+
+I am having trouble making the program do what I want.  This is a problem, 
+as my semester project must be done with a music editor.  I'd like to turn 
+in some of my assignments in using it as well, so I get a feel for this 
+thing.  So far, that has not been a rousing success.  How do I get it to 
+use the letter "C" to indicate
+"common" time (yes, I know it's the same as 4/4, but if "C" is what's 
+written on the assignment in the book, it had better be on the homework as 
+well.
+
+Thank you for your time,
+
+Karen Rodgers
+
+
+
+From noteedit-user at lists.berlios.de  Fri Mar  2 02:01:34 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Thu, 01 Mar 2007 17:01:34 -0800
+Subject: [Noteedit-user] Noob Questions
+In-Reply-To: <5.1.0.14.0.20070301160228.01f72600@pop.coxmail.com>
+References: <5.1.0.14.0.20070301160228.01f72600@pop.coxmail.com>
+Message-ID: <45E7776E.3000205@nWood.org>
+
+Hi Karen,
+
+I use Ubuntu and have played around with NoteEdit - have been meaning to 
+get back to it.
+
+I'm not in front of my linux box right now, but if memory serves...I 
+think that there may not be a way to get the "C" from NoteEdit.  You 
+should be prepared for a lot of little issues like this with NoteEdit 
+and with any other open source notation editor.  I don't think that any 
+can hold a candle to Sibelius (except that they all blow it away in price).
+
+Here's what I would do: Enter your music as best you can.  Skip any 
+problems that you get stuck on.  Then export your music to Lilypond (or 
+one of the other text formats that NE supports).  Manually edit the 
+Lilypond file (you'll need to learn Lilypond: 
+http://lilypond.org/doc/v2.10/Documentation/user/lilypond/Tutorial) with 
+a text editor (Emacs has a lilypond mode - Vi might too) and then print 
+the music.  You should expect this process to be slower than writing out 
+the music by hand on manuscript.  Lilypond produces really nice music 
+though.
+
+The NE team is now working on Canorus (http://canorus.berlios.de/) you 
+should keep an eye on that. Denemo 
+(http://savannah.gnu.org/projects/denemo/) is another project, but it is 
+less mature than NE.  You might also take a look at Rosegarden which you 
+can download with apt or synaptic if it is not already under one of your 
+Gnome (or KDE?) menus.
+
+Best of luck.  What is your instrument?  Let me know how it goes.
+
+Below is a message that I sent to this list (no response) detailing some 
+other problems that you might run into.
+> Hi,
+>
+> I'm really enjoying Noteedit.  Thanks for all of your work.  I'm 
+> running 2.8.1 on Ubuntu Dapper (using Gnome) but I have KDE libraries 
+> installed and things seem to be working pretty well.
+>
+> I'd be grateful for info about any (or all) of the following problems:
+>
+> Beaming:
+>
+> I have set my staff to 4/4. I am trying to enter a half rest, 8th rest 
+> and then 3 8th notes.  I want the 2nd two 8th notes beamed but I want 
+> the first to stand on its own. If I simply enter 3 8th notes, they all 
+> get beamed together. If I enter the first two 8th notes (upbeat of 3 
+> and downbeat of 4) and then I hit Backspace they are un-beamed, but 
+> then when I enter the 3rd 8th note they all get beamed again. I've 
+> tried various combinations of using Backspace and clicking the Beam 
+> button on the tool bar but so far have not been able to achieve what I 
+> want.  I also tried marking the two 8th notes that I want to un-beam 
+> as a block and then clicking the Beam button a couple of times. 
+> Nothing seems to change.  I could probably edit the exported file, but 
+> if it's possible to do this in Noteedit, I'd love to know.
+>
+> I think the answer might be Edit > AutoBeam...but I don't see a way of 
+> indicating how many notes I want automatically beamed.
+>
+> Custom Chords:
+>
+> I'm creating leadsheets for use in a jazz context. I would like to 
+> enter chord changes and I would like these changes to transpose when I 
+> transpose the piece.  For this reason I don't want to enter the chords 
+> as arbitrary text.  At the top of the Insert > Chord dialog there is a 
+> text box that looks like it might be a place to enter a custom chord 
+> symbol.  For example, I would like to be able to enter "B-7b5" or 
+> "F#7+9".  Is there a way to do this?
+> Editing:
+>
+> I went to edit mode to change a measure in the middle of the piece.  
+> Somehow I ended up with a bar of 4.5 beats: 8th rest followed by 8 8th 
+> notes.  The only way I was able to fix this was to delete all of the 
+> bar (did Undo several times) after the offending measure, re-enter the 
+> bad measure and then reenter the rest of the piece.  Is there a better 
+> way I could have done that? Is there a way to get Noteedit to 
+> recalculate the measures and correct the bars?
+>
+>
+> Thank you very much for your time.
+>
+> Brian
+
+
+Brian
+
+user mailing list for the score editor noteedit wrote:
+> Hi,
+>
+> I'm Karen Rodgers, a recent user of both Ubuntu, and NoteEdit.  I'm a music 
+> major, and quite frankly, a cheapskate (else I'd be using Sibelius).
+>
+> I am having trouble making the program do what I want.  This is a problem, 
+> as my semester project must be done with a music editor.  I'd like to turn 
+> in some of my assignments in using it as well, so I get a feel for this 
+> thing.  So far, that has not been a rousing success.  How do I get it to 
+> use the letter "C" to indicate
+> "common" time (yes, I know it's the same as 4/4, but if "C" is what's 
+> written on the assignment in the book, it had better be on the homework as 
+> well.
+>
+> Thank you for your time,
+>
+> Karen Rodgers
+>
+> _______________________________________________
+> Noteedit-user mailing list
+> Noteedit-user at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/noteedit-user
+>   
+
+
+From noteedit-user at lists.berlios.de  Tue Mar 20 05:24:44 2007
+From: noteedit-user at lists.berlios.de (user mailing list for the score editor noteedit)
+Date: Tue, 20 Mar 2007 05:24:44 +0100
+Subject: [Noteedit-user] Canorus 0.2.5 is out
+Message-ID: <45FF620C.9030604@gmail.com>
+
+Canorus development team is happy to announce the new release of Canorus
+- a free cross-platform music score editor, version 0.2.5. The release
+took lots of effort from core developers, various contributors, testers
+and translators. This release mostly brought huge under the hood
+changes. Among others, the most notible features are the new GUI and
+LilyPond support.
+
+Finally we would like to mention a close-related project to Canorus,
+Harmonia (http://harmonia.berlios.de). A project aimed at harmony
+analysis which works as a Canorus plugin.
+
+Changes summary:
+- New Doxygen documentation.
+- Initial work on MacOSX port.
+- Improved function marking rendering
+- Scripting engine now offers integration with Canorus menu, import/export
+dialogs and keyboard and mouse events.
+- New completely XML CanorusML format.
+- LilyPond document export support.
+- LilyPond voice import/export support.
+- Rewritten GUI. Now supports multiple main windows. Added lots of icons.
+- Translations support. Current translations: English, Slovenian.
+- Majority of the code rewritten so we have a more robust foundation now for
+future development.
+- Lots of warnings, crashes, bugfixes and memory leaks fixed in MIDI,
+GUI and
+Scripting engine.
+
+
+
+Matev? Jekovec
+Canorus project manager
+http://www.canorus.org
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 252 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/noteedit-user/attachments/20070320/c4d73402/attachment.pgp>
+

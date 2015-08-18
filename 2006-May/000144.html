@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Compile error
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2006-May/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compile%20error&In-Reply-To=%3C4455DC39.7070900%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000143.html">
+   <LINK REL="Next"  HREF="000145.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Compile error</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Compile%20error&In-Reply-To=%3C4455DC39.7070900%40web.de%3E"
+       TITLE="[Noteedit-user] Compile error">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Mon May  1 12:00:25 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000143.html">[Noteedit-user] Compile error
+</A></li>
+        <LI>Next message: <A HREF="000145.html">[Noteedit-user] Compile error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#144">[ date ]</a>
+              <a href="thread.html#144">[ thread ]</a>
+              <a href="subject.html#144">[ subject ]</a>
+              <a href="author.html#144">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Claudius,
+
+This problem was fixed some weeks ago, so if you want
+to try it out immediately fetch the current version from SVN
+which also fixed a path problem with print preview.
+
+The final release should appear really soon now, just
+how soon is another question :-)
+
+Search the archives for nscaleedit.h, there the cause &amp; fix is
+explained for the problem.
+
+Best,
+
+Reinhard
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">noteedit-user-admin at berlios.de</A> wrote:
+&gt;<i> Hi all,
+</I>&gt;<i>
+</I>&gt;<i> I tried to compile noteedit 2.8.1 beta on a Suse 10 system. 
+</I>&gt;<i> Unfortunately &quot;make&quot; stops with the following output:
+</I>&gt;<i>
+</I>&gt;<i> if /bin/sh ../libtool --silent --mode=compile --tag=CXX g++ 
+</I>&gt;<i> -DHAVE_CONFIG_H -I. -I. -I.. -I/opt/kde3/include 
+</I>&gt;<i> -I/usr/lib/qt3/include -I/usr/X11R6/include  -I/usr/include    
+</I>&gt;<i> -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wnon-virtual-dtor -Wno-long-long 
+</I>&gt;<i> -Wundef -Wall -W -Wpointer-arith -Wwrite-strings -ansi 
+</I>&gt;<i> -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion 
+</I>&gt;<i> -Wchar-subscripts -O2 -Wformat-security -Wmissing-format-attribute 
+</I>&gt;<i> -fno-exceptions -fno-check-new -fno-common  -MT pmxexportform.lo -MD 
+</I>&gt;<i> -MP -MF &quot;.deps/pmxexportform.Tpo&quot; \
+</I>&gt;<i>   -c -o pmxexportform.lo `test -f 'pmxexportform.cc' || echo 
+</I>&gt;<i> './'`pmxexportform.cc; \
+</I>&gt;<i> then mv -f &quot;.deps/pmxexportform.Tpo&quot; &quot;.deps/pmxexportform.Plo&quot;; \
+</I>&gt;<i> else rm -f &quot;.deps/pmxexportform.Tpo&quot;; exit 1; \
+</I>&gt;<i> fi
+</I>&gt;<i> pmxexportform.cc:23:24: error: nscaleedit.h: No such file or directory
+</I>&gt;<i> make[3]: *** [pmxexportform.lo] Fehler 1
+</I>&gt;<i> make[3]: Leaving directory 
+</I>&gt;<i> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+</I>&gt;<i> make[2]: *** [all-recursive] Fehler 1
+</I>&gt;<i> make[2]: Leaving directory 
+</I>&gt;<i> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta/noteedit'
+</I>&gt;<i> make[1]: *** [all-recursive] Fehler 1
+</I>&gt;<i> make[1]: Leaving directory 
+</I>&gt;<i> `/home/moppo/Download/Office/Notensatz/noteedit-2.8.1-beta'
+</I>&gt;<i> make: *** [all] Fehler 2
+</I>&gt;<i>
+</I>&gt;<i> Since I am not a programmer, I have no Idea how to correct this error. 
+</I>&gt;<i> Any help is quite appreciated.
+</I>&gt;<i>
+</I>&gt;<i> Thank you. 
+</I>&gt;<i> Claudius
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> Noteedit-user mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/noteedit-user">Noteedit-user at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="http://lists.berlios.de/mailman/listinfo/noteedit-user">http://lists.berlios.de/mailman/listinfo/noteedit-user</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>
+
+-- 
+Software-Engineer, Developer of User Interfaces
+Project: Canorus - the next generation music score editor - <A HREF="http://canorus.berlios.de">http://canorus.berlios.de</A>
+GnuPG Public Key available on request
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000143.html">[Noteedit-user] Compile error
+</A></li>
+	<LI>Next message: <A HREF="000145.html">[Noteedit-user] Compile error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#144">[ date ]</a>
+              <a href="thread.html#144">[ thread ]</a>
+              <a href="subject.html#144">[ subject ]</a>
+              <a href="author.html#144">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>

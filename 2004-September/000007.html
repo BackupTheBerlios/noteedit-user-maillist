@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Noteedit-user] Re: noteedit upgrade
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/noteedit-user/2004-September/index.html" >
+   <LINK REL="made" HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Re%3A%20noteedit%20upgrade&In-Reply-To=%3C415735DC.8030907%40schwaben.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Noteedit-user] Re: noteedit upgrade</H1>
+    <B>noteedit-user-admin at lists.berlios.de</B> 
+    <A HREF="mailto:noteedit-user%40lists.berlios.de?Subject=Re%3A%20%5BNoteedit-user%5D%20Re%3A%20noteedit%20upgrade&In-Reply-To=%3C415735DC.8030907%40schwaben.de%3E"
+       TITLE="[Noteedit-user] Re: noteedit upgrade">noteedit-user-admin at lists.berlios.de
+       </A><BR>
+    <I>Sun Sep 26 23:34:20 CEST 2004</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">[Noteedit-user] Re: noteedit upgrade
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Nigel,
+
+as there might be many missing links for the setup you're seeking for I 
+would suggest you to make a first step:
+
+Play a midi file on your soundcard with timidity. When that's done, I 
+think noteedit will be the easier part. What happens when you try it?
+
+Then/Or: Start vkeybd and kaconnect and try to connect vkeybd and the 
+midi synthesizer and play a sound.
+
+Many things can happen: a) another application is grabbing the 
+soundcard, b) timidity doesn't find the right card, c) your midi patch 
+set is not appropriate, d) the soundcard is muted, e) the soundcard 
+didn't get the download of midipatches if you're planning to use it's 
+midi capabibility.
+
+Me, on Suse 9.0, I prefer first let jack grab the soundcard, then put 
+timidity on jack to be the software midi synthesizer. For this setup I 
+have first to kill Suse's timidity process. I also switch of artsd in 
+KDE. For me AC'97, jack, timidity, noteedit, ardour and alsaplayer play 
+nicely together.
+
+Usually for every problem I get an error message. Let hear from you,
+
+Best Regards,
+Georg Rudolph.
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">[Noteedit-user] Re: noteedit upgrade
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/noteedit-user">More information about the Noteedit-user
+mailing list</a><br>
+</body></html>
